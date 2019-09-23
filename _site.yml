@@ -2,6 +2,7 @@ name: "OCNMS info"
 output_dir: "docs"
 description: |
   OCNMS info
+svg_csv: "svg/svg_links_ocnms.csv"
 navbar:
   title: "OCNMS"
   icon: fa-info
