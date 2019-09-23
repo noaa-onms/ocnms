@@ -11,7 +11,7 @@ redo_modals <- F
 # read in links for svg
 d <- read_csv(csv)
 
-iq_render <- function(input){
+render_modal <- function(input){
   render(input, html_document(
     theme = site_config()$output$html_document$theme, 
     self_contained=F, lib_dir = here("modals/modal_libs"), 
@@ -34,7 +34,7 @@ for (i in 1:nrow(d)){ # i=1
     rmd_newer <- T
   }
   if (rmd_newer | redo_modals){
-    iq_render(rmd)
+    render_modal(rmd)
   }
 }
 
