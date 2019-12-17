@@ -11,7 +11,18 @@ redo_modals <- F
 # read in links for svg
 d <- read_csv(csv)
 
+render_page <- function(rmd){
+  render(rmd, html_document(
+    theme = site_config()$output$html_document$theme, 
+    self_contained=F, lib_dir = here("modals/modal_libs"), 
+    mathjax = NULL))
+}
+
 render_modal <- function(rmd){
+  rmds_theme_white <- c("")
+  
+  site_theme <- site_config()$output$html_document$theme
+  rmd_theme  <- ifelse(input %in% rmds_theme_white, "cosmo", site_theme)
   
   render(rmd, html_document(
     theme = site_config()$output$html_document$theme, 
@@ -28,7 +39,6 @@ render_modal <- function(rmd){
 # render_modal("modals/algal-groups.Rmd")
 # render_modal("modals/barnacles.Rmd")
 # render_modal("modals/mussels.Rmd")
-
 
 # create/render modals by iterating over svg links in csv ----
 for (i in 1:nrow(d)){ # i=1
@@ -51,7 +61,7 @@ for (i in 1:nrow(d)){ # i=1
 }
 
 # render website, ie Rmds in root ----
-walk(list.files(".", "*\\.md$"), iq_render)
+walk(list.files(".", "*\\.md$"), render_page)
 walk(
   list.files(".", "*\\.html$"), 
   function(x) file.copy(x, file.path("docs", x)))
@@ -60,4 +70,4 @@ render_site()
 # shortcuts w/out full render:
 # file.copy("libs", "docs", recursive=T)
 # file.copy("svg", "docs", recursive=T)
-
+# file.copy("modals", "docs", recursive=T)

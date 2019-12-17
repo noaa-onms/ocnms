@@ -4,16 +4,18 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source(here::here("../cinms/scripts/rocky.R"))
 ```
 
-### Dwarf Rockweed
+## {.tabset}
+
+### Map of Sites
+
+```{r}
+map_nms_sites("ocnms")
+```
+
+### Dwarf Rockweed (_Pelvetiopsis limitata_) {.active}
 
 ```{r}
 plot_intertidal_nms(d_csv, "OCNMS", "PELLIM", "Dwarf Rockweed")
 #plot_intertidal_nms(d_csv, "OCNMS", "PHYOVR", "Surfgrass")
-```
-
-## Map of Sites
-
-```{r}
-map_nms_sites("OCNMS")
 ```
 
