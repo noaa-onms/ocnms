@@ -15,11 +15,13 @@ map_nms_sites("ocnms")
 ### California Mussels (_Mytilus californianus_), target = ANY {.active}
 
 ```{r}
-plot_intertidal_nms(d_csv, "OCNMS", "MYTCAL", "California Mussels")
+plot_intertidal_nms(d_csv, "OCNMS", "MYTCAL", "California Mussels") %>%
+  dyLegend(show="follow")
 ```
 
 ### California Mussels (_Mytilus californianus_), target = mytilus
 
 ```{r}
-plot_intertidal_nms(d_csv, "OCNMS", "MYTCAL", "California Mussels [target = mytilus]", "mytilus")
+plot_intertidal_nms(d_csv, "OCNMS", "MYTCAL", "California Mussels [target = mytilus]", "mytilus") %>%
+  dyLegend(show="follow")
 ```
