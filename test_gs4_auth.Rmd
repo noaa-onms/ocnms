@@ -1,0 +1,59 @@
+---
+title: "Test gs4_auth"
+author: "Ben Best"
+date: "5/19/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+if (!require(librarian)){
+  install.packages("librarian")
+  library(librarian)
+}
+shelf(
+  DT,
+  googlesheets4,
+  here)
+
+gsheets_sa_json <- switch(
+  Sys.info()[["effective_user"]],
+  bbest      = "/Volumes/GoogleDrive/My Drive/projects/nms-web/data/nms4gargle-774a9e9ec703.json",
+  jai        = "TBD",
+  PikesStuff = "TBD")
+
+gsheet <- "https://docs.google.com/spreadsheets/d/1C5YAp77WcnblHoIRwA_rloAagkLn0gDcJCda8E8Efu4/edit"
+```
+
+## Setup Service Account API Key
+
+Reference:
+
+- [googlesheets4 auth • googlesheets4](https://googlesheets4.tidyverse.org/articles/articles/auth.html)
+
+Steps:
+
+1. Save [nms4gargle-774a9e9ec703](https://drive.google.com/file/d/1LTvMM74gYB5MAkspiTqjA4BiTzVLTgNp/view?usp=sharing) locally, in this case to `r gsheets_sa_json`.
+  - Manage [shares – IAM & Admin – nms4gargle – Google Cloud Platform](https://console.cloud.google.com/iam-admin/serviceaccounts/details/111162214432618062602?authuser=2&project=nms4gargle). Added permissions to : jai.ranganathan@gmail.com, pike.spector@noaa.gov.
+  
+1. Share [Master_OCNMS_infographic_content - Google Sheets](`r gsheet`) to `shares@nms4gargle.iam.gserviceaccount.com`.
+
+
+## Use
+
+```{r}
+stopifnot(file.exists(gsheets_sa_json))
+
+gs4_auth(path = gsheets_sa_json)
+
+sheet_names(gsheet)
+
+tbl_modals <- read_sheet(gsheet, "modals")
+
+datatable(tbl_modals)
+```
+
+
