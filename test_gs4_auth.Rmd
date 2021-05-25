@@ -37,7 +37,8 @@ Reference:
 Steps:
 
 1. Save [nms4gargle-774a9e9ec703](https://drive.google.com/file/d/1LTvMM74gYB5MAkspiTqjA4BiTzVLTgNp/view?usp=sharing) locally, in this case to `r gsheets_sa_json`.
-  - Manage [shares – IAM & Admin – nms4gargle – Google Cloud Platform](https://console.cloud.google.com/iam-admin/serviceaccounts/details/111162214432618062602?authuser=2&project=nms4gargle). Added permissions to : jai.ranganathan@gmail.com, pike.spector@noaa.gov.
+
+  1. Manage [shares – IAM & Admin – nms4gargle – Google Cloud Platform](https://console.cloud.google.com/iam-admin/serviceaccounts/details/111162214432618062602?authuser=2&project=nms4gargle). Added permissions to : jai.ranganathan@gmail.com, pike.spector@noaa.gov.
   
 1. Share [Master_OCNMS_infographic_content - Google Sheets](`r gsheet`) to `shares@nms4gargle.iam.gserviceaccount.com`.
 
