@@ -33,6 +33,7 @@ gsheet <- "https://docs.google.com/spreadsheets/d/1C5YAp77WcnblHoIRwA_rloAagkLn0
 Reference:
 
 - [googlesheets4 auth • googlesheets4](https://googlesheets4.tidyverse.org/articles/articles/auth.html)
+- [Non-interactive auth](https://cran.r-project.org/web/packages/gargle/vignettes/non-interactive-auth.html): main reference for understanding this
 
 Steps:
 
