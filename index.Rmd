@@ -1,7 +1,9 @@
 ---
 title: "Overview"
 params:
-  svg: "svg/mbnms_overview.svg"
+  csv: "svg/svg_links_ocnms.csv"
+  svg: "svg/ocnms_overview.svg"
+  svg_filter: "ocnms_overview.svg"
 ---
 
 Please explore the interactive infographics for Olympic Coast National Marine Sanctuary (OCNMS) to learn more about elements in each habitat.
