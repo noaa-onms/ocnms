@@ -1,9 +1,0 @@
----
-title: "Kelp Forest"
-params:
-  svg: "svg/mbnms_kelp-forest.svg"
----
-
-```{r svg, child = '_svg-html_child.Rmd'}
-```
-

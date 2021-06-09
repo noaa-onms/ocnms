@@ -1,9 +1,0 @@
----
-title: "Estuary"
-params:
-  svg: "svg/mbnms_estuary.svg"
----
-
-```{r svg, child = '_svg-html_child.Rmd'}
-```
-

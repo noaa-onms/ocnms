@@ -1,8 +1,0 @@
----
-title: "Sandy Seafloor"
-params:
-  svg: "svg/mbnms_sandy-seafloor.svg"
----
-
-```{r svg, child = '_svg-html_child.Rmd'}
-```

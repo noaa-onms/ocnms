@@ -1,9 +1,0 @@
----
-title: "Rocky Shore"
-params:
-  svg: "svg/mbnms_rocky-shore.svg"
----
-
-```{r svg, child = '_svg-html_child.Rmd'}
-```
-
