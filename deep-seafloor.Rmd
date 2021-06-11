@@ -1,9 +1,0 @@
----
-title: "Deep Seafloor"
-params:
-  svg: "svg/mbnms_deep-seafloor.svg"
----
-
-```{r svg, child = '_svg-html_child.Rmd'}
-```
-

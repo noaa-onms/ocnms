@@ -8,21 +8,17 @@ navbar:
   icon: fa-info
   left:
     - text: "Deep Seafloor"
-      href: deep-seafloor.html
-    - text: "Estuary"
-      href: estuary.html
+      href: deep_seafloor.html
     - text: "Kelp Forest"
-      href: kelp-forest.html
+      href: kelp_forest.html
     - text: "Pelagic"
       href: pelagic.html
     - text: "Rocky Shore"
-      href: rocky-shore.html
+      href: rocky_shore.html
     - text: "Sandy Beach"
-      href: sandy-beach.html
+      href: sandy_beach.html
     - text: "Sandy Seafloor"
-      href: sandy-seafloor.html
-    - text: "Seamount Ridge"
-      href: seamount-ridge.html
+      href: sandy_seafloor.html
   right:
     - text: "About"
       href: https://marinebon.org/sanctuaries/

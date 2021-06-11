@@ -1,0 +1,20 @@
+---
+title: "Deep Seafloor"
+params:
+  csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSrXtsaIU5-YeIhxFlBJlG1lid-pp2zv9rIFMoHQB8uJu80TS2z_Kc-IWvdXI9CwZm__MFZN-CMLEvw/pub?gid=1622711438&single=true&output=csv"
+  svg: "svg/ocnms_deep_seafloor.svg"
+  svg_filter: "ocnms_deep_seafloor.svg"
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+library(infographiqR) 
+library(magrittr)
+# remotes::install_github("marinebon/infographiqR")
+```
+
+`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSrXtsaIU5-YeIhxFlBJlG1lid-pp2zv9rIFMoHQB8uJu80TS2z_Kc-IWvdXI9CwZm__MFZN-CMLEvw/pub?gid=1408719048&single=true&output=csv")`
+
+```{r svg, child = '_svg-html_child.Rmd'}
+```
+
