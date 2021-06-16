@@ -47,7 +47,7 @@ Steps:
 ## Use
 
 ```{r}
-# ensure
+# ensure secret JSON file exists
 stopifnot(file.exists(gsheets_sa_json))
 
 # authenticate to GoogleSheets using Google Service Account's secret JSON
