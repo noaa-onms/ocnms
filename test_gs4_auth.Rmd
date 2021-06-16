@@ -47,12 +47,17 @@ Steps:
 ## Use
 
 ```{r}
+# ensure
 stopifnot(file.exists(gsheets_sa_json))
 
+# authenticate to GoogleSheets using Google Service Account's secret JSON
 gs4_auth(path = gsheets_sa_json)
 
+# access to this Google Sheet was granted to the Google Service Account
+#   by Sharing with its email: shares@nms4gargle.iam.gserviceaccount.com
 sheet_names(gsheet)
 
+# read in the tab called figures
 tbl_modals <- read_sheet(gsheet, "figures")
 
 datatable(tbl_modals)
