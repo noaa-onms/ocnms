@@ -22,13 +22,8 @@ shelf(
 gsheets_sa_json <- switch(
   Sys.info()[["effective_user"]],
   bbest      = "/Volumes/GoogleDrive/My Drive/projects/nms-web/data/nms4gargle-774a9e9ec703.json",
-<<<<<<< HEAD
-  jai        = "TBD",
-  PikesStuff = "/Users/PikesStuff/Theseus/Private/nms4gargle-774a9e9ec703.json")
-=======
   jai        = "/Volumes/GoogleDrive/My Drive/service-tokens/nms4gargle-774a9e9ec703.json",
-  PikesStuff = "TBD")
->>>>>>> 3b8026ca5d19ffc43d12bd0c1d1e685bd987c891
+  PikesStuff = "/Users/PikesStuff/Theseus/Private/nms4gargle-774a9e9ec703.json")
 
 gsheet <- "https://docs.google.com/spreadsheets/d/1C5YAp77WcnblHoIRwA_rloAagkLn0gDcJCda8E8Efu4/edit"
 ```
