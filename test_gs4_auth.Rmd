@@ -53,7 +53,7 @@ gs4_auth(path = gsheets_sa_json)
 
 sheet_names(gsheet)
 
-tbl_modals <- read_sheet(gsheet, "modals")
+tbl_modals <- read_sheet(gsheet, "figures")
 
 datatable(tbl_modals)
 ```
