@@ -13,7 +13,7 @@
 
 <title>Overview</title>
 
-<script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
@@ -280,7 +280,10 @@ $(document).ready(function () {
 </div>
 
 
-<p>Please explore the interactive infographics for Olympic Coast National Marine Sanctuary (OCNMS) to learn more about elements in each habitat.</p>
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"></div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">Please explore the interactive ecosystem for Olympic Coast National Marine Sanctuary. Navigate by clicking on icons representing major habitats, species of interest, major climate and ocean drivers, and key human activities. These interactive icons and silhouettes access status and trend data, images, web stories and other supporting content.</div>
+</div>
 <div class="row">
 <div class="col-md-9">
 <div id="svg">
@@ -299,8 +302,8 @@ $(document).ready(function () {
 <script>
   link_svg({
     svg: "svg/ocnms_overview.svg",
-    csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSrXtsaIU5-YeIhxFlBJlG1lid-pp2zv9rIFMoHQB8uJu80TS2z_Kc-IWvdXI9CwZm__MFZN-CMLEvw/pub?gid=1622711438&single=true&output=csv",
-    svg_filter: "ocnms_overview.svg",   
+    csv: "svg/svg_links_ocnms.csv",
+    svg_filter: "index",   
     toc_style: 'list',
     text_toggle: true});
 </script>

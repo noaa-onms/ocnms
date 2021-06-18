@@ -1,19 +1,20 @@
 ---
 title: "Pelagic"
 params:
-  csv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSrXtsaIU5-YeIhxFlBJlG1lid-pp2zv9rIFMoHQB8uJu80TS2z_Kc-IWvdXI9CwZm__MFZN-CMLEvw/pub?gid=1622711438&single=true&output=csv"
+  csv: "svg/svg_links_ocnms.csv"
   svg: "svg/ocnms_pelagic.svg"
-  svg_filter: "ocnms_pelagic.svg"
+  svg_filter: "pelagic"
 ---
 
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+# remotes::install_github("marinebon/infographiqR")
 library(infographiqR) 
 library(magrittr)
-# remotes::install_github("marinebon/infographiqR")
+infographiqR::ocnms_create_link_table()
 ```
 
-`r infographiqR::get_modal_info(info_modal_links_csv = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSrXtsaIU5-YeIhxFlBJlG1lid-pp2zv9rIFMoHQB8uJu80TS2z_Kc-IWvdXI9CwZm__MFZN-CMLEvw/pub?gid=1408719048&single=true&output=csv")`
+`r infographiqR::ocnms_get_modal_info()`
 
 ```{r svg, child = '_svg-html_child.Rmd'}
 ```
