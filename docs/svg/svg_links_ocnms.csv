@@ -24,7 +24,7 @@ human_dimensions,vessels,human-dimensions_vessels.html,Vessels,F
 human_dimensions,harvest,human-dimensions_harvest.html,Harvest,F
 human_dimensions,seafloor-disturbance,human-dimensions_seafloor-disturbance.html,Seafloor disturbance,F
 human_dimensions,marine-debris,human-dimensions_marine-debris.html,Marine debris,F
-human_dimensions,whale-entanglement,human-dimensions_whale-entanglement.html,Whale entanglement,F
+human_dimensions,wildlife-disturbance,human-dimensions_wildlife-disturbance.html,Wildlife disturbance,F
 human_dimensions,sound,human-dimensions_sound.html,Sound,F
 kelp_forest,benthic-invertebrates,kelp-forest_benthic-invertebrates.html,Benthic invertebrates,F
 kelp_forest,contaminants,kelp-forest_contaminants.html,Contaminants,F
@@ -35,7 +35,7 @@ kelp_forest,sea-otters,kelp-forest_sea-otters.html,Sea otters,F
 kelp_forest,sea-stars,kelp-forest_sea-stars.html,Sea stars,F
 kelp_forest,sea-urchins,kelp-forest_sea-urchins.html,Sea urchins,F
 kelp_forest,understory-algae,kelp-forest_understory-algae.html,Understory algae,F
-ocean_climate,nutrient-phytoplankton,ocean-climate_nutrient-phytoplankton.html,Nutrients and Phytoplankton,F
+ocean_climate,nutrients-phytoplankton,ocean-climate_nutrients-phytoplankton.html,Nutrients and Phytoplankton,F
 ocean_climate,oceanographic-index,ocean-climate_oceanographic-index.html,Oceanographic Indexes,F
 ocean_climate,temperature,ocean-climate_temperature.html,Temperature,F
 pelagic,cetaceans,pelagic_cetaceans.html,Cetaceans,F
