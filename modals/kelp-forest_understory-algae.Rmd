@@ -1,0 +1,8 @@
+---
+pagetitle: Understory algae
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/seaweed/seaweed.html)
+- [info_tagline](One key part of kelp forests is the understory, which consists of algal species that cover the rocky reefs in a rich mosaic of greens, reds, and browns.)
+
+

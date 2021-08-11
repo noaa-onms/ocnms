@@ -1,0 +1,11 @@
+---
+pagetitle: Mussels
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/inverts/inverts.html)
+- [info_photo_link](https://sanctuarysimon.org/dbtools/species-database/id/474/)
+- [info_tagline](Although they may resemble the rocks they're found on, mussels are very much alive. These filter-feeders can form large dense beds that provide habitat for many other species. Mussels are an important food source for many animals, including ochre stars, snails, and humans.)
+
+
+![](figures/Figure S.H.10.3_Mussels_MARINe.jpg)
+![](figures/S.LR.12.5 - Mussell shell thickness.jpg)

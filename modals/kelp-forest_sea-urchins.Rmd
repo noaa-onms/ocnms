@@ -1,0 +1,11 @@
+---
+pagetitle: Sea urchins
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/inverts/inverts.html)
+- [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_urchinred.html)
+- [info_tagline](Sea urchins in kelp forest are food for  predators such as sea stars, fishes, and sea otters. If their numbers grow unchecked, these grazers if kelp and understory algae can cause declines in kelp and the associated fauna.)
+
+
+![](figures/Appendix S.LR.12.4 - Density of purple urchin in kelp forest habitats 2015-2019.jpg)
+![](figures/Appendix S.LR.13.19 - Density of red urchins in kelp forest 2015-2019.jpg)

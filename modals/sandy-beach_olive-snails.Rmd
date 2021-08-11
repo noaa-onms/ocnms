@@ -1,0 +1,10 @@
+---
+pagetitle: Olive snails
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/inverts/inverts.html)
+- [info_tagline](Purple olive shells have long been collected by the Makah people for traditional cultural practices.)
+
+
+![](figures/Appendix S.LR.13.2 - Purple olive snail density Makah Bay 2014-2015.jpg)
+![](figures/Appendix S.LR.13.2 - Purple olive snail density Makah Bay 2016-2017.jpg)

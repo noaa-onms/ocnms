@@ -1,0 +1,9 @@
+---
+pagetitle: Salmon
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/fish/fish.html)
+
+
+![](figures/S.LR.13.13a - Status of Salmon and Stealhead on WA coast 2018.jpg)
+![](figures/S.LR.13.13b - Status of Quinault Blueback Salmon.jpg)

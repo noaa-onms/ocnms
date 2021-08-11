@@ -1,0 +1,12 @@
+---
+pagetitle: Rockfishes
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/fish/fish.html)
+- [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_chinarockfish.html)
+- [info_tagline](Rockfish is a term used for nearly sixty species in the fish family of Sebastidae. Rockfishes come in various shapes, sizes, and colors with interesting names such as vermillion, chilipepper, blue, black, or gopher.)
+
+
+![](figures/S.LR.13.8 - Rockfish CPUE 2004-2018.jpg)
+![](figures/Appendix S.LR.13.7 - CPUE for bocaccio in OCNMS 2003-2018.jpg)
+![](figures/Appendix S.LR.13.8 - CPUE for yellow eye rockfish in OCNMS 2003-2018.jpg)

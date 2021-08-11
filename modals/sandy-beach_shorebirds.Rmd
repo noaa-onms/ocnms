@@ -1,0 +1,9 @@
+---
+pagetitle: Shorebirds
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/birds/birds.html)
+- [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_caspianterns.html)
+- [info_tagline](Shorebirds are a common sight on Olympic Coast beaches. Most shorebirds are carnivorous and eat a range of insects, mollusks, crustaceans, and similar prey that they catch by picking and probing with their bills. The abundance and diversisty of shorebirds can be helpful way of tracking the health of sanctuary beaches.)
+
+

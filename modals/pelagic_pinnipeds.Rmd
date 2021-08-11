@@ -1,0 +1,12 @@
+---
+pagetitle: Pinnipeds
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/mammals/mammals.html)
+- [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_sealions.html)
+- [info_tagline](Seals and sea lions are pinnipeds and they are some of the most charismatic mammals along the Olympic Coast.)
+
+
+![](figures/S.LR.13.9 - Stellar sea lion abundance 1989-2013.jpg)
+![](figures/S.LR.13.9 - Stellar sea lion haulouts in OCNMS.jpg)
+![](figures/Appendix S.LR.13.13 - Number of at sea pacific harbor seals off WA 2008-2019.jpg)

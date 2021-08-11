@@ -1,0 +1,8 @@
+---
+pagetitle: Benthic invertebrates
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/inverts/inverts.html)
+- [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_brittlestars.html)
+
+

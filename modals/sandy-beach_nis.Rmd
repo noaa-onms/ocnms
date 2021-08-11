@@ -1,0 +1,12 @@
+---
+pagetitle: Non-indigenous species
+---
+
+- [info_link](https://sanctuaries.noaa.gov/science/sentinel-site-program/olympic-coast/invasive-species.html)
+- [info_photo_link](https://nmsolympiccoast.blob.core.windows.net/olympiccoast-prod/media/docs/20200724-green-crabs-west-coast.pdf)
+- [info_tagline](Beaches can be impacted by the arrival of species from other parts of the world that have the potential to be invasive by out-competing native species. Some non-indigenous species are disruptive to ecosystems and others aren't.)
+
+
+![](figures/S.LR.14.2 - European green crab CPUE in Makah Bay 2018 and 2019.jpg)
+![](figures/S.LR.14.4 - NIS introduced to US west coast by 2011 tsunami.jpg)
+![](figures/S.LR.14.5 - Map of marine debris from 2011 tsunami.jpg)

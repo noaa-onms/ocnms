@@ -1,0 +1,8 @@
+---
+pagetitle: Pacific hake (whiting)
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/fish/fish.html)
+
+
+![](figures/S.LR.12.6 - Pacific Hake spatiotemporal distribution.jpg)

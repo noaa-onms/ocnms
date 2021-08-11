@@ -1,0 +1,16 @@
+---
+pagetitle: Cetaceans
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/mammals/mammals.html)
+- [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_humpback.html)
+- [info_tagline](Marine mammals in the cetacean family include whales, dolphins and porpoises.)
+
+
+![](figures/Appendix S.LR.13.14 - Density of gray whales 2005-2011jpg.jpg)
+![](figures/Appendix S.LR.13.15 - Abundance Fin Whale 1991-2014.jpg)
+![](figures/Appendix S.LR.13.15 - Map Sightings Fin Whale 1991-2014.jpg)
+![](figures/Appendix S.LR.13.16 - Figure Sightings of humpback whales off US west coast 1991-2014.jpg)
+![](figures/Appendix S.LR.13.16 - Map Sightings of humpback whales off US west coast 1991-2014.jpg)
+![](figures/Appendix S.LR.13.17 - Comparison of predicted densities for blue, fin and humpback whales.jpg)
+![](figures/Appendix S.LR.13.18 - Gray whale strandings 2019-2020.jpg)

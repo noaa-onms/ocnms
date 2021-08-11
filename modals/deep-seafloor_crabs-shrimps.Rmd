@@ -1,0 +1,8 @@
+---
+pagetitle: Crabs and shrimp
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/inverts/inverts.html)
+- [info_tagline](Protected by their hard shell, crabs and shrimp patrol the seafloor in search of food.)
+
+

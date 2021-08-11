@@ -1,0 +1,9 @@
+---
+pagetitle: Colonial seabirds
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/birds/birds.html)
+- [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_murres.html)
+
+
+![](figures/S.LR.13.10 - Common murre colony counts 1996-2015.jpg)

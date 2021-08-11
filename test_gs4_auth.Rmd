@@ -53,6 +53,11 @@ stopifnot(file.exists(gsheets_sa_json))
 # authenticate to GoogleSheets using Google Service Account's secret JSON
 gs4_auth(path = gsheets_sa_json)
 
+gsa_json_text <- readLines(gsheets_sa_json) %>% paste(sep="\n")
+# listviewer::jsonedit(jsonlite::fromJSON(gsa_json_text))
+# cat(gsa_json_text)
+gs4_auth(path = gsa_json_text)
+
 # access to this Google Sheet was granted to the Google Service Account
 #   by Sharing with its email: shares@nms4gargle.iam.gserviceaccount.com
 sheet_names(gsheet)

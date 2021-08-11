@@ -1,0 +1,8 @@
+---
+pagetitle: Midwater rockfish
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/fish/fish.html)
+- [info_tagline](The collection of rockfish species found in the vertical middle of the water column (meaning not at the sea surface not at the ocean bottom).)
+
+

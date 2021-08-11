@@ -1,0 +1,9 @@
+---
+pagetitle: Black oystercatcher
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/birds/specieslist/spp_blkoystercatch.html)
+- [info_photo_link](https://sanctuarysimon.org/dbtools/species-database/id/718)
+- [info_tagline](This black shorebird with a bright red bill is a critical species of conservation concern because of the key role it plays in coastal ecosystems and its senstivity to disturbance by human activities while breeding.)
+
+

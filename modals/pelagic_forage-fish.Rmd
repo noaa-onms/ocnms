@@ -1,0 +1,10 @@
+---
+pagetitle: Forage fish
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/fish/fish.html)
+- [info_tagline](Forage fish, also called prey fish or bait fish, are small fishes that are important food for larger predators including larger fish, seabirds, sea lions and whales. Forage fish, such as anchovies and sardines, feed near the base of the food chain on plankton.)
+
+
+![](figures/Appendix S.LR.12.5 - Abundance anomalies for northern anchovies off OR and WA.jpg)
+![](figures/Appendix S.LR.12.6 - Distributions of krill off OR and southern WA May-June 2011-2019.jpg)

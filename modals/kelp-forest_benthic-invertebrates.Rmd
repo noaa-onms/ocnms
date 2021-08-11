@@ -1,0 +1,8 @@
+---
+pagetitle: Benthic invertebrates
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/inverts/inverts.html)
+- [info_tagline](What they may lack in size, they make up in diversity! Invertebrates are any animal with without a backbone. From snails to crabs and clams to urchins, the seafloor is teeming with invertebrate life.)
+
+

@@ -1,0 +1,8 @@
+---
+pagetitle: Beach wrack
+---
+
+- [info_link](https://olympiccoast.noaa.gov/living/marinelife/seaweed/seaweed.html)
+- [info_tagline](Wrack consists of kelp and other algae that washes onto beaches from the ocean. Wrack is an essential part of the ecology of the shoreline, providing food and habitat for everything from insects to birds.)
+
+
