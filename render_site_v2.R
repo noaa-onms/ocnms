@@ -284,6 +284,7 @@ render_modals <- function(
 # update site ----
 gsheets_to_csvs(gsheet)
 add_gimage_paths()
+
 create_modals()
 render_modals()
 
