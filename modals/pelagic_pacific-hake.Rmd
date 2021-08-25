@@ -6,7 +6,8 @@ pagetitle: Pacific hake (whiting)
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Trends - biomass
+#### Trends - biomass
+
 ![](figures/S.LR.12.6 - Pacific Hake spatiotemporal distribution.jpg)

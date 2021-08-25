@@ -5,13 +5,16 @@ pagetitle: Seafloor disturbance
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Maps - bottom contact Trends
-![](figures/Figure S.P.3.2.png)
+#### Maps - bottom contact frequency
 
-## Maps - bottom contact frequency
 ![](figures/Figure S.P.5.1.png)
 
-## Maps - submarine cables
+#### Maps - bottom contact Trends
+
+![](figures/Figure S.P.3.2.png)
+
+#### Maps - submarine cables
+
 ![](figures/Figure P.8 OCNMS_Submarine_Cables_P7_04162021.jpg)

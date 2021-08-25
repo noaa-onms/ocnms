@@ -7,10 +7,12 @@ pagetitle: Olive snails
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Maps - density Makah Bay
+#### Maps - density Makah Bay
+
 ![](figures/Appendix S.LR.13.2 - Purple olive snail density Makah Bay 2014-2015.jpg)
 
-## Maps - density Makah Bay
+#### Maps - density Makah Bay
+
 ![](figures/Appendix S.LR.13.2 - Purple olive snail density Makah Bay 2016-2017.jpg)

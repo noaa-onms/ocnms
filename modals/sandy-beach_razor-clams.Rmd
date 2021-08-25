@@ -8,13 +8,16 @@ pagetitle: Pacific razor clam *Siliqua patula*
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Trends - Pt. Grenville
-![](figures/S.LR.13.2 - Razor Clam density Pt Grenville 2001-2018.jpg)
+#### Trends - Kalaloch Beach
 
-## Trends - Kalaloch Beach
 ![](figures/S.LR.13.3 - Razor Clam density Kalaloch 1997-2019.jpg)
 
-## Trends - Mocrocks Beach
+#### Trends - Mocrocks Beach
+
 ![](figures/Appendix S.LR.13.1 - Razor clam density Mocrocks 1997-2019.jpg)
+
+#### Trends - Pt. Grenville
+
+![](figures/S.LR.13.2 - Razor Clam density Pt Grenville 2001-2018.jpg)

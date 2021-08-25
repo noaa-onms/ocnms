@@ -8,13 +8,16 @@ pagetitle: Rockfishes
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Trends - abundance all rockfish
+#### Trends - abundance all rockfish
+
 ![](figures/S.LR.13.8 - Rockfish CPUE 2004-2018.jpg)
 
-## Trends - abundance bocaccio
+#### Trends - abundance bocaccio
+
 ![](figures/Appendix S.LR.13.7 - CPUE for bocaccio in OCNMS 2003-2018.jpg)
 
-## Trends - abundance yelloweye rockfish
+#### Trends - abundance yelloweye rockfish
+
 ![](figures/Appendix S.LR.13.8 - CPUE for yellow eye rockfish in OCNMS 2003-2018.jpg)

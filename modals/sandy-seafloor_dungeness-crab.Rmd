@@ -6,10 +6,12 @@ pagetitle: Dungeness crab
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Trends - abundance (CPUE)
+#### Trends - abundance (CPUE)
+
 ![](figures/log_ocnms_Cancer magister_2003-2019.png)
 
-## Trends - landings
+#### Trends - landings
+
 ![](figures/S.LR.13.5 - Dungeness crab harvest 2000-2019.jpg)

@@ -160,6 +160,7 @@ create_modal <- function(
   
   # modal_html = "deep-seafloor_benthic-invertebrates.html"; dir_modals = here::here("modals"); fld_html = "link"
   # modal_html = "deep-seafloor_groundfish-assemblage.html"; dir_modals = here::here("modals"); fld_html = "link"
+  # modal_html = "pelagic_seabirds.html"; dir_modals = here::here("modals"); fld_html = "link"
   
   path_rmd <- file.path(
     dir_modals,
@@ -170,7 +171,8 @@ create_modal <- function(
   d_f <- d_figures %>% 
     filter(
       .data[[fld_html]] == !!modal_html,
-      !is.na(image_path))
+      !is.na(image_path)) %>% 
+    arrange(tab_group, tab, image_path)
     
   #* yaml ----
   write(glue::glue(
@@ -181,44 +183,72 @@ create_modal <- function(
     
     "), path_rmd)
   
+  glue_rmd <- function(x, ...){
+    write(glue::glue(x, ...), path_rmd, append = T)
+  }
+  
   #* info_* ----
   for (ikey in c("info_link", "info_photo_link",	"info_tagline")){ # ikey = "info_link"
     ival <- d_m[[ikey]]
     if (!is.na(ival)){
-      write(glue::glue(
+      glue_rmd(
         "
         - [{ikey}]({ival})
-        "), path_rmd, append = T)
+        ")
     }
   }
   write("\n", path_rmd, append = T)
   
   #* figures ----
   if (nrow(d_f) >= 1){ 
+    has_tabgroups <- any(!is.na(d_f$tab_group))
+    has_tabs      <- any(!is.na(d_f$tab))
+    tabgroup_prev <- "INIT"
+    
+    d_f <- d_f %>% 
+      mutate(
+        across(c(tab, tab_group), tidyr::replace_na, ""))
+    
     for (i in 1:nrow(d_f)){ # i = 1
-      r_f <- d_f %>% slice(i)
-      attach(r_f)
       
-      if(!is.na(tab) & i==1)
-        write(glue::glue(
+      r_f <- d_f %>% slice(i)
+      attach(r_f) # detach(r_f)
+      
+      if(has_tabgroups & i==1)
+        glue_rmd(
           "
           
           # {.tabset}
-          ", .open = "{{", .close = "}}"), 
-          path_rmd, append = T)
+          ", .open = "{{", .close = "}}")
       
-      if(!is.na(tab))
-        write(glue::glue(
+      if(has_tabgroups & tabgroup_prev != tab_group)
+        glue_rmd(
+          "
+            
+          ## {tab_group}
+          ")
+      
+      if(has_tabs & tabgroup_prev != tab_group)
+        glue_rmd(
           "
           
-          ## {tab}
-          "), path_rmd, append = T)
+          ### {.tabset}
+          ", .open = "{{", .close = "}}")
       
-      write(glue::glue(
+      if(has_tabs)
+        glue_rmd(
+          "
+          
+          #### {tab}
+          ")
+      
+      glue_rmd(
         "
+        
         ![]({image_path})
-        "), path_rmd, append = T)
+        ")
       
+      tabgroup_prev <- tab_group
       detach(r_f)
     }
   }
@@ -241,9 +271,19 @@ create_modals <- function(
   }
 }
 
+render_modals <- function(
+  dir_modals = here::here("modals")){
+  
+  # TODO: blacklist certain Rmds to be rendered manually
+  tibble(
+    input = list.files(dir_modals, ".*\\.Rmd$", full.names = T)) %>% 
+    purrr::pwalk(rmarkdown::render)
+}
+
+
 # update site ----
 gsheets_to_csvs(gsheet)
 add_gimage_paths()
 create_modals()
-
+render_modals()
 

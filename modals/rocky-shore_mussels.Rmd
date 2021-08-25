@@ -8,10 +8,12 @@ pagetitle: Mussels
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Trends - abundance
+#### Trends - abundance
+
 ![](figures/Figure S.H.10.3_Mussels_MARINe.jpg)
 
-## Trends - condition
+#### Trends - condition
+
 ![](figures/S.LR.12.5 - Mussell shell thickness.jpg)

@@ -7,7 +7,8 @@ pagetitle: Barnacles
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Trends - MARINe
+#### Trends - MARINe
+
 ![](figures/Figure S.H.10.2_Barnacles_MARINe.jpg)

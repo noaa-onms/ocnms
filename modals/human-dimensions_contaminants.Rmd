@@ -5,10 +5,12 @@ pagetitle: Contaminants
 
 
 
-# {.tabset}
+### {.tabset}
 
-## POPs - prey fish
-![](figures/Figure S.H.11.1.Contaminants_in_prey_fish.jpg)
+#### PAHs - mussels
 
-## PAHs - mussels
 ![](figures/Figure S.H.11.2.PAHs_Mussel_Watch.jpg)
+
+#### POPs - prey fish
+
+![](figures/Figure S.H.11.1.Contaminants_in_prey_fish.jpg)

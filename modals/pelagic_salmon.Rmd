@@ -6,10 +6,12 @@ pagetitle: Salmon
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Trends - salmonid populations
-![](figures/S.LR.13.13a - Status of Salmon and Stealhead on WA coast 2018.jpg)
+#### Trends - blueback salmon
 
-## Trends - blueback salmon
 ![](figures/S.LR.13.13b - Status of Quinault Blueback Salmon.jpg)
+
+#### Trends - salmonid populations
+
+![](figures/S.LR.13.13a - Status of Salmon and Stealhead on WA coast 2018.jpg)

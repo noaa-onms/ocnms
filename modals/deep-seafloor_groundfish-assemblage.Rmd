@@ -7,16 +7,20 @@ pagetitle: Groundfish assemblage
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Trends - abundance
+#### Trends - abundance
+
 ![](figures/S.LR.13.7 - Groundfish CPUE 2004-2018.jpg)
 
-## Trends - species density
+#### Trends - species density
+
 ![](figures/S.LR.15.1 - Groundfish Species Density in OCNMS.jpg)
 
-## Trends - species diversity
+#### Trends - species diversity
+
 ![](figures/S.LR.15.1 - Groundfish Species Diversity in OCNMS.jpg)
 
-## Trends - species richness
+#### Trends - species richness
+
 ![](figures/S.LR.15.1 - Groundfish Species Richness in OCNMS.jpg)

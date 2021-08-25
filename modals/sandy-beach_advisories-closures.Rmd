@@ -5,7 +5,8 @@ pagetitle: NA
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Trends - swimming closures
+#### Trends - swimming closures
+
 ![](figures/S_WQ_Q7_8_Swimming_Beaches_Closures_WACoast.JPG)

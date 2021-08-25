@@ -6,10 +6,12 @@ pagetitle: Algae and surfgrass
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Trends - surfgrass
-![](figures/S.H.10.4_Surfgrass_MARINe.jpg)
+#### Trends - rockweed
 
-## Trends - rockweed
 ![](figures/S.H.10.*_Pelvetiopsis_SokolPt_MARINe.jpg)
+
+#### Trends - surfgrass
+
+![](figures/S.H.10.4_Surfgrass_MARINe.jpg)

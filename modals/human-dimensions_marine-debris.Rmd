@@ -5,7 +5,8 @@ pagetitle: Marine debris
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Trends - amount on beaches
+#### Trends - amount on beaches
+
 ![](figures/Figure S.P.4.3.png)

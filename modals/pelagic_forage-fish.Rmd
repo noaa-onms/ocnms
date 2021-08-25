@@ -7,10 +7,12 @@ pagetitle: Forage fish
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Trends - anchovy
-![](figures/Appendix S.LR.12.5 - Abundance anomalies for northern anchovies off OR and WA.jpg)
+#### Maps - distribution
 
-## Maps - distribution
 ![](figures/Appendix S.LR.12.6 - Distributions of krill off OR and southern WA May-June 2011-2019.jpg)
+
+#### Trends - anchovy
+
+![](figures/Appendix S.LR.12.5 - Abundance anomalies for northern anchovies off OR and WA.jpg)

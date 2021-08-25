@@ -8,7 +8,8 @@ pagetitle: Southern resident killer whale
 
 
 
-# {.tabset}
+### {.tabset}
 
-## Trends - killer whales
+#### Trends - killer whales
+
 ![](figures/S.LR.13.14 - Southern Resident Killer Whale Abundance 1976-2017.jpg)
