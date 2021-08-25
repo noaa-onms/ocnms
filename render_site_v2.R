@@ -1,3 +1,4 @@
+# load libraries ----
 if (!require("librarian")){
   install.packages("librarian")
   library(librarian)
@@ -5,6 +6,8 @@ if (!require("librarian")){
 shelf(
   dplyr, fs, glue, here, googledrive, googlesheets4, htmltools, knitr, purrr, readr, rmarkdown, stringr, tibble, tidyr)
 here <- here::here
+
+# set variables ----
 
 gsheet <- "https://docs.google.com/spreadsheets/d/1C5YAp77WcnblHoIRwA_rloAagkLn0gDcJCda8E8Efu4/edit"
 # expecting Google sheets: scenes, modals, glossary
@@ -27,6 +30,8 @@ if (!skip_drive_auth){
   googlesheets4::gs4_auth(path = gsa_json_text)
 }
 
+# define functions ----
+
 gsheets_to_csvs <- function(gsheet, dir_csvs=here::here("data/gsheets")){
   # dir_csvs=here::here("data/gsheets")
   
@@ -41,7 +46,6 @@ gsheets_to_csvs <- function(gsheet, dir_csvs=here::here("data/gsheets")){
   }
   
 }
-gsheets_to_csvs(gsheet)
 
 add_gimage_paths <- function(
   figures_csv = here::here("data/gsheets/figures.csv"),
@@ -96,6 +100,7 @@ add_gimage_paths <- function(
   
   readr::write_csv(d_figures, figures_csv)
 }
+
 gdrive2path <- function(gdrive_shareable_link, get_relative_path = T, relative_pfx = "../", redo = F, skip_spectrogram = F){
   
   # gdrive_shareable_link <- "https://drive.google.com/file/d/1_wWLplFmhEAEqmbsTA0D85yuAhmapc5a/view?usp=sharing"
@@ -154,6 +159,7 @@ create_modal <- function(
   fld_html = "link"){
   
   # modal_html = "deep-seafloor_benthic-invertebrates.html"; dir_modals = here::here("modals"); fld_html = "link"
+  # modal_html = "deep-seafloor_groundfish-assemblage.html"; dir_modals = here::here("modals"); fld_html = "link"
   
   path_rmd <- file.path(
     dir_modals,
@@ -187,12 +193,33 @@ create_modal <- function(
   }
   write("\n", path_rmd, append = T)
   
-  if (nrow(d_f) >= 1){
+  #* figures ----
+  if (nrow(d_f) >= 1){ 
     for (i in 1:nrow(d_f)){ # i = 1
+      r_f <- d_f %>% slice(i)
+      attach(r_f)
+      
+      if(!is.na(tab) & i==1)
+        write(glue::glue(
+          "
+          
+          # {.tabset}
+          ", .open = "{{", .close = "}}"), 
+          path_rmd, append = T)
+      
+      if(!is.na(tab))
+        write(glue::glue(
+          "
+          
+          ## {tab}
+          "), path_rmd, append = T)
+      
       write(glue::glue(
         "
-        ![]({d_f$image_path[i]})
+        ![]({image_path})
         "), path_rmd, append = T)
+      
+      detach(r_f)
     }
   }
 }
@@ -206,11 +233,17 @@ create_modals <- function(
   d_figures <- readr::read_csv(figures_csv, show_col_types = F)
   
   for (mdl_html in d_modals$link){
-    message(glue("mdl_html: {mdl_html}"))
     # mdl_html = "deep-seafloor_benthic-invertebrates.html"
+    # mdl_html = "deep-seafloor_groundfish-assemblage.html" (n_figures = 4)
+
+    message(glue("mdl_html: {mdl_html}"))
     create_modal(mdl_html, d_modals, d_figures)
   }
 }
+
+# update site ----
+gsheets_to_csvs(gsheet)
+add_gimage_paths()
 create_modals()
 
 

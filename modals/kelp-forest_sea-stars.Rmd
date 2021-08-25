@@ -7,5 +7,11 @@ pagetitle: Sea stars
 - [info_tagline](Don't let their slow movement fool you, sea stars are an important part of kelp forests. Some are fierce predators, while others are vital decomposers. Species in the genus Pisaster and Pycnopodia are considered to be keystone because loss of these sea stars can lead to changes in community structure or function, such as more sea urchins and less kelp in kelp forests.)
 
 
+
+# {.tabset}
+
+## Trends - sunflower star
 ![](figures/Appendix S.LR.12.3b - Density of Pycnopodeia helianthoides in kelp forest 2015-2019.jpg)
+
+## Trends - ochre star
 ![](figures/Appendix S.LR.12.2 - Density of Pisaster ochraceous in kelp forest habitats 2015-2019.jpg)

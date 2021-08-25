@@ -4,8 +4,20 @@ pagetitle: Larvae and zooplankton
 
 
 
+
+# {.tabset}
+
+## Trends - copepods
 ![](figures/S.LR.13.1 - Copepod Biomass 1996-2020.jpg)
+
+## Trends - phytoplankton diversity
 ![](figures/S.LR.Q15.2 - Figure Diatom and dinoflagellate species richness anomalies for 2009-2016 offshore of Newport OR.jpg)
+
+## Maps - phytoplankton
 ![](figures/S.LR.Q15.2 - Map Diatom and dinoflagellate species richness anomalies for 2009-2016 offshore of Newport OR.jpg)
+
+## Trends - larvae and zooplankton diversity
 ![](figures/S.LR.Q15.3 - Figure Pelagic larvae and zooplankton species richness, diversity and evenness.jpg)
+
+## Maps - larvae and zooplankton stations
 ![](figures/S.LR.Q15.3 - Map Pelagic larvae and zooplankton species richness, diversity and evenness.jpg)

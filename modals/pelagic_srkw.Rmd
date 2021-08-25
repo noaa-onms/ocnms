@@ -7,4 +7,8 @@ pagetitle: Southern resident killer whale
 - [info_tagline](Southern Resident killer whales spend several months of the summer and fall each year in Washington State's Puget Sound. This population was listed as endangered in 2005 under the Endangered Species Act. Three main causes of the decline of Southern Residents are: reduced quantity and quality of prey, persistent organic pollutants, and noise and disturbance from vessels.)
 
 
+
+# {.tabset}
+
+## Trends - killer whales
 ![](figures/S.LR.13.14 - Southern Resident Killer Whale Abundance 1976-2017.jpg)

@@ -6,4 +6,8 @@ pagetitle: Colonial seabirds
 - [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_murres.html)
 
 
+
+# {.tabset}
+
+## Trends - Common Murre colony
 ![](figures/S.LR.13.10 - Common murre colony counts 1996-2015.jpg)

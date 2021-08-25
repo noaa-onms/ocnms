@@ -7,6 +7,14 @@ pagetitle: Pacific razor clam *Siliqua patula*
 - [info_tagline](The Pacific razor clam is an exceptionally meaty shellfish, with a narrow, oblong shell, and is one of the most sought after shellfish in the state of Washington. Razor clams are found primarily on the intertidal coastal beaches (those that are exposed at low tide). They are also a food for wildlife including shorebirds and sea otters.)
 
 
+
+# {.tabset}
+
+## Trends - Pt. Grenville
 ![](figures/S.LR.13.2 - Razor Clam density Pt Grenville 2001-2018.jpg)
+
+## Trends - Kalaloch Beach
 ![](figures/S.LR.13.3 - Razor Clam density Kalaloch 1997-2019.jpg)
+
+## Trends - Mocrocks Beach
 ![](figures/Appendix S.LR.13.1 - Razor clam density Mocrocks 1997-2019.jpg)

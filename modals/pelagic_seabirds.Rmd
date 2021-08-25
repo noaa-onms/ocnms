@@ -7,8 +7,23 @@ pagetitle: Seabirds
 - [info_tagline](The Olympic Coast is home to a rich variety of seabirds, from migratory birds who use the islands as a stopover to year-round residents.)
 
 
+
+# {.tabset}
+
+## Trends - Tufted Puffin
 ![](figures/S.LR.13.11 - Tufted puffin encounters 2001-2018.jpg)
+
+## Trends - Cassin's Auklet
 ![](figures/Appendix S.LR.13.10 - Density anomalies for Cassins Auklet 2003-2019.jpg)
+
+## Trends - Marbled Murrelet
+![](figures/Figure S.LR.13.10 Panel 2 - Marbled murrelet densities 2000-2019 Figure.jpg)
+
+## Maps - Marbled Murrelet
 ![](figures/S.LR.13.12 - Marbled murrelet densities 2000-2019 Map.jpg)
+
+## Trends - Common Murre carcasses
 ![](figures/Appendix S.LR.13.9 - Encounter rates for dead common murres 2008-2020.jpg)
+
+## Trends - Cassin's Auklet carcasses
 ![](figures/Appendix S.LR.13.11 - Encounter rates for dead Cassins auklet 2001-2018.jpg)

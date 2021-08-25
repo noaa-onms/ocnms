@@ -4,6 +4,14 @@ pagetitle: Oceanographic Indexes
 
 
 
+
+# {.tabset}
+
+## Trends - STI
 ![](figures/S_WQ_Q6_3_STI_CCIEA.JPG)
+
+## Trends - LUSI
 ![](figures/S_WQ_Q6_4_LUSI_TUMI_CCIEA.JPG)
+
+## Trends - TUMI
 ![](figures/S_WQ_Q6_4_LUSI_TUMI_CCIEA.JPG)

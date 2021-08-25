@@ -5,4 +5,11 @@ pagetitle: Dungeness crab
 - [info_link](https://olympiccoast.noaa.gov/living/marinelife/inverts/inverts.html)
 
 
+
+# {.tabset}
+
+## Trends - abundance (CPUE)
+![](figures/log_ocnms_Cancer magister_2003-2019.png)
+
+## Trends - landings
 ![](figures/S.LR.13.5 - Dungeness crab harvest 2000-2019.jpg)

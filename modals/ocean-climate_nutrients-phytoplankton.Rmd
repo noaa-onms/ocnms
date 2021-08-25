@@ -4,6 +4,14 @@ pagetitle: Nutrients and Phytoplankton
 
 
 
+
+# {.tabset}
+
+## Trends -Columbia River loading
 ![](figures/S_WQ_6_5 Load trend for N and P Columbia River 2002-2012.jpg)
+
+## Maps - Columbia River plume
 ![](figures/S_WQ_Q6_1_Conceptual framework or environmental conditions for HABs in the OCNMS Hickey et al 2013.jpg)
+
+## Trends - Chlorophyll anomaly
 ![](figures/S_WQ_Q6_2_Chlorophyll_a_COPEPOD.JPG)

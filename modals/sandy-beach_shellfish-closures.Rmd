@@ -4,8 +4,20 @@ pagetitle: NA
 
 
 
+
+# {.tabset}
+
+## Trends - biotoxin closures
 ![](figures/S_WQ_Q7_6_ClosuresDays_by_Biotoxins_OCNMS_DOH.JPG)
+
+## Trends - Kalaloch Domoic Acid Levels
 ![](figures/S_WQ_Q7_2_DA_RazorClam_Kalaloch_WDFW.JPG)
+
+## Trends - Mocrocks Domoic Acid Levels
 ![](figures/S_WQ_Q7_3_DA_RazorClams_Mocrocks_WDEW.JPG)
+
+## Trends - CCIEA Mocrocks DA
 ![](figures/S_WQ_Q7_4_MaxDA_RazorClams_Mocrocks_CCIEA.JPG)
+
+## Trends - DA all beaches (CCIEA)
 ![](figures/S_WQ_Q7_5_MaxDA_RazorClams_WA_Coast_CCIEA.JPG)

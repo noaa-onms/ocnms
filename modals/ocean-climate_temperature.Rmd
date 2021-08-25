@@ -4,5 +4,11 @@ pagetitle: Temperature
 
 
 
+
+# {.tabset}
+
+## Mapss - 2019 marine heatwave
 ![](figures/Figure S.H.10.4_Marine Heat Wave.JPG)
+
+## Mapss - marine heatwave 2014/2019 comparison
 ![](figures/S_WQ_8_6_SST anomaly heat maps Blob 2014 and 2019.png)

@@ -7,8 +7,20 @@ pagetitle: Ochre stars
 - [info_tagline](Don't let their slow movement fool you, sea stars play an important role along the rocky shore. Some are fierce predators, while others are vital decomposers. Species in the genus Pisaster and Pycnopodia are considered to be keystone because loss of these sea stars can lead to changes in community structure or function, such as expansion of mussel beds along the rocky shore and more sea urchins and less kelp in kelp forests.)
 
 
+
+# {.tabset}
+
+## Trends - abundance (MARINe)
 ![](figures/S.LR.12.1 - Abundance of Pisaster ochraceus.jpg)
+
+## Trends - status & condition
 ![](figures/S.H.12.*_seastar_S&T_ONP.tiff)
+
+## Trends - size at Pt. Grenville
 ![](figures/Appendix S.LR.12.1 - Size structure of Pisaster ochraceus in rocky shore habitats Pt Grenville.jpg)
+
+## Trends - size at Sokol Point
 ![](figures/Appendix S.LR.12.1 - Size structure of Pisaster ochraceus in rocky shore habitats Sokol Pt.jpg)
+
+## Trends - sunflower star
 ![](figures/Appendix S.LR.12.3a - Counts of Pycnopodeia helianthoides in rocky shores 2006-2015.jpg)

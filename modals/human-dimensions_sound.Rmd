@@ -4,3 +4,8 @@ pagetitle: Sound
 
 
 
+
+# {.tabset}
+
+## Maps - Sound monitoring and zoning areas
+![](figures/Figure P.2 OCNMS_PressuresMap_P2_04192021.jpg)

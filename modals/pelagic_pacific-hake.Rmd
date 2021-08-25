@@ -5,4 +5,8 @@ pagetitle: Pacific hake (whiting)
 - [info_link](https://olympiccoast.noaa.gov/living/marinelife/fish/fish.html)
 
 
+
+# {.tabset}
+
+## Trends - biomass
 ![](figures/S.LR.12.6 - Pacific Hake spatiotemporal distribution.jpg)

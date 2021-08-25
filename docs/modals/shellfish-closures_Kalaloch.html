@@ -1,0 +1,2414 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="no-js">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"97d317dbe4",applicationID:"234875434"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(7),c=e(8),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(9);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e){return!(!e||!e.protocol||"file:"===e.protocol)}t.exports=r},{}],4:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(6),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],5:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],6:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],7:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],8:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],9:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(7),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=x.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=e(2),c=e("handle"),f=e(7),u=e("ee"),s=e(5),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,w=g&&g.prototype;if(d(p.location)){NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1208.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:b,userAgent:s};e(1),e(4),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(8),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-32031722-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<script src="/sites/default/files/hotjar/hotjar.script.js?qtd24h"></script>
+<link rel="canonical" href="https://wdfw.wa.gov/fishing/basics/domoic-acid/kalaloch" />
+<meta name="description" content="Visit the Kalaloch beach page for directions, harvest information, and more." />
+<link rel="shortcut icon" href="/themes/custom/wdfw/images/favicons/favicon.ico" />
+<link rel="icon" sizes="16x16" href="/themes/custom/wdfw/images/favicons/favicon-16x16.png" />
+<link rel="icon" sizes="32x32" href="/themes/custom/wdfw/images/favicons/favicon-32x32.png" />
+<link rel="icon" sizes="96x96" href="/themes/custom/wdfw/images/favicons/favicon-96x96.png" />
+<link rel="icon" sizes="192x192" href="/themes/custom/wdfw/images/favicons/favicon-192x192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/wdfw/images/favicons/apple-touch-icon.png" />
+<meta property="og:site_name" content="Washington Department of Fish &amp; Wildlife" />
+<meta property="og:title" content="Kalaloch domoic acid levels" />
+<meta property="og:description" content="Visit the Kalaloch beach page for directions, harvest information, and more." />
+<meta property="og:image" content="https://wdfw.wa.gov/sites/default/files/logo/wdfw_logo_news_release.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="WDFW logo" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="ImageToolbar" content="false" />
+<link rel="alternate" hreflang="en" href="https://wdfw.wa.gov/fishing/basics/domoic-acid/kalaloch" />
+<link rel="revision" href="https://wdfw.wa.gov/fishing/basics/domoic-acid/kalaloch" />
+
+    <title>Kalaloch domoic acid levels | Washington Department of Fish &amp; Wildlife</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_Pi22CJltI2oJcxedi_apyF7ESsXd6Z71e_3APB4sqYw.css" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.13/c3.min.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_QPAG9yzy2qPGANoGund1BXvZAP1NQIcHhOlU-NUdnrU.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:400,400i,700" rel="stylesheet">
+  </head>
+  <body class="lang-en section-fishing path-node node--type-basic-accordion-page">
+  <a href="#main-content" class="visually-hidden focusable skip-link">
+    Skip to main content
+  </a>
+  
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<div class="off-canvas-wrapper">
+  <div class="inner-wrap off-canvas-wrapper-inner" id="inner-wrap" data-off-canvas-wrapper>
+    <aside id="left-off-canvas-menu" class="off-canvas left-off-canvas-menu position-left" role="complementary" data-off-canvas>
+      
+    </aside>
+
+    <aside id="right-off-canvas-menu" class="off-canvas right-off-canvas-menu position-right" role="complementary" data-off-canvas>
+      
+    </aside>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+                        <div>
+    <section id="block-sitewidealertbannerblock" class="block-sitewidealertbannerblock block block-wdfw-sitewide-alert block-wdfw-sitewide-alert-block">
+  
+  
+    
+
+  
+          <div class="sitewide-alert">
+    <div class="callout warning" id="alert-banner">
+    <span class="icon-warning"></span>
+    <p>For COVID-19-related closures, restrictions, and updates see the <a href="/about/covid-19-updates">WDFW COVID-19/Coronavirus response page</a>.<br />
+Attending an in-person WDFW event? Complete your <strong><a class="external-link " href="https://forms.office.com/Pages/ResponsePage.aspx?id=F-LQEU4mCkCLoFfcwSfXLYHQAQT_E0VClpkcgX-FrXFUNUpEVFgzUFZBRzQySzFQQzNFT1Q2VFRFNS4u" target="_blank">COVID-19 Health Self-Screen Attestation</a></strong> before arriving.</p>
+
+  </div>
+  </div>
+
+    
+    
+  </section>
+<section id="block-googletranslate" class="block-googletranslate block block-block-content block-block-content0c8db8a2-cac9-4194-a8ca-5ca65057e470">
+  
+  
+    
+
+  
+          <div class="field-wrapper body field field-block-content--body field-name-body field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+          <div class="field-item"><link charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css" rel="stylesheet" type="text/css" />
+<div id="google-translate">
+  <div class="grid-container">
+    <div id="gt-disclaimer" class="float-right"><a href="/accessibility/google-translate-disclaimer">Translation limitations and disclaimer</a></div>
+    <div id="gt-element" class="float-right"></div>
+  </div>
+</div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,es,ko,ru,vi,zh-TW',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      gaTrack: true,
+      gaId: 'UA-32031722-1'
+    }, 'gt-element');
+  }
+
+  var ua = window.navigator.userAgent;
+  var isIE = /MSIE|Trident|Edge\//.test(ua);
+
+  if ( isIE ) {
+    document.getElementById('google-translate').style.display = 'none';
+  }
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div>
+</div>
+      </div>
+</div>
+
+    
+    
+  </section>
+
+  </div>
+
+              
+      <header class="grid-container" role="banner" aria-label="Site header">
+                          <div class="cell">
+            <section id="block-wdfw-branding" class="block-wdfw-branding block block-system block-system-branding-block">
+  
+  
+    
+
+  
+      <div class="branding-inner">
+          <a href="/" title="Home" rel="home" class="logo">
+        <img src="/sites/default/files/sm_wdfwlogoclrnotxt_0.gif" alt="Home" />
+      </a>
+              <a href="/" title="Home" rel="home" class="site-name">Washington Department of <br /><span class="big">Fish and Wildlife</span></a>
+        
+  </div>
+
+    
+  </section>
+
+            <div class="collapsible-section grid-x">
+              <div class="cell small-6 hide-for-large">
+                <div class="title-bar" data-animate="fade-in fade-out" data-responsive-toggle="mobile-dropdown" data-hide-for="large">
+                  <button class="menu-icon" type="button" data-toggle="mobile-dropdown"><span>Menu</span></button>
+                </div>
+              </div>
+              <div class="cell small-6 hide-for-large">
+                <div class="search-toggle" data-animate="fade-in fade-out" data-responsive-toggle="header-search-bar" data-hide-for="large">
+                  <button type="button" data-toggle="header-search-bar">Search
+                    <span class="icon-search"></span><span class="visually-hidden">Search</span>
+                </button>
+                </div>
+              </div>
+              <div id="header-search-bar">
+                <section id="block-cludosearchblock" class="block-cludosearchblock block block-block-content block-block-content079cf286-53f7-44aa-be63-0d72f5c845f8">
+  
+  
+    
+
+  
+          <div class="field-wrapper body field field-block-content--body field-name-body field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+          <div class="field-item"><form action="/search" id="search-block-form" method="get"><label class="show-for-sr" for="site-search">Site search</label><input class="form-search" id="site-search" name="q" type="search" />&nbsp;</form>
+</div>
+      </div>
+</div>
+
+    
+    
+  </section>
+
+              </div>
+              <div class="top-bar cell" id="mobile-dropdown" data-hide-for="large">
+                <div class="mobile-menu-header grid-x cell hide-for-large">
+                  <a href="/" class="cell small-6">Home</a>
+                  <div class="cell small-6" data-responsive-toggle="mobile-dropdown">
+                    <button data-toggle="mobile-dropdown">Close<span class="icon-cross"></span></button>
+                  </div>
+                </div>
+                  <div>
+    <nav role="navigation" aria-labelledby="block-wdfw-topmenu-menu" id="block-wdfw-topmenu" class="block-wdfw-topmenu">
+            
+  <h2 class="block-title visually-hidden" id="block-wdfw-topmenu-menu">Top menu</h2>
+  
+
+        
+
+                        <ul class="menu vertical large-horizontal" data-responsive-menu="large-dropdown">
+                                        <li class="active-trail menu-item--collapsed">
+                <a href="/about" data-drupal-link-system-path="node/6326">About WDFW</a>
+                      </li>
+                              <li class="active-trail">
+                <a href="/news" data-drupal-link-system-path="node/65776">News</a>
+                      </li>
+                              <li class="active-trail menu-item--collapsed">
+                <a href="/get-involved" data-drupal-link-system-path="node/11492">Get involved</a>
+                      </li>
+                              <li class="active-trail menu-item--collapsed">
+                <a href="/accessibility" data-drupal-link-system-path="node/11493">Civil Rights/Accessibility</a>
+                      </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-wdfw-main-menu-menu" id="block-wdfw-main-menu" class="block-wdfw-main-menu">
+            
+  <h2 class="block-title visually-hidden" id="block-wdfw-main-menu-menu">Main navigation</h2>
+  
+
+        
+
+                        <ul class="menu vertical large-horizontal" data-responsive-menu="large-dropdown">
+                                        <li class="active-trail">
+                <a href="/" data-drupal-link-system-path="&lt;front&gt;">Home</a>
+                      </li>
+                              <li class="active-trail has-submenu menu-item--expanded">
+                <a href="/species-habitats" data-drupal-link-system-path="node/6089">Species &amp; Habitats</a>
+                  <span class="btn-open-submenu icon-ctrl"></span>
+                                                  <ul class="submenu menu vertical" data-submenu>
+                                        <li>
+                <a href="/species-habitats/species" data-drupal-link-system-path="node/22110">Species in Washington</a>
+                      </li>
+                              <li>
+                <a href="/species-habitats/ecosystems" data-drupal-link-system-path="node/116493">Ecosystems in Washington</a>
+                      </li>
+                              <li>
+                <a href="/species-habitats/living" data-drupal-link-system-path="node/22145">Living with wildlife</a>
+                      </li>
+                              <li>
+                <a href="/species-habitats/at-risk" data-drupal-link-system-path="node/22130">At-risk species</a>
+                      </li>
+                              <li>
+                <a href="/species-habitats/habitat-recovery" data-drupal-link-system-path="node/22132">Habitat recovery and protection</a>
+                      </li>
+                              <li>
+                <a href="/species-habitats/invasive" data-drupal-link-system-path="node/22135">Aquatic Invasive Species</a>
+                      </li>
+                              <li>
+                <a href="/species-habitats/diseases" data-drupal-link-system-path="node/22136">Wildlife diseases</a>
+                      </li>
+                              <li>
+                <a href="/species-habitats/science/marine-toxics" data-drupal-link-system-path="node/115565">Marine toxic contaminants</a>
+                      </li>
+        </ul>
+  
+              </li>
+                              <li class="active-trail has-submenu menu-item--expanded menu-item--active-trail is-active">
+                <a href="/fishing" class="is-active" data-drupal-link-system-path="node/6085">Fishing &amp; Shellfishing</a>
+                  <span class="btn-open-submenu icon-ctrl"></span>
+                                                  <ul class="submenu menu vertical" data-submenu>
+                                        <li>
+                <a href="/fishing/regulations" data-drupal-link-system-path="node/22111">Fishing regulations</a>
+                      </li>
+                              <li>
+                <a href="/fishing/shellfishing-regulations" data-drupal-link-system-path="node/22119">Shellfishing regulations</a>
+                      </li>
+                              <li>
+                <a href="/fishing/locations" data-drupal-link-system-path="node/30363">Places to go fishing</a>
+                      </li>
+                              <li>
+                <a href="/fishing/reports" title="Creel and stocking reports" data-drupal-link-system-path="node/82859">Fishing and stocking reports</a>
+                      </li>
+                              <li>
+                <a href="/fishing/basics" data-drupal-link-system-path="node/22129">Fishing &amp; shellfishing basics</a>
+                      </li>
+                              <li>
+                <a href="/fishing/management" data-drupal-link-system-path="node/22151">Managing fish populations</a>
+                      </li>
+                              <li>
+                <a href="/fishing/tribal" data-drupal-link-system-path="node/22143">Tribal fishing</a>
+                      </li>
+                              <li>
+                <a href="/fishing/commercial" title="Commercial fishing" data-drupal-link-system-path="node/22120">Commercial fishing</a>
+                      </li>
+                              <li>
+                <a href="/fishing/contests" data-drupal-link-system-path="node/83226">Fishing events</a>
+                      </li>
+        </ul>
+  
+              </li>
+                              <li class="active-trail has-submenu menu-item--expanded">
+                <a href="/hunting" data-drupal-link-system-path="node/6086">Hunting</a>
+                  <span class="btn-open-submenu icon-ctrl"></span>
+                                                  <ul class="submenu menu vertical" data-submenu>
+                                        <li>
+                <a href="/hunting/regulations" data-drupal-link-system-path="node/22109">Seasons and regulations</a>
+                      </li>
+                              <li>
+                <a href="/hunting/requirements" data-drupal-link-system-path="node/22137">Hunting education and requirements</a>
+                      </li>
+                              <li>
+                <a href="/hunting/management" data-drupal-link-system-path="node/22149">Managing game populations</a>
+                      </li>
+                              <li>
+                <a href="/hunting/special-hunts" data-drupal-link-system-path="node/22165">Special hunt permits and raffles</a>
+                      </li>
+                              <li>
+                <a href="/hunting/locations" data-drupal-link-system-path="node/30364">Places to go hunting</a>
+                      </li>
+        </ul>
+  
+              </li>
+                              <li class="active-trail has-submenu menu-item--expanded">
+                <a href="/licenses" data-drupal-link-system-path="node/6087">Licenses &amp; Permits</a>
+                  <span class="btn-open-submenu icon-ctrl"></span>
+                                                  <ul class="submenu menu vertical" data-submenu>
+                                        <li>
+                <a href="/licenses/fishing" title="Fishing licenses, permits, and endorsements" data-drupal-link-system-path="node/82816">Fishing and shellfishing licenses</a>
+                      </li>
+                              <li>
+                <a href="/licenses/hunting" data-drupal-link-system-path="node/73957">Hunting licenses</a>
+                      </li>
+                              <li>
+                <a href="/licenses/environmental" data-drupal-link-system-path="node/22138">Construction and environmental permits</a>
+                      </li>
+                              <li>
+                <a href="/licenses/parking" data-drupal-link-system-path="node/21795">Parking and access passes</a>
+                      </li>
+                              <li>
+                <a href="/licenses/license-plates" data-drupal-link-system-path="node/65496">License plates</a>
+                      </li>
+                              <li>
+                <a href="/licenses/dealers" data-drupal-link-system-path="node/26514">License dealers</a>
+                      </li>
+                              <li>
+                <a href="/licenses/commercial" data-drupal-link-system-path="node/69765">Commercial licensing</a>
+                      </li>
+                              <li>
+                <a href="/licenses/roadkill-salvage" data-drupal-link-system-path="node/21828">Roadkill salvage permit</a>
+                      </li>
+        </ul>
+  
+              </li>
+                              <li class="active-trail has-submenu menu-item--expanded">
+                <a href="/places-to-go" data-drupal-link-system-path="node/6088">Places to go</a>
+                  <span class="btn-open-submenu icon-ctrl"></span>
+                                                  <ul class="submenu menu vertical" data-submenu>
+                                        <li>
+                <a href="/places-to-go/wildlife-areas" data-drupal-link-system-path="places-to-go/wildlife-areas">Wildlife areas</a>
+                      </li>
+                              <li>
+                <a href="/places-to-go/water-access-sites" data-drupal-link-system-path="node/68418">Water access areas</a>
+                      </li>
+                              <li>
+                <a href="/places-to-go/weekender" title="WDFW Weekender report" data-drupal-link-system-path="node/87025">Weekender report</a>
+                      </li>
+                              <li>
+                <a href="/places-to-go/shellfish-beaches" data-drupal-link-system-path="node/21840">Clam, mussel, and oyster beaches</a>
+                      </li>
+                              <li>
+                <a href="/places-to-go/salmon-viewing" data-drupal-link-system-path="node/116386">Salmon viewing locations</a>
+                      </li>
+                              <li>
+                <a href="/places-to-go/fishing-piers" data-drupal-link-system-path="node/14293">Public fishing piers</a>
+                      </li>
+                              <li>
+                <a href="/fishing/locations/marine-areas" data-drupal-link-system-path="node/26475">Marine areas</a>
+                      </li>
+                              <li>
+                <a href="/licenses/dealers" data-drupal-link-system-path="node/26514">License dealers</a>
+                      </li>
+                              <li>
+                <a href="/fishing/locations/lowland-lakes" data-drupal-link-system-path="node/69909">Lowland lakes</a>
+                      </li>
+                              <li>
+                <a href="/fishing/locations/high-lakes" data-drupal-link-system-path="node/73680">High lakes</a>
+                      </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+              </div>
+            </div>
+          </div>
+              </header>
+      <div class="header-separator"></div>
+      <div class="grid-container">
+        <div class="grid-x">
+                                      </div>
+      </div>
+
+      
+      
+              <div class="grid-container breadcrumbs-area">
+          <div class="grid-x grid-margin-x">
+            <div class="large-12 cell">
+                <div>
+    <section id="block-wdfw-breadcrumbs" class="block-wdfw-breadcrumbs block block-system block-system-breadcrumb-block">
+  
+  
+    
+
+  
+            <nav role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">You are here</h2>
+    <ul class="breadcrumbs">
+          <li>
+                  <a href="/">Home</a>
+              </li>
+          <li>
+                  <a href="/fishing">Fishing &amp; Shellfishing</a>
+              </li>
+          <li>
+                  <a href="/fishing/basics">Fishing and shellfishing basics</a>
+              </li>
+          <li>
+                  <a href="/fishing/basics/domoic-acid">Domoic acid</a>
+              </li>
+          <li class="current"><a href="#">Kalaloch domoic acid levels</a></li>
+    </ul>
+  </nav>
+
+    
+    
+  </section>
+
+  </div>
+
+            </div>
+          </div>
+        </div>
+      
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x sidebar-wrapper">
+
+          <main id="main" class="large-9 large-push-3 cell" role="main">
+                        <a id="main-content"></a>
+            <section>
+                <div>
+    <div data-drupal-messages-fallback class="hidden"></div><section id="block-wdfw-page-title" class="block-wdfw-page-title block block-core block-page-title-block">
+  
+  
+    
+
+  
+          
+  <h1>Kalaloch domoic acid levels</h1>
+
+
+    
+    
+  </section>
+<section id="block-wdfw-content" class="block-wdfw-content block block-system block-system-main-block">
+  
+  
+    
+
+  
+          <article data-history-node-id="115162" class="node node--type-basic_accordion_page node--view-mode-full clearfix">
+  
+    
+
+  <div>
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="grid-container">
+        <div class="block-region-content"><section class="block block-ctools-block block-entity-fieldnodebody">
+  
+  
+    
+
+  
+          <div class="field-wrapper body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+          <div class="field-item"><p>Visit the <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="9e3505da-fe53-48b1-ac06-79a2df5c4641" href="/places-to-go/shellfish-beaches/590100" title="KALALOCH">Kalaloch beach page</a> for directions, harvest information, and more.</p>
+
+<p>Domoic acid, a naturally occurring toxin produced by certain types of algae, can be harmful or even fatal to humans if contaminated shellfish is consumed.  The Washington Department of Fish and Wildlife (WDFW) routinely provides razor clams from various ocean beaches to the Washington Department of Health to test for domoic acid. State public health officials have set the maximum threshold for domoic acid levels in razor clams at 20 parts per million.</p>
+
+<p>See domoic acid levels at <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="fed9a029-e9f0-44cd-975e-57edd23b1b77" href="/fishing/basics/domoic-acid/long-beach" title="Long Beach domoic acid levels">Long Beach</a>, <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="d9a38c5a-3192-4529-84fa-1029e633b949" href="/fishing/basics/domoic-acid/twin-harbors" title="Twin Harbors domoic acid levels">Twin Harbors</a>, <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="ff08dd22-0297-4775-bd80-1d50403d3ac6" href="/fishing/basics/domoic-acid/copalis" title="Copalis domoic acid levels">Copalis</a>, <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="4b26302b-5d8b-4d3b-ae0f-6d41118a6055" href="/fishing/basics/domoic-acid/mocrocks" title="Mocrocks domoic acid levels">Mocrocks</a>, and <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="f382f13e-00ca-4660-994d-3b9d8a998839" href="/fishing/basics/domoic-acid/willapa-spits" title="Willapa Spits domoic acid levels">Willapa Spits</a>.</p>
+</div>
+      </div>
+</div>
+
+    
+    
+  </section>
+<section class="block block-wdfw-data-domoic">
+  
+  
+    
+
+  
+          <div class="callout primary fine-print" data-closable>
+  On <strong>desktop/laptop</strong>, move the cursor over a data point to
+  see the exact date and level. To zoom in or out on the chart,
+  use the mouse scroll wheel. Click and drag the graph to pan the data left or right.<br>
+  <br>
+  On <strong>touch devices</strong>, tap the data point to see the exact date
+  and level. To zoom in or out on the chart, spread or pinch the chart area.
+  Tap and drag the graph to pan the data left or right.
+  <button class="close-button" aria-label="Dismiss instructions" type="button"
+          data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="domoic-data">
+  <label for="chart-kalaloch-recent"><input
+      class="chart-radio" type="radio" id="chart-kalaloch-recent" name="map-data"
+      checked="checked">Show last 12 mos.</label>
+  <label for="chart-kalaloch-all"><input
+      class="chart-radio" type="radio" id="chart-kalaloch-all" name="map-data">Show
+    historical data</label>
+  <div id="chart-kalaloch" class="domoic-chart"></div>
+  <table class="show-for-sr">
+    <caption>All domoic acid readings in ascending order of sample date</caption>
+    <thead>
+    <tr>
+      <th scope="col">Sample Date</th>
+      <th scope="col">Level (ppm)</th>
+    </tr>
+    </thead>
+    <tbody>
+          <tr>
+        <th scope="row" style="text-align: right;">5/4/2021</th>
+        <td style="text-align: right;">5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/4/2021</th>
+        <td style="text-align: right;">16</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/29/2021</th>
+        <td style="text-align: right;">10</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/29/2021</th>
+        <td style="text-align: right;">11</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/28/2021</th>
+        <td style="text-align: right;">17</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/31/2021</th>
+        <td style="text-align: right;">28</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/12/2020</th>
+        <td style="text-align: right;">54</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/31/2020</th>
+        <td style="text-align: right;">20</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/18/2020</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/1/2020</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/18/2020</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/8/2020</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/4/2020</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/7/2020</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/23/2020</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/7/2020</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/24/2020</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/8/2020</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/26/2020</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/9/2020</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/24/2019</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/14/2019</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/14/2019</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/30/2019</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/16/2019</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/1/2019</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/18/2019</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/4/2019</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/21/2019</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/7/2019</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/20/2019</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/25/2019</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/20/2019</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/17/2019</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/7/2019</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/20/2019</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/19/2019</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/5/2019</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/6/2019</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/27/2018</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/5/2018</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/20/2018</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/29/2018</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/16/2018</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/3/2018</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/24/2018</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/11/2018</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/28/2018</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/14/2018</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/27/2018</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/13/2018</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/30/2018</th>
+        <td style="text-align: right;">5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/16/2018</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/1/2018</th>
+        <td style="text-align: right;">5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/20/2018</th>
+        <td style="text-align: right;">21</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/4/2017</th>
+        <td style="text-align: right;">20</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/30/2017</th>
+        <td style="text-align: right;">31</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/6/2017</th>
+        <td style="text-align: right;">27</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/5/2017</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/19/2017</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/6/2017</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/22/2017</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/20/2017</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/8/2017</th>
+        <td style="text-align: right;">5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/25/2017</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/26/2017</th>
+        <td style="text-align: right;">9</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/3/2017</th>
+        <td style="text-align: right;">18</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/31/2017</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/23/2017</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/10/2017</th>
+        <td style="text-align: right;">7</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/27/2016</th>
+        <td style="text-align: right;">8</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/13/2016</th>
+        <td style="text-align: right;">10</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/20/2016</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/13/2016</th>
+        <td style="text-align: right;">5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/27/2016</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/17/2016</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/17/2016</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/2/2016</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/5/2016</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/21/2016</th>
+        <td style="text-align: right;">5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/22/2016</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/11/2016</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/11/2016</th>
+        <td style="text-align: right;">22</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/8/2016</th>
+        <td style="text-align: right;">14</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/9/2016</th>
+        <td style="text-align: right;">20</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/25/2015</th>
+        <td style="text-align: right;">18</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/27/2015</th>
+        <td style="text-align: right;">21</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/28/2015</th>
+        <td style="text-align: right;">8</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/10/2015</th>
+        <td style="text-align: right;">10</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/27/2015</th>
+        <td style="text-align: right;">14</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/29/2015</th>
+        <td style="text-align: right;">34</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/15/2015</th>
+        <td style="text-align: right;">47</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/30/2015</th>
+        <td style="text-align: right;">94</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/16/2015</th>
+        <td style="text-align: right;">85</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/2/2015</th>
+        <td style="text-align: right;">94</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/2/2015</th>
+        <td style="text-align: right;">95</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/18/2015</th>
+        <td style="text-align: right;">126</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/6/2015</th>
+        <td style="text-align: right;">34</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/11/2014</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/28/2014</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/15/2014</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/24/2014</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/15/2014</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/11/2014</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/14/2014</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/30/2014</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/22/2014</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/14/2014</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/1/2014</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/19/2013</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/6/2013</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/15/2013</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/30/2013</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/10/2012</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/14/2012</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/12/2012</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/28/2012</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/17/2012</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/26/2012</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/18/2012</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/10/2012</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/30/2012</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/29/2012</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/15/2012</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/31/2012</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/18/2012</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/3/2012</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/7/2012</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/6/2012</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/12/2011</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/25/2011</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/21/2011</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/29/2011</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/21/2011</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/9/2011</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/12/2011</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/28/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/12/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/29/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/22/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/14/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/2/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/31/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/18/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/16/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/9/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/4/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/13/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/21/2011</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/16/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/4/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/31/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/23/2011</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/19/2011</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/15/2011</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/21/2010</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/22/2010</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/8/2010</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/26/2010</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/20/2010</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/7/2010</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/30/2010</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/21/2010</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/9/2010</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/7/2010</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/24/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/9/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/26/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/25/2010</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/13/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/29/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/27/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/23/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/14/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/10/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/31/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/17/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/1/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/12/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/18/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/28/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/9/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/27/2010</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/11/2010</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/30/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/20/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/14/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/1/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/23/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/12/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/3/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/22/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/15/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/3/2009</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/2/2009</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/19/2009</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/3/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/20/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/6/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/22/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/9/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/26/2009</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/11/2009</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/10/2009</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/29/2009</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/9/2009</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/26/2009</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/28/2008</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/13/2008</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/28/2008</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/13/2008</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/2/2008</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/13/2008</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/5/2008</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/29/2008</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/16/2008</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/1/2008</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/17/2008</th>
+        <td style="text-align: right;">5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/5/2008</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/7/2008</th>
+        <td style="text-align: right;">5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/21/2008</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/7/2008</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/24/2007</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/27/2007</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/13/2007</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/24/2007</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/27/2007</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/13/2007</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/30/2007</th>
+        <td style="text-align: right;">5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/16/2007</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/12/2007</th>
+        <td style="text-align: right;">0.5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/3/2007</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/18/2007</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/21/2007</th>
+        <td style="text-align: right;">5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/1/2007</th>
+        <td style="text-align: right;">8</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/16/2007</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/12/2007</th>
+        <td style="text-align: right;">9</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/4/2007</th>
+        <td style="text-align: right;">14</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/8/2007</th>
+        <td style="text-align: right;">7</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/28/2007</th>
+        <td style="text-align: right;">12</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/13/2007</th>
+        <td style="text-align: right;">15</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/3/2007</th>
+        <td style="text-align: right;">14</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/28/2007</th>
+        <td style="text-align: right;">14</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/18/2006</th>
+        <td style="text-align: right;">8</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/5/2006</th>
+        <td style="text-align: right;">8</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/27/2006</th>
+        <td style="text-align: right;">13</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/19/2006</th>
+        <td style="text-align: right;">11</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/25/2006</th>
+        <td style="text-align: right;">7</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/10/2006</th>
+        <td style="text-align: right;">18</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/4/2006</th>
+        <td style="text-align: right;">14</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/2/2006</th>
+        <td style="text-align: right;">18</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/25/2006</th>
+        <td style="text-align: right;">15</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/19/2006</th>
+        <td style="text-align: right;">8</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/11/2006</th>
+        <td style="text-align: right;">19</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/6/2006</th>
+        <td style="text-align: right;">20</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/21/2006</th>
+        <td style="text-align: right;">16</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/8/2006</th>
+        <td style="text-align: right;">26</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/24/2006</th>
+        <td style="text-align: right;">34</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/18/2006</th>
+        <td style="text-align: right;">38</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/11/2006</th>
+        <td style="text-align: right;">20</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/26/2006</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/13/2006</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/30/2006</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/24/2006</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/15/2006</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/15/2006</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/20/2006</th>
+        <td style="text-align: right;">0.1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/13/2006</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/26/2006</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/15/2006</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/8/2006</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/25/2006</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/11/2006</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/19/2005</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/12/2005</th>
+        <td style="text-align: right;">5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/14/2005</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/6/2005</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/30/2005</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/9/2005</th>
+        <td style="text-align: right;">7</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/2/2005</th>
+        <td style="text-align: right;">7</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/7/2005</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/30/2005</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/22/2005</th>
+        <td style="text-align: right;">5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/19/2005</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/2/2005</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/19/2005</th>
+        <td style="text-align: right;">9</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/23/2005</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/20/2005</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/6/2005</th>
+        <td style="text-align: right;">10</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/25/2005</th>
+        <td style="text-align: right;">12</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/10/2005</th>
+        <td style="text-align: right;">9</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/1/2005</th>
+        <td style="text-align: right;">12</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/25/2005</th>
+        <td style="text-align: right;">14</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/14/2005</th>
+        <td style="text-align: right;">17</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/5/2005</th>
+        <td style="text-align: right;">17</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/31/2005</th>
+        <td style="text-align: right;">22</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/22/2005</th>
+        <td style="text-align: right;">13</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/14/2005</th>
+        <td style="text-align: right;">15</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/7/2005</th>
+        <td style="text-align: right;">24</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/23/2005</th>
+        <td style="text-align: right;">16</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/11/2005</th>
+        <td style="text-align: right;">21</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/26/2005</th>
+        <td style="text-align: right;">22</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/13/2005</th>
+        <td style="text-align: right;">28</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/28/2004</th>
+        <td style="text-align: right;">22</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/22/2004</th>
+        <td style="text-align: right;">17</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/23/2004</th>
+        <td style="text-align: right;">23</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/27/2004</th>
+        <td style="text-align: right;">24</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/3/2004</th>
+        <td style="text-align: right;">29</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/27/2004</th>
+        <td style="text-align: right;">19</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/13/2004</th>
+        <td style="text-align: right;">23</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/30/2004</th>
+        <td style="text-align: right;">22</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/18/2004</th>
+        <td style="text-align: right;">49</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/16/2004</th>
+        <td style="text-align: right;">40</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/8/2004</th>
+        <td style="text-align: right;">48</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/3/2004</th>
+        <td style="text-align: right;">47</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/19/2004</th>
+        <td style="text-align: right;">7</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/21/2004</th>
+        <td style="text-align: right;">10</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/16/2004</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/2/2004</th>
+        <td style="text-align: right;">7</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/19/2004</th>
+        <td style="text-align: right;">12</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/12/2004</th>
+        <td style="text-align: right;">5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/5/2004</th>
+        <td style="text-align: right;">8</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/2/2004</th>
+        <td style="text-align: right;">14</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/25/2004</th>
+        <td style="text-align: right;">16</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/14/2004</th>
+        <td style="text-align: right;">12</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/5/2004</th>
+        <td style="text-align: right;">11</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/1/2004</th>
+        <td style="text-align: right;">19</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/17/2004</th>
+        <td style="text-align: right;">11</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/14/2004</th>
+        <td style="text-align: right;">15</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/7/2004</th>
+        <td style="text-align: right;">14</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/2/2004</th>
+        <td style="text-align: right;">11</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/1/2004</th>
+        <td style="text-align: right;">10</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/18/2004</th>
+        <td style="text-align: right;">19</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/9/2004</th>
+        <td style="text-align: right;">28</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/1/2004</th>
+        <td style="text-align: right;">14</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/18/2004</th>
+        <td style="text-align: right;">11</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/5/2004</th>
+        <td style="text-align: right;">28</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/22/2003</th>
+        <td style="text-align: right;">8</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/14/2003</th>
+        <td style="text-align: right;">11</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/8/2003</th>
+        <td style="text-align: right;">11</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/23/2003</th>
+        <td style="text-align: right;">7</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/9/2003</th>
+        <td style="text-align: right;">22</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/5/2003</th>
+        <td style="text-align: right;">13</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/20/2003</th>
+        <td style="text-align: right;">21</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/13/2003</th>
+        <td style="text-align: right;">20</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/7/2003</th>
+        <td style="text-align: right;">12</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/29/2003</th>
+        <td style="text-align: right;">22</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/22/2003</th>
+        <td style="text-align: right;">19</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/15/2003</th>
+        <td style="text-align: right;">18</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/8/2003</th>
+        <td style="text-align: right;">25</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/3/2003</th>
+        <td style="text-align: right;">40</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/27/2003</th>
+        <td style="text-align: right;">15</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/25/2003</th>
+        <td style="text-align: right;">11</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/10/2003</th>
+        <td style="text-align: right;">22</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/15/2003</th>
+        <td style="text-align: right;">25</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/1/2003</th>
+        <td style="text-align: right;">43</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/15/2003</th>
+        <td style="text-align: right;">56</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/2/2003</th>
+        <td style="text-align: right;">66</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/18/2003</th>
+        <td style="text-align: right;">68</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/4/2003</th>
+        <td style="text-align: right;">84</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/20/2003</th>
+        <td style="text-align: right;">90</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/7/2003</th>
+        <td style="text-align: right;">97</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/23/2003</th>
+        <td style="text-align: right;">77</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/17/2003</th>
+        <td style="text-align: right;">90</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/27/2003</th>
+        <td style="text-align: right;">102</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/13/2003</th>
+        <td style="text-align: right;">68</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/28/2003</th>
+        <td style="text-align: right;">103</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/16/2003</th>
+        <td style="text-align: right;">67</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/29/2002</th>
+        <td style="text-align: right;">115</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/17/2002</th>
+        <td style="text-align: right;">80</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/3/2002</th>
+        <td style="text-align: right;">78</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/17/2002</th>
+        <td style="text-align: right;">98</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/4/2002</th>
+        <td style="text-align: right;">150</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/25/2002</th>
+        <td style="text-align: right;">67</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/13/2002</th>
+        <td style="text-align: right;">99</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/6/2002</th>
+        <td style="text-align: right;">52</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/30/2002</th>
+        <td style="text-align: right;">26</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/20/2002</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/22/2002</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/24/2002</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/28/2002</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/21/2002</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/24/2002</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/21/2002</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/14/2002</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/17/2001</th>
+        <td style="text-align: right;">1</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/7/2001</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/10/2001</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/4/2001</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/20/2001</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/9/2001</th>
+        <td style="text-align: right;">3</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/5/2001</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/8/2001</th>
+        <td style="text-align: right;">13</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/12/2001</th>
+        <td style="text-align: right;">12</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/5/2001</th>
+        <td style="text-align: right;">17</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/4/2001</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/24/2001</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/8/2000</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/16/2000</th>
+        <td style="text-align: right;">4</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/14/2000</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/13/2000</th>
+        <td style="text-align: right;">18</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/1/2000</th>
+        <td style="text-align: right;">2</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/17/2000</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/5/2000</th>
+        <td style="text-align: right;">7</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/3/2000</th>
+        <td style="text-align: right;">5</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/12/2000</th>
+        <td style="text-align: right;">6</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/16/2000</th>
+        <td style="text-align: right;">35</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/4/2000</th>
+        <td style="text-align: right;">24</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/18/2000</th>
+        <td style="text-align: right;">18</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">12/21/1999</th>
+        <td style="text-align: right;">19</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">11/22/1999</th>
+        <td style="text-align: right;">36</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">10/11/1999</th>
+        <td style="text-align: right;">20</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">9/8/1999</th>
+        <td style="text-align: right;">45</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">8/11/1999</th>
+        <td style="text-align: right;">16</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">7/28/1999</th>
+        <td style="text-align: right;">11</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">6/29/1999</th>
+        <td style="text-align: right;">81</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">5/17/1999</th>
+        <td style="text-align: right;">71</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">4/19/1999</th>
+        <td style="text-align: right;">236</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">3/15/1999</th>
+        <td style="text-align: right;">185</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">2/2/1999</th>
+        <td style="text-align: right;">214</td>
+      </tr>
+          <tr>
+        <th scope="row" style="text-align: right;">1/4/1999</th>
+        <td style="text-align: right;">238</td>
+      </tr>
+      </table>
+</div>
+
+    
+    
+  </section>
+</div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</article>
+
+    
+    
+  </section>
+
+  </div>
+
+            </section>
+          </main>
+                      <div id="sidebar-first" class="large-3 large-pull-9 cell sidebar ">
+              <span class="mobile-text">Also in this section</span>
+                <div>
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="block-mainnavigation">
+      
+  <h2 class="block-title" id="block-mainnavigation-menu">Fishing &amp; Shellfishing</h2>
+  
+
+        
+
+                        <ul class="menu vertical large-horizontal" data-responsive-menu="large-dropdown">
+                                        <li class="active-trail">
+                <a href="/fishing/regulations" data-drupal-link-system-path="node/22111">Fishing regulations</a>
+                      </li>
+                              <li class="active-trail">
+                <a href="/fishing/shellfishing-regulations" data-drupal-link-system-path="node/22119">Shellfishing regulations</a>
+                      </li>
+                              <li class="active-trail">
+                <a href="/fishing/locations" data-drupal-link-system-path="node/30363">Places to go fishing</a>
+                      </li>
+                              <li class="active-trail">
+                <a href="/fishing/reports" title="Creel and stocking reports" data-drupal-link-system-path="node/82859">Fishing and stocking reports</a>
+                      </li>
+                              <li class="active-trail menu-item--active-trail is-active">
+                <a href="/fishing/basics" class="is-active" data-drupal-link-system-path="node/22129">Fishing &amp; shellfishing basics</a>
+                      </li>
+                              <li class="active-trail">
+                <a href="/fishing/management" data-drupal-link-system-path="node/22151">Managing fish populations</a>
+                      </li>
+                              <li class="active-trail">
+                <a href="/fishing/tribal" data-drupal-link-system-path="node/22143">Tribal fishing</a>
+                      </li>
+                              <li class="active-trail">
+                <a href="/fishing/commercial" title="Commercial fishing" data-drupal-link-system-path="node/22120">Commercial fishing</a>
+                      </li>
+                              <li class="active-trail">
+                <a href="/fishing/contests" data-drupal-link-system-path="node/83226">Fishing events</a>
+                      </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            </div>
+                            </div>
+      </div>
+              <footer>
+          <span id="back-to-top"></span>
+          <div class="grid-container">
+            <div class="grid-x">
+                              <div id="footer-first" class="large-4 cell">
+                    <div>
+    <nav role="navigation" aria-labelledby="block-wdfw-footertoptasks-menu" id="block-wdfw-footertoptasks" class="block-wdfw-footertoptasks">
+      
+  <h2 class="block-title" id="block-wdfw-footertoptasks-menu">Top tasks</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="active-trail">
+        <a href="https://fishhunt.dfw.wa.gov/#/login">Log in to the WILD licensing website</a>
+              </li>
+                <li class="active-trail">
+        <a href="/fishing/shellfishing-regulations/razor-clams" data-drupal-link-system-path="node/82604">Get razor clam information</a>
+              </li>
+                <li class="active-trail">
+        <a href="/get-involved/calendar" data-drupal-link-system-path="node/109982">Event Calendar</a>
+              </li>
+                <li class="active-trail">
+        <a href="/about/enforcement/report" data-drupal-link-system-path="node/73744">Report a violation</a>
+              </li>
+                <li class="active-trail">
+        <a href="/share" data-drupal-link-system-path="node/65486">Submit a photo</a>
+              </li>
+                <li class="active-trail">
+        <a href="/website-error-report" title="Did you encounter a problem or error on the website? Please let us know!" data-drupal-link-system-path="node/86253">Report a website error</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+                </div>
+                                            <div id="footer-middle" class="large-4 cell">
+                    <div>
+    <div id="block-wdfw-footeraboutwdfw" class="block-wdfw-footeraboutwdfw">
+  
+      <a href="/about"><h2 class="block-title">About WDFW</h2></a>
+    
+      
+              <ul class="menu">
+                    <li class="active-trail">
+        <a href="/about/regional-offices" title="Find WDFW regional offices" data-drupal-link-system-path="node/21867">Regional offices</a>
+              </li>
+                <li class="active-trail">
+        <a href="/about/commission" data-drupal-link-system-path="node/22128">Fish and Wildlife Commission</a>
+              </li>
+                <li class="active-trail">
+        <a href="/about/enforcement" data-drupal-link-system-path="node/22144">Enforcement</a>
+              </li>
+                <li class="active-trail">
+        <a href="/about/administration/public-records" title="Public records requests" data-drupal-link-system-path="node/21863">Public Records Requests</a>
+              </li>
+                <li class="active-trail">
+        <a href="/about/contact" data-drupal-link-system-path="node/22118">Contact us</a>
+              </li>
+                <li class="active-trail">
+        <a href="/about/jobs" data-drupal-link-system-path="node/21839">Jobs at WDFW</a>
+              </li>
+                <li class="active-trail">
+        <a href="/about/regulations" data-drupal-link-system-path="node/22152">Rule making</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+  </div>
+
+                </div>
+                                            <div id="footer-last" class="large-4 cell">
+                    <div>
+    <section id="block-wdfw-stayconnected" class="block-wdfw-stayconnected block block-block-content block-block-content569af9a6-68d7-4d5a-9f15-80cd9e0e68a3">
+  
+  
+      <h2  class="block-title">Stay connected</h2>
+    
+
+  
+          <div class="field-wrapper text-content field field-block-content--field-link field-name-field-link field-type-link field-label-hidden">
+    <div class="field-items">
+          <div class="field-item"><a href="https://www.facebook.com/WashingtonFishWildlife" class="fa-facebook">WDFW</a></div>
+          <div class="field-item"><a href="https://www.instagram.com/thewdfw/" class="fa-instagram">@thewdfw</a></div>
+          <div class="field-item"><a href="https://www.facebook.com/WDFWPolice" class="fa-facebook">WDFW Police</a></div>
+          <div class="field-item"><a href="https://twitter.com/wdfw" class="fa-twitter">@WDFW</a></div>
+          <div class="field-item"><a href="https://www.youtube.com/thewdfw" class="fa-youtube">TheWDFW</a></div>
+          <div class="field-item"><a href="https://medium.com/@wdfw" class="connected-medium">WDFW Blog</a></div>
+          <div class="field-item"><a href="/about/lists" class="connected-email">Join our email lists</a></div>
+          <div class="field-item"><a href="https://www.linkedin.com/company/washington-state-fish-wildlife" class="connected-linkedin">LinkedIn</a></div>
+      </div>
+</div>
+
+    
+    
+  </section>
+
+  </div>
+
+                </div>
+                          </div>
+          </div>
+        </footer>
+            <div class="bottom-bar panel">
+        <div class="grid-container">
+          <div class="grid-x">
+            <div class="large-12 cell">
+            &copy; 2021  All rights reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  
+  <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/115162","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"wdfwDataDomoic":{"chartId":"chart-kalaloch","labelsAll":["x","1999-01-04","1999-02-02","1999-03-15","1999-04-19","1999-05-17","1999-06-29","1999-07-28","1999-08-11","1999-09-08","1999-10-11","1999-11-22","1999-12-21","2000-01-18","2000-02-04","2000-03-16","2000-04-12","2000-05-03","2000-06-05","2000-07-17","2000-08-01","2000-09-13","2000-10-14","2000-11-16","2000-12-08","2001-01-24","2001-02-04","2001-03-05","2001-04-12","2001-05-08","2001-06-05","2001-07-09","2001-08-20","2001-09-04","2001-10-10","2001-11-07","2001-12-17","2002-01-14","2002-02-21","2002-03-24","2002-04-21","2002-05-28","2002-06-24","2002-07-22","2002-08-20","2002-09-30","2002-10-06","2002-10-13","2002-10-25","2002-11-04","2002-11-17","2002-12-03","2002-12-17","2002-12-29","2003-01-16","2003-01-28","2003-02-13","2003-02-27","2003-03-17","2003-03-23","2003-04-07","2003-04-20","2003-05-04","2003-05-18","2003-06-02","2003-06-15","2003-07-01","2003-07-15","2003-08-10","2003-08-25","2003-08-27","2003-09-03","2003-09-08","2003-09-15","2003-09-22","2003-09-29","2003-10-07","2003-10-13","2003-10-20","2003-11-05","2003-11-09","2003-11-23","2003-12-08","2003-12-14","2003-12-22","2004-01-05","2004-01-18","2004-02-01","2004-02-09","2004-02-18","2004-03-01","2004-03-02","2004-03-07","2004-03-14","2004-03-17","2004-04-01","2004-04-05","2004-04-14","2004-04-25","2004-05-02","2004-05-05","2004-05-12","2004-05-19","2004-06-02","2004-06-16","2004-06-21","2004-07-19","2004-08-03","2004-08-08","2004-08-16","2004-08-18","2004-08-30","2004-09-13","2004-09-27","2004-10-03","2004-10-27","2004-11-23","2004-12-22","2004-12-28","2005-01-13","2005-01-26","2005-02-11","2005-02-23","2005-03-07","2005-03-14","2005-03-22","2005-03-31","2005-04-05","2005-04-14","2005-04-25","2005-05-01","2005-05-10","2005-05-25","2005-06-06","2005-06-20","2005-06-23","2005-07-19","2005-08-02","2005-08-19","2005-08-22","2005-08-30","2005-09-07","2005-10-02","2005-10-09","2005-10-30","2005-11-06","2005-11-14","2005-12-12","2005-12-19","2006-01-11","2006-01-25","2006-02-08","2006-02-15","2006-02-26","2006-03-13","2006-03-20","2006-05-15","2006-05-15","2006-05-24","2006-05-30","2006-06-13","2006-06-26","2006-07-11","2006-07-18","2006-07-24","2006-08-08","2006-08-21","2006-09-06","2006-09-11","2006-09-19","2006-09-25","2006-10-02","2006-10-04","2006-10-10","2006-10-25","2006-11-19","2006-11-27","2006-12-05","2006-12-18","2007-01-28","2007-02-03","2007-02-13","2007-02-28","2007-03-08","2007-04-04","2007-04-12","2007-04-16","2007-05-01","2007-05-21","2007-06-18","2007-07-03","2007-07-12","2007-07-16","2007-07-30","2007-08-13","2007-08-27","2007-10-24","2007-11-13","2007-11-27","2007-12-24","2008-01-07","2008-04-21","2008-05-07","2008-06-05","2008-06-17","2008-07-01","2008-07-16","2008-07-29","2008-08-05","2008-08-13","2008-09-02","2008-10-13","2008-10-28","2008-11-13","2008-12-28","2009-01-26","2009-03-09","2009-03-29","2009-04-10","2009-05-11","2009-05-26","2009-06-09","2009-06-22","2009-07-06","2009-07-20","2009-08-03","2009-08-19","2009-09-02","2009-09-03","2009-09-15","2009-09-22","2009-10-03","2009-10-12","2009-11-23","2009-12-01","2009-12-14","2009-12-20","2009-12-30","2010-01-11","2010-01-27","2010-02-09","2010-02-28","2010-03-18","2010-04-12","2010-05-01","2010-05-17","2010-05-31","2010-06-10","2010-06-14","2010-06-23","2010-06-27","2010-06-29","2010-07-13","2010-07-25","2010-07-26","2010-08-09","2010-08-24","2010-09-07","2010-09-09","2010-09-21","2010-09-30","2010-10-07","2010-10-20","2010-10-26","2010-11-08","2010-11-22","2010-12-21","2011-01-15","2011-01-19","2011-01-23","2011-01-31","2011-02-04","2011-02-16","2011-03-21","2011-04-13","2011-05-04","2011-05-09","2011-05-16","2011-05-18","2011-05-31","2011-06-02","2011-06-14","2011-06-22","2011-06-29","2011-07-12","2011-07-28","2011-08-12","2011-09-09","2011-09-21","2011-09-29","2011-10-21","2011-10-25","2011-12-12","2012-05-06","2012-06-07","2012-07-03","2012-07-18","2012-07-31","2012-08-15","2012-08-29","2012-08-30","2012-09-10","2012-09-18","2012-09-26","2012-10-17","2012-10-28","2012-11-12","2012-11-14","2012-12-10","2013-04-30","2013-05-15","2013-08-06","2013-08-19","2014-04-01","2014-04-14","2014-04-22","2014-04-30","2014-05-14","2014-06-11","2014-06-15","2014-06-24","2014-07-15","2014-07-28","2014-08-11","2015-05-06","2015-05-18","2015-06-02","2015-06-02","2015-06-16","2015-06-30","2015-07-15","2015-07-29","2015-08-27","2015-09-10","2015-09-28","2015-10-27","2015-11-25","2016-02-09","2016-03-08","2016-04-11","2016-05-11","2016-05-22","2016-06-21","2016-07-05","2016-08-02","2016-08-17","2016-09-17","2016-09-27","2016-11-13","2016-11-20","2016-12-13","2016-12-27","2017-01-10","2017-02-23","2017-03-31","2017-05-03","2017-05-26","2017-07-25","2017-08-08","2017-08-20","2017-08-22","2017-09-06","2017-09-19","2017-10-05","2017-11-06","2017-11-30","2017-12-04","2018-03-20","2018-05-01","2018-05-16","2018-05-30","2018-07-13","2018-07-27","2018-08-14","2018-08-28","2018-09-11","2018-09-24","2018-10-03","2018-10-16","2018-10-29","2018-11-20","2018-12-05","2018-12-27","2019-01-06","2019-02-05","2019-02-19","2019-02-20","2019-03-07","2019-03-17","2019-03-20","2019-03-25","2019-04-20","2019-05-07","2019-05-21","2019-06-04","2019-06-18","2019-07-01","2019-07-16","2019-07-30","2019-08-14","2019-10-14","2019-11-24","2020-04-09","2020-04-26","2020-05-08","2020-05-24","2020-06-07","2020-06-23","2020-07-07","2020-08-04","2020-08-08","2020-08-18","2020-09-01","2020-09-18","2020-10-31","2020-12-12","2021-03-31","2021-04-29","2021-04-29","2021-04-28","2021-05-04","2021-05-04"],"dataAll":["Level (ppm)","238.0","214.0","185.0","236.0","71.0","81.0","11.0","16.0","45.0","20.0","36.0","19.0","18.0","24.0","35.0","6.0","5.0","7.0","6.0","2.0","18.0","6.0","4.0","4.0","2.0","4.0","17.0","12.0","13.0","6.0","3.0","2.0","3.0","2.0","2.0","1.0","1.0","1.0","1.0","1.0","2.0","4.0","2.0","1.0","26.0","52.0","99.0","67.0","150.0","98.0","78.0","80.0","115.0","67.0","103.0","68.0","102.0","90.0","77.0","97.0","90.0","84.0","68.0","66.0","56.0","43.0","25.0","22.0","11.0","15.0","40.0","25.0","18.0","19.0","22.0","12.0","20.0","21.0","13.0","22.0","7.0","11.0","11.0","8.0","28.0","11.0","14.0","28.0","19.0","10.0","11.0","14.0","15.0","11.0","19.0","11.0","12.0","16.0","14.0","8.0","5.0","12.0","7.0","3.0","10.0","7.0","47.0","48.0","40.0","49.0","22.0","23.0","19.0","29.0","24.0","23.0","17.0","22.0","28.0","22.0","21.0","16.0","24.0","15.0","13.0","22.0","17.0","17.0","14.0","12.0","9.0","12.0","10.0","6.0","6.0","9.0","4.0","3.0","5.0","2.0","1.0","7.0","7.0","4.0","6.0","6.0","5.0","6.0","3.0","3.0","2.0","3.0","4.0","3.0","0.1","3.0","3.0","1.0","1.0","2.0","3.0","20.0","38.0","34.0","26.0","16.0","20.0","19.0","8.0","15.0","18.0","14.0","18.0","7.0","11.0","13.0","8.0","8.0","14.0","14.0","15.0","12.0","7.0","14.0","9.0","6.0","8.0","5.0","4.0","3.0","0.5","1.0","5.0","0.1","4.0","2.0","1.0","1.0","2.0","3.0","0.5","5.0","1.0","5.0","1.0","1.0","0.5","0.5","1.0","0.5","0.1","0.1","0.5","0.1","0.5","0.5","0.5","0.1","2.0","1.0","1.0","1.0","1.0","1.0","1.0","2.0","2.0","2.0","1.0","1.0","1.0","1.0","1.0","1.0","1.0","1.0","1.0","1.0","0.1","1.0","1.0","1.0","1.0","1.0","1.0","1.0","1.0","1.0","1.0","1.0","1.0","1.0","0.1","1.0","1.0","1.0","0.1","0.5","0.1","0.1","0.5","0.1","0.1","0.1","0.5","0.5","0.1","0.5","0.5","0.1","0.1","0.1","0.5","0.1","0.1","0.1","0.1","0.1","0.1","0.1","0.1","0.1","0.1","0.1","0.1","0.5","2.0","1.0","2.0","1.0","1.0","1.0","1.0","1.0","0.5","0.5","0.1","1.0","4.0","4.0","2.0","2.0","2.0","3.0","2.0","2.0","3.0","2.0","1.0","0.1","2.0","3.0","2.0","3.0","1.0","4.0","3.0","2.0","1.0","2.0","1.0","0.5","1.0","34.0","126.0","95.0","94.0","85.0","94.0","47.0","34.0","14.0","10.0","8.0","21.0","18.0","20.0","14.0","22.0","6.0","0.1","5.0","1.0","3.0","4.0","6.0","6.0","5.0","3.0","10.0","8.0","7.0","6.0","3.0","18.0","9.0","2.0","5.0","1.0","1.0","1.0","0.5","6.0","27.0","31.0","20.0","21.0","5.0","4.0","5.0","0.1","2.0","1.0","2.0","1.0","1.0","2.0","2.0","3.0","2.0","1.0","3.0","3.0","4.0","3.0","3.0","3.0","2.0","3.0","3.0","1.0","2.0","2.0","1.0","0.1","0.1","1.0","1.0","1.0","2.0","4.0","1.0","2.0","1.0","2.0","1.0","2.0","1.0","1.0","1.0","1.0","1.0","1.0","20.0","54.0","28.0","10.0","11.0","17.0","5.0","16.0"],"maxAll":238,"labelsRecent":["x","2020-05-24","2020-06-07","2020-06-23","2020-07-07","2020-08-04","2020-08-08","2020-08-18","2020-09-01","2020-09-18","2020-10-31","2020-12-12","2021-03-31","2021-04-29","2021-04-29","2021-04-28","2021-05-04","2021-05-04"],"dataRecent":["Level (ppm)","2.0","1.0","2.0","1.0","1.0","1.0","1.0","1.0","1.0","20.0","54.0","28.0","10.0","11.0","17.0","5.0","16.0"],"maxRecent":54,"chartTitle":"Domoic Acid Levels -- Kalaloch"},"user":{"uid":0,"permissionsHash":"f0b83600e2ef5097876589a916df03b80e2ea7a1822c8579561cbb4b705dc05c"}}</script>
+<script src="/sites/default/files/js/js_mHpwdrxBO0TWQF6AvDcT437ZIPpzKmGhA12-4iAJmyg.js"></script>
+<script src="https://ssl.google-analytics.com/ga.js"></script>
+<script src="https://app-script.monsido.com/v2/monsido-script.js"></script>
+<script src="/sites/default/files/js/js_J03goJVAQTMr5I4yCXOMKTIWyPZfmcMjuSAygOO2-E8.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.13/c3.min.js"></script>
+<script src="/sites/default/files/js/js_Mn20CSS02uI_kns5dJ4jCVR1ZentqQZW0AXP3DNRxwc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"97d317dbe4","applicationID":"234875434","transactionName":"ZlRUMBdYWkcHARFYXl8edwcRUFtaSSYXREFQXWoKCl1RaCUNC0VDXl1aARdlelsCBzNYVEZyWQoRS1tYCgcXHA9HWFMT","queueTime":0,"applicationTime":600,"atts":"ShNXRl9CSUk=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

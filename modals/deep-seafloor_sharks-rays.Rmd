@@ -6,4 +6,8 @@ pagetitle: Sharks and rays
 - [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_skate.html)
 
 
+
+# {.tabset}
+
+## Trends - abundance
 ![](figures/Appendix S.LR.13.5 - CPUE for elasmobranchs in OCNMS 2003-2018.jpg)

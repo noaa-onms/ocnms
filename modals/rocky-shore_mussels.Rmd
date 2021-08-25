@@ -7,5 +7,11 @@ pagetitle: Mussels
 - [info_tagline](Although they may resemble the rocks they're found on, mussels are very much alive. These filter-feeders can form large dense beds that provide habitat for many other species. Mussels are an important food source for many animals, including ochre stars, snails, and humans.)
 
 
+
+# {.tabset}
+
+## Trends - abundance
 ![](figures/Figure S.H.10.3_Mussels_MARINe.jpg)
+
+## Trends - condition
 ![](figures/S.LR.12.5 - Mussell shell thickness.jpg)

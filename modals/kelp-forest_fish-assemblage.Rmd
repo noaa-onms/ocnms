@@ -6,5 +6,11 @@ pagetitle: Fish assemblage
 - [info_tagline](Forests on land have birds that fly between the trees and kelp forests have fishes that swim between the kelp. Some are brightly colored, while others are perfectly camouflaged. Some even sing!)
 
 
+
+# {.tabset}
+
+## Trends - black rockfish
 ![](figures/Appendix S.LR.13.19 - Density of red urchins in kelp forest 2015-2019.jpg)
+
+## Trends - striped surfperch
 ![](figures/Appendix S.LR.13.21 - Abundance of striped surfperch in kelp forest 2015-2019.jpg)

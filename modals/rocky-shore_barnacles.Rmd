@@ -6,4 +6,8 @@ pagetitle: Barnacles
 - [info_tagline](Acorn barnacles typically dominate the high intertidal zone along the Olympic Coast. They can help create conditions that are favorable to some types of native algae. Acorn barnacles are highly vulnerable to smothering from oil spills because floating oil often sticks along the uppermost tidal levels.)
 
 
+
+# {.tabset}
+
+## Trends - MARINe
 ![](figures/Figure S.H.10.2_Barnacles_MARINe.jpg)

@@ -7,5 +7,11 @@ pagetitle: Roundfishes
 - [info_tagline](Roundfish is a term that refers to a group of fish that live on or near the seafloor and includes lingcod, cabezon, kelp greenling, Pacific cod, Pacific whiting (hake), and sablefish.)
 
 
+
+# {.tabset}
+
+## Trends - abundance all roundfish
 ![](figures/Appendix S.LR.13.4 - CPUE for roundfish in OCNMS 2003-2018.jpg)
+
+## Trends - lingcod abundance
 ![](figures/Appendix S.LR.13.6 - CPUE for lingcod in OCNMS 2003-2018.jpg)

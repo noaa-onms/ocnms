@@ -7,5 +7,11 @@ pagetitle: Sea urchins
 - [info_tagline](Sea urchins in kelp forest are food for  predators such as sea stars, fishes, and sea otters. If their numbers grow unchecked, these grazers if kelp and understory algae can cause declines in kelp and the associated fauna.)
 
 
+
+# {.tabset}
+
+## Trends - purple urchin
 ![](figures/Appendix S.LR.12.4 - Density of purple urchin in kelp forest habitats 2015-2019.jpg)
+
+## Trends - red urchin
 ![](figures/Appendix S.LR.13.19 - Density of red urchins in kelp forest 2015-2019.jpg)
