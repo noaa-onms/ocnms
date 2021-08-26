@@ -152,20 +152,17 @@ gdrive2path <- function(gdrive_shareable_link, get_relative_path = T, relative_p
 
 
 create_modal <- function(
-  modal_html,
+  path_rmd,
   d_modals,
   d_figures,
-  dir_modals = here::here("modals"),
   fld_html = "link"){
   
-  # modal_html = "deep-seafloor_benthic-invertebrates.html"; dir_modals = here::here("modals"); fld_html = "link"
-  # modal_html = "deep-seafloor_groundfish-assemblage.html"; dir_modals = here::here("modals"); fld_html = "link"
-  # modal_html = "pelagic_seabirds.html"; dir_modals = here::here("modals"); fld_html = "link"
+  # path_rmd = here("modals/deep-seafloor_benthic-invertebrates.html"); fld_html = "link"
+  # path_rmd = here("modals/deep-seafloor_groundfish-assemblage.html"); fld_html = "link"
+  # path_rmd = here("modals/pelagic_seabirds.html"); fld_html = "link"
   
-  path_rmd <- file.path(
-    dir_modals,
-    fs::path_ext_set(basename(modal_html), ".Rmd"))
-  
+  modal_html <- fs::path_ext_set(basename(path_rmd), ".html")
+    
   d_m <- d_modals %>% 
     filter(.data[[fld_html]] == !!modal_html)
   d_f <- d_figures %>% 
@@ -256,7 +253,8 @@ create_modal <- function(
 
 create_modals <- function(
   modals_csv  = here::here("data/gsheets/modals.csv"),
-  figures_csv = here::here("data/gsheets/figures.csv")){
+  figures_csv = here::here("data/gsheets/figures.csv"),
+  dir_modals  = here::here("modals")){
   # modals_csv  = here::here("data/gsheets/modals.csv"); figures_csv = here::here("data/gsheets/figures.csv")
   
   d_modals  <- readr::read_csv(modals_csv, show_col_types = F)
@@ -265,9 +263,12 @@ create_modals <- function(
   for (mdl_html in d_modals$link){
     # mdl_html = "deep-seafloor_benthic-invertebrates.html"
     # mdl_html = "deep-seafloor_groundfish-assemblage.html" (n_figures = 4)
-
-    message(glue("mdl_html: {mdl_html}"))
-    create_modal(mdl_html, d_modals, d_figures)
+    path_rmd <- file.path(
+      dir_modals,
+      fs::path_ext_set(basename(mdl_html), ".Rmd"))
+    
+    message(glue("creating modal: {basename(path_rmd)}"))
+    create_modal(path_rmd, d_modals, d_figures)
   }
 }
 
@@ -282,8 +283,8 @@ render_modals <- function(
 
 
 # update site ----
-gsheets_to_csvs(gsheet)
-add_gimage_paths()
+#gsheets_to_csvs(gsheet)
+#add_gimage_paths()
 
 create_modals()
 render_modals()
