@@ -18,6 +18,7 @@ skip_drive_auth <- F
 if (Sys.getenv("GITHUB_ACTIONS") == ""){
   message("GITHUB_ACTIONS environmental variable is empty")
   google_sa_json <- "/Users/bbest/My Drive (ben@ecoquants.com)/projects/nms-web/data/nms4gargle-774a9e9ec703.json"
+  google_sa_json <- "/Users/PikesStuff/Theseus/Private/nms4gargle-774a9e9ec703.json"
   stopifnot(file.exists(google_sa_json))
   gsa_json_text <- readLines(google_sa_json) %>% paste(sep="\n")
 } else {
