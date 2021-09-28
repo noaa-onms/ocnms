@@ -24,7 +24,7 @@ pagetitle: Ochre stars
 
 #### Trends - status & condition
 
-![](figures/S.H.12.*_seastar_S&T_ONP.tiff)
+![](figures/S.H.12.*_seastar_S&T_ONP.jpg)
 
 #### Trends - sunflower star
 

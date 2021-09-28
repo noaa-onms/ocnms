@@ -1,0 +1,17 @@
+---
+title: "Sandy Seafloor"
+params:
+  csv: "svg/_links.csv"
+  svg: "svg/sandy-seafloor.svg"
+  svg_filter: "sandy-seafloor"
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source("infographiqR.R")
+```
+
+`r insert_scene_info()`
+
+```{r svg, child = '_svg-html_child.Rmd'}
+```

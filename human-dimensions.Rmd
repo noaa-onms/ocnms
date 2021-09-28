@@ -1,0 +1,17 @@
+---
+title: "Human Dimensions"
+params:
+  csv: "svg/_links.csv"
+  svg: "svg/human-dimensions.svg"
+  svg_filter: "human-dimensions"
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source("infographiqR.R")
+```
+
+`r insert_scene_info()`
+
+```{r svg, child = '_svg-html_child.Rmd'}
+```

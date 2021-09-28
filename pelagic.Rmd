@@ -1,20 +1,17 @@
 ---
 title: "Pelagic"
 params:
-  csv: "svg/svg_links_ocnms.csv"
-  svg: "svg/ocnms_pelagic.svg"
+  csv: "svg/_links.csv"
+  svg: "svg/pelagic.svg"
   svg_filter: "pelagic"
 ---
 
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-# remotes::install_github("marinebon/infographiqR")
-library(infographiqR) 
-library(magrittr)
-infographiqR::ocnms_create_link_table()
+source("infographiqR.R")
 ```
 
-`r infographiqR::ocnms_get_modal_info()`
+`r insert_scene_info()`
 
 ```{r svg, child = '_svg-html_child.Rmd'}
 ```

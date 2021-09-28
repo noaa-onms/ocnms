@@ -1,0 +1,83 @@
+svg,icon,link,title,not_modal
+index,deep-seafloor,deep-seafloor.html,Deep Seafloor,T
+index,human-dimensions,human-dimensions.html,Human Dimensions,T
+index,kelp-forest,kelp-forest.html,Kelp Forest,T
+index,ocean-climate,ocean-climate.html,Ocean Climate,T
+index,pelagic,pelagic.html,Pelagic,T
+index,rocky-shore,rocky-shore.html,Rocky Shore,T
+index,sandy-beach,sandy-beach.html,Sandy Beach,T
+index,sandy-seafloor,sandy-seafloor.html,Sandy Seafloor,T
+deep-seafloor,benthic-invertebrates,modals/deep-seafloor_benthic-invertebrates.html,Benthic invertebrates,F
+deep-seafloor,corals-sponges,modals/deep-seafloor_corals-sponges.html,Deep sea corals and sponges,F
+deep-seafloor,crabs-shrimps,modals/deep-seafloor_crabs-shrimps.html,Crabs and shrimp,F
+deep-seafloor,flatfishes,modals/deep-seafloor_flatfishes.html,Flatfishes,F
+deep-seafloor,green-sturgeon,modals/deep-seafloor_green-sturgeon.html,Green sturgeon,F
+deep-seafloor,groundfish-assemblage,modals/deep-seafloor_groundfish-assemblage.html,Groundfish assemblage,F
+deep-seafloor,nis,modals/deep-seafloor_nis.html,Non-indigenous species,F
+deep-seafloor,rockfishes,modals/deep-seafloor_rockfishes.html,Rockfishes,F
+deep-seafloor,roundfishes,modals/deep-seafloor_roundfishes.html,Roundfishes,F
+deep-seafloor,shad,modals/deep-seafloor_shad.html,Shad,F
+deep-seafloor,sharks-rays,modals/deep-seafloor_sharks-rays.html,Sharks and rays,F
+deep-seafloor,terrain-complexity,modals/deep-seafloor_terrain-complexity.html,Seafloor terrain complexity,F
+human-dimensions,contaminants,modals/human-dimensions_contaminants.html,Contaminants,F
+human-dimensions,vessels,modals/human-dimensions_vessels.html,Vessels,F
+human-dimensions,harvest,modals/human-dimensions_harvest.html,Harvest,F
+human-dimensions,seafloor-disturbance,modals/human-dimensions_seafloor-disturbance.html,Seafloor disturbance,F
+human-dimensions,marine-debris,modals/human-dimensions_marine-debris.html,Marine debris,F
+human-dimensions,wildlife-disturbance,modals/human-dimensions_wildlife-disturbance.html,Wildlife disturbance,F
+human-dimensions,sound,modals/human-dimensions_sound.html,Sound,F
+kelp-forest,benthic-invertebrates,modals/kelp-forest_benthic-invertebrates.html,Benthic invertebrates,F
+kelp-forest,contaminants,modals/kelp-forest_contaminants.html,Contaminants,F
+kelp-forest,fish-assemblage,modals/kelp-forest_fish-assemblage.html,Fish assemblage,F
+kelp-forest,kelp-canopy,modals/kelp-forest_kelp-canopy.html,Kelp canopy,F
+kelp-forest,rock-cover,modals/kelp-forest_rock-cover.html,Rock cover,F
+kelp-forest,sea-otters,modals/kelp-forest_sea-otters.html,Sea otters,F
+kelp-forest,sea-stars,modals/kelp-forest_sea-stars.html,Sea stars,F
+kelp-forest,sea-urchins,modals/kelp-forest_sea-urchins.html,Sea urchins,F
+kelp-forest,understory-algae,modals/kelp-forest_understory-algae.html,Understory algae,F
+ocean-climate,nutrients-phytoplankton,modals/ocean-climate_nutrients-phytoplankton.html,Nutrients and Phytoplankton,F
+ocean-climate,oceanographic-index,modals/ocean-climate_oceanographic-index.html,Oceanographic Indexes,F
+ocean-climate,temperature,modals/ocean-climate_temperature.html,Temperature,F
+pelagic,cetaceans,modals/pelagic_cetaceans.html,Cetaceans,F
+pelagic,eulachon,modals/pelagic_eulachon.html,Eulachon,F
+pelagic,forage-fish,modals/pelagic_forage-fish.html,Forage fish,F
+pelagic,humboldt-squid,modals/pelagic_humboldt-squid.html,Humboldt squid,F
+pelagic,krill,modals/pelagic_krill.html,Krill,F
+pelagic,larvae-zooplankton,modals/pelagic_larvae-zooplankton.html,Larvae and zooplankton,F
+pelagic,leatherback,modals/pelagic_leatherback.html,Leatherback turtle,F
+pelagic,midwater-rockfishes,modals/pelagic_midwater-rockfishes.html,Midwater rockfish,F
+pelagic,nis,modals/pelagic_nis.html,Non-indigenous species,F
+pelagic,pacific-hake,modals/pelagic_pacific-hake.html,Pacific hake (whiting),F
+pelagic,pinnipeds,modals/pelagic_pinnipeds.html,Pinnipeds,F
+pelagic,salmon,modals/pelagic_salmon.html,Salmon,F
+pelagic,seabirds,modals/pelagic_seabirds.html,Seabirds,F
+pelagic,srkw,modals/pelagic_srkw.html,Southern resident killer whale,F
+rocky-shore,barnacles,modals/rocky-shore_barnacles.html,Barnacles,F
+rocky-shore,black-oystercatcher,modals/rocky-shore_black-oystercatcher.html,Black oystercatcher,F
+rocky-shore,colonial-seabirds,modals/rocky-shore_colonial-seabirds.html,Colonial seabirds,F
+rocky-shore,invertebrate-diversity,modals/rocky-shore_invertebrate-diversity.html,Invertebrate diversity,F
+rocky-shore,macroalgae-surfgrass,modals/rocky-shore_macroalgae-surfgrass.html,Algae and surfgrass,F
+rocky-shore,mussels,modals/rocky-shore_mussels.html,Mussels,F
+rocky-shore,nis,modals/rocky-shore_nis.html,Non-indigenous species,F
+rocky-shore,ochre-star,modals/rocky-shore_ochre-star.html,Ochre stars,F
+rocky-shore,pinnipeds,modals/rocky-shore_pinnipeds.html,Seals and sealions,F
+sandy-beach,advisories-closures,modals/sandy-beach_advisories-closures.html,NA,F
+sandy-beach,amphipods-isopods,modals/sandy-beach_amphipods-isopods.html,Amphipods and isopods,F
+sandy-beach,beach-sediment,modals/sandy-beach_beach-sediment.html,NA,F
+sandy-beach,beach-wrack,modals/sandy-beach_beach-wrack.html,Beach wrack,F
+sandy-beach,decapods,modals/sandy-beach_decapods.html,Decapods,F
+sandy-beach,infaunal-predators,modals/sandy-beach_infaunal-predators.html,NA,F
+sandy-beach,nis,modals/sandy-beach_nis.html,Non-indigenous species,F
+sandy-beach,olive-snails,modals/sandy-beach_olive-snails.html,Olive snails,F
+sandy-beach,phytoplankton,modals/sandy-beach_phytoplankton.html,Phytoplankton,F
+sandy-beach,pinnipeds,modals/sandy-beach_pinnipeds.html,Pinnipeds,F
+sandy-beach,position-slope,modals/sandy-beach_position-slope.html,NA,F
+sandy-beach,razor-clams,modals/sandy-beach_razor-clams.html,Pacific razor clam *Siliqua patula*,F
+sandy-beach,shellfish-closures,modals/sandy-beach_shellfish-closures.html,NA,F
+sandy-beach,shorebirds,modals/sandy-beach_shorebirds.html,Shorebirds,F
+sandy-beach,surfzone-fish,modals/sandy-beach_surfzone-fish.html,Surfzone fish,F
+sandy-seafloor,benthic-invertebrates,modals/sandy-seafloor_benthic-invertebrates.html,Benthic invertebrates,F
+sandy-seafloor,dungeness-crab,modals/sandy-seafloor_dungeness-crab.html,Dungeness crab,F
+sandy-seafloor,flatfishes,modals/sandy-seafloor_flatfishes.html,Flatfishes,F
+sandy-seafloor,forage-fish,modals/sandy-seafloor_forage-fish.html,Forage fish,F
+sandy-seafloor,sea-otters,modals/sandy-seafloor_sea-otters.html,Sea otters,F

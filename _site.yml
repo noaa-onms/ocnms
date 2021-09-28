@@ -1,5 +1,5 @@
 name: "OCNMS info"
-output_dir: "docs"
+output_dir: "."
 description: |
   OCNMS info
 svg_csv: "svg/svg_links_ocnms.csv"
@@ -8,17 +8,17 @@ navbar:
   icon: fa-info
   left:
     - text: "Deep Seafloor"
-      href: deep_seafloor.html
+      href: deep-seafloor.html
     - text: "Kelp Forest"
-      href: kelp_forest.html
+      href: kelp-forest.html
     - text: "Pelagic"
       href: pelagic.html
     - text: "Rocky Shore"
-      href: rocky_shore.html
+      href: rocky-shore.html
     - text: "Sandy Beach"
-      href: sandy_beach.html
+      href: sandy-beach.html
     - text: "Sandy Seafloor"
-      href: sandy_seafloor.html
+      href: sandy-seafloor.html
   right:
     - text: "About"
       href: https://marinebon.org/sanctuaries/
