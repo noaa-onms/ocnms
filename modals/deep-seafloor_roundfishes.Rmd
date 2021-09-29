@@ -1,11 +1,13 @@
 ---
-pagetitle: Roundfishes
+pagetitle: "Roundfishes"
 ---
 
-- [info_link](https://olympiccoast.noaa.gov/living/marinelife/fish/fish.html)
-- [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_lingcod.html)
-- [info_tagline](Roundfish is a term that refers to a group of fish that live on or near the seafloor and includes lingcod, cabezon, kelp greenling, Pacific cod, Pacific whiting (hake), and sablefish.)
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("infographiqR.R"))
+```
 
+`r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
 
 ### {.tabset}

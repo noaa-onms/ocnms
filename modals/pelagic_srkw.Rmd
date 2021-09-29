@@ -1,11 +1,13 @@
 ---
-pagetitle: Southern resident killer whale
+pagetitle: "Southern resident killer whale"
 ---
 
-- [info_link](https://www.fisheries.noaa.gov/west-coast/endangered-species-conservation/southern-resident-killer-whale-orcinus-orca)
-- [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_orca.html)
-- [info_tagline](Southern Resident killer whales spend several months of the summer and fall each year in Washington State's Puget Sound. This population was listed as endangered in 2005 under the Endangered Species Act. Three main causes of the decline of Southern Residents are: reduced quantity and quality of prey, persistent organic pollutants, and noise and disturbance from vessels.)
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("infographiqR.R"))
+```
 
+`r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
 
 ### {.tabset}

@@ -1,10 +1,13 @@
 ---
-pagetitle: Non-indigenous species
+pagetitle: "Non-indigenous species"
 ---
 
-- [info_link](https://sanctuaries.noaa.gov/science/sentinel-site-program/olympic-coast/invasive-species.html)
-- [info_tagline](Our rocky shores can be impacted by the arrival of species from other parts of the world. Some non-indigenous species are disruptive to ecosystems and others aren't. Some algae and invertebrates have the potential to be invasive by out-competing native rocky shore species.)
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("infographiqR.R"))
+```
 
+`r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
 
 ### {.tabset}

@@ -1,9 +1,11 @@
 ---
-pagetitle: Sea otters
+pagetitle: "Sea otters"
 ---
 
-- [info_link](https://olympiccoast.noaa.gov/living/marinelife/mammals/specieslist/spp_seaotter.html)
-- [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_seaotter.html)
-- [info_tagline](Once ruthlessly hunted for their prized fur coat, sea otters were reintroduced into the ocean waters along the Olympic peninsula due to their importance! Sea otters are a “keystone species,” meaning that they are an indicator of the health of a habitat. If their population is healthy, it means that other parts of the ecosystem, such as kelp forests and sandy bottoms, are likely also healthy.)
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("infographiqR.R"))
+```
 
+`r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 

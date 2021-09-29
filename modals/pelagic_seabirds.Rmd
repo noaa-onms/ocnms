@@ -1,11 +1,13 @@
 ---
-pagetitle: Seabirds
+pagetitle: "Seabirds"
 ---
 
-- [info_link](https://olympiccoast.noaa.gov/living/marinelife/birds/birds.html)
-- [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_albatross.html)
-- [info_tagline](The Olympic Coast is home to a rich variety of seabirds, from migratory birds who use the islands as a stopover to year-round residents.)
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("infographiqR.R"))
+```
 
+`r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
 
 # {.tabset}

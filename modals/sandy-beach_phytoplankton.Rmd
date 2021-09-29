@@ -1,7 +1,11 @@
 ---
-pagetitle: Phytoplankton
+pagetitle: "Phytoplankton"
 ---
 
-- [info_tagline](Phytoplankton are small, often microscopic, algae that largely just drift with the ocean current. Despite being small, they pack a big punch in marine ecosystems because a wide variety of marine life survives by eating phytoplankton.)
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("infographiqR.R"))
+```
 
+`r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 

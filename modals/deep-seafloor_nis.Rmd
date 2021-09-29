@@ -1,7 +1,11 @@
 ---
-pagetitle: Non-indigenous species
+pagetitle: "Non-indigenous species"
 ---
 
-- [info_link](https://sanctuaries.noaa.gov/science/sentinel-site-program/olympic-coast/invasive-species.html)
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("infographiqR.R"))
+```
 
+`r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 

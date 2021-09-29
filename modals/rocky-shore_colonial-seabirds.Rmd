@@ -1,10 +1,13 @@
 ---
-pagetitle: Colonial seabirds
+pagetitle: "Colonial seabirds"
 ---
 
-- [info_link](https://olympiccoast.noaa.gov/living/marinelife/birds/birds.html)
-- [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_murres.html)
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("infographiqR.R"))
+```
 
+`r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
 
 ### {.tabset}

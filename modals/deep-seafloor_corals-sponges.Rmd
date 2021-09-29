@@ -1,9 +1,11 @@
 ---
-pagetitle: Deep sea corals and sponges
+pagetitle: "Deep sea corals and sponges"
 ---
 
-- [info_link](https://olympiccoast.noaa.gov/science/coralandsponge/coralandsponge.html)
-- [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_primnoa.html)
-- [info_tagline](Without any sunlight it's hard to imagine corals and sponges thriving in the deep ocean. And yet, deep sea corals and sponges make up vital habitat for many fishes and invertebrates around the world.)
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("infographiqR.R"))
+```
 
+`r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 

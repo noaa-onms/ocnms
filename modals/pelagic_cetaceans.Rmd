@@ -1,11 +1,13 @@
 ---
-pagetitle: Cetaceans
+pagetitle: "Cetaceans"
 ---
 
-- [info_link](https://olympiccoast.noaa.gov/living/marinelife/mammals/mammals.html)
-- [info_photo_link](https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_humpback.html)
-- [info_tagline](Marine mammals in the cetacean family include whales, dolphins and porpoises.)
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("infographiqR.R"))
+```
 
+`r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
 
 ### {.tabset}
