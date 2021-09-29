@@ -178,11 +178,14 @@ create_modal <- function(
   path_rmd,
   d_modals,
   d_figures,
-  fld_html = "link"){
+  rmd_template = here::here("_modal.Rmd"),
+  fld_html = "link",
+  debug = F){
   
   # path_rmd = here("modals/deep-seafloor_benthic-invertebrates.html"); fld_html = "link"
   # path_rmd = here("modals/deep-seafloor_groundfish-assemblage.html"); fld_html = "link"
   # path_rmd = here("modals/pelagic_seabirds.html"); fld_html = "link"
+  # path_rmd = here("modals/kelp-forest_sea-otters.html")
   
   modal_html <- fs::path_ext_set(basename(path_rmd), ".html")
   
@@ -195,30 +198,17 @@ create_modal <- function(
       !is.na(image_path)) %>% 
     arrange(tab_group, tab, image_path)
   
-  #* yaml ----
-  write(glue::glue(
-    "
-    ---
-    pagetitle: {d_m$title}
-    ---
-    
-    "), path_rmd)
+  #* template ----
+  attach(d_m)
+  knitr::knit_expand(rmd_template) %>% 
+    writeLines(path_rmd)
+  detach(d_m)
   
   glue_rmd <- function(x, ...){
+    if (debug)
+      message(glue("glue_rmd(): {x}"))
     write(glue::glue(x, ...), path_rmd, append = T)
   }
-  
-  #* info_* ----
-  for (ikey in c("info_link", "info_photo_link",	"info_tagline")){ # ikey = "info_link"
-    ival <- d_m[[ikey]]
-    if (!is.na(ival)){
-      glue_rmd(
-        "
-        - [{ikey}]({ival})
-        ")
-    }
-  }
-  write("\n", path_rmd, append = T)
   
   #* figures ----
   if (nrow(d_f) >= 1){ 
@@ -290,7 +280,7 @@ create_modals <- function(
   
   for (mdl_html in d_modals$link){
     # mdl_html = "deep-seafloor_benthic-invertebrates.html"
-    # mdl_html = "deep-seafloor_groundfish-assemblage.html" (n_figures = 4)
+    # mdl_html = "deep-seafloor_groundfish-assemblage.html" # (n_figures = 4)
     path_rmd <- file.path(
       dir_modals,
       fs::path_ext_set(basename(mdl_html), ".Rmd"))
@@ -341,21 +331,33 @@ create_scenes <- function(
     purrr::pwalk(create_scene)
 }
 
-insert_scene_info <- function(
-  rmd         = knitr::current_input(),
-  scenes_csv  = here::here("data/gsheets/scenes.csv")){
+insert_info <- function(
+  rmd = knitr::current_input(),
+  csv = here::here("data/gsheets/scenes.csv"),
+  debug = F){
   # rmd = here::here("rocky_shore.Rmd")
   
   svg <- basename(fs::path_ext_remove(rmd))
 
-  d_scenes <- readr::read_csv(scenes_csv)
+  d_all <- readr::read_csv(csv)
   
-  flds_missing <- setdiff(c("svg", "info_link", "info_photo_link", "info_tagline") , names(d_scenes))
+  if (debug)
+    message(glue("rmd: {rmd}"))
+  
+  flds_missing <- setdiff(c("svg", "info_link", "info_photo_link", "info_tagline") , names(d_all))
   if (length(flds_missing) > 0) 
-    stop(glue("Missing expected columns in scenes_csv: {paste(flds_missing, collapse = ', ')}."))
+    stop(glue("Missing expected columns in csv: {paste(flds_missing, collapse = ', ')}."))
   
-  d <- d_scenes %>%
-    dplyr::filter(svg == !!svg)
+  if ("link" %in% names(d_all)){
+    # modal
+    html <- basename(fs::path_ext_set(rmd, ".html"))
+    d <- d_all %>%
+      dplyr::filter(link == !!html)
+  } else {
+    # scene
+    d <- d_all %>%
+      dplyr::filter(svg == !!svg)
+  }
   
   if (nrow(d) != 1)
     stop("Need rmd to match 1 possible value of svg column in scenes_csv.")

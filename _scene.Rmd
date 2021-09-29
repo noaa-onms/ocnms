@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
 source("infographiqR.R")
 ```
 
-`r insert_scene_info()`
+`r insert_info(csv = here::here("data/gsheets/scenes.csv"))`
 
 ```{r svg, child = '_svg.Rmd'}
 ```
