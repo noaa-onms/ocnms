@@ -19,6 +19,10 @@ navbar:
       href: sandy-beach.html
     - text: "Sandy Seafloor"
       href: sandy-seafloor.html
+    - text: "Ocean & Climate"	
+      href: ocean-climate.html
+    - text: "Human Dimensions"
+      href: human-dimensions.html
   right:
     - text: "About"
       href: https://marinebon.org/sanctuaries/

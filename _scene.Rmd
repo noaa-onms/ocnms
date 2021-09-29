@@ -13,5 +13,5 @@ source("infographiqR.R")
 
 `r insert_scene_info()`
 
-```{r svg, child = '_svg-html_child.Rmd'}
+```{r svg, child = '_svg.Rmd'}
 ```
