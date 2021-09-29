@@ -1,7 +1,7 @@
 ---
 title: "Sandy Seafloor"
 params:
-  csv: "svg/_links.csv"
+  csv: "svg/links.csv"
   svg: "svg/sandy-seafloor.svg"
   svg_filter: "sandy-seafloor"
 ---

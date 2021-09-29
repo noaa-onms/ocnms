@@ -1,7 +1,7 @@
 ---
 title: "Human Dimensions"
 params:
-  csv: "svg/_links.csv"
+  csv: "svg/links.csv"
   svg: "svg/human-dimensions.svg"
   svg_filter: "human-dimensions"
 ---

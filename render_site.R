@@ -6,6 +6,7 @@ gsheets_to_csvs(gsheet)
 # add_gimage_paths() # add image_path to data/gsheets/figures.csv
 # create_svg_links()
 
+# TODO: + arg for only_new = T
 create_modals()
 render_modals()
 

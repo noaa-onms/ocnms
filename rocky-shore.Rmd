@@ -1,7 +1,7 @@
 ---
 title: "Rocky Shore"
 params:
-  csv: "svg/_links.csv"
+  csv: "svg/links.csv"
   svg: "svg/rocky-shore.svg"
   svg_filter: "rocky-shore"
 ---

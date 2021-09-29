@@ -312,7 +312,7 @@ render_modals <- function(
 create_scene <- function(
   title, svg, 
   rmd_out       = glue::glue(here::here("{svg}.Rmd")),
-  svg_links_csv = here::here("svg/_links.csv"),
+  svg_links_csv = here::here("svg/links.csv"),
   dir_svg       = here::here("svg"),
   rmd_template  = here::here("_scene.Rmd"),
   ...){
@@ -335,7 +335,7 @@ create_scene <- function(
 create_scenes <- function(
   scenes_csv    = here::here("data/gsheets/scenes.csv"),
   dir_svg       = here::here("svg"),
-  svg_links_csv = here::here("svg/_links.csv")){
+  svg_links_csv = here::here("svg/links.csv")){
   
   readr::read_csv(scenes_csv) %>% 
     purrr::pwalk(create_scene)
