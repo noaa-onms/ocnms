@@ -14,28 +14,28 @@ source(here::here("infographiqR.R"))
 
 #### Maps - density comparison
 
-![](figures/Appendix S.LR.13.17 - Comparison of predicted densities for blue, fin and humpback whales.jpg)
+`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.17 - Comparison of predicted densities for blue, fin and humpback whales.jpg")`
 
 #### Maps - fin whale
 
-![](figures/Appendix S.LR.13.15 - Map Sightings Fin Whale 1991-2014.jpg)
+`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.15 - Map Sightings Fin Whale 1991-2014.jpg")`
 
 #### Maps - humpback whales
 
-![](figures/Appendix S.LR.13.16 - Map Sightings of humpback whales off US west coast 1991-2014.jpg)
+`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.16 - Map Sightings of humpback whales off US west coast 1991-2014.jpg")`
 
 #### Trends - fin whale
 
-![](figures/Appendix S.LR.13.15 - Abundance Fin Whale 1991-2014.jpg)
+`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.15 - Abundance Fin Whale 1991-2014.jpg")`
 
 #### Trends - gray whale strandings
 
-![](figures/Appendix S.LR.13.18 - Gray whale strandings 2019-2020.jpg)
+`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.18 - Gray whale strandings 2019-2020.jpg")`
 
 #### Trends - gray whales
 
-![](figures/Appendix S.LR.13.14 - Density of gray whales 2005-2011jpg.jpg)
+`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.14 - Density of gray whales 2005-2011jpg.jpg")`
 
 #### Trends - humpback whale
 
-![](figures/Appendix S.LR.13.16 - Figure Sightings of humpback whales off US west coast 1991-2014.jpg)
+`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.16 - Figure Sightings of humpback whales off US west coast 1991-2014.jpg")`

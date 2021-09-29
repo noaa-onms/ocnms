@@ -14,12 +14,8 @@ source(here::here("infographiqR.R"))
 
 #### Trends - LUSI
 
-![](figures/S_WQ_Q6_4_LUSI_TUMI_CCIEA.JPG)
+`r insert_figure("ocean-climate_oceanographic-index.html", "figures/S_WQ_Q6_4_LUSI_TUMI_CCIEA.JPG")`
 
 #### Trends - STI
 
-![](figures/S_WQ_Q6_3_STI_CCIEA.JPG)
-
-#### Trends - TUMI
-
-![](figures/S_WQ_Q6_4_LUSI_TUMI_CCIEA.JPG)
+`r insert_figure("ocean-climate_oceanographic-index.html", "figures/S_WQ_Q6_3_STI_CCIEA.JPG")`

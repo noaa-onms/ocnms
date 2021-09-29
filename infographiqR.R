@@ -254,16 +254,118 @@ create_modal <- function(
           ")
       
       glue_rmd(
-        "
+        '
         
-        ![]({image_path})
-        ")
+        `r insert_figure("{link}", "{image_path}")`
+        ')
       
       tabgroup_prev <- tab_group
       detach(r_f)
     }
   }
 }
+
+insert_figure_meta <- function(
+  link, image_path,
+  figures_csv = here::here("data/gsheets/figures.csv")){
+  # link = "deep-seafloor_groundfish-assemblage.html"
+  # image_path = "figures/S.LR.13.7 - Groundfish CPUE 2004-2018.jpg"
+  
+  d_figs <- read_csv(figures_csv)
+  stopifnot(all(
+    c("link", "image_path", 
+      "monitoring_title", "monitoring_link", 
+      "data_title", "data_link") %in% names(d_figs)))
+  
+  # monitoring program, data ----
+  d <- d_figs %>% 
+    filter(
+      link       == !!link,
+      image_path == !!image_path)
+  
+  if (nrow(d) != 1)
+    stop(glue("insert_figure(): need exactly 1 row in figures_csv to match supplied `link` and `image_path`"))
+  
+  html  <- NULL
+  no_ws <- c("before","after","outside","after-begin","before-end")
+  
+  icons <- tribble(
+    ~description_bkup   ,    ~css,            ~icon,         ~fld_url, ~fld_description,
+    "Monitoring Program",  "left", "clipboard-list", "monitoring_link", "monitoring_title",
+    "Data"              , "right", "database"      ,       "data_link", "data_title")
+  
+  # caption | monitoring_title | monitoring_link | data_title | data_link
+  
+  #if (is.na(d$)
+  
+  for (i in 1:nrow(icons)){  # i=1
+    
+    h           <- icons[i,]
+    url         <- d[h$fld_url]
+    description <- d[h$fld_description]
+    
+    if(!is.na(url) & substr(url,0,4) == "http"){
+      if (is.na(description)){
+        description <- h$description_bkup
+      } else {
+        #description <- substr(str_trim(description), 0, 45) 
+        description <- str_trim(description)
+      }   
+      
+      html <- tagList(
+        html, 
+        div(
+          .noWS = no_ws,
+          style = glue("text-align:{h$css}; display:table-cell;"),
+          a(
+            .noWS = no_ws,
+            href = url, target = '_blank',
+            shiny::icon(h$icon), description)))
+    }
+  }
+  
+  if (is.null(html))
+    return("")
+  
+  tagList(
+    div(
+      .noWS = no_ws,
+      style = "background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;",
+      div(
+        .noWS = no_ws,
+        style = "display:table-row",
+        html)))
+}
+
+insert_figure <- function(
+  link, image_path,
+  insert_meta = T,
+  figures_csv = here::here("data/gsheets/figures.csv")){
+  # link = "deep-seafloor_groundfish-assemblage.html"
+  # image_path = "figures/S.LR.13.7 - Groundfish CPUE 2004-2018.jpg"
+  
+  h = NULL
+  if (insert_meta)
+    h = insert_figure_meta(link, image_path, figures_csv)
+  
+  d_figs <- read_csv(figures_csv)
+  stopifnot(all(
+    c("link", "image_path", 
+      "caption") %in% names(d_figs)))
+  
+  d <- d_figs %>% 
+    filter(
+      link       == !!link,
+      image_path == !!image_path)
+  
+  if (nrow(d) != 1)
+    stop(glue("insert_figure(): need exactly 1 row in figures_csv to match supplied `link` and `image_path`"))
+  
+  tagList(
+    h, 
+    htmltools::HTML(markdown::renderMarkdown(text = glue("![]({d$image_path}) {d$caption}"))))
+}
+
 
 create_modals <- function(
   modals_csv  = here::here("data/gsheets/modals.csv"),

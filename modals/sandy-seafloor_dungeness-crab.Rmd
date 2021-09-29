@@ -14,8 +14,8 @@ source(here::here("infographiqR.R"))
 
 #### Trends - abundance (CPUE)
 
-![](figures/log_ocnms_Cancer magister_2003-2019.png)
+`r insert_figure("sandy-seafloor_dungeness-crab.html", "figures/log_ocnms_Cancer magister_2003-2019.png")`
 
 #### Trends - landings
 
-![](figures/S.LR.13.5 - Dungeness crab harvest 2000-2019.jpg)
+`r insert_figure("sandy-seafloor_dungeness-crab.html", "figures/S.LR.13.5 - Dungeness crab harvest 2000-2019.jpg")`

@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - MARINe
 
-![](figures/Figure S.H.10.2_Barnacles_MARINe.jpg)
+`r insert_figure("rocky-shore_barnacles.html", "figures/Figure S.H.10.2_Barnacles_MARINe.jpg")`

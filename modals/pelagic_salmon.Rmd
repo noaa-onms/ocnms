@@ -14,8 +14,8 @@ source(here::here("infographiqR.R"))
 
 #### Trends - blueback salmon
 
-![](figures/S.LR.13.13b - Status of Quinault Blueback Salmon.jpg)
+`r insert_figure("pelagic_salmon.html", "figures/S.LR.13.13b - Status of Quinault Blueback Salmon.jpg")`
 
 #### Trends - salmonid populations
 
-![](figures/S.LR.13.13a - Status of Salmon and Stealhead on WA coast 2018.jpg)
+`r insert_figure("pelagic_salmon.html", "figures/S.LR.13.13a - Status of Salmon and Stealhead on WA coast 2018.jpg")`

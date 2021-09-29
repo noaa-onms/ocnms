@@ -14,20 +14,20 @@ source(here::here("infographiqR.R"))
 
 #### Trends - abundance (MARINe)
 
-![](figures/S.LR.12.1 - Abundance of Pisaster ochraceus.jpg)
+`r insert_figure("rocky-shore_ochre-star.html", "figures/S.LR.12.1 - Abundance of Pisaster ochraceus.jpg")`
 
 #### Trends - size at Pt. Grenville
 
-![](figures/Appendix S.LR.12.1 - Size structure of Pisaster ochraceus in rocky shore habitats Pt Grenville.jpg)
+`r insert_figure("rocky-shore_ochre-star.html", "figures/Appendix S.LR.12.1 - Size structure of Pisaster ochraceus in rocky shore habitats Pt Grenville.jpg")`
 
 #### Trends - size at Sokol Point
 
-![](figures/Appendix S.LR.12.1 - Size structure of Pisaster ochraceus in rocky shore habitats Sokol Pt.jpg)
+`r insert_figure("rocky-shore_ochre-star.html", "figures/Appendix S.LR.12.1 - Size structure of Pisaster ochraceus in rocky shore habitats Sokol Pt.jpg")`
 
 #### Trends - status & condition
 
-![](figures/S.H.12.*_seastar_S&T_ONP.jpg)
+`r insert_figure("rocky-shore_ochre-star.html", "figures/S.H.12.*_seastar_S&T_ONP.jpg")`
 
 #### Trends - sunflower star
 
-![](figures/Appendix S.LR.12.3a - Counts of Pycnopodeia helianthoides in rocky shores 2006-2015.jpg)
+`r insert_figure("rocky-shore_ochre-star.html", "figures/Appendix S.LR.12.3a - Counts of Pycnopodeia helianthoides in rocky shores 2006-2015.jpg")`

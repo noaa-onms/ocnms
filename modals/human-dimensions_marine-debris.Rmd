@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - amount on beaches
 
-![](figures/Figure S.P.4.3.png)
+`r insert_figure("human-dimensions_marine-debris.html", "figures/Figure S.P.4.3.png")`

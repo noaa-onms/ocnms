@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Maps - Atlantic salmon
 
-![](figures/S.LR.14.3 - Map of where Atlantic salmon caught.jpg)
+`r insert_figure("pelagic_nis.html", "figures/S.LR.14.3 - Map of where Atlantic salmon caught.jpg")`

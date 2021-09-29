@@ -14,8 +14,8 @@ source(here::here("infographiqR.R"))
 
 #### Trends - abundance
 
-![](figures/Figure S.H.10.3_Mussels_MARINe.jpg)
+`r insert_figure("rocky-shore_mussels.html", "figures/Figure S.H.10.3_Mussels_MARINe.jpg")`
 
 #### Trends - condition
 
-![](figures/S.LR.12.5 - Mussell shell thickness.jpg)
+`r insert_figure("rocky-shore_mussels.html", "figures/S.LR.12.5 - Mussell shell thickness.jpg")`

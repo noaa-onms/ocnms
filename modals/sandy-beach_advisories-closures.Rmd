@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - swimming closures
 
-![](figures/S_WQ_Q7_8_Swimming_Beaches_Closures_WACoast.JPG)
+`r insert_figure("sandy-beach_advisories-closures.html", "figures/S_WQ_Q7_8_Swimming_Beaches_Closures_WACoast.JPG")`

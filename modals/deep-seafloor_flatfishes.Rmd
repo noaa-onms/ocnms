@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - abundance
 
-![](figures/Appendix S.LR.13.3 - CPUE for flatfish 2003-2018 in OCNMS.jpg)
+`r insert_figure("deep-seafloor_flatfishes.html", "figures/Appendix S.LR.13.3 - CPUE for flatfish 2003-2018 in OCNMS.jpg")`

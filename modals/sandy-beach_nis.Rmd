@@ -14,12 +14,12 @@ source(here::here("infographiqR.R"))
 
 #### 2011 Tsunami
 
-![](figures/S.LR.14.4 - NIS introduced to US west coast by 2011 tsunami.jpg)
+`r insert_figure("sandy-beach_nis.html", "figures/S.LR.14.4 - NIS introduced to US west coast by 2011 tsunami.jpg")`
 
 #### Maps - 2011 Tsunami
 
-![](figures/S.LR.14.5 - Map of marine debris from 2011 tsunami.jpg)
+`r insert_figure("sandy-beach_nis.html", "figures/S.LR.14.5 - Map of marine debris from 2011 tsunami.jpg")`
 
 #### Trends - European green crab
 
-![](figures/S.LR.14.2 - European green crab CPUE in Makah Bay 2018 and 2019.jpg)
+`r insert_figure("sandy-beach_nis.html", "figures/S.LR.14.2 - European green crab CPUE in Makah Bay 2018 and 2019.jpg")`

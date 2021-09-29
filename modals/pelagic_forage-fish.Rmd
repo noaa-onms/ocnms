@@ -14,8 +14,8 @@ source(here::here("infographiqR.R"))
 
 #### Maps - distribution
 
-![](figures/Appendix S.LR.12.6 - Distributions of krill off OR and southern WA May-June 2011-2019.jpg)
+`r insert_figure("pelagic_forage-fish.html", "figures/Appendix S.LR.12.6 - Distributions of krill off OR and southern WA May-June 2011-2019.jpg")`
 
 #### Trends - anchovy
 
-![](figures/Appendix S.LR.12.5 - Abundance anomalies for northern anchovies off OR and WA.jpg)
+`r insert_figure("pelagic_forage-fish.html", "figures/Appendix S.LR.12.5 - Abundance anomalies for northern anchovies off OR and WA.jpg")`

@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Maps - Zoning
 
-![](figures/OCNMS_ATBA_TSS_SP23_04162021.jpg)
+`r insert_figure("human-dimensions_vessels.html", "figures/OCNMS_ATBA_TSS_SP23_04162021.jpg")`

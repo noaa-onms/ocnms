@@ -14,8 +14,8 @@ source(here::here("infographiqR.R"))
 
 #### Trends - ochre star
 
-![](figures/Appendix S.LR.12.2 - Density of Pisaster ochraceous in kelp forest habitats 2015-2019.jpg)
+`r insert_figure("kelp-forest_sea-stars.html", "figures/Appendix S.LR.12.2 - Density of Pisaster ochraceous in kelp forest habitats 2015-2019.jpg")`
 
 #### Trends - sunflower star
 
-![](figures/Appendix S.LR.12.3b - Density of Pycnopodeia helianthoides in kelp forest 2015-2019.jpg)
+`r insert_figure("kelp-forest_sea-stars.html", "figures/Appendix S.LR.12.3b - Density of Pycnopodeia helianthoides in kelp forest 2015-2019.jpg")`

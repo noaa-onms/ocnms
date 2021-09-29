@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends
 
-![](figures/Figure S.H.10.1_Kelp.JPG)
+`r insert_figure("kelp-forest_kelp-canopy.html", "figures/Figure S.H.10.1_Kelp.JPG")`
