@@ -1,6 +1,6 @@
 svg,link,icon,not_modal,title,info_link,info_photo_link,info_tagline,comments
 index,deep-seafloor.html,deep-seafloor,T,Deep Seafloor,NA,NA,NA,NA
-index,human-dimensions.html,human-dimensions,T,Human Dimensions,NA,NA,NA,NA
+index,human-connections.html,human-connections,T,Human Connections,NA,NA,NA,NA
 index,kelp-forest.html,kelp-forest,T,Kelp Forest,NA,NA,NA,NA
 index,ocean-climate.html,ocean-climate,T,Ocean Climate,NA,NA,NA,NA
 index,pelagic.html,pelagic,T,Pelagic,NA,NA,NA,NA
@@ -19,13 +19,13 @@ deep-seafloor,deep-seafloor_roundfishes.html,roundfishes,F,Roundfishes,https://o
 deep-seafloor,deep-seafloor_shad.html,shad,F,Shad,https://olympiccoast.noaa.gov/living/marinelife/fish/fish.html,NA,NA,NA
 deep-seafloor,deep-seafloor_sharks-rays.html,sharks-rays,F,Sharks and rays,https://olympiccoast.noaa.gov/living/marinelife/fish/fish.html,https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_skate.html,NA,NA
 deep-seafloor,deep-seafloor_terrain-complexity.html,terrain-complexity,F,Seafloor terrain complexity,https://olympiccoast.noaa.gov/science/habitatmapping/habitatmapping.html,NA,NA,NA
-human-dimensions,human-dimensions_contaminants.html,contaminants,F,Contaminants,NA,NA,NA,NA
-human-dimensions,human-dimensions_vessels.html,vessels,F,Vessels,NA,NA,NA,NA
-human-dimensions,human-dimensions_harvest.html,harvest,F,Harvest,NA,NA,NA,NA
-human-dimensions,human-dimensions_seafloor-disturbance.html,seafloor-disturbance,F,Seafloor disturbance,NA,NA,NA,NA
-human-dimensions,human-dimensions_marine-debris.html,marine-debris,F,Marine debris,NA,NA,NA,NA
-human-dimensions,human-dimensions_wildlife-disturbance.html,wildlife-disturbance,F,Wildlife disturbance,NA,NA,NA,NA
-human-dimensions,human-dimensions_sound.html,sound,F,Sound,NA,NA,NA,NA
+human-connections,human-connections_contaminants.html,contaminants,F,Contaminants,NA,NA,NA,NA
+human-connections,human-connections_vessels.html,vessels,F,Vessels,NA,NA,NA,NA
+human-connections,human-connections_harvest.html,harvest,F,Harvest,NA,NA,NA,NA
+human-connections,human-connections_seafloor-disturbance.html,seafloor-disturbance,F,Seafloor disturbance,NA,NA,NA,NA
+human-connections,human-connections_marine-debris.html,marine-debris,F,Marine debris,NA,NA,NA,NA
+human-connections,human-connections_wildlife-disturbance.html,wildlife-disturbance,F,Wildlife disturbance,NA,NA,NA,NA
+human-connections,human-connections_sound.html,sound,F,Sound,NA,NA,NA,NA
 kelp-forest,kelp-forest_benthic-invertebrates.html,benthic-invertebrates,F,Benthic invertebrates,https://olympiccoast.noaa.gov/living/marinelife/inverts/inverts.html,NA,"What they may lack in size, they make up in diversity! Invertebrates are any animal with without a backbone. From snails to crabs and clams to urchins, the seafloor is teeming with invertebrate life.",NA
 kelp-forest,kelp-forest_contaminants.html,contaminants,F,Contaminants,NA,NA,NA,NA
 kelp-forest,kelp-forest_fish-assemblage.html,fish-assemblage,F,Fish assemblage,https://olympiccoast.noaa.gov/living/marinelife/fish/fish.html,NA,"Forests on land have birds that fly between the trees and kelp forests have fishes that swim between the kelp. Some are brightly colored, while others are perfectly camouflaged. Some even sing!",NA

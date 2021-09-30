@@ -1,5 +1,5 @@
 ---
-pagetitle: "Marine debris"
+pagetitle: "Sound"
 ---
 
 ```{r setup, include=F}
@@ -12,6 +12,6 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Trends - amount on beaches
+#### Maps - Sound monitoring and zoning areas
 
-`r insert_figure("human-dimensions_marine-debris.html", "figures/Figure S.P.4.3.png")`
+`r insert_figure("human-connections_sound.html", "figures/Figure P.2 OCNMS_PressuresMap_P2_04192021.jpg")`

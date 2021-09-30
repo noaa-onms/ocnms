@@ -51,7 +51,7 @@ gsheets_to_csvs <- function(gsheet, dir_csvs=here::here("data/gsheets")){
 create_svg_links <- function(
   modals_csv    = here::here("data/gsheets/modals.csv"),
   dir_modals    = "modals",
-  svg_links_csv = here::here("svg/_links.csv")){
+  svg_links_csv = here::here("svg/links.csv")){
   
   d <- readr::read_csv(modals_csv)
   

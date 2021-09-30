@@ -1,9 +1,9 @@
 ---
-title: "Human Dimensions"
+title: "Human Connections"
 params:
   csv: "svg/links.csv"
-  svg: "svg/human-dimensions.svg"
-  svg_filter: "human-dimensions"
+  svg: "svg/human-connections.svg"
+  svg_filter: "human-connections"
 ---
 
 ```{r setup, include=F}

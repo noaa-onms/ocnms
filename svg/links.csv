@@ -1,6 +1,6 @@
 svg,icon,link,title,not_modal
 index,deep-seafloor,deep-seafloor.html,Deep Seafloor,T
-index,human-dimensions,human-dimensions.html,Human Dimensions,T
+index,human-connections,human-connections.html,Human Connections,T
 index,kelp-forest,kelp-forest.html,Kelp Forest,T
 index,ocean-climate,ocean-climate.html,Ocean Climate,T
 index,pelagic,pelagic.html,Pelagic,T
@@ -19,13 +19,13 @@ deep-seafloor,roundfishes,modals/deep-seafloor_roundfishes.html,Roundfishes,F
 deep-seafloor,shad,modals/deep-seafloor_shad.html,Shad,F
 deep-seafloor,sharks-rays,modals/deep-seafloor_sharks-rays.html,Sharks and rays,F
 deep-seafloor,terrain-complexity,modals/deep-seafloor_terrain-complexity.html,Seafloor terrain complexity,F
-human-dimensions,contaminants,modals/human-dimensions_contaminants.html,Contaminants,F
-human-dimensions,vessels,modals/human-dimensions_vessels.html,Vessels,F
-human-dimensions,harvest,modals/human-dimensions_harvest.html,Harvest,F
-human-dimensions,seafloor-disturbance,modals/human-dimensions_seafloor-disturbance.html,Seafloor disturbance,F
-human-dimensions,marine-debris,modals/human-dimensions_marine-debris.html,Marine debris,F
-human-dimensions,wildlife-disturbance,modals/human-dimensions_wildlife-disturbance.html,Wildlife disturbance,F
-human-dimensions,sound,modals/human-dimensions_sound.html,Sound,F
+human-connections,contaminants,modals/human-connections_contaminants.html,Contaminants,F
+human-connections,vessels,modals/human-connections_vessels.html,Vessels,F
+human-connections,harvest,modals/human-connections_harvest.html,Harvest,F
+human-connections,seafloor-disturbance,modals/human-connections_seafloor-disturbance.html,Seafloor disturbance,F
+human-connections,marine-debris,modals/human-connections_marine-debris.html,Marine debris,F
+human-connections,wildlife-disturbance,modals/human-connections_wildlife-disturbance.html,Wildlife disturbance,F
+human-connections,sound,modals/human-connections_sound.html,Sound,F
 kelp-forest,benthic-invertebrates,modals/kelp-forest_benthic-invertebrates.html,Benthic invertebrates,F
 kelp-forest,contaminants,modals/kelp-forest_contaminants.html,Contaminants,F
 kelp-forest,fish-assemblage,modals/kelp-forest_fish-assemblage.html,Fish assemblage,F

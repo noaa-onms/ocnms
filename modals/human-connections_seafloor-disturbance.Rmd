@@ -14,12 +14,12 @@ source(here::here("infographiqR.R"))
 
 #### Maps - bottom contact frequency
 
-`r insert_figure("human-dimensions_seafloor-disturbance.html", "figures/Figure S.P.5.1.png")`
+`r insert_figure("human-connections_seafloor-disturbance.html", "figures/Figure S.P.5.1.png")`
 
 #### Maps - bottom contact Trends
 
-`r insert_figure("human-dimensions_seafloor-disturbance.html", "figures/Figure S.P.3.2.png")`
+`r insert_figure("human-connections_seafloor-disturbance.html", "figures/Figure S.P.3.2.png")`
 
 #### Maps - submarine cables
 
-`r insert_figure("human-dimensions_seafloor-disturbance.html", "figures/Figure P.8 OCNMS_Submarine_Cables_P7_04162021.jpg")`
+`r insert_figure("human-connections_seafloor-disturbance.html", "figures/Figure P.8 OCNMS_Submarine_Cables_P7_04162021.jpg")`

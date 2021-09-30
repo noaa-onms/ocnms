@@ -1,5 +1,5 @@
 ---
-pagetitle: "Sound"
+pagetitle: "Vessels"
 ---
 
 ```{r setup, include=F}
@@ -12,6 +12,6 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Maps - Sound monitoring and zoning areas
+#### Maps - Zoning
 
-`r insert_figure("human-dimensions_sound.html", "figures/Figure P.2 OCNMS_PressuresMap_P2_04192021.jpg")`
+`r insert_figure("human-connections_vessels.html", "figures/OCNMS_ATBA_TSS_SP23_04162021.jpg")`

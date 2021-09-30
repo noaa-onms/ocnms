@@ -14,8 +14,8 @@ source(here::here("infographiqR.R"))
 
 #### PAHs - mussels
 
-`r insert_figure("human-dimensions_contaminants.html", "figures/Figure S.H.11.2.PAHs_Mussel_Watch.jpg")`
+`r insert_figure("human-connections_contaminants.html", "figures/Figure S.H.11.2.PAHs_Mussel_Watch.jpg")`
 
 #### POPs - prey fish
 
-`r insert_figure("human-dimensions_contaminants.html", "figures/Figure S.H.11.1.Contaminants_in_prey_fish.jpg")`
+`r insert_figure("human-connections_contaminants.html", "figures/Figure S.H.11.1.Contaminants_in_prey_fish.jpg")`
