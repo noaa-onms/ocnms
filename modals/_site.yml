@@ -3,4 +3,4 @@ output:
     self_contained: false
     lib_dir: _libs
     mathjax: null
-    
+output_dir: "."    
