@@ -4,7 +4,8 @@ if (!require("librarian")){
   library(librarian)
 }
 shelf(
-  dplyr, fs, glue, here, googledrive, googlesheets4, htmltools, knitr, purrr, readr, rmarkdown, stringr, tibble, tidyr)
+  dplyr, dygraphs, fs, glue, here, googledrive, googlesheets4, htmltools, knitr, 
+  noaa-onms/onmsR, purrr, readr, rmarkdown, stringr, tibble, tidyr)
 here <- here::here
 
 # set variables -----
@@ -374,7 +375,9 @@ create_modals <- function(
   # modals_csv  = here::here("data/gsheets/modals.csv"); figures_csv = here::here("data/gsheets/figures.csv")
   
   d_modals  <- readr::read_csv(modals_csv, show_col_types = F) %>% 
-    filter(!not_modal)
+    filter(
+      !not_modal,
+      !dynamic_modal)
   d_figures <- readr::read_csv(figures_csv, show_col_types = F)
   
   if (!dir.exists(dir_modals))

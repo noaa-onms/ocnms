@@ -1,13 +1,8 @@
----
-pagetitle: "Barnacles"
----
 
-```{r setup, include=F}
+```{r, include=F}
 knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
-source(here::here("infographiqR.R"))
+source(here::here("../cinms/scripts/rocky.R"))
 ```
-
-`r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
 ## {.tabset}
 
@@ -20,8 +15,6 @@ map_nms_sites("ocnms")
 ### Acorn Barnacles (_Chthamalus dalli/fissus/Balanus glandula_) {.active}
 
 ```{r}
-d_csv <- here("data/rocky-intertidal_MARINe/sanctuary_species_percentcover.csv")
-
 plot_intertidal_nms(d_csv, "OCNMS", "CHTBAL", "Acorn Barnacles") %>%
   dyLegend(show="follow")
 ```
@@ -32,4 +25,3 @@ plot_intertidal_nms(d_csv, "OCNMS", "CHTBAL", "Acorn Barnacles") %>%
 plot_intertidal_nms(d_csv, "OCNMS", "CHTBAL", "Acorn Barnacles [target = balanus]", c("balanus", "chthamalus_balanus")) %>% 
   dyLegend(show="follow")
 ```
-
