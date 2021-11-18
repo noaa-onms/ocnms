@@ -9,8 +9,22 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
-
 ### {.tabset}
+
+### Map of Sites
+
+```{r}
+map_nms_sites("ocnms")
+```
+
+### Ochre Seastar (_Pisaster ochraceus_) {.active}
+
+```{r}
+d_csv <- here("data/rocky-intertidal_MARINe/sanctuary_species_percentcover.csv")
+
+plot_intertidal_nms(nms_spp_sscount_csv, "OCNMS", "PISOCH", "Ochre Seastar", fld_val = "count", label_y = "Count (annual avg)") %>% 
+  dyLegend(show="follow")
+```
 
 #### Trends - abundance (MARINe)
 
