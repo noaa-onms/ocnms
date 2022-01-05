@@ -1,5 +1,5 @@
 ---
-pagetitle: "NA"
+pagetitle: "Shellfish closures"
 ---
 
 ```{r setup, include=F}
@@ -26,8 +26,8 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Kalaloch Domoic Acid Levels
 
-`r insert_figure("sandy-beach_shellfish-closures.html", "figures/S_WQ_Q7_2_DA_RazorClam_Kalaloch_WDFW.JPG")`
+`r insert_figure("sandy-beach_shellfish-closures.html", "figures/DA_Kalaloch_WDFW.JPG")`
 
 #### Trends - Mocrocks Domoic Acid Levels
 
-`r insert_figure("sandy-beach_shellfish-closures.html", "figures/S_WQ_Q7_3_DA_RazorClams_Mocrocks_WDEW.JPG")`
+`r insert_figure("sandy-beach_shellfish-closures.html", "figures/DA_Mocrocks_WDFW.JPG")`

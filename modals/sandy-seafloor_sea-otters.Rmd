@@ -9,3 +9,9 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
+
+### {.tabset}
+
+#### Trends - USFWS
+
+`r insert_figure("sandy-seafloor_sea-otters.html", "figures/S.LR.12.4 - Number of Sea Otters.jpg")`

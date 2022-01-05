@@ -9,3 +9,37 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
+
+### {.tabset}
+
+#### Fishing, personal use
+
+`r insert_figure("human-connections_harvest.html", "figures/Figure ES.SH.1 Subsistence.png")`
+
+#### Map - at-sea fish processing discharge
+
+`r insert_figure("human-connections_harvest.html", "figures/Figure R.2_EPA_Daily_Vessel_Locations_2019.jpg")`
+
+#### Trends - # vessels in salmon troll fleet
+
+`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.8 Troll vessels.png")`
+
+#### Trends - biomass halibut
+
+`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.1 IPHC catch area.png")`
+
+#### Trends - Dcrab catch, revenue
+
+`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.3 D crab.png")`
+
+#### Trends - salmon troll species groups
+
+`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.9 Total revenue by management group.png")`
+
+#### Trends - total bottom trawling
+
+`r insert_figure("human-connections_harvest.html", "figures/Figure S.P.3.1 Distance IEA time series plots in ocnms.png")`
+
+#### Trends - whiting catch
+
+`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.2 Whiting.png")`

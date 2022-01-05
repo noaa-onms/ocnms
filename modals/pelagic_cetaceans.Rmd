@@ -14,11 +14,15 @@ source(here::here("infographiqR.R"))
 
 #### Maps - density comparison
 
-`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.17 - Comparison of predicted densities for blue, fin and humpback whales.jpg")`
+`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.17.jpg")`
 
 #### Maps - fin whale
 
 `r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.15 - Map Sightings Fin Whale 1991-2014.jpg")`
+
+#### Maps - gray whales
+
+`r insert_figure("pelagic_cetaceans.html", "figures/Figure Appendix S.LR.13.13 Panel 1 - Map Density of gray whales 2005-2011jpg.jpg")`
 
 #### Maps - humpback whales
 

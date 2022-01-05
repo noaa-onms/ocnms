@@ -16,9 +16,9 @@ source(here::here("infographiqR.R"))
 
 `r insert_figure("ocean-climate_nutrients-phytoplankton.html", "figures/S_WQ_Q6_1_Conceptual framework or environmental conditions for HABs in the OCNMS Hickey et al 2013.jpg")`
 
-#### Trends - Chlorophyll anomaly
+#### Maps - streamflow, sediments, N, P
 
-`r insert_figure("ocean-climate_nutrients-phytoplankton.html", "figures/S_WQ_Q6_2_Chlorophyll_a_COPEPOD.JPG")`
+`r insert_figure("ocean-climate_nutrients-phytoplankton.html", "figures/S.WQ.6.5 Sparrow_USGS.png")`
 
 #### Trends -Columbia River loading
 

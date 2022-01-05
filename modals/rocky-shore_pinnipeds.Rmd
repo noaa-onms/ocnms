@@ -9,3 +9,13 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
+
+### {.tabset}
+
+#### Maps - Stellar sea lion haul-outs
+
+`r insert_figure("rocky-shore_pinnipeds.html", "figures/S.LR.13.9 - Stellar sea lion haulouts in OCNMS.jpg")`
+
+#### Trends - Stellar sea lion abundance
+
+`r insert_figure("rocky-shore_pinnipeds.html", "figures/S.LR.13.9 - Stellar sea lion abundance 1989-2013.jpg")`
