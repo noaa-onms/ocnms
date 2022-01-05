@@ -96,16 +96,21 @@ add_gimage_paths <- function(
     #browser()
     # glink = "https://drive.google.com/file/d/1u_-SA9OSjFUOuxzKs5ESUZCmnv-i0xCg/view?usp=sharing"
     # glink = "https://drive.google.com/file/d/1bWyZOGzZQvcaESC5Y3vX9uDL9NRjVsyn/view?usp=sharing"
+    #glink = "link is to shared drive at HQ: \\\\aamb-s-clust01\\Shared_Data\\ONMS\\Socioeconomic\\Olympic Coast NMS\\Condition Report 2019\\Final Excel Files with Graphs for CR June 2021"
+    message(glue("get_image_path(): {glink}"))
+    # glink = "https://docs.google.com/document/d/1PqeKj8L94i8lpioG9BtW9Bz63ovf20BE3ceMwacBXNA/edit?usp=sharing"
     
     gd <- try(googledrive::drive_get(glink), silent = T)
-    if ("try-error" %in% class(gd))
+    if ("try-error" %in% class(gd) || nrow(gd)==0)
       return(NA)
     fname <- gd %>% pull(name)
     fpath <- file.path(dir_figures, fname)
     
     # TODO: what if image changes but not file path?
     if (!file.exists(fpath)){
-      drive_download(glink, fpath)
+      gd <- try(drive_download(glink, fpath))
+      if ("try-error" %in% class(gd))
+        return(NA)
     }
     
     # strip dir_modal, so from modal figure is found
@@ -131,6 +136,11 @@ gdrive2path <- function(gdrive_shareable_link, get_relative_path = T, relative_p
   # gdrive_shareable_link <- tbl$gdrive_shareable_link; get_relative_path = T; redo = F
   # gdrive_shareable_link <- sound$sound_enhancement; get_relative_path = T; relative_pfx = "../", redo = F, skip_spectrogram = T; redo = F
   
+  #message(glue("gdrive2path(): {gdrive_shareable_link}"))
+  # if (gdrive_shareable_link == "link is to shared drive at HQ: \\\\aamb-s-clust01\\Shared_Data\\ONMS\\Socioeconomic\\Olympic Coast NMS\\Condition Report 2019\\Final Excel Files with Graphs for CR June 2021"){
+  #   browser()
+  # }
+  
   regex <- ifelse(
     str_detect(gdrive_shareable_link, "/file/"),
     "https://drive.google.com/file/d/(.*)/view.*",
@@ -142,7 +152,6 @@ gdrive2path <- function(gdrive_shareable_link, get_relative_path = T, relative_p
   
   message(glue("gdrive_shareable_link: {gdrive_shareable_link}"))
   message(glue("  gid: {gid}"))
-  
   
   if (class(fname) == "try-error")
     return(NA)

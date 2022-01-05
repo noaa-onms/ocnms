@@ -14,11 +14,11 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Kalaloch Beach
 
-`r insert_figure("sandy-beach_razor-clams.html", "figures/S.LR.13.3 - Razor Clam density Kalaloch 1997-2019.jpg")`
+`r insert_figure("sandy-beach_razor-clams.html", "figures/RazorClam_densityKalaloch.png")`
 
 #### Trends - Mocrocks Beach
 
-`r insert_figure("sandy-beach_razor-clams.html", "figures/Appendix S.LR.13.1 - Razor clam density Mocrocks 1997-2019.jpg")`
+`r insert_figure("sandy-beach_razor-clams.html", "figures/Mocrocks.Density,Historical (1).jpg")`
 
 #### Trends - Pt. Grenville
 

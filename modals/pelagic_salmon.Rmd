@@ -12,6 +12,10 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
+#### Trends - adult Chinook salmon
+
+`r insert_figure("pelagic_salmon.html", "figures/S.LR.13.12_NorthofFalcon.png")`
+
 #### Trends - blueback salmon
 
 `r insert_figure("pelagic_salmon.html", "figures/S.LR.13.13b - Status of Quinault Blueback Salmon.jpg")`
