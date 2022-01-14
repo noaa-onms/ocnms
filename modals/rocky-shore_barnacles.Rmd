@@ -17,18 +17,16 @@ source(here::here("infographiqR.R"))
 map_nms_sites("ocnms")
 ```
 
-`r insert_figure("rocky-shore_barnacles.html)`
 
 ### Acorn Barnacles (_Chthamalus dalli/fissus/Balanus glandula_) {.active}
 
 ```{r}
-d_csv <- here("data/rocky-intertidal_MARINe/sanctuary_species_percentcover.csv")
+d_csv <- here("data/rocky-intertidal_MARINe/sanctuary_species_percentcover_new.csv")
 
 plot_intertidal_nms(d_csv, "OCNMS", "CHTBAL", "Acorn Barnacles") %>%
   dyLegend(show="follow")
 ```
 
-`r insert_figure("rocky-shore_barnacles.html)`
 
 ### Acorn Barnacles (_Chthamalus dalli/fissus/Balanus glandula_), target = balanus
 
