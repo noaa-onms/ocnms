@@ -8,7 +8,7 @@ shelf(
   noaa-onms/onmsR, purrr, readr, rmarkdown, stringr, tibble, tidyr)
 here <- here::here
 
-# set variables -----
+# set variables ----- 
 
 gsheet <- "https://docs.google.com/spreadsheets/d/1C5YAp77WcnblHoIRwA_rloAagkLn0gDcJCda8E8Efu4/edit"
 # expecting Google sheets: scenes, modals, glossary
