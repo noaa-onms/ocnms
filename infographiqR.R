@@ -18,8 +18,14 @@ skip_drive_auth <- F
 #   after Sharing with its email: shares@nms4gargle.iam.gserviceaccount.com
 if (Sys.getenv("GITHUB_ACTIONS") == ""){
   message("GITHUB_ACTIONS environmental variable is empty")
-  google_sa_json <- "/Users/bbest/My Drive (ben@ecoquants.com)/projects/nms-web/data/nms4gargle-774a9e9ec703.json"
-  google_sa_json <- "/Users/PikesStuff/Theseus/Private/nms4gargle-774a9e9ec703.json"
+  
+  google_sa_json <- switch(
+    Sys.info()[['user']],
+    # download from: https://drive.google.com/drive/u/1/folders/1k7DZBGTm4f8w4ppXdURSw67tnvzW4DsK
+    bbest       = "/Users/bbest/My Drive (ben@ecoquants.com)/projects/nms-web/data/nms4gargle-774a9e9ec703.json",
+    jaira       = "",
+    PikesStuff  = "/Users/PikesStuff/Theseus/Private/nms4gargle-774a9e9ec703.json")
+  
   stopifnot(file.exists(google_sa_json))
   gsa_json_text <- readLines(google_sa_json) %>% paste(sep="\n")
 } else {
@@ -97,13 +103,13 @@ add_gimage_paths <- function(
     # glink = "https://drive.google.com/file/d/1u_-SA9OSjFUOuxzKs5ESUZCmnv-i0xCg/view?usp=sharing"
     # glink = "https://drive.google.com/file/d/1bWyZOGzZQvcaESC5Y3vX9uDL9NRjVsyn/view?usp=sharing"
     #glink = "link is to shared drive at HQ: \\\\aamb-s-clust01\\Shared_Data\\ONMS\\Socioeconomic\\Olympic Coast NMS\\Condition Report 2019\\Final Excel Files with Graphs for CR June 2021"
-    message(glue("get_image_path(): {glink}"))
     # glink = "https://docs.google.com/document/d/1PqeKj8L94i8lpioG9BtW9Bz63ovf20BE3ceMwacBXNA/edit?usp=sharing"
     
     gd <- try(googledrive::drive_get(glink), silent = T)
     if ("try-error" %in% class(gd) || nrow(gd)==0)
       return(NA)
-    fname <- gd %>% pull(name)
+    #message(glue("get_image_path(): {glink}"))
+    fname <- gd %>% pull(name) %>% str_replace_all(fixed("*"), "")
     fpath <- file.path(dir_figures, fname)
     
     # TODO: what if image changes but not file path?
