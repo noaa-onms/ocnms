@@ -1,4 +1,5 @@
 source("infographiqR.R")
+remotes::install_github("noaa-onms/onmsR")
 
 # update site ----
 gsheets_to_csvs(gsheet) # downloads the Google Sheet tabs into seperate CSVs for quick reading
