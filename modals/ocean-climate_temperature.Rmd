@@ -12,14 +12,14 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Maps - 2019 marine heatwave
-
-`r insert_figure("ocean-climate_temperature.html", "figures/Figure S.H.10.4_Marine Heat Wave.JPG")`
-
-#### Maps - marine heatwave 2014/2019 comparison
+#### Maps - Marine heatwave 2014/2019 comparison
 
 `r insert_figure("ocean-climate_temperature.html", "figures/S_WQ_8_6_SST anomaly heat maps Blob 2014 and 2019.png")`
 
-#### Trends - subsurface temp anomalies
+#### Maps - Marine heatwave 2019
+
+`r insert_figure("ocean-climate_temperature.html", "figures/Figure S.H.10.4_Marine Heat Wave.JPG")`
+
+#### Trends - Subsurface temperatuve
 
 `r insert_figure("ocean-climate_temperature.html", "figures/Figure S_WQ_8_4_SST anomalies profile 1980-2019.png")`

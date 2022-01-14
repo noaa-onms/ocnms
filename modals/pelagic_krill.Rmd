@@ -12,6 +12,6 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Maps - distribution
+#### Maps - Krill distribution
 
 `r insert_figure("pelagic_krill.html", "figures/Appendix S.LR.12.6 - Distributions of krill off OR and southern WA May-June 2011-2019.jpg")`

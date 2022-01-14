@@ -1,5 +1,5 @@
 ---
-pagetitle: "Nutrients and Phytoplankton"
+pagetitle: "Nutrients and phytoplankton"
 ---
 
 ```{r setup, include=F}
@@ -16,10 +16,6 @@ source(here::here("infographiqR.R"))
 
 `r insert_figure("ocean-climate_nutrients-phytoplankton.html", "figures/S_WQ_Q6_1_Conceptual framework or environmental conditions for HABs in the OCNMS Hickey et al 2013.jpg")`
 
-#### Maps - streamflow, sediments, N, P
+#### Maps - Streamflow, sediments, N, P
 
 `r insert_figure("ocean-climate_nutrients-phytoplankton.html", "figures/S.WQ.6.5 Sparrow_USGS.png")`
-
-#### Trends -Columbia River loading
-
-`r insert_figure("ocean-climate_nutrients-phytoplankton.html", "figures/S_WQ_6_5 Load trend for N and P Columbia River 2002-2012.jpg")`

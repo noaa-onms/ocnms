@@ -12,6 +12,6 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Trends - abundance spawners
+#### Trends - Abundance spawners
 
 `r insert_figure("pelagic_eulachon.html", "figures/Appendix S.LR.13.12 - Number of spawning Eulachon 2011-2018.jpg")`

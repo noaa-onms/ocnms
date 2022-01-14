@@ -1,0 +1,25 @@
+---
+pagetitle: "Science"
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("infographiqR.R"))
+```
+
+`r insert_info(csv = here::here("data/gsheets/modals.csv"))`
+
+
+### {.tabset}
+
+#### Community science activities
+
+`r insert_figure("human-connections_science.html", "figures/Figure ES.S.3 Sci Hours by Project-pie chart.jpg")`
+
+#### Trends - Community science
+
+`r insert_figure("human-connections_science.html", "figures/Figure ES.S.4 Sci hours and count.jpg")`
+
+#### Trends - R/V Tatoosh activity
+
+`r insert_figure("human-connections_science.html", "figures/Figure ES.S.2._Tatoosh hours and days at sea by year.jpg")`

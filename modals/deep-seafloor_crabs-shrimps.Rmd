@@ -12,6 +12,6 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Trends - Dcrab abundance
+#### Trends - Dungeness crab
 
 `r insert_figure("deep-seafloor_crabs-shrimps.html", "figures/log_ocnms_Cancer magister_2003-2019.png")`

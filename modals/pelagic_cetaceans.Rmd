@@ -10,36 +10,52 @@ source(here::here("infographiqR.R"))
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
 
+# {.tabset}
+  
+## Fin whales
+
 ### {.tabset}
 
-#### Maps - density comparison
-
-`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.17.jpg")`
-
-#### Maps - fin whale
+#### Maps - Fin whales
 
 `r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.15 - Map Sightings Fin Whale 1991-2014.jpg")`
 
-#### Maps - gray whales
+#### Trends - Fin whales
+
+`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.15 - Abundance Fin Whale 1991-2014.jpg")`
+  
+## Grey whales
+
+### {.tabset}
+
+#### Maps - Gray whales
 
 `r insert_figure("pelagic_cetaceans.html", "figures/Figure Appendix S.LR.13.13 Panel 1 - Map Density of gray whales 2005-2011jpg.jpg")`
 
-#### Maps - humpback whales
-
-`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.16 - Map Sightings of humpback whales off US west coast 1991-2014.jpg")`
-
-#### Trends - fin whale
-
-`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.15 - Abundance Fin Whale 1991-2014.jpg")`
-
-#### Trends - gray whale strandings
+#### Trends - Gray whale strandings
 
 `r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.18 - Gray whale strandings 2019-2020.jpg")`
 
-#### Trends - gray whales
+#### Trends - Gray whales
 
 `r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.14 - Density of gray whales 2005-2011jpg.jpg")`
+  
+## Humpback whales
 
-#### Trends - humpback whale
+### {.tabset}
+
+#### Maps - Humpback whales
+
+`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.16 - Map Sightings of humpback whales off US west coast 1991-2014.jpg")`
+
+#### Trends - Humpback whales
 
 `r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.16 - Figure Sightings of humpback whales off US west coast 1991-2014.jpg")`
+  
+## 
+
+### {.tabset}
+
+#### Maps - Density comparison
+
+`r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.17.jpg")`

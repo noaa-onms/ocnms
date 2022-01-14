@@ -12,14 +12,10 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Trends - adult Chinook salmon
-
-`r insert_figure("pelagic_salmon.html", "figures/S.LR.13.12_NorthofFalcon.png")`
-
-#### Trends - blueback salmon
+#### Trends - Blueback salmon
 
 `r insert_figure("pelagic_salmon.html", "figures/S.LR.13.13b - Status of Quinault Blueback Salmon.jpg")`
 
-#### Trends - salmonid populations
+#### Trends - Chinook salmon
 
-`r insert_figure("pelagic_salmon.html", "figures/S.LR.13.13a - Status of Salmon and Stealhead on WA coast 2018.jpg")`
+`r insert_figure("pelagic_salmon.html", "figures/S.LR.13.12_NorthofFalcon.png")`

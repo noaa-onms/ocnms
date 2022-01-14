@@ -12,14 +12,14 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Maps - bottom contact frequency
-
-`r insert_figure("human-connections_seafloor-disturbance.html", "figures/Figure S.P.5.1.png")`
-
-#### Maps - bottom contact Trends
+#### Map - Bottom trawling intensity
 
 `r insert_figure("human-connections_seafloor-disturbance.html", "figures/Figure S.P.3.2.png")`
 
-#### Maps - submarine cables
+#### Maps - Submarine cables
 
 `r insert_figure("human-connections_seafloor-disturbance.html", "figures/Figure P.8 OCNMS_Submarine_Cables_P7_04162021.jpg")`
+
+#### Trends - Total bottom trawling
+
+`r insert_figure("human-connections_seafloor-disturbance.html", "figures/Figure S.P.3.1 Distance IEA time series plots in ocnms.png")`

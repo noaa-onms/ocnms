@@ -16,7 +16,7 @@ source(here::here("infographiqR.R"))
 
 `r insert_figure("pelagic_pinnipeds.html", "figures/S.LR.13.9 - Stellar sea lion haulouts in OCNMS.jpg")`
 
-#### Trends - harbor seal abundance
+#### Trends - Harbor seal abundance
 
 `r insert_figure("pelagic_pinnipeds.html", "figures/Appendix S.LR.13.13 - Number of at sea pacific harbor seals off WA 2008-2019.jpg")`
 

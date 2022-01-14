@@ -19,15 +19,23 @@ deep-seafloor,roundfishes,modals/deep-seafloor_roundfishes.html,Roundfishes,F
 deep-seafloor,shad,modals/deep-seafloor_shad.html,Shad,F
 deep-seafloor,sharks-rays,modals/deep-seafloor_sharks-rays.html,Sharks and rays,F
 deep-seafloor,terrain-complexity,modals/deep-seafloor_terrain-complexity.html,Seafloor terrain complexity,F
+human-connections,aquaculture,modals/human-connections_aquaculture.html,Aquaculture,F
 human-connections,contaminants,modals/human-connections_contaminants.html,Contaminants,F
-human-connections,vessels,modals/human-connections_vessels.html,Vessels,F
+human-connections,education-engagement,modals/human-connections_education-engagement.html,Education and engagement,F
+human-connections,energy,modals/human-connections_energy.html,Energy,F
 human-connections,harvest,modals/human-connections_harvest.html,Harvest,F
-human-connections,seafloor-disturbance,modals/human-connections_seafloor-disturbance.html,Seafloor disturbance,F
+human-connections,heritage,modals/human-connections_heritage.html,Heritage,F
 human-connections,marine-debris,modals/human-connections_marine-debris.html,Marine debris,F
+human-connections,military-activity,modals/human-connections_military-activity.html,Military activity,F
+human-connections,nonconsumptive-recreation,modals/human-connections_nonconsumptive-recreation.html,Non-consumptive recreation,F
+human-connections,ocean-sound,modals/human-connections_ocean-sound.html,Ocean sound,F
+human-connections,science,modals/human-connections_science.html,Science,F
+human-connections,seafloor-disturbance,modals/human-connections_seafloor-disturbance.html,Seafloor disturbance,F
+human-connections,sense-place,modals/human-connections_sense-place.html,Sense of place,F
+human-connections,spills-discharges,modals/human-connections_spills-discharges.html,Spills and discharges,F
+human-connections,vessels,modals/human-connections_vessels.html,Vessels,F
 human-connections,wildlife-disturbance,modals/human-connections_wildlife-disturbance.html,Wildlife disturbance,F
-human-connections,sound,modals/human-connections_sound.html,Sound,F
 kelp-forest,benthic-invertebrates,modals/kelp-forest_benthic-invertebrates.html,Benthic invertebrates,F
-kelp-forest,contaminants,modals/kelp-forest_contaminants.html,Contaminants,F
 kelp-forest,fish-assemblage,modals/kelp-forest_fish-assemblage.html,Fish assemblage,F
 kelp-forest,kelp-canopy,modals/kelp-forest_kelp-canopy.html,Kelp canopy,F
 kelp-forest,rock-cover,modals/kelp-forest_rock-cover.html,Rock cover,F
@@ -35,9 +43,13 @@ kelp-forest,sea-otters,modals/kelp-forest_sea-otters.html,Sea otters,F
 kelp-forest,sea-stars,modals/kelp-forest_sea-stars.html,Sea stars,F
 kelp-forest,sea-urchins,modals/kelp-forest_sea-urchins.html,Sea urchins,F
 kelp-forest,understory-algae,modals/kelp-forest_understory-algae.html,Understory algae,F
-ocean-climate,nutrients-phytoplankton,modals/ocean-climate_nutrients-phytoplankton.html,Nutrients and Phytoplankton,F
+ocean-climate,nutrients-phytoplankton,modals/ocean-climate_nutrients-phytoplankton.html,Nutrients and phytoplankton,F
 ocean-climate,oceanographic-index,modals/ocean-climate_oceanographic-index.html,Oceanographic Indexes,F
 ocean-climate,temperature,modals/ocean-climate_temperature.html,Temperature,F
+ocean-climate,dissolved-oxygen,modals/ocean-climate_dissolved-oxygen.html,Dissolved oxygen,F
+ocean-climate,ocean-acidification,modals/ocean-climate_ocean-acidification.html,Ocean acidification,F
+ocean-climate,water-chemistry,modals/ocean-climate_water-chemistry.html,Water chemistry,F
+ocean-climate,physical-processes,modals/ocean-climate_physical-processes.html,Physical processes,F
 pelagic,cetaceans,modals/pelagic_cetaceans.html,Cetaceans,F
 pelagic,eulachon,modals/pelagic_eulachon.html,Eulachon,F
 pelagic,forage-fish,modals/pelagic_forage-fish.html,Forage fish,F

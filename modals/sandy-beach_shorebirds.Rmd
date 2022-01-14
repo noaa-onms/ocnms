@@ -9,3 +9,13 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
+
+### {.tabset}
+
+#### Trends - Cassin's Auklet carcasses
+
+`r insert_figure("sandy-beach_shorebirds.html", "figures/Appendix S.LR.13.11 - Encounter rates for dead Cassins auklet 2001-2018.jpg")`
+
+#### Trends - Common Murre carcasses
+
+`r insert_figure("sandy-beach_shorebirds.html", "figures/Appendix S.LR.13.9 - Encounter rates for dead common murres 2008-2020.jpg")`

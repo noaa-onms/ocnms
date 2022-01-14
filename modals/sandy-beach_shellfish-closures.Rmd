@@ -12,15 +12,11 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Trends - biotoxin closures
+#### Trends - Biotoxin closures
 
 `r insert_figure("sandy-beach_shellfish-closures.html", "figures/S_WQ_Q7_6_ClosuresDays_by_Biotoxins_OCNMS_DOH.JPG")`
 
-#### Trends - CCIEA Mocrocks DA
-
-`r insert_figure("sandy-beach_shellfish-closures.html", "figures/S_WQ_Q7_4_MaxDA_RazorClams_Mocrocks_CCIEA.JPG")`
-
-#### Trends - DA all beaches (CCIEA)
+#### Trends - Domoic Acid, all beaches (CCIEA)
 
 `r insert_figure("sandy-beach_shellfish-closures.html", "figures/S_WQ_Q7_5_MaxDA_RazorClams_WA_Coast_CCIEA.JPG")`
 
@@ -28,6 +24,10 @@ source(here::here("infographiqR.R"))
 
 `r insert_figure("sandy-beach_shellfish-closures.html", "figures/DA_Kalaloch_WDFW.JPG")`
 
-#### Trends - Mocrocks Domoic Acid Levels
+#### Trends - Mocrocks Domoic Acid Levels (CCIEA)
+
+`r insert_figure("sandy-beach_shellfish-closures.html", "figures/S_WQ_Q7_4_MaxDA_RazorClams_Mocrocks_CCIEA.JPG")`
+
+#### Trends - Mocrocks Domoic Acid Levels (WDFW)
 
 `r insert_figure("sandy-beach_shellfish-closures.html", "figures/DA_Mocrocks_WDFW.JPG")`

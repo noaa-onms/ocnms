@@ -12,6 +12,6 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Trends - swimming closures
+#### Trends - Swimming closures
 
 `r insert_figure("sandy-beach_advisories-closures.html", "figures/beachclosures.png")`

@@ -12,6 +12,6 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Trends - amount on beaches
+#### Trends - Debris on beaches
 
 `r insert_figure("human-connections_marine-debris.html", "figures/Figure S.P.4.3. Avg count md 2008-19.jpg")`

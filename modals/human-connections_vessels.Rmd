@@ -12,30 +12,14 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Map - petroleum movement
-
-`r insert_figure("human-connections_vessels.html", "figures/Figure P.4 ECY Oil movement.png")`
-
-#### Map - sunken vessels
-
-`r insert_figure("human-connections_vessels.html", "figures/SH.7 Shipwrecks.png")`
-
-#### Map - Tenyo Maru oil spill
-
-`r insert_figure("human-connections_vessels.html", "figures/Figure P.6 Tenyo Maru.png")`
-
-#### Map - vessel density
+#### Map - Vessel density
 
 `r insert_figure("human-connections_vessels.html", "figures/Figure P.3 Vessel Traffic NWTT.png")`
 
-#### Maps - Zoning
+#### Map - Vessel zoning
 
 `r insert_figure("human-connections_vessels.html", "figures/OCNMS_ATBA_TSS_SP23_04162021.jpg")`
 
-#### Trends - petroleum movement
-
-`r insert_figure("human-connections_vessels.html", "figures/Figure P.5 ECY Total Oil moved.png")`
-
-#### Trends - Seattle cruise passengers
+#### Trends - Cruise passengers
 
 `r insert_figure("human-connections_vessels.html", "figures/Figure P.7 Cruise Ships.png")`

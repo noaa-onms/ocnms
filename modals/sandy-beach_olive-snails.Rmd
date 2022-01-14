@@ -12,10 +12,6 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Maps - density Makah Bay
+#### Maps - Density at Makah Bay
 
-`r insert_figure("sandy-beach_olive-snails.html", "figures/Appendix S.LR.13.2 - Purple olive snail density Makah Bay 2014-2015.jpg")`
-
-#### Maps - density Makah Bay
-
-`r insert_figure("sandy-beach_olive-snails.html", "figures/Appendix S.LR.13.2 - Purple olive snail density Makah Bay 2016-2017.jpg")`
+`r insert_figure("sandy-beach_olive-snails.html", "figures/Appendix S.L.R.13.2 - Purple olive snail 2014-2017.png")`

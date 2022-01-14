@@ -9,9 +9,3 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
-
-### {.tabset}
-
-#### Map - EMUs
-
-`r insert_figure("deep-seafloor_terrain-complexity.html", "figures/SH.4 CMECS_EMUs.jpg")`

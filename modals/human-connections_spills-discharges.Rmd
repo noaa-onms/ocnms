@@ -1,0 +1,29 @@
+---
+pagetitle: "Spills and discharges"
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("infographiqR.R"))
+```
+
+`r insert_info(csv = here::here("data/gsheets/modals.csv"))`
+
+
+### {.tabset}
+
+#### Map - At-sea fish processing discharge
+
+`r insert_figure("human-connections_spills-discharges.html", "figures/Figure R.2_EPA_Daily_Vessel_Locations_2019.jpg")`
+
+#### Map - Petroleum movement
+
+`r insert_figure("human-connections_spills-discharges.html", "figures/Figure P.4 ECY Oil movement.png")`
+
+#### Map - Tenyo Maru oil spill
+
+`r insert_figure("human-connections_spills-discharges.html", "figures/Figure P.6 Tenyo Maru.png")`
+
+#### Trends - Petroleum movement
+
+`r insert_figure("human-connections_spills-discharges.html", "figures/Figure P.5 ECY Total Oil moved.png")`

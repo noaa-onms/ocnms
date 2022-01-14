@@ -22,17 +22,11 @@ map_nms_sites("ocnms")
 ```{r}
 d_csv <- here("data/rocky-intertidal_MARINe/sanctuary_species_percentcover.csv")
 
-plot_intertidal_nms(d_csv, "OCNMS", "MYTCAL", "California Mussels") %>%
-  dyLegend(show="follow")
-```
-
-### California Mussels (_Mytilus californianus_), target = mytilus
-
-```{r}
 plot_intertidal_nms(d_csv, "OCNMS", "MYTCAL", "California Mussels [target = mytilus]", "mytilus") %>%
   dyLegend(show="follow")
 ```
 
-#### Trends - condition
+
+### Trends - condition
 
 `r insert_figure("rocky-shore_mussels.html", "figures/S.LR.12.5 - Mussell shell thickness.jpg")`

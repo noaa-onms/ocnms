@@ -9,9 +9,3 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
-
-### {.tabset}
-
-#### Trends - abundance
-
-`r insert_figure("deep-seafloor_flatfishes.html", "figures/Appendix S.LR.13.3 - CPUE for flatfish 2003-2018 in OCNMS.jpg")`

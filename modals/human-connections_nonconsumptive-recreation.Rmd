@@ -1,0 +1,11 @@
+---
+pagetitle: "Non-consumptive recreation"
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo=F, message=F, warning=F, error=F)
+source(here::here("infographiqR.R"))
+```
+
+`r insert_info(csv = here::here("data/gsheets/modals.csv"))`
+

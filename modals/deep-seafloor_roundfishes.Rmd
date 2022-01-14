@@ -12,10 +12,10 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Trends - abundance all roundfish
+#### Trends - All roundfish
 
 `r insert_figure("deep-seafloor_roundfishes.html", "figures/Appendix S.LR.13.4 - CPUE for roundfish in OCNMS 2003-2018.jpg")`
 
-#### Trends - lingcod abundance
+#### Trends - Lingcod
 
 `r insert_figure("deep-seafloor_roundfishes.html", "figures/Appendix S.LR.13.6 - CPUE for lingcod in OCNMS 2003-2018.jpg")`
