@@ -20,7 +20,7 @@ map_nms_sites("ocnms")
 ### California Mussels (_Mytilus californianus_), target = ANY {.active}
 
 ```{r}
-d_csv <- here("data/rocky-intertidal_MARINe/sanctuary_species_percentcover.csv")
+d_csv <- here("data/rocky-intertidal_MARINe/sanctuary_species_percentcover_new.csv")
 
 plot_intertidal_nms(d_csv, "OCNMS", "MYTCAL", "California Mussels [target = mytilus]", "mytilus") %>%
   dyLegend(show="follow")

@@ -19,8 +19,8 @@ map_nms_sites("ocnms")
 
 ### Ochre Seastar (_Pisaster ochraceus_) {.active}
 
-```{r}
-d_csv <- here("data/rocky-intertidal_MARINe/sanctuary_species_percentcover.csv")
+```{r, eval=F}
+d_csv <- here("data/rocky-intertidal_MARINe/sanctuary_species_percentcover_new.csv") # missing count column though
 
 plot_intertidal_nms(nms_spp_sscount_csv, "OCNMS", "PISOCH", "Ochre Seastar", fld_val = "count", label_y = "Count (annual avg)") %>% 
   dyLegend(show="follow")
@@ -28,7 +28,7 @@ plot_intertidal_nms(nms_spp_sscount_csv, "OCNMS", "PISOCH", "Ochre Seastar", fld
 
 #### Trends - abundance (MARINe)
 
-`r insert_figure("rocky-shore_ochre-star.html", "figures/S.LR.12.1 - Abundance of Pisaster ochraceus.jpg")`
+`r insert_figure("rocky-shore_ochre-star.html", "figures/S.LR.12.1.png")`
 
 #### Trends - size at Pt. Grenville
 
@@ -38,10 +38,12 @@ plot_intertidal_nms(nms_spp_sscount_csv, "OCNMS", "PISOCH", "Ochre Seastar", fld
 
 `r insert_figure("rocky-shore_ochre-star.html", "figures/Appendix S.LR.12.1 - Size structure of Pisaster ochraceus in rocky shore habitats Sokol Pt.jpg")`
 
+<!-- OLD: missing in [Master_OCNMS_infographic_content - Google Sheets](https://docs.google.com/spreadsheets/d/1C5YAp77WcnblHoIRwA_rloAagkLn0gDcJCda8E8Efu4/edit#gid=1464497539)
 #### Trends - status & condition
 
-`r insert_figure("rocky-shore_ochre-star.html", "figures/S.H.12.*_seastar_S&T_ONP.jpg")`
+r insert_figure("rocky-shore_ochre-star.html", "figures/S.H.12.*_seastar_S&T_ONP.jpg")
 
 #### Trends - sunflower star
 
-`r insert_figure("rocky-shore_ochre-star.html", "figures/Appendix S.LR.12.3a - Counts of Pycnopodeia helianthoides in rocky shores 2006-2015.jpg")`
+r insert_figure("rocky-shore_ochre-star.html", "figures/Appendix S.LR.12.3a - Counts of Pycnopodeia helianthoides in rocky shores 2006-2015.jpg")
+-->

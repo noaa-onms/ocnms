@@ -106,10 +106,12 @@ add_gimage_paths <- function(
     #glink = "link is to shared drive at HQ: \\\\aamb-s-clust01\\Shared_Data\\ONMS\\Socioeconomic\\Olympic Coast NMS\\Condition Report 2019\\Final Excel Files with Graphs for CR June 2021"
     # glink = "https://docs.google.com/document/d/1PqeKj8L94i8lpioG9BtW9Bz63ovf20BE3ceMwacBXNA/edit?usp=sharing"
     
+    
     gd <- try(googledrive::drive_get(glink), silent = T)
     if ("try-error" %in% class(gd) || nrow(gd)==0)
       return(NA)
-    #message(glue("get_image_path(): {glink}"))
+    
+    message(glue("get_image_path(): {glink}"))
     fname <- gd %>% pull(name) %>% str_replace_all(fixed("*"), "")
     fpath <- file.path(dir_figures, fname)
     
@@ -354,6 +356,23 @@ insert_figure_meta <- function(
         html)))
 }
 
+insert_caption <- function(
+  link, tab,
+  figures_csv = here::here("data/gsheets/figures.csv")){
+  # link = "rocky-shore_barnacles.html"; tab = "Trends - Acorn barnacles"
+
+  d <- read_csv(figures_csv) %>% 
+    filter(
+      link == !!link,
+      tab  == !!tab)
+  
+  if (nrow(d) != 1)
+    stop(glue("insert_caption(): need exactly 1 row in figures_csv to match supplied `link` and `tab`"))
+  
+  tagList(
+    htmltools::HTML(markdown::renderMarkdown(text = glue("{d$caption}"))))
+}
+
 insert_figure <- function(
   link, image_path,
   insert_meta = T,
@@ -390,33 +409,45 @@ create_modals <- function(
   dir_modals  = here::here("modals")){
   # modals_csv  = here::here("data/gsheets/modals.csv"); figures_csv = here::here("data/gsheets/figures.csv")
   
-  d_modals  <- readr::read_csv(modals_csv, show_col_types = F) %>% 
+  d_modals_rmd  <- readr::read_csv(modals_csv, show_col_types = F) %>% 
     filter(
-      !not_modal,
+      !not_modal) %>% 
+    mutate(
+      path_rmd = file.path(
+        dir_modals,
+        fs::path_ext_set(basename(link), ".Rmd")),
+      path_html = file.path(
+        dir_modals,
+        basename(link)))
+  d_modals  <- d_modals_rmd %>% 
+    filter(
       !dynamic_modal)
   d_figures <- readr::read_csv(figures_csv, show_col_types = F)
   
   if (!dir.exists(dir_modals))
     dir.create(dir_modals)
   
-  for (mdl_html in d_modals$link){
-    # mdl_html = "deep-seafloor_benthic-invertebrates.html"
-    # mdl_html = "deep-seafloor_groundfish-assemblage.html" # (n_figures = 4)
-    path_rmd <- file.path(
-      dir_modals,
-      fs::path_ext_set(basename(mdl_html), ".Rmd"))
-    
+  for (path_rmd in d_modals$path_rmd){
     message(glue("creating modal: {basename(path_rmd)}"))
     create_modal(path_rmd, d_modals, d_figures)
   }
+  
+  # delete unused modal Rmd/html files
+  rmd_del <- setdiff(list.files(dir_modals, "Rmd$"), basename(d_modals_rmd$path_rmd))
+  unlink(file.path(dir_modals, rmd_del))
+  html_del <- setdiff(list.files(dir_modals, "html$"), basename(d_modals_rmd$path_html))
+  unlink(file.path(dir_modals, html_del))
 }
 
 render_modals <- function(
   dir_modals = here::here("modals")){
   
   # TODO: blacklist certain Rmds to be rendered manually
-  tibble(
-    input = list.files(dir_modals, ".*\\.Rmd$", full.names = T)) %>% 
+  d <- tibble(
+    input = list.files(dir_modals, ".*\\.Rmd$", full.names = T))
+  # View(d)
+  d %>%
+    # slice(63:nrow(d)) %>% 
     purrr::pwalk(rmarkdown::render)
 }
 
