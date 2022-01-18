@@ -14,8 +14,8 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Black rockfish
 
-`r insert_figure("kelp-forest_fish-assemblage.html", "figures/Appendix S.LR.13.19 - Density of red urchins in kelp forest 2015-2019.jpg")`
+`r insert_figure("kelp-forest_fish-assemblage.html", "https://drive.google.com/file/d/1lG7jawnmluTITFA7Th2OEk6hRdhffZ8b/view?usp=sharing")`
 
 #### Trends - Striped surfperch
 
-`r insert_figure("kelp-forest_fish-assemblage.html", "figures/Appendix S.LR.13.21 - Abundance of striped surfperch in kelp forest 2015-2019.jpg")`
+`r insert_figure("kelp-forest_fish-assemblage.html", "https://drive.google.com/file/d/1HTuooAQZ40m7xavuMCSP5Ru_XAcMJ99G/view?usp=sharing")`

@@ -14,12 +14,12 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Benthic aragonite saturation
 
-`r insert_figure("ocean-climate_ocean-acidification.html", "figures/Alin arag.png")`
+`r insert_figure("ocean-climate_ocean-acidification.html", "https://drive.google.com/file/d/1i02DL0hpGNT5Wyuf3KN_Te2HU2PhR6gX/view?usp=sharing")`
 
 #### Trends - Benthic pCO2
 
-`r insert_figure("ocean-climate_ocean-acidification.html", "figures/Alin pCO2.png")`
+`r insert_figure("ocean-climate_ocean-acidification.html", "https://drive.google.com/file/d/1sWT8lGA7itS8RT2YCqKCCIvgv30WaGo0/view?usp=sharing")`
 
 #### Trends - Benthic pH
 
-`r insert_figure("ocean-climate_ocean-acidification.html", "figures/alin pH.png")`
+`r insert_figure("ocean-climate_ocean-acidification.html", "https://drive.google.com/file/d/11TIE7jgD5LJpzFABWi_x6JGljvlpwW48/view?usp=sharing")`

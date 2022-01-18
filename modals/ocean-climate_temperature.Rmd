@@ -14,12 +14,12 @@ source(here::here("infographiqR.R"))
 
 #### Maps - Marine heatwave 2014/2019 comparison
 
-`r insert_figure("ocean-climate_temperature.html", "figures/S_WQ_8_6_SST anomaly heat maps Blob 2014 and 2019.png")`
+`r insert_figure("ocean-climate_temperature.html", "https://drive.google.com/file/d/1m8Z5Zoz1sUCJ05stDAyGr_kO-Y6FVlA9/view?usp=sharing")`
 
 #### Maps - Marine heatwave 2019
 
-`r insert_figure("ocean-climate_temperature.html", "figures/Figure S.H.10.4_Marine Heat Wave.JPG")`
+`r insert_figure("ocean-climate_temperature.html", "https://drive.google.com/file/d/1zHUjbC3kZjlpPtwPBaOaOQIA2DuBB9zF/view?usp=sharing")`
 
 #### Trends - Subsurface temperatuve
 
-`r insert_figure("ocean-climate_temperature.html", "figures/Figure S_WQ_8_4_SST anomalies profile 1980-2019.png")`
+`r insert_figure("ocean-climate_temperature.html", "https://drive.google.com/file/d/1i49-4kFgWiolBLk1_r9GOYDG9LW2D8dR/view?usp=sharing")`

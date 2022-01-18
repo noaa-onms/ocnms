@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Southern resident killer whales
 
-`r insert_figure("pelagic_srkw.html", "figures/S.LR.13.14 - Southern Resident Killer Whale Abundance 1976-2017.jpg")`
+`r insert_figure("pelagic_srkw.html", "https://drive.google.com/file/d/1lu1ATL8twlK1e5cx14cHn-_MgLMxS0uu/view?usp=sharing")`

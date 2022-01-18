@@ -14,24 +14,28 @@ source(here::here("infographiqR.R"))
 
 #### Fishing, personal use
 
-`r insert_figure("human-connections_harvest.html", "figures/Figure ES.SH.1 Subsistence.png")`
+`r insert_figure("human-connections_harvest.html", "https://drive.google.com/file/d/1k6us49td_sazW6nzWcvhX4Br3VoAMAWl/view?usp=sharing")`
 
 #### Trends - Dungeness crab catch, revenue
 
-`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.3 D crab.png")`
+`r insert_figure("human-connections_harvest.html", "https://drive.google.com/file/d/1MLMAs8Py-fdZl_ebl47ah63nsNS7AwCd/view?usp=sharing")`
 
 #### Trends - Halibut biomass
 
-`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.1 IPHC catch area.png")`
+`r insert_figure("human-connections_harvest.html", "https://drive.google.com/file/d/1k58FXRQhc8A3UkmoXemJaAcEhz_yzN3s/view?usp=sharing")`
 
 #### Trends - Revenue, salmon troll
 
-`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.9 Total revenue by management group.png")`
+`r insert_figure("human-connections_harvest.html", "https://drive.google.com/file/d/1cDXiotAa1xXfSmT9Toe62DDaUrJ6Cpqd/view?usp=sharing")`
+
+#### Trends - Status of goundfish stocks
+
+`r insert_figure("human-connections_harvest.html", "https://drive.google.com/file/d/1A_zUEOxSrmCreEXmBptt5HSMSTBhBADP/view?usp=sharing")`
 
 #### Trends - Vessels, salmon troll fleet
 
-`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.8 Troll vessels.png")`
+`r insert_figure("human-connections_harvest.html", "https://drive.google.com/file/d/1hluBZkwxkIXNgy5jagpe0mTLT-O475v2/view?usp=sharing")`
 
 #### Trends - Whiting catch
 
-`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.2 Whiting.png")`
+`r insert_figure("human-connections_harvest.html", "https://drive.google.com/file/d/13Dw0qHCD943yGrkH-KBwM8FYaAh0cbwr/view?usp=sharing")`

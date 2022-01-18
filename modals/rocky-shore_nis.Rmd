@@ -14,8 +14,8 @@ source(here::here("infographiqR.R"))
 
 #### 2011 Tsunami
 
-`r insert_figure("rocky-shore_nis.html", "figures/S.LR.14.4 - NIS introduced to US west coast by 2011 tsunami.jpg")`
+`r insert_figure("rocky-shore_nis.html", "https://drive.google.com/file/d/1-rKfOKux4C98ry1FxCFus2TdEm1gYaRV/view?usp=sharing")`
 
 #### Maps - 2011 Tsunami
 
-`r insert_figure("rocky-shore_nis.html", "figures/S.LR.14.5 - Map of marine debris from 2011 tsunami.jpg")`
+`r insert_figure("rocky-shore_nis.html", "https://drive.google.com/file/d/1uM9ihNgDDnWi67Nd6ZpMYNW8MlbwUU-1/view?usp=sharing")`

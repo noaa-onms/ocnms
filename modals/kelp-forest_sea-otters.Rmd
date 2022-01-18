@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Sea otter abundance
 
-`r insert_figure("kelp-forest_sea-otters.html", "figures/S.LR.12.4 - Number of Sea Otters.jpg")`
+`r insert_figure("kelp-forest_sea-otters.html", "https://drive.google.com/file/d/1gICe7yDGS1j2NU3qTromeE_UAdnJd6iL/view?usp=sharing")`

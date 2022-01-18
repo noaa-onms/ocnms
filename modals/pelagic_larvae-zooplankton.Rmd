@@ -14,20 +14,20 @@ source(here::here("infographiqR.R"))
 
 #### Maps - Larvae and zooplankton stations
 
-`r insert_figure("pelagic_larvae-zooplankton.html", "figures/S.LR.Q15.3 - Map Pelagic larvae and zooplankton species richness, diversity and evenness.jpg")`
+`r insert_figure("pelagic_larvae-zooplankton.html", "https://drive.google.com/file/d/1iqn5t3V81LOu3KjaFBAib2SA6Q6Sm8Iq/view?usp=sharing")`
 
 #### Maps - Phytoplankton
 
-`r insert_figure("pelagic_larvae-zooplankton.html", "figures/S.LR.Q15.2 - Map Diatom and dinoflagellate species richness anomalies for 2009-2016 offshore of Newport OR.jpg")`
+`r insert_figure("pelagic_larvae-zooplankton.html", "https://drive.google.com/file/d/1Jxfmfo-CYyBmHTpbBOkTqiT44ldO49z1/view?usp=sharing")`
 
 #### Trends - Copepods
 
-`r insert_figure("pelagic_larvae-zooplankton.html", "figures/S.LR.13.1 - Copepod Biomass 1996-2020.jpg")`
+`r insert_figure("pelagic_larvae-zooplankton.html", "https://drive.google.com/file/d/1zFTCVLyUkNdfQpdFmJJJwqMYcIPzR2W2/view?usp=sharing")`
 
 #### Trends - Larvae and zooplankton diversity
 
-`r insert_figure("pelagic_larvae-zooplankton.html", "figures/S.LR.Q15.3 - Figure Pelagic larvae and zooplankton species richness, diversity and evenness.jpg")`
+`r insert_figure("pelagic_larvae-zooplankton.html", "https://drive.google.com/file/d/16GlTpDcU1nLcFLcthf0f5ubbrOEwPZwO/view?usp=sharing")`
 
 #### Trends - Phytoplankton diversity
 
-`r insert_figure("pelagic_larvae-zooplankton.html", "figures/S.LR.Q15.2 - Figure Diatom and dinoflagellate species richness anomalies for 2009-2016 offshore of Newport OR.jpg")`
+`r insert_figure("pelagic_larvae-zooplankton.html", "https://drive.google.com/file/d/1lCS6Me3LoO24f6Ux6tHwstX48-AaFH5K/view?usp=sharing")`

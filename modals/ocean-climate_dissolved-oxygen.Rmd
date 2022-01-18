@@ -14,16 +14,16 @@ source(here::here("infographiqR.R"))
 
 #### Map - DO and halibut 2017
 
-`r insert_figure("ocean-climate_dissolved-oxygen.html", "figures/Figure ES.CH.5 IPHC hypoxia.png")`
+`r insert_figure("ocean-climate_dissolved-oxygen.html", "https://drive.google.com/file/d/1hZP8b1tphMxKP1ONZaSG0ysNFOI9cmtC/view?usp=sharing")`
 
 #### Maps - Minimum DO
 
-`r insert_figure("ocean-climate_dissolved-oxygen.html", "figures/Figure S_WQ_Q8_6_Hypoxia_NMFS.JPG")`
+`r insert_figure("ocean-climate_dissolved-oxygen.html", "https://drive.google.com/file/d/1n0LCqxUuDPtjWz_w5Ref1FBSRWE-igtS/view?usp=sharing")`
 
 #### Trends - Bottom DO
 
-`r insert_figure("ocean-climate_dissolved-oxygen.html", "figures/Figure S_WQ_Q8_7_BDO_2019_OCNMS.JPG")`
+`r insert_figure("ocean-climate_dissolved-oxygen.html", "https://drive.google.com/file/d/1Ao9wUaVkPSBTOdVFc8WQZlMP3NIGiTZp/view?usp=sharing")`
 
 #### Trends - Near-bottom DO
 
-`r insert_figure("ocean-climate_dissolved-oxygen.html", "figures/Alin DO.png")`
+`r insert_figure("ocean-climate_dissolved-oxygen.html", "https://drive.google.com/file/d/1ZYdvaAWaPgx_Fubhb_sBaL9ULncidXrI/view?usp=sharing")`

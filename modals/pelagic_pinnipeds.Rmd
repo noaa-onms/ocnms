@@ -14,12 +14,12 @@ source(here::here("infographiqR.R"))
 
 #### Maps - Stellar sea lion haul-outs
 
-`r insert_figure("pelagic_pinnipeds.html", "figures/S.LR.13.9 - Stellar sea lion haulouts in OCNMS.jpg")`
+`r insert_figure("pelagic_pinnipeds.html", "https://drive.google.com/file/d/194S-SqLA8npbbZ7fCGGJw0BkKZaTiRO3/view?usp=sharing")`
 
 #### Trends - Harbor seal abundance
 
-`r insert_figure("pelagic_pinnipeds.html", "figures/Appendix S.LR.13.13 - Number of at sea pacific harbor seals off WA 2008-2019.jpg")`
+`r insert_figure("pelagic_pinnipeds.html", "https://drive.google.com/file/d/1Y3BP4sNdJ6klMg8C1ZQQyHzoRl8R_43d/view?usp=sharing")`
 
 #### Trends - Stellar sea lion abundance
 
-`r insert_figure("pelagic_pinnipeds.html", "figures/S.LR.13.9 - Stellar sea lion abundance 1989-2013.jpg")`
+`r insert_figure("pelagic_pinnipeds.html", "https://drive.google.com/file/d/1CfhtNyTrFzXcbgtQKS13OhTm9_ZdRFL4/view?usp=sharing")`

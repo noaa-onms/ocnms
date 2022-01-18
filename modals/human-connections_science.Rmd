@@ -14,12 +14,12 @@ source(here::here("infographiqR.R"))
 
 #### Community science activities
 
-`r insert_figure("human-connections_science.html", "figures/Figure ES.S.3 Sci Hours by Project-pie chart.jpg")`
+`r insert_figure("human-connections_science.html", "https://drive.google.com/file/d/1bzwisl5ASSuvTzcvf2Mvw9SnxLH67Ac1/view?usp=sharing")`
 
 #### Trends - Community science
 
-`r insert_figure("human-connections_science.html", "figures/Figure ES.S.4 Sci hours and count.jpg")`
+`r insert_figure("human-connections_science.html", "https://drive.google.com/file/d/1ngq-OYD4_GoHNLZeRnotcbDT35GOCDDW/view?usp=sharing")`
 
 #### Trends - R/V Tatoosh activity
 
-`r insert_figure("human-connections_science.html", "figures/Figure ES.S.2._Tatoosh hours and days at sea by year.jpg")`
+`r insert_figure("human-connections_science.html", "https://drive.google.com/file/d/1oCxmBY-jHYkKRvQ4j6Qjogi7Gx7fgN5s/view?usp=sharing")`

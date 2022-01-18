@@ -14,20 +14,24 @@ source(here::here("infographiqR.R"))
 
 #### Map - Crushed cars lost at sea
 
-`r insert_figure("human-connections_vessels.html", "figures/R5 crushed cars.png")`
+`r insert_figure("human-connections_vessels.html", "https://drive.google.com/file/d/1M01TJnO-h7LM8e7KDVtKQqstFQyMhzBI/view?usp=sharing")`
 
 #### Map - Vessel density
 
-`r insert_figure("human-connections_vessels.html", "figures/Figure P.3 Vessel Traffic NWTT.png")`
+`r insert_figure("human-connections_vessels.html", "https://drive.google.com/file/d/1uZUO77oYmJT_nSt2f9-4sQX_ONk-6s8L/view?usp=sharing")`
 
 #### Map - Vessel zoning
 
-`r insert_figure("human-connections_vessels.html", "figures/OCNMS_ATBA_TSS_SP23_04162021.jpg")`
+`r insert_figure("human-connections_vessels.html", "https://drive.google.com/file/d/1QzkA-zUmQ9Q1OysFp_vBO3Hg-hfxwanR/view?usp=sharing")`
 
 #### Trends - Cruise passengers
 
-`r insert_figure("human-connections_vessels.html", "figures/Figure P.7 Cruise Ships.png")`
+`r insert_figure("human-connections_vessels.html", "https://drive.google.com/file/d/14gkHLiaO_1pBtTfZ2J7X1cKtq8zXsD0U/view?usp=sharing")`
 
 #### Trends - Vessel groundings/sinkings
 
-`r insert_figure("human-connections_vessels.html", "figures/R6 vessel groundings.png")`
+`r insert_figure("human-connections_vessels.html", "https://drive.google.com/file/d/1j8fdBGsxpdA9WDTdtsgU_sduYcAbXxEw/view?usp=sharing")`
+
+#### Trends - Vessel transits
+
+`r insert_figure("human-connections_vessels.html", "https://drive.google.com/file/d/1flhJXA1gRr9EK4YTTgT8nQcG6tA--Dlq/view?usp=sharing")`

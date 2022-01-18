@@ -14,20 +14,20 @@ source(here::here("infographiqR.R"))
 
 #### Trends - LUSI & TUMI
 
-`r insert_figure("ocean-climate_oceanographic-index.html", "figures/S_WQ_Q6_4_LUSI_TUMI_CCIEA.JPG")`
+`r insert_figure("ocean-climate_oceanographic-index.html", "https://drive.google.com/file/d/10y6LbIykrXe-NNbs4FtkakyfoEHFO6T-/view?usp=sharing")`
 
 #### Trends - NPGO
 
-`r insert_figure("ocean-climate_oceanographic-index.html", "figures/Figure S_WQ_Q8_2_NPGO_CCIEA.JPG")`
+`r insert_figure("ocean-climate_oceanographic-index.html", "https://drive.google.com/file/d/1WHXSBl8xe8YhHy0-kiPz7_f4QfrKgk_8/view?usp=sharing")`
 
 #### Trends - ONI
 
-`r insert_figure("ocean-climate_oceanographic-index.html", "figures/Figure S_WQ_Q8_3_ONI_CCIEA.JPG")`
+`r insert_figure("ocean-climate_oceanographic-index.html", "https://drive.google.com/file/d/1WBZcGMrwhwsYFGIzjJZGIk-gm44IiSu4/view?usp=sharing")`
 
 #### Trends - PDO
 
-`r insert_figure("ocean-climate_oceanographic-index.html", "figures/Figure S_WQ_Q8_1_PDO_CCIEA.JPG")`
+`r insert_figure("ocean-climate_oceanographic-index.html", "https://drive.google.com/file/d/1FXFVFtMRX5UAJFeL6ppZN_UVdP4sUx4X/view?usp=sharing")`
 
 #### Trends - STI
 
-`r insert_figure("ocean-climate_oceanographic-index.html", "figures/S_WQ_Q6_3_STI_CCIEA.JPG")`
+`r insert_figure("ocean-climate_oceanographic-index.html", "https://drive.google.com/file/d/1XYzfhnnYETHSPVhYZ4AtuQ0ck6-yh677/view?usp=sharing")`

@@ -14,8 +14,12 @@ source(here::here("infographiqR.R"))
 
 #### Maps - Columbia River plume
 
-`r insert_figure("ocean-climate_nutrients-phytoplankton.html", "figures/S_WQ_Q6_1_Conceptual framework or environmental conditions for HABs in the OCNMS Hickey et al 2013.jpg")`
+`r insert_figure("ocean-climate_nutrients-phytoplankton.html", "https://drive.google.com/file/d/1tS_mgL6OrN1E5yITZW5Ybr0fOdGzh9zn/view?usp=sharing")`
 
 #### Maps - Streamflow, sediments, N, P
 
-`r insert_figure("ocean-climate_nutrients-phytoplankton.html", "figures/S.WQ.6.5 Sparrow_USGS.png")`
+`r insert_figure("ocean-climate_nutrients-phytoplankton.html", "https://drive.google.com/file/d/1PQoc70L3swk-mnyfSX_A8UrWXtRY-umK/view?usp=sharing")`
+
+#### Trends - Chlorophyll anomaly
+
+`r insert_figure("ocean-climate_nutrients-phytoplankton.html", "https://docs.google.com/document/d/1J5b6Dh0IKQHwtwT8OoR_rjkCUekWUNc1vlBNeoTXdf8/edit?usp=sharing")`

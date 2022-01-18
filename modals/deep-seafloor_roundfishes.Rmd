@@ -14,8 +14,8 @@ source(here::here("infographiqR.R"))
 
 #### Trends - All roundfish
 
-`r insert_figure("deep-seafloor_roundfishes.html", "figures/Appendix S.LR.13.4 - CPUE for roundfish in OCNMS 2003-2018.jpg")`
+`r insert_figure("deep-seafloor_roundfishes.html", "https://drive.google.com/file/d/1EyFY4aTXh_BZBNrIQLimrLPoc2bdA0Di/view?usp=sharing")`
 
 #### Trends - Lingcod
 
-`r insert_figure("deep-seafloor_roundfishes.html", "figures/Appendix S.LR.13.6 - CPUE for lingcod in OCNMS 2003-2018.jpg")`
+`r insert_figure("deep-seafloor_roundfishes.html", "https://drive.google.com/file/d/1U85IerBPlu88q8ZpfyfjY9dGllN3Kxrg/view?usp=sharing")`
