@@ -19,6 +19,7 @@ source(here::here("infographiqR.R"))
 map_nms_sites("ocnms")
 ```
 
+`r insert_caption('rocky-shore_barnacles.html', 'Map of Sites')`
 
 ### Acorn Barnacles (_Chthamalus dalli/fissus/Balanus glandula_) {.active}
 
