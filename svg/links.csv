@@ -16,9 +16,7 @@ deep-seafloor,groundfish-assemblage,modals/deep-seafloor_groundfish-assemblage.h
 deep-seafloor,nis,modals/deep-seafloor_nis.html,Non-indigenous species,F
 deep-seafloor,rockfishes,modals/deep-seafloor_rockfishes.html,Rockfishes,F
 deep-seafloor,roundfishes,modals/deep-seafloor_roundfishes.html,Roundfishes,F
-deep-seafloor,shad,modals/deep-seafloor_shad.html,Shad,F
 deep-seafloor,sharks-rays,modals/deep-seafloor_sharks-rays.html,Sharks and rays,F
-deep-seafloor,terrain-complexity,modals/deep-seafloor_terrain-complexity.html,Seafloor terrain complexity,F
 human-connections,aquaculture,modals/human-connections_aquaculture.html,Aquaculture,F
 human-connections,contaminants,modals/human-connections_contaminants.html,Contaminants,F
 human-connections,education-engagement,modals/human-connections_education-engagement.html,Education and engagement,F
@@ -74,21 +72,13 @@ rocky-shore,nis,modals/rocky-shore_nis.html,Non-indigenous species,F
 rocky-shore,ochre-star,modals/rocky-shore_ochre-star.html,Ochre stars,F
 rocky-shore,pinnipeds,modals/rocky-shore_pinnipeds.html,Seals and sealions,F
 sandy-beach,advisories-closures,modals/sandy-beach_advisories-closures.html,Beach closures,F
-sandy-beach,amphipods-isopods,modals/sandy-beach_amphipods-isopods.html,Amphipods and isopods,F
-sandy-beach,beach-sediment,modals/sandy-beach_beach-sediment.html,NA,F
 sandy-beach,beach-wrack,modals/sandy-beach_beach-wrack.html,Beach wrack,F
-sandy-beach,decapods,modals/sandy-beach_decapods.html,Decapods,F
-sandy-beach,infaunal-predators,modals/sandy-beach_infaunal-predators.html,NA,F
 sandy-beach,nis,modals/sandy-beach_nis.html,Non-indigenous species,F
 sandy-beach,olive-snails,modals/sandy-beach_olive-snails.html,Olive snails,F
-sandy-beach,phytoplankton,modals/sandy-beach_phytoplankton.html,Phytoplankton,F
-sandy-beach,pinnipeds,modals/sandy-beach_pinnipeds.html,Pinnipeds,F
-sandy-beach,position-slope,modals/sandy-beach_position-slope.html,NA,F
-sandy-beach,razor-clams,modals/sandy-beach_razor-clams.html,Pacific razor clam *Siliqua patula*,F
+sandy-beach,razor-clams,modals/sandy-beach_razor-clams.html,Pacific razor clam _Siliqua patula_,F
 sandy-beach,shellfish-closures,modals/sandy-beach_shellfish-closures.html,Shellfish closures,F
 sandy-beach,shorebirds,modals/sandy-beach_shorebirds.html,Shorebirds,F
 sandy-beach,surfzone-fish,modals/sandy-beach_surfzone-fish.html,Surfzone fish,F
-sandy-seafloor,benthic-invertebrates,modals/sandy-seafloor_benthic-invertebrates.html,Benthic invertebrates,F
 sandy-seafloor,dungeness-crab,modals/sandy-seafloor_dungeness-crab.html,Dungeness crab,F
 sandy-seafloor,flatfishes,modals/sandy-seafloor_flatfishes.html,Flatfishes,F
 sandy-seafloor,forage-fish,modals/sandy-seafloor_forage-fish.html,Forage fish,F

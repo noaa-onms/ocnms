@@ -41,12 +41,5 @@ plot_intertidal_nms(d_csv, "OCNMS", "CHTBAL", "Acorn Barnacles") %>%
   dyLegend(show="follow")
 ```
 
-
-### Acorn Barnacles (_Chthamalus dalli/fissus/Balanus glandula_), target = balanus
-
-```{r}
-plot_intertidal_nms(d_csv, "OCNMS", "CHTBAL", "Acorn Barnacles [target = balanus]", c("balanus", "chthamalus_balanus")) %>% 
-  dyLegend(show="follow")
-```
-
+`r insert_caption('rocky-shore_barnacles.html', 'Trends - Acorn barnacles')`
 
