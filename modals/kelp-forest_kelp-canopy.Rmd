@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Kelp canopy cover
 
-`r insert_figure("kelp-forest_kelp-canopy.html", "figures/S.H.10.1 DNR_kelp_canopy_coast_ha_1989_2019.tiff")`
+`r insert_figure("kelp-forest_kelp-canopy.html", "figures/S.H.10.1 DNR_kelp_canopy_coast_ha_1989_2019.png")`
