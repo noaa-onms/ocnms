@@ -453,10 +453,10 @@ render_modals <- function(
   d <- tibble(
     input = list.files(dir_modals, ".*\\.Rmd$", full.names = T))
   # View(d)
-  # which(basename(d$input) == "rocky-shore_mussels.Rmd")
+  # which(basename(d$input) == "rocky-shore_mussels.Rmd") # 61
   # gsheets_to_csvs(gsheet); add_gimage_paths() 
   d %>%
-    slice(61:nrow(d)) %>% 
+    # slice(61:nrow(d)) %>% 
     purrr::pwalk(rmarkdown::render)
 }
 
