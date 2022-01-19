@@ -12,6 +12,6 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Trends  - Kelp canopy cover
+#### Trends - Kelp canopy cover
 
 `r insert_figure("kelp-forest_kelp-canopy.html", "https://drive.google.com/file/d/1hiPP46gIGNzGSr1Ba_1qTls1zpQmSWuT/view?usp=sharing")`

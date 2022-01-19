@@ -17,6 +17,8 @@ source(here::here("infographiqR.R"))
 map_nms_sites("ocnms")
 ```
 
+`r insert_caption('rocky-shore_mussels.html', 'Map of Sites')`
+
 ### California Mussels (_Mytilus californianus_), target = ANY {.active}
 
 ```{r}
@@ -26,6 +28,7 @@ plot_intertidal_nms(d_csv, "OCNMS", "MYTCAL", "California Mussels [target = myti
   dyLegend(show="follow")
 ```
 
+`r insert_caption('rocky-shore_mussels.html', 'Trends - Mussel abundance')`
 
 ### Trends - condition
 
