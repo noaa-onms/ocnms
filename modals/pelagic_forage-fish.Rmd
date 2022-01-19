@@ -9,9 +9,3 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
-
-### {.tabset}
-
-#### Trends - Anchovy
-
-`r insert_figure("pelagic_forage-fish.html", "https://docs.google.com/document/d/1GThJlTwN8Y9KLOOfgL5kTglmlGZea6gfgjUsjemg5tY/edit")`

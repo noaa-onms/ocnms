@@ -14,12 +14,12 @@ source(here::here("infographiqR.R"))
 
 #### Trends - All rockfish
 
-`r insert_figure("deep-seafloor_rockfishes.html", "https://drive.google.com/file/d/1nWMsOJr-7O_e0_fZAdkv4IMW8FXxOsDu/view?usp=sharing")`
+`r insert_figure("deep-seafloor_rockfishes.html", "figures/S.LR.13.8 - Rockfish CPUE 2004-2018.jpg")`
 
 #### Trends - Bocaccio
 
-`r insert_figure("deep-seafloor_rockfishes.html", "https://drive.google.com/file/d/1nQ_onqRzTXAxQXuGP7T_pi52_2r1C0kR/view?usp=sharing")`
+`r insert_figure("deep-seafloor_rockfishes.html", "figures/Appendix S.LR.13.7 - CPUE for bocaccio in OCNMS 2003-2018.jpg")`
 
 #### Trends - Yelloweye rockfish
 
-`r insert_figure("deep-seafloor_rockfishes.html", "https://drive.google.com/file/d/1ea0dU_jOFUMKwpL_ayFtMLHMF_eMb4Jx/view?usp=sharing")`
+`r insert_figure("deep-seafloor_rockfishes.html", "figures/Appendix S.LR.13.8 - CPUE for yellow eye rockfish in OCNMS 2003-2018.jpg")`

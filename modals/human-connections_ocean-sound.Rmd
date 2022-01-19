@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Maps - Sound monitoring and zoning areas
 
-`r insert_figure("human-connections_ocean-sound.html", "https://drive.google.com/file/d/1IReJytwWIIMK9hxI_Fzc9SdK6GKWceac/view?usp=sharing")`
+`r insert_figure("human-connections_ocean-sound.html", "figures/Figure P.2 OCNMS_PressuresMap_P2_04192021.jpg")`

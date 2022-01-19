@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - landings
 
-`r insert_figure("sandy-seafloor_dungeness-crab.html", "https://drive.google.com/file/d/11wno_HqN0ll8XBi-cnhUXXSeNMKdDwTT/view?usp=sharing")`
+`r insert_figure("sandy-seafloor_dungeness-crab.html", "figures/S.LR.13.5 - Dungeness crab harvest 2000-2019.jpg")`

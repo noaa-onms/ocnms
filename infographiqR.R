@@ -395,7 +395,14 @@ insert_figure <- function(
       image_path == !!image_path)
   
   if (nrow(d) != 1)
-    stop(glue("insert_figure(): need exactly 1 row in figures_csv to match supplied `link` and `image_path`"))
+    stop(glue("insert_figure() needs exactly 1 row (nrow={nrow(d)}) 
+              in figures_csv to match supplied `link` and `image_path`.
+              Please update:
+                [Master_OCNMS_infographic_content](https://docs.google.com/spreadsheets/d/1C5YAp77WcnblHoIRwA_rloAagkLn0gDcJCda8E8Efu4/edit#gid=1464497539)
+              and re-run render_site.R:
+                source('infographiqR.R')
+                gsheets_to_csvs(gsheet)
+                add_gimage_paths() # adds image_path to data/gsheets/figures.csv"))
   
   tagList(
     h, 
@@ -446,8 +453,10 @@ render_modals <- function(
   d <- tibble(
     input = list.files(dir_modals, ".*\\.Rmd$", full.names = T))
   # View(d)
+  # which(basename(d$input) == "rocky-shore_mussels.Rmd")
+  # gsheets_to_csvs(gsheet); add_gimage_paths() 
   d %>%
-    # slice(63:nrow(d)) %>% 
+    slice(61:nrow(d)) %>% 
     purrr::pwalk(rmarkdown::render)
 }
 

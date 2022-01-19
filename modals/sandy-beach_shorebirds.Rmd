@@ -14,8 +14,8 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Cassin's Auklet carcasses
 
-`r insert_figure("sandy-beach_shorebirds.html", "https://drive.google.com/file/d/1_Nov9OAyefLkY7n2QWkQE6GFpgz5XuOa/view?usp=sharing")`
+`r insert_figure("sandy-beach_shorebirds.html", "figures/Appendix S.LR.13.11 - Encounter rates for dead Cassins auklet 2001-2018.jpg")`
 
 #### Trends - Common Murre carcasses
 
-`r insert_figure("sandy-beach_shorebirds.html", "https://drive.google.com/file/d/1iAfM0HAU-VxyYiY0WaREtpYGsddEb9Gw/view?usp=sharing")`
+`r insert_figure("sandy-beach_shorebirds.html", "figures/Appendix S.LR.13.9 - Encounter rates for dead common murres 2008-2020.jpg")`

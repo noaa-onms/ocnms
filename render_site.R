@@ -3,7 +3,7 @@ source("infographiqR.R")
 
 # update site ----
 gsheets_to_csvs(gsheet) # downloads the Google Sheet tabs into separate data/*.csv files for quick reading
-add_gimage_paths()      # add image_path to data/gsheets/figures.csv
+add_gimage_paths()      # adds image_path to data/gsheets/figures.csv
 # Error : Unrecognized `type`:                                                                                                           
 #   x JPG
 # Error : Path exists and overwrite is FALSE

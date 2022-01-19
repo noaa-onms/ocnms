@@ -14,16 +14,16 @@ source(here::here("infographiqR.R"))
 
 #### Map - At-sea fish processing discharge
 
-`r insert_figure("human-connections_spills-discharges.html", "https://drive.google.com/file/d/16NcE4qsY9XVtJdUjGwVYUxAoz9KcuDEr/view?usp=sharing")`
+`r insert_figure("human-connections_spills-discharges.html", "figures/Figure R.2_EPA_Daily_Vessel_Locations_2019.jpg")`
 
 #### Map - Petroleum movement
 
-`r insert_figure("human-connections_spills-discharges.html", "https://drive.google.com/file/d/1s3hUxVoZ_Fz9BmzOBdl3f1_BLKKU0pHq/view?usp=sharing")`
+`r insert_figure("human-connections_spills-discharges.html", "figures/Figure P.4 ECY Oil movement.png")`
 
 #### Map - Tenyo Maru oil spill
 
-`r insert_figure("human-connections_spills-discharges.html", "https://drive.google.com/file/d/1k2Tv2n2y9idXjLgl-MC5VU5gQwLZGCi4/view?usp=sharing")`
+`r insert_figure("human-connections_spills-discharges.html", "figures/Figure P.6 Tenyo Maru.png")`
 
 #### Trends - Petroleum movement
 
-`r insert_figure("human-connections_spills-discharges.html", "https://drive.google.com/file/d/1wswG3iFUIvT0cBeonllt2aiCU2pGgrvN/view?usp=sharing")`
+`r insert_figure("human-connections_spills-discharges.html", "figures/Figure P.5 ECY Total Oil moved.png")`

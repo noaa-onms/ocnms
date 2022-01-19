@@ -14,16 +14,16 @@ source(here::here("infographiqR.R"))
 
 #### Map - Bottom trawling intensity
 
-`r insert_figure("human-connections_seafloor-disturbance.html", "https://drive.google.com/file/d/1dGgkNN6n3qdvzXSjWJwunoI3eE2Z-Emc/view?usp=sharing")`
+`r insert_figure("human-connections_seafloor-disturbance.html", "figures/Figure S.P.3.2.png")`
 
 #### Maps - Submarine cables
 
-`r insert_figure("human-connections_seafloor-disturbance.html", "https://drive.google.com/file/d/1qBM3Unkw6NrRQv9-3gMBEWWr0KF0nnlo/view?usp=sharing")`
+`r insert_figure("human-connections_seafloor-disturbance.html", "figures/Figure P.8 OCNMS_Submarine_Cables_P7_04162021.jpg")`
 
 #### Trends - Bottom trawling by habitat
 
-`r insert_figure("human-connections_seafloor-disturbance.html", "https://drive.google.com/file/d/1QFVDRKh8C2SzKUr5XxvND59JV7p9WPD7/view?usp=sharing")`
+`r insert_figure("human-connections_seafloor-disturbance.html", "figures/SP3.3 trawl distance by habitat.png")`
 
 #### Trends - Total bottom trawling
 
-`r insert_figure("human-connections_seafloor-disturbance.html", "https://drive.google.com/file/d/1k_DNnn8d9EQqliOsQvv4FhGid7rhcoNf/view?usp=sharing")`
+`r insert_figure("human-connections_seafloor-disturbance.html", "figures/Figure S.P.3.1 Distance IEA time series plots in ocnms.png")`

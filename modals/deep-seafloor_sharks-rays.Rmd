@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Abundance
 
-`r insert_figure("deep-seafloor_sharks-rays.html", "https://drive.google.com/file/d/1tKXQXaUWX8I09Y0qWh2EYLIGfhyo9Q7b/view?usp=sharing")`
+`r insert_figure("deep-seafloor_sharks-rays.html", "figures/Appendix S.LR.13.5 - CPUE for elasmobranchs in OCNMS 2003-2018.jpg")`

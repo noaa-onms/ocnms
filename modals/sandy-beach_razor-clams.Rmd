@@ -14,12 +14,12 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Kalaloch Beach
 
-`r insert_figure("sandy-beach_razor-clams.html", "https://drive.google.com/file/d/1WWXvWWOxCLRM_39AUbq56DB_ARcofLXU/view?usp=sharing")`
+`r insert_figure("sandy-beach_razor-clams.html", "figures/RazorClam_densityKalaloch.png")`
 
 #### Trends - Mocrocks Beach
 
-`r insert_figure("sandy-beach_razor-clams.html", "https://drive.google.com/file/d/1EZm6a9ynEFF_9cKRgHM9te0dHIVT7uYx/view?usp=sharing")`
+`r insert_figure("sandy-beach_razor-clams.html", "figures/Mocrocks.Density,Historical (1).jpg")`
 
 #### Trends - Pt. Grenville
 
-`r insert_figure("sandy-beach_razor-clams.html", "https://drive.google.com/file/d/1rTb-zvvfiQ8pd1Ff8xxmxDVgGJhqaCPH/view?usp=sharing")`
+`r insert_figure("sandy-beach_razor-clams.html", "figures/S.LR.13.2 - Razor Clam density Pt Grenville 2001-2018.jpg")`

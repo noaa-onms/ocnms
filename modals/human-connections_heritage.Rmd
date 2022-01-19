@@ -14,8 +14,8 @@ source(here::here("infographiqR.R"))
 
 #### Map - Bottom trawling activity
 
-`r insert_figure("human-connections_heritage.html", "https://drive.google.com/file/d/1ermEHg7bGrzPlthzwwV1lvQXCq6Btzxq/view?usp=sharing")`
+`r insert_figure("human-connections_heritage.html", "figures/Figure S.P.5.1.png")`
 
 #### Map - Sunken vessels
 
-`r insert_figure("human-connections_heritage.html", "https://drive.google.com/file/d/14FUaaq-gJdCCTv6ElLpzfNC6pdb_mcbI/view?usp=sharing")`
+`r insert_figure("human-connections_heritage.html", "figures/SH.7 Shipwrecks.png")`

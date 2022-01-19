@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Sunflower star
 
-`r insert_figure("deep-seafloor_benthic-invertebrates.html", "https://drive.google.com/file/d/1u_-SA9OSjFUOuxzKs5ESUZCmnv-i0xCg/view?usp=sharing")`
+`r insert_figure("deep-seafloor_benthic-invertebrates.html", "figures/S.LR.12.2 - Biomass of Pycnopodia helianthoides Figure.jpg")`

@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Maps - Density at Makah Bay
 
-`r insert_figure("sandy-beach_olive-snails.html", "https://drive.google.com/file/d/1sZ4s2LRuLYIpxZMCDTlgRUr9-afX7yOz/view?usp=sharing")`
+`r insert_figure("sandy-beach_olive-snails.html", "figures/Purple olive snail 2014-2017 combined.png")`

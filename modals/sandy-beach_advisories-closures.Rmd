@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Swimming closures
 
-`r insert_figure("sandy-beach_advisories-closures.html", "https://drive.google.com/file/d/1vNtVal7eqZfC037uXucBFEND99IfvPAH/view?usp=sharing")`
+`r insert_figure("sandy-beach_advisories-closures.html", "figures/beachclosures.png")`

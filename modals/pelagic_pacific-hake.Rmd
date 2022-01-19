@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Biomass
 
-`r insert_figure("pelagic_pacific-hake.html", "https://drive.google.com/file/d/1lRvwHNdX5CufW6a-baTChXzFt-f3o5gN/view?usp=sharing")`
+`r insert_figure("pelagic_pacific-hake.html", "figures/S.LR.12.6 - Pacific Hake spatiotemporal distribution.jpg")`

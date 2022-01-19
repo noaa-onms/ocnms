@@ -9,6 +9,3 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
-#### Trends - Abundance
-
-`r insert_caption('rocky-shore_black-oystercatcher.html', 'Trends - Abundance')`

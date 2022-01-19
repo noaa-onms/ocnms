@@ -18,19 +18,19 @@ source(here::here("infographiqR.R"))
 
 #### Maps - Marbled Murrelet
 
-`r insert_figure("pelagic_seabirds.html", "https://drive.google.com/file/d/152xEC20lsOeXgOZmFRnjfwqCJiaonkkh/view?usp=sharing")`
+`r insert_figure("pelagic_seabirds.html", "figures/S.LR.13.12 - Marbled murrelet densities 2000-2019 Map.jpg")`
 
 #### Trends - Cassin's Auklet
 
-`r insert_figure("pelagic_seabirds.html", "https://drive.google.com/file/d/1ktdIt6YVdlOfvkFDBIPCyOWipXjNSDxl/view?usp=sharing")`
+`r insert_figure("pelagic_seabirds.html", "figures/Appendix S.LR.13.10 - Density anomalies for Cassins Auklet 2003-2019.jpg")`
 
 #### Trends - Marbled Murrelet
 
-`r insert_figure("pelagic_seabirds.html", "https://drive.google.com/file/d/191FOIAxlIE5HXSA_S_cU81SN-kQ4obev/view?usp=sharing")`
+`r insert_figure("pelagic_seabirds.html", "figures/Figure S.LR.13.10 Panel 2 - Marbled murrelet densities 2000-2019 Figure.jpg")`
 
 #### Trends - Tufted Puffin
 
-`r insert_figure("pelagic_seabirds.html", "https://drive.google.com/file/d/17Kq9n7veUDPxxrWTsebl1TTB83DzLmU9/view?usp=sharing")`
+`r insert_figure("pelagic_seabirds.html", "figures/S.LR.13.11 - Tufted puffin encounters 2001-2018.jpg")`
   
 ## Beach carcass surveys
 
@@ -38,8 +38,8 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Cassin's Auklet carcasses
 
-`r insert_figure("pelagic_seabirds.html", "https://drive.google.com/file/d/1_Nov9OAyefLkY7n2QWkQE6GFpgz5XuOa/view?usp=sharing")`
+`r insert_figure("pelagic_seabirds.html", "figures/Appendix S.LR.13.11 - Encounter rates for dead Cassins auklet 2001-2018.jpg")`
 
 #### Trends - Common Murre carcasses
 
-`r insert_figure("pelagic_seabirds.html", "https://drive.google.com/file/d/1iAfM0HAU-VxyYiY0WaREtpYGsddEb9Gw/view?usp=sharing")`
+`r insert_figure("pelagic_seabirds.html", "figures/Appendix S.LR.13.9 - Encounter rates for dead common murres 2008-2020.jpg")`

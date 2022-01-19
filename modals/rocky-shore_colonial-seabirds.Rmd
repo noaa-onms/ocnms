@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Common Murre colony
 
-`r insert_figure("rocky-shore_colonial-seabirds.html", "https://drive.google.com/file/d/1ltsW9_KEWFVl46I_tSlU-uJrhI7_AvY2/view?usp=sharing")`
+`r insert_figure("rocky-shore_colonial-seabirds.html", "figures/S.LR.13.10 - Common murre colony counts 1996-2015.jpg")`

@@ -14,8 +14,8 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Rockweed
 
-`r insert_figure("rocky-shore_macroalgae-surfgrass.html", "https://drive.google.com/file/d/1ppiWHNZpz6Xb6MygA-1dk8jT-HMreUCU/view?usp=sharing")`
+`r insert_figure("rocky-shore_macroalgae-surfgrass.html", "figures/S.H.10._Pelvetiopsis_SokolPt_MARINe.jpg")`
 
 #### Trends - Surfgrass
 
-`r insert_figure("rocky-shore_macroalgae-surfgrass.html", "https://drive.google.com/file/d/16tmj3jbhFwbsgskk35yM3HyoxRfTpaaa/view?usp=sharing")`
+`r insert_figure("rocky-shore_macroalgae-surfgrass.html", "figures/S.H.10.4_Surfgrass_MARINe.jpg")`
