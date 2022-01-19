@@ -1,12 +1,4 @@
 svg,icon,link,title,not_modal
-index,deep-seafloor,deep-seafloor.html,Deep Seafloor,T
-index,human-connections,human-connections.html,Human Connections,T
-index,kelp-forest,kelp-forest.html,Kelp Forest,T
-index,ocean-climate,ocean-climate.html,Ocean Climate,T
-index,pelagic,pelagic.html,Pelagic,T
-index,rocky-shore,rocky-shore.html,Rocky Shore,T
-index,sandy-beach,sandy-beach.html,Sandy Beach,T
-index,sandy-seafloor,sandy-seafloor.html,Sandy Seafloor,T
 deep-seafloor,benthic-invertebrates,modals/deep-seafloor_benthic-invertebrates.html,Benthic invertebrates,F
 deep-seafloor,corals-sponges,modals/deep-seafloor_corals-sponges.html,Deep sea corals and sponges,F
 deep-seafloor,crabs-shrimps,modals/deep-seafloor_crabs-shrimps.html,Crabs and shrimp,F
@@ -32,7 +24,15 @@ human-connections,seafloor-disturbance,modals/human-connections_seafloor-disturb
 human-connections,sense-place,modals/human-connections_sense-place.html,Sense of place,F
 human-connections,spills-discharges,modals/human-connections_spills-discharges.html,Spills and discharges,F
 human-connections,vessels,modals/human-connections_vessels.html,Vessels,F
-human-connections,wildlife-disturbance,modals/human-connections_wildlife-disturbance.html,Wildlife disturbance,F
+human-connections,wildlife-health,modals/human-connections_wildlife-disturbance.html,Wildlife disturbance,F
+index,deep_seafloor,deep-seafloor.html,Deep Seafloor,T
+index,human-connections,human-connections.html,Human Connections,T
+index,kelp_forest,kelp-forest.html,Kelp Forest,T
+index,climate-ocean,ocean-climate.html,Ocean Climate,T
+index,pelagic,pelagic.html,Pelagic,T
+index,rocky_shore,rocky-shore.html,Rocky Shore,T
+index,sandy_beach,sandy-beach.html,Sandy Beach,T
+index,sandy_seafloor,sandy-seafloor.html,Sandy Seafloor,T
 kelp-forest,benthic-invertebrates,modals/kelp-forest_benthic-invertebrates.html,Benthic invertebrates,F
 kelp-forest,fish-assemblage,modals/kelp-forest_fish-assemblage.html,Fish assemblage,F
 kelp-forest,kelp-canopy,modals/kelp-forest_kelp-canopy.html,Kelp canopy,F
@@ -41,13 +41,13 @@ kelp-forest,sea-otters,modals/kelp-forest_sea-otters.html,Sea otters,F
 kelp-forest,sea-stars,modals/kelp-forest_sea-stars.html,Sea stars,F
 kelp-forest,sea-urchins,modals/kelp-forest_sea-urchins.html,Sea urchins,F
 kelp-forest,understory-algae,modals/kelp-forest_understory-algae.html,Understory algae,F
-ocean-climate,nutrients-phytoplankton,modals/ocean-climate_nutrients-phytoplankton.html,Nutrients and phytoplankton,F
-ocean-climate,oceanographic-index,modals/ocean-climate_oceanographic-index.html,Oceanographic Indexes,F
-ocean-climate,temperature,modals/ocean-climate_temperature.html,Temperature,F
 ocean-climate,dissolved-oxygen,modals/ocean-climate_dissolved-oxygen.html,Dissolved oxygen,F
+ocean-climate,nutrients-phytoplankton,modals/ocean-climate_nutrients-phytoplankton.html,Nutrients and phytoplankton,F
 ocean-climate,ocean-acidification,modals/ocean-climate_ocean-acidification.html,Ocean acidification,F
-ocean-climate,water-chemistry,modals/ocean-climate_water-chemistry.html,Water chemistry,F
-ocean-climate,physical-processes,modals/ocean-climate_physical-processes.html,Physical processes,F
+ocean-climate,oceanographic-index,modals/ocean-climate_oceanographic-index.html,Oceanographic Indexes,F
+ocean-climate,physical_processes,modals/ocean-climate_physical-processes.html,Physical processes,F
+ocean-climate,temperature,modals/ocean-climate_temperature.html,Temperature,F
+ocean-climate,water_chemistry,modals/ocean-climate_water-chemistry.html,Water chemistry,F
 pelagic,cetaceans,modals/pelagic_cetaceans.html,Cetaceans,F
 pelagic,eulachon,modals/pelagic_eulachon.html,Eulachon,F
 pelagic,forage-fish,modals/pelagic_forage-fish.html,Forage fish,F
