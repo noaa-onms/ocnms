@@ -17,6 +17,8 @@ source(here::here("infographiqR.R"))
 map_nms_sites("ocnms")
 ```
 
+`r insert_caption('rocky-shore_mussels.html', 'Map of Sites')`
+
 ### Ochre Seastar (_Pisaster ochraceus_) {.active}
 
 ```{r, eval=F}
