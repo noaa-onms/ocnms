@@ -1,5 +1,5 @@
 ---
-pagetitle: "Pacific razor clam _Siliqua patula_"
+pagetitle: "Pacific razor clam"
 ---
 
 ```{r setup, include=F}

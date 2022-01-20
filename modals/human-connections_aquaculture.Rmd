@@ -9,3 +9,9 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
+
+### {.tabset}
+
+#### Maps - Atlantic salmon
+
+`r insert_figure("human-connections_aquaculture.html", "figures/S.LR.14.3 - Map of where Atlantic salmon caught.jpg")`

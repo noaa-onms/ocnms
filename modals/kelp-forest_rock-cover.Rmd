@@ -9,6 +9,3 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
-#### Trends - Cover
-
-`r insert_caption('kelp-forest_rock-cover.html', 'Trends - Cover')`

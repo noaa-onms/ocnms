@@ -12,7 +12,7 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Map - Bottom trawling activity
+#### Map - Bottom contact
 
 `r insert_figure("human-connections_heritage.html", "figures/Figure S.P.5.1.png")`
 

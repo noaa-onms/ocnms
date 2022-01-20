@@ -1,5 +1,5 @@
 ---
-title: "Sandy Beach"
+title: "Beaches"
 params:
   csv: "svg/links.csv"
   svg: "svg/sandy-beach.svg"

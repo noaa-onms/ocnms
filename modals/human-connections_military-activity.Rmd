@@ -9,3 +9,9 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
+
+### {.tabset}
+
+#### Map - Military activity zoning
+
+`r insert_figure("human-connections_military-activity.html", "figures/Figure P.10 NWTT Area.png")`

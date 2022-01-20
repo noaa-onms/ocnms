@@ -1,5 +1,5 @@
 ---
-pagetitle: "Beach closures"
+pagetitle: "Beach advisories"
 ---
 
 ```{r setup, include=F}
