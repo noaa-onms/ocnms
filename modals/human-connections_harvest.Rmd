@@ -28,7 +28,7 @@ source(here::here("infographiqR.R"))
 
 `r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.9 Total revenue by management group.png")`
 
-#### Trends - Status of goundfish stocks
+#### Trends - Status of groundfish stocks
 
 `r insert_figure("human-connections_harvest.html", "figures/SP4.1 overfished rebuilt stock.png")`
 
