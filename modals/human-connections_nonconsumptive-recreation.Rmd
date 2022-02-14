@@ -9,3 +9,27 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
+
+### {.tabset}
+
+#### Map - Recreational activities
+
+`r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/FigureES.NCR.1.png")`
+
+#### Trends - National Park recreation visitors
+
+`r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/ES.NCR.6.png")`
+
+#### Trends - Outdoor recreation visitors
+
+`r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/ES.NCR.5.png")`
+
+#### Trends - Recreational boat registrations
+
+`r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/ES.NCR.3.png")`
+
+#### Trends - Surf camp participation
+
+`r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/ES.NCR.2.png")`
+
+

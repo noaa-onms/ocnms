@@ -16,6 +16,10 @@ source(here::here("infographiqR.R"))
 
 `r insert_figure("human-connections_seafloor-disturbance.html", "figures/Figure S.P.3.2.png")`
 
+#### Map - Crushed cars lost at sea
+
+`r insert_figure("human-connections_seafloor-disturbance.html", "figures/R5 crushed cars.png")`
+
 #### Maps - Submarine cables
 
 `r insert_figure("human-connections_seafloor-disturbance.html", "figures/Figure P.8 OCNMS_Submarine_Cables_P7_04162021.jpg")`

@@ -12,10 +12,6 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Map - Crushed cars lost at sea
-
-`r insert_figure("human-connections_vessels.html", "figures/R5 crushed cars.png")`
-
 #### Map - Vessel density
 
 `r insert_figure("human-connections_vessels.html", "figures/Figure P.3 Vessel Traffic NWTT.png")`
@@ -27,11 +23,3 @@ source(here::here("infographiqR.R"))
 #### Trends - Cruise passengers
 
 `r insert_figure("human-connections_vessels.html", "figures/Figure P.7 Cruise Ships.png")`
-
-#### Trends - Vessel groundings/sinkings
-
-`r insert_figure("human-connections_vessels.html", "figures/R6 vessel groundings.png")`
-
-#### Trends - Vessel transits
-
-`r insert_figure("human-connections_vessels.html", "figures/SP2.3 vessel transits strait JdF.png")`

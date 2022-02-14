@@ -9,3 +9,6 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
+
+### Trends - Benthic Invertebrates
+`r insert_caption('kelp-forest_benthic-invertebrates.html', 'Trends - Benthic Invertebrates')`

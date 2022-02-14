@@ -9,3 +9,7 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
+
+
+### Trends - Chemistry
+`r insert_caption('ocean-climate_water-chemistry.html', 'Trends - Chemistry')`
