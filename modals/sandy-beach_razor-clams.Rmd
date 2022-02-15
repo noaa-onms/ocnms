@@ -18,7 +18,7 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Mocrocks Beach
 
-`r insert_figure("sandy-beach_razor-clams.html", "figures/Mocrocks.Density,Historical (1).jpg")`
+`r insert_figure("sandy-beach_razor-clams.html", "figures/Mocrocks.Density,Historical.jpg")`
 
 #### Trends - Pt. Grenville
 
