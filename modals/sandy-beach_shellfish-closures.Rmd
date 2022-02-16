@@ -9,7 +9,7 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
-PLEASE NOTE: for real-time information about shellfish harvesting in Washington, please visit the [Washington Department of Health shellfish safety information map](https://fortress.wa.gov/doh/biotoxin/biotoxin.htm)
+PLEASE NOTE: for real-time information about shellfish harvesting in Washington, please visit the [Washington Department of Health shellfish safety information map](https://fortress.wa.gov/doh/biotoxin/biotoxin.html)
 
 ### {.tabset}
 
