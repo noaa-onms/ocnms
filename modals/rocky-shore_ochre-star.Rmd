@@ -1,5 +1,7 @@
 ---
 pagetitle: "Ochre stars"
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=F}
@@ -9,34 +11,33 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
-### {.tabset}
+## {.tabset}
 
 ### Map of Sites
 
 ```{r}
-map_nms_sites("ocnms")
+rocky_map("ocnms")
 ```
 
 `r insert_caption('rocky-shore_mussels.html', 'Map of Sites')`
 
 ### Ochre Seastar (_Pisaster ochraceus_) {.active}
 
-```{r, eval=F}
-d_csv <- here("data/rocky-intertidal_MARINe/sanctuary_species_percentcover_new.csv") # missing count column though
-
-plot_intertidal_nms(nms_spp_sscount_csv, "OCNMS", "PISOCH", "Ochre Seastar", fld_val = "count", label_y = "Count (annual avg)") %>% 
-  dyLegend(show="follow")
+```{r}
+rocky_tsplot(
+  rocky_counts, "OCNMS", "PISOCH", "Ochre Seastar") # %>% 
+  # dyLegend(show="follow")
 ```
 
-#### Trends - abundance (MARINe)
+### Trends - abundance (MARINe)
 
 `r insert_figure("rocky-shore_ochre-star.html", "figures/S.LR.12.1.png")`
 
-#### Trends - size at Pt. Grenville
+### Trends - size at Pt. Grenville
 
 `r insert_figure("rocky-shore_ochre-star.html", "figures/Appendix S.LR.12.1 - Size structure of Pisaster ochraceus in rocky shore habitats Pt Grenville.jpg")`
 
-#### Trends - size at Sokol Point
+### Trends - size at Sokol Point
 
 `r insert_figure("rocky-shore_ochre-star.html", "figures/Appendix S.LR.12.1 - Size structure of Pisaster ochraceus in rocky shore habitats Sokol Pt.jpg")`
 
