@@ -7,6 +7,7 @@ shelf(
   dplyr, dygraphs, fs, glue, here, googledrive, googlesheets4, htmltools, knitr, 
   noaa-onms/onmsR, purrr, readr, rmarkdown, stringr, tibble, tidyr)
 here <- here::here
+# remotes::install_github("noaa-onms/onmsR")
 
 # set variables ----- 
 
