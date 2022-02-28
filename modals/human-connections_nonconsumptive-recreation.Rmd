@@ -14,22 +14,12 @@ source(here::here("infographiqR.R"))
 
 #### Map - Recreational activities
 
-`r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/FigureES.NCR.1.png")`
+`r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/FigureES.NCR.1_edit.png")`
 
-#### Trends - National Park recreation visitors
+#### Trends - National Park backcountry campers
 
 `r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/ES.NCR.6.png")`
 
-#### Trends - Outdoor recreation visitors
+#### Trends - National Park recreation visitors
 
 `r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/ES.NCR.5.png")`
-
-#### Trends - Recreational boat registrations
-
-`r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/ES.NCR.3.png")`
-
-#### Trends - Surf camp participation
-
-`r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/ES.NCR.2.png")`
-
-
