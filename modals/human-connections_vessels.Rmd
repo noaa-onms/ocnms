@@ -14,7 +14,7 @@ source(here::here("infographiqR.R"))
 
 #### Map - Vessel density
 
-`r insert_figure("human-connections_vessels.html", "figures/Figure P.3 Vessel Traffic NWTT.png")`
+`r insert_figure("human-connections_vessels.html", "figures/Figure P.3 Vessel Traffic NWTT_edit.png")`
 
 #### Map - Vessel zoning
 
@@ -22,4 +22,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Cruise passengers
 
-`r insert_figure("human-connections_vessels.html", "figures/Figure P.7 Cruise Ships.png")`
+`r insert_figure("human-connections_vessels.html", "figures/Figure P.7 Cruise Ships_edit.png")`

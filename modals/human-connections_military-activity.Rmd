@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Map - Military activity zoning
 
-`r insert_figure("human-connections_military-activity.html", "figures/Figure P.10 NWTT Area.png")`
+`r insert_figure("human-connections_military-activity.html", "figures/Figure P.10 NWTT Area_edit.png")`

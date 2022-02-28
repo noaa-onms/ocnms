@@ -18,12 +18,12 @@ source(here::here("infographiqR.R"))
 
 #### Map - Petroleum movement
 
-`r insert_figure("human-connections_spills-discharges.html", "figures/Figure P.4 ECY Oil movement.png")`
+`r insert_figure("human-connections_spills-discharges.html", "figures/Figure P.4 ECY Oil movement_edit.png")`
 
 #### Map - Tenyo Maru oil spill
 
-`r insert_figure("human-connections_spills-discharges.html", "figures/Figure P.6 Tenyo Maru.png")`
+`r insert_figure("human-connections_spills-discharges.html", "figures/Figure P.6 Tenyo Maru_edit.png")`
 
 #### Trends - Petroleum movement
 
-`r insert_figure("human-connections_spills-discharges.html", "figures/Figure P.5 ECY Total Oil moved.png")`
+`r insert_figure("human-connections_spills-discharges.html", "figures/Figure P.5 ECY Total Oil moved_edit.png")`

@@ -14,7 +14,7 @@ source(here::here("infographiqR.R"))
 
 #### Fishing, personal use
 
-`r insert_figure("human-connections_harvest.html", "figures/Figure ES.SH.1 Subsistence.png")`
+`r insert_figure("human-connections_harvest.html", "figures/Figure ES.SH.1 Subsistence_edit.png")`
 
 #### Trends - Black rockfish retained
 
@@ -22,11 +22,11 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Dungeness crab catch, revenue
 
-`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.3 D crab.png")`
+`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.3 D crab_edit.png")`
 
 #### Trends - Halibut biomass
 
-`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.1 IPHC catch area.png")`
+`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.1 IPHC catch area_edit.png")`
 
 #### Trends - Halibut retained
 
@@ -38,7 +38,7 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Revenue, salmon troll
 
-`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.9 Total revenue by management group.png")`
+`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.9 Total revenue by management group_edit.png")`
 
 #### Trends - Salmon retained
 
@@ -50,11 +50,11 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Vessels, salmon troll fleet
 
-`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.8 Troll vessels.png")`
+`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.8 Troll vessels_edit.png")`
 
 #### Trends - Whiting catch
 
-`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.2 Whiting.png")`
+`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.2 Whiting_edit.png")`
 
 #### Trends - Yellowtail rockfish retained
 

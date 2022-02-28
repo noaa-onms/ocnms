@@ -14,7 +14,7 @@ source(here::here("infographiqR.R"))
 
 #### Map - DO and halibut 2017
 
-`r insert_figure("ocean-climate_dissolved-oxygen.html", "figures/Figure ES.CH.5 IPHC hypoxia.png")`
+`r insert_figure("ocean-climate_dissolved-oxygen.html", "figures/Figure ES.CH.5 IPHC hypoxia_edit.png")`
 
 #### Maps - Minimum DO
 
@@ -26,4 +26,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Near-bottom DO
 
-`r insert_figure("ocean-climate_dissolved-oxygen.html", "figures/Alin DO.png")`
+`r insert_figure("ocean-climate_dissolved-oxygen.html", "figures/Alin DO_edit.png")`

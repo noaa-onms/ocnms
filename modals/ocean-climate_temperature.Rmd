@@ -20,6 +20,10 @@ source(here::here("infographiqR.R"))
 
 `r insert_figure("ocean-climate_temperature.html", "figures/Figure S.H.10.4_Marine Heat Wave.JPG")`
 
+#### Trends - Sea surface temperature
+
+`r insert_figure("ocean-climate_temperature.html", "figures/SSTanomalies NEW Final png")`
+
 #### Trends - Subsurface temperatuve
 
 `r insert_figure("ocean-climate_temperature.html", "figures/Figure S_WQ_8_4_SST anomalies profile 1980-2019.png")`

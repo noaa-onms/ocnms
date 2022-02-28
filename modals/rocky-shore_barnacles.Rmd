@@ -16,7 +16,7 @@ source(here::here("infographiqR.R"))
 ### Map of Sites
 
 ```{r}
-map_nms_sites("ocnms")
+rocky_map("ocnms")
 ```
 
 `r insert_caption('rocky-shore_barnacles.html', 'Map of Sites')`
