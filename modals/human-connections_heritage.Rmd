@@ -18,4 +18,4 @@ source(here::here("infographiqR.R"))
 
 #### Map - Sunken vessels
 
-`r insert_figure("human-connections_heritage.html", "figures/SH.7 Shipwrecks.png")`
+`r insert_figure("human-connections_heritage.html", "figures/SH.7 Shipwrecks_edit.png")`

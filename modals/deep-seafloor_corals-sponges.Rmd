@@ -9,5 +9,9 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
-### Trends - Abundance
-`r insert_caption('deep-seafloor_corals-sponges.html', 'Trends - Abundance')`
+
+### {.tabset}
+
+#### Trends - Abundance
+
+`r insert_figure("deep-seafloor_corals-sponges.html", "figures/SH.6 Coral.png")`

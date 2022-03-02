@@ -14,7 +14,7 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Blueback salmon
 
-`r insert_figure("pelagic_salmon.html", "figures/S.LR.13.13b - Status of Quinault Blueback Salmon.jpg")`
+`r insert_figure("pelagic_salmon.html", "figures/S.LR.13.11.png")`
 
 #### Trends - Chinook salmon
 

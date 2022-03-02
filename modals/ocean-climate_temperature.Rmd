@@ -24,6 +24,6 @@ source(here::here("infographiqR.R"))
 
 `r insert_figure("ocean-climate_temperature.html", "figures/SSTanomalies NEW Final png")`
 
-#### Trends - Subsurface temperatuve
+#### Trends - Subsurface temperature
 
 `r insert_figure("ocean-climate_temperature.html", "figures/Figure S_WQ_8_4_SST anomalies profile 1980-2019.png")`
