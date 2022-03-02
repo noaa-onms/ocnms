@@ -21,7 +21,7 @@ rocky_map("ocnms")
 
 `r insert_caption('rocky-shore_mussels.html', 'Map of Sites')`
 
-### California Mussels (_Mytilus californianus_), target = ANY {.active}
+### Trends - Mussel abundance {.active}
 
 ```{r}
 rocky_tsplot(rocky_cover, "OCNMS", "MYTCAL", "California Mussels [target = mytilus]", "mytilus") # %>%
@@ -30,6 +30,6 @@ rocky_tsplot(rocky_cover, "OCNMS", "MYTCAL", "California Mussels [target = mytil
 
 `r insert_caption('rocky-shore_mussels.html', 'Trends - Mussel abundance')`
 
-### Trends - condition
+### Trends - Mussel condition
 
 `r insert_figure("rocky-shore_mussels.html", "figures/S.LR.12.5 - Mussell shell thickness.jpg")`

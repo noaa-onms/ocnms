@@ -21,25 +21,10 @@ rocky_map("ocnms")
 
 `r insert_caption('rocky-shore_barnacles.html', 'Map of Sites')`
 
-### Acorn Barnacles (_Chthamalus dalli/fissus/Balanus glandula_) {.active}
+### Trends - Acorn Barnacles {.active}
 
 ```{r}
-d0_csv         <- here("data/rocky-intertidal_MARINe/sanctuary_species_percentcover.csv")
-d_csv         <- here("data/rocky-intertidal_MARINe/sanctuary_species_percentcover_new.csv")
-
-d0 <- readr::read_csv(d0_csv)
-d  <- readr::read_csv(d_csv)
-
-# readr::read_csv(d_csv) %>%
-#   mutate(
-#     date = as.Date(date, "%m/%d/%y")) %>% 
-#   readr::write_csv(d_csv)
-
-# detach("package:onmsR", unload = TRUE)
-# devtools::load_all("~/github/noaa-onms/onmsR")
-
-plot_intertidal_nms(d_csv, "OCNMS", "CHTBAL", "Acorn Barnacles") %>%
-  dyLegend(show="follow")
+rocky_tsplot(rocky_cover, "OCNMS", "CHTBAL", "Acorn Barnacles") 
 ```
 
 `r insert_caption('rocky-shore_barnacles.html', 'Trends - Acorn barnacles')`
