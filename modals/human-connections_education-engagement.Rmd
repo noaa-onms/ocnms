@@ -9,24 +9,3 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
-### {.tabset}
-
-#### Trends - B-WET program
-
-`r insert_figure("human-connections_education-engagement.html", "figures/ES.E.2.png")`
-
-#### Trends - Facebook post reach
-
-`r insert_figure("human-connections_education-engagement.html", "figures/ES.E.4.png")`
-
-#### Trends - Impressions per tweet
-
-`r insert_figure("human-connections_education-engagement.html", "figures/ES.E.5.png")`
-
-#### Trends - Ocean Guardian program
-
-`r insert_figure("human-connections_education-engagement.html", "figures/ES.E.1.png")`
-
-#### Trends - Volunteer activity
-
-`r insert_figure("human-connections_education-engagement.html", "figures/ES.S.4.png")`

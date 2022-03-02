@@ -14,4 +14,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Abundance
 
-`r insert_figure("deep-seafloor_corals-sponges.html", "figures/SH.6 Coral.png")`
+`r insert_figure("deep-seafloor_corals-sponges.html", "figures/SH.6 Coral_edit.png")`

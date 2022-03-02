@@ -9,3 +9,6 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
+### Trends - Sense of Place
+
+`r insert_caption('human-connections_sense-place.html', 'Trends - Sense of Place')`
