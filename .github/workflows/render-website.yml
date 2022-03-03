@@ -4,8 +4,7 @@ on:
   push:
   schedule:            
   - cron: '0 0 * * 0' # once per week, Sundays 0:00
-  # see more on [cron schedule
-](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule)
+  # see more on [cron schedule](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule)
   workflow_dispatch:
 
 jobs:
