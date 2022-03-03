@@ -23,9 +23,6 @@ navbar:
       href: ocean-climate.html
     - text: "Human Connections"
       href: human-connections.html
-  right:
-    - text: "About"
-      href: https://marinebon.org/sanctuaries/
 output:
   html_document:
     theme: lumen # darkly # cosmo # https://bootswatch.com
