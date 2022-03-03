@@ -13,6 +13,7 @@
 
 <title>Krill</title>
 
+<script src="_libs/header-attrs-2.12/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -41,7 +42,8 @@
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
-    </style>
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -53,6 +55,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -81,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -180,7 +186,7 @@ pre code {
 <div style="margin: 10px; font-style: italic; flex: 20; ">The rich abundance of marine life on the Olympic Coast is associated with high seasonal productivity driven by climate and ocean phenomena like upwelling, a wind-driven process that draws nutrients from deep ocean water onto the continental shelf during the spring and summer. This influx of nutrients fuels an increase among phytoplankton, tiny marine plants that use sunlight and nutrients to grow. Phytoplankton are consumed by other plankton, including tiny marine crustaceans known as krill . Krill species, including northern Pacific krill *Euphausia pacifica*, are an important link in the food chain, since they are consumed by many larger species including whales, seals, seabirds, squid and fish. Krill are among the species that vertically migrate within the water column each day, spending daylight hours at depth and rising to surface waters at night.</div>
 </div>
 <div id="section" class="section level3 tabset">
-<h3></h3>
+<h3 class="tabset"></h3>
 <div id="maps---krill-distribution" class="section level4">
 <h4>Maps - Krill distribution</h4>
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://www.pcouncil.org/documents/2020/02/g-1-a-iea-team-report-1.pdf/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>

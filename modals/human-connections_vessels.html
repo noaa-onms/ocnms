@@ -13,6 +13,7 @@
 
 <title>Vessels</title>
 
+<script src="_libs/header-attrs-2.12/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -41,7 +42,8 @@
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
-    </style>
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -53,6 +55,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -81,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -177,7 +183,7 @@ pre code {
 <div style="margin: 10px; font-style: italic; flex: 20; ">Although water quality within the sanctuary is currently good, the potential for contamination by petroleum products, pathogens, and chemicals is a concern. Four of the five largest vessel-based oil spills in Washington state history have occurred in or moved into the area now designated as the sanctuary. Sanctuary staff collaborate on management efforts designed to minimize risks to sanctuary habitats and living resources and the communities that depend on them from vessels in several ways. For example, an Area to Be Avoided covering more than 70% of the sanctuary was designated by the International Maritime Organization to keep all ships and barges that carry oil or hazardous materials as cargo, and all ships 400 gross tons and above, solely in transit, outside of the Area To Be Avoided. High compliance with this provision enhances several other resource protection efforts at the sanctuary designed to minimize risks from vessels.</div>
 </div>
 <div id="section" class="section level3 tabset">
-<h3></h3>
+<h3 class="tabset"></h3>
 <div id="map---vessel-density" class="section level4">
 <h4>Map - Vessel density</h4>
 
