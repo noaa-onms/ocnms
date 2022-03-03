@@ -86,7 +86,7 @@ add_gimage_paths <- function(
   dir_figures = "modals/figures",
   dir_modals  = "modals"){
   # add google image paths
-  # figures_csv = here::here("data/gsheets/figures.csv"); fld_glink   = "image_link"; fld_path    = "image_path"; dir_figures = "modals/figures"; dir_modals  = "modals"
+  # figures_csv = here::here("data/gsheets/figures.csv"); fld_glink = "image_link"; fld_path = "image_path"; dir_figures = "modals/figures"; dir_modals  = "modals"
   
   stopifnot(file.exists(figures_csv))
   
@@ -109,8 +109,11 @@ add_gimage_paths <- function(
     
     
     gd <- try(googledrive::drive_get(glink), silent = T)
-    if ("try-error" %in% class(gd) || nrow(gd)==0)
+    if ("try-error" %in% class(gd) || nrow(gd)==0){
+      message(glue("get_image_path() ERROR!: {glink}"))
+      message(glue("  PLEASE CHECK!"))
       return(NA)
+    }
     
     message(glue("get_image_path(): {glink}"))
     fname <- gd %>% pull(name) %>% str_replace_all(fixed("*"), "")
@@ -118,9 +121,15 @@ add_gimage_paths <- function(
     
     # TODO: what if image changes but not file path?
     if (!file.exists(fpath)){
+      message(glue("  file downloading ..."))
       gd <- try(drive_download(glink, fpath))
-      if ("try-error" %in% class(gd))
+      if ("try-error" %in% class(gd)){
+        message(glue("  file download ERROR! :("))
         return(NA)
+      }
+      message(glue("  file succesfully download :)"))
+    } else {
+      message(glue("  file already downloaded :)"))
     }
     
     # strip dir_modal, so from modal figure is found
@@ -135,7 +144,7 @@ add_gimage_paths <- function(
   d_figures %>% 
     filter(!is.na(image_link) & is.na(image_path)) %>% 
     select(link, image_link) %>% 
-    write_csv("data/gsheets/figures_needs-to-be-shared_shares@nms4gargle.iam.gserviceaccount.com.csv")
+    write_csv("data/gsheets/figures_needs-to-be-fixed-or-shared_shares@nms4gargle.iam.gserviceaccount.com.csv")
   
   readr::write_csv(d_figures, figures_csv)
 }
@@ -206,17 +215,35 @@ create_modal <- function(
   # path_rmd = here("modals/deep-seafloor_groundfish-assemblage.html"); fld_html = "link"
   # path_rmd = here("modals/pelagic_seabirds.html"); fld_html = "link"
   # path_rmd = here("modals/kelp-forest_sea-otters.html")
+  # path_rmd = "/Users/bbest/github/noaa-onms/ocnms/modals/human-connections_education-engagement.Rmd"; fld_html = "link"; debug=T
+  # create_modal(path_rmd)
   
   modal_html <- fs::path_ext_set(basename(path_rmd), ".html")
   
   d_m <- d_modals %>% 
     filter(
       .data[[fld_html]] == !!modal_html)
-  d_f <- d_figures %>% 
+  d_f_0 <- d_figures %>% 
     filter(
-      .data[[fld_html]] == !!modal_html,
-      !is.na(image_path)) %>% 
+      .data[[fld_html]] == !!modal_html)
+  d_f <- d_f_0 %>% 
+    filter(!is.na(image_path)) %>% 
     arrange(tab_group, tab, image_path)
+  
+  if (nrow(d_f) < nrow(d_f_0)){
+    image_links_bad <- d_f_0 %>% 
+      anti_join(
+        d_f, by= "image_link") %>% pull(image_link)
+
+    message(glue("
+      WHOAH! For `link` == {modal_html},
+      missing {length(image_links_bad)} figures locally (not downloaded by `add_gimage_paths()`) that were
+      defined in Google Sheet:
+      - {paste(image_links_bad, collapse='\n      - ')}
+      This usually means `add_gimage_paths()` had trouble with the `image_link` because:
+        1) file wasn't shared with shares@nms4gargle.iam.gserviceaccount.com; or
+        2) file is not an expected image, eg *png or *jpeg."))
+  }
   
   #* template ----
   attach(d_m)
@@ -415,7 +442,7 @@ create_modals <- function(
   modals_csv  = here::here("data/gsheets/modals.csv"),
   figures_csv = here::here("data/gsheets/figures.csv"),
   dir_modals  = here::here("modals")){
-  # modals_csv  = here::here("data/gsheets/modals.csv"); figures_csv = here::here("data/gsheets/figures.csv")
+  # modals_csv  = here::here("data/gsheets/modals.csv"); figures_csv = here::here("data/gsheets/figures.csv"); dir_modals  = here::here("modals")
   
   d_modals_rmd  <- readr::read_csv(modals_csv, show_col_types = F) %>% 
     filter(
@@ -435,7 +462,7 @@ create_modals <- function(
   if (!dir.exists(dir_modals))
     dir.create(dir_modals)
   
-  for (path_rmd in d_modals$path_rmd){
+  for (path_rmd in d_modals$path_rmd){ # path_rmd = d_modals$path_rmd[11]
     message(glue("creating modal: {basename(path_rmd)}"))
     create_modal(path_rmd, d_modals, d_figures)
   }
@@ -458,6 +485,7 @@ render_modals <- function(
   # gsheets_to_csvs(gsheet); add_gimage_paths() 
   d %>%
     # slice(61:nrow(d)) %>% 
+    # slice(13) %>% 
     purrr::pwalk(rmarkdown::render)
 }
 

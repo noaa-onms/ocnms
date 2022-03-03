@@ -16,6 +16,22 @@ source(here::here("infographiqR.R"))
 
 `r insert_figure("human-connections_harvest.html", "figures/Figure ES.SH.1 Subsistence_edit.png")`
 
+#### Top 11 species by landings
+
+`r insert_figure("human-connections_harvest.html", "figures/ES.CH.2a.png")`
+
+#### Top 11 species by value
+
+`r insert_figure("human-connections_harvest.html", "figures/ES.CH.2b.png")`
+
+#### Top 5 species by $
+
+`r insert_figure("human-connections_harvest.html", "figures/ES.CH.4.png")`
+
+#### Top 5 species by weight
+
+`r insert_figure("human-connections_harvest.html", "figures/ES.CH.3.png")`
+
 #### Trends - Black rockfish retained
 
 `r insert_figure("human-connections_harvest.html", "figures/CR_app_blackrockfish.JPG")`
@@ -36,6 +52,10 @@ source(here::here("infographiqR.R"))
 
 `r insert_figure("human-connections_harvest.html", "figures/CR_app_lingcod.JPG")`
 
+#### Trends - Razor Clam harvest and value
+
+`r insert_figure("human-connections_harvest.html", "figures/ES.CR.5.png")`
+
 #### Trends - Revenue, salmon troll
 
 `r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.9 Total revenue by management group_edit.png")`
@@ -43,6 +63,10 @@ source(here::here("infographiqR.R"))
 #### Trends - Salmon retained
 
 `r insert_figure("human-connections_harvest.html", "figures/CR_app_salmon.JPG")`
+
+#### Trends - Status of goundfish stocks
+
+`r insert_figure("human-connections_harvest.html", "figures/Graph S.P.4.1.png")`
 
 #### Trends - Tuna retained
 

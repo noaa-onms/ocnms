@@ -15,3 +15,7 @@ source(here::here("infographiqR.R"))
 #### Map - Entangled whales
 
 `r insert_figure("human-connections_wildlife-disturbance.html", "figures/Figure P.9 Whale Entanglement Santora_edit.png")`
+
+#### Trend - Entangled whales
+
+`r insert_figure("human-connections_wildlife-disturbance.html", "figures/Graph S.P.4.2.png")`

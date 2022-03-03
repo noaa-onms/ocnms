@@ -9,3 +9,21 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
+
+### {.tabset}
+
+#### Community science activities
+
+`r insert_figure("human-connections_science.html", "figures/ES.S.3.png")`
+
+#### Trends - Community science
+
+`r insert_figure("human-connections_science.html", "figures/ES.S.4.png")`
+
+#### Trends - Open OCNMS permits
+
+`r insert_figure("human-connections_science.html", "figures/ES.S.1.png")`
+
+#### Trends - R/V *Tatoosh* activity
+
+`r insert_figure("human-connections_science.html", "figures/ES.S.2.png")`

@@ -23,3 +23,11 @@ source(here::here("infographiqR.R"))
 #### Trends - Cruise passengers
 
 `r insert_figure("human-connections_vessels.html", "figures/Figure P.7 Cruise Ships_edit.png")`
+
+#### Trends - Vessel groundings/sinkings
+
+`r insert_figure("human-connections_vessels.html", "figures/R.6.png")`
+
+#### Trends - Vessel transits
+
+`r insert_figure("human-connections_vessels.html", "figures/S.P.2.2.png")`

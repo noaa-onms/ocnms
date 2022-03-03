@@ -23,3 +23,15 @@ source(here::here("infographiqR.R"))
 #### Trends - National Park recreation visitors
 
 `r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/ES.NCR.5.png")`
+
+#### Trends - Outdoor recreation visitors
+
+`r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/ES.NCR.4.png")`
+
+#### Trends - Recreational boat registrations
+
+`r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/ES.NCR.3.png")`
+
+#### Trends - Surf camp participation
+
+`r insert_figure("human-connections_nonconsumptive-recreation.html", "figures/ES.NCR.2.png")`

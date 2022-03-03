@@ -19,3 +19,7 @@ source(here::here("infographiqR.R"))
 #### Maps - Streamflow, sediments, N, P
 
 `r insert_figure("ocean-climate_nutrients-phytoplankton.html", "figures/S.WQ.6.5 Sparrow_USGS.png")`
+
+#### Trends - Chlorophyll anomaly
+
+`r insert_figure("ocean-climate_nutrients-phytoplankton.html", "figures/S.WQ.Q6.2.png")`

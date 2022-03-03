@@ -9,3 +9,9 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
+
+### {.tabset}
+
+#### Trends - Debris on beaches
+
+`r insert_figure("human-connections_marine-debris.html", "figures/S.P.4.3.png")`
