@@ -16,6 +16,14 @@ source(here::here("infographiqR.R"))
 
 `r insert_figure("human-connections_harvest.html", "figures/Figure ES.SH.1 Subsistence_edit.png")`
 
+#### Map - catch reporting areas fish/shellfish
+
+`r insert_figure("human-connections_harvest.html", "figures/Figure ES.CH1a. marine area vs ocnms boundary.png")`
+
+#### Map - catch reporting areas salmon
+
+`r insert_figure("human-connections_harvest.html", "figures/Figure ES.CH1b. salmon areas vs ocnms boundary.png")`
+
 #### Top 11 species by landings
 
 `r insert_figure("human-connections_harvest.html", "figures/ES.CH.2a.png")`

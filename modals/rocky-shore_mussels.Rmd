@@ -21,14 +21,14 @@ rocky_map("ocnms")
 
 `r insert_caption('rocky-shore_mussels.html', 'Map of Sites')`
 
-### Trends - Mussel abundance {.active}
+### Interactive Trends - Mussels  {.active}
 
 ```{r}
-rocky_tsplot(rocky_cover, "OCNMS", "MYTCAL", "California Mussels [target = mytilus]", "mytilus") # %>%
+rocky_tsplot(rocky_cover, "OCNMS", "MYTCAL", "California Mussels", "mytilus") # %>%
   # dyLegend(show="follow")
 ```
 
-`r insert_caption('rocky-shore_mussels.html', 'Trends - Mussel abundance')`
+`r insert_caption('rocky-shore_mussels.html', 'Interactive Trends - Mussels')`
 
 ### Trends - Mussel condition
 

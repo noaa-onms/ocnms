@@ -19,23 +19,23 @@ rocky_map("ocnms")
 
 `r insert_caption('rocky-shore_macroalgae-surfgrass.html', 'Map of Sites')`
 
-### Trends - Rockweed abundance {.active}
+### Interactive Trends - Rockweed {.active}
 
 ```{r}
 rocky_tsplot(rocky_cover, "OCNMS", "PELLIM", "Rockweed", "pelvetiopsis") # %>%
   # dyLegend(show="follow")
 ```
 
-`r insert_caption('rocky-shore_macroalgae-surfgrass.html', 'Trends - Rockweed abundance')`
+`r insert_caption('rocky-shore_macroalgae-surfgrass.html', 'Interactive Trends - Rockweed')`
 
-### Trends - Surfgrass abundance
+### 'Interactive Trends - Surfgrass
 
 ```{r}
 rocky_tsplot(rocky_cover, "OCNMS", "PHYSPP", "Surfgrass", "phyllospadix") # %>%
   # dyLegend(show="follow")
 ```
 
-`r insert_caption('rocky-shore_macroalgae-surfgrass.html', 'Trends - Surfgrass abundance')`
+`r insert_caption('rocky-shore_macroalgae-surfgrass.html', 'Interactive Trends - Surfgrass')`
 
 ### Trends - Rockweed
 

@@ -21,7 +21,7 @@ rocky_map("ocnms")
 
 `r insert_caption('rocky-shore_mussels.html', 'Map of Sites')`
 
-### Trends - Abundance {.active}
+### Interactive Trends - Ochre stars {.active}
 
 ```{r}
 rocky_tsplot(
@@ -29,7 +29,7 @@ rocky_tsplot(
   # dyLegend(show="follow")
 ```
 
-`r insert_caption('rocky-shore_ochre-star.html', 'Trends - Abundance')`
+`r insert_caption('rocky-shore_ochre-star.html', 'Interactive Trends - Ochre stars')`
 
 ### Trends - Size at Pt. Grenville
 
