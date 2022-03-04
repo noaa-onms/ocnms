@@ -28,7 +28,7 @@ rocky_tsplot(rocky_cover, "OCNMS", "PELLIM", "Rockweed", "pelvetiopsis") # %>%
 
 `r insert_caption('rocky-shore_macroalgae-surfgrass.html', 'Interactive Trends - Rockweed')`
 
-### 'Interactive Trends - Surfgrass
+### Interactive Trends - Surfgrass
 
 ```{r}
 rocky_tsplot(rocky_cover, "OCNMS", "PHYSPP", "Surfgrass", "phyllospadix") # %>%
