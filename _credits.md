@@ -5,6 +5,9 @@
   * Jennifer Brown
   * Jai Ranganathan
   * Pike Spector
+- **Content support**
+  * Jenny Waddell
+  * Katie Wrubel 
 - **Tools**: 
   * [**infographiq**](https://marinebon.org/infographiq): intelligently linked infographics approach; developed by the [Marine Biodiversity Observation Network](https://marinebon.org)
     * [**`infographiqJS`**](https://marinebon.org/infographiqJS/): core JavaScript (JS) library to link infographic icons to pop-up windows 

@@ -23,6 +23,9 @@ navbar:
       href: ocean-climate.html
     - text: "Human Connections"
       href: human-connections.html
+  right:
+    - text: "Credits"
+      href: _credits.html
 output:
   html_document:
     theme: lumen # darkly # cosmo # https://bootswatch.com
