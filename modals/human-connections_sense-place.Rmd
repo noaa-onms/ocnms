@@ -9,6 +9,17 @@ source(here::here("infographiqR.R"))
 
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
-### Trends - Sense of Place
 
-`r insert_caption('human-connections_sense-place.html', 'Trends - Sense of Place')`
+### {.tabset}
+
+#### Trends - Sense of Place
+
+`r insert_figure("human-connections_sense-place.html", "figures/MakahDays-SmokingSalmon-KarlynLangjahr.jpg")`
+
+#### Trends - Sense of Place
+
+`r insert_figure("human-connections_sense-place.html", "figures/S.P.16.3_tribaljourneys2009_24.JPG")`
+
+#### Trends - Sense of Place
+
+`r insert_figure("human-connections_sense-place.html", "figures/SecondBeach_Matt_McIntosh.jpg")`
