@@ -1,5 +1,5 @@
 
-- **Artwork**: Amanda Dillon
+- **Artwork**: Amanda Dillon, [Aline design](https://alinedesignhawaii.com/)
 - **Technical implementation**: 
   * Ben Best
   * Jennifer Brown
