@@ -1,5 +1,5 @@
 
-- **Artwork**: Amanda Dillon, [Aline design](https://alinedesignhawaii.com/)
+- **Artwork**: Amanda Dillon, [Aline design](https://alinedesignhawaii.com/){target="_blank"}
 - **Technical implementation**: 
   * Ben Best
   * Jennifer Brown
@@ -9,8 +9,8 @@
   * Jenny Waddell
   * Katie Wrubel 
 - **Tools**: 
-  * [**infographiq**](https://marinebon.org/infographiq): intelligently linked infographics approach; developed by the [Marine Biodiversity Observation Network](https://marinebon.org)
+  * [**infographiq**](https://marinebon.org/infographiq){target="_blank"}: intelligently linked infographics approach; developed by the [Marine Biodiversity Observation Network](https://marinebon.org){target="_blank"}
     * [**`infographiqJS`**](https://marinebon.org/infographiqJS/): core JavaScript (JS) library to link infographic icons to pop-up windows 
-    * [**`infographiqR`**](https://marinebon.org/infographiqR/): core R library used to render and create the entire website
+    * [**`infographiqR`**](https://marinebon.org/infographiqR/){target="_blank"}: core R library used to render and create the entire website
 - **More Resources**:
-    * [**Webenizing Condition Reports**](https://sanctuaries.noaa.gov/science/conservation/webenizing-condition-reports.html) Sanctuary Conservation Series document detailing the creation and development of WebCRs
+    * [**Webenizing Condition Reports**](https://sanctuaries.noaa.gov/science/conservation/webenizing-condition-reports.html){target="_blank"} Sanctuary Conservation Series document detailing the creation and development of Webenized Condition Reports (WebCRs)
