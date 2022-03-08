@@ -1,5 +1,7 @@
 
-- **Artwork**: Amanda Dillon, [Aline design](https://alinedesignhawaii.com/){target="_blank"}
+- **Artwork**: 
+  * Amanda Dillon, [Aline design](https://alinedesignhawaii.com/){target="_blank"}
+  * Su Kim, NOAA/NMFS-NWFSC
 - **Technical implementation**: 
   * Ben Best
   * Jennifer Brown
