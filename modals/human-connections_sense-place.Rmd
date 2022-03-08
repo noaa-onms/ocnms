@@ -12,14 +12,14 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Trends - Sense of Place
+#### Sense of Place
 
 `r insert_figure("human-connections_sense-place.html", "figures/MakahDays-SmokingSalmon-KarlynLangjahr.jpg")`
 
-#### Trends - Sense of Place
+#### Sense of Place
 
 `r insert_figure("human-connections_sense-place.html", "figures/S.P.16.3_tribaljourneys2009_24.JPG")`
 
-#### Trends - Sense of Place
+#### Sense of Place
 
 `r insert_figure("human-connections_sense-place.html", "figures/SecondBeach_Matt_McIntosh.jpg")`
