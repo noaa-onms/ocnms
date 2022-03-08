@@ -1,7 +1,7 @@
 
 - **Artwork**: 
+   * Su Kim, NOAA/NMFS-NWFSC
   * Amanda Dillon, [Aline design](https://alinedesignhawaii.com/){target="_blank"}
-  * Su Kim, NOAA/NMFS-NWFSC
 - **Technical implementation**: 
   * Ben Best, EcoQuants
   * Jennifer Brown, ECOS Consulting for NOAA/CINMS & MBNMS
