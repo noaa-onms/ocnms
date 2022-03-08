@@ -4,7 +4,7 @@
   * Su Kim, NOAA/NMFS-NWFSC
 - **Technical implementation**: 
   * Ben Best, EcoQuants
-  * Jennifer Brown, ECOS
+  * Jennifer Brown, ECOS Consulting for NOAA/CINMS & MBNMS
   * Jai Ranganathan, EcoQuants
   * Pike Spector, NOAA/ONMS-OCNMS
 - **Content support**
