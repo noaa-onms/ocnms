@@ -26,10 +26,13 @@ navbar:
   right:
     - text: "Credits"
       href: _credits.html
+      
+  Create _ganalytics.html
 output:
   html_document:
     theme: lumen # darkly # cosmo # https://bootswatch.com
     self_contained: no
     css: libs/styles.css
     mathjax: null
-    
+    includes:
+      in_header: _ganalytics.html 
