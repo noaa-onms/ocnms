@@ -4,5 +4,5 @@ output:
     lib_dir: _libs
     mathjax: null
     includes:
-      in_header: _ganalytics.html     
+      in_header: ../_ganalytics.html     
 output_dir: "."    
