@@ -13,6 +13,7 @@
 
 <title>Harvest</title>
 
+<script src="_libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -33,6 +34,15 @@
 <script src="_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
 <link href="_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S52XFTVKL0');
+</script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -41,7 +51,8 @@
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
-    </style>
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -53,6 +64,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -81,6 +93,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -173,14 +188,15 @@ pre code {
 <div style="margin: 10px; font-style: italic; flex: 20; ">The bountiful marine resources of the Olympic Coast have supported tribal communities since time immemorial. Humans currently harvest living resources on the Olympic Coast through commercial, recreational and subsistence fishing activities that target a wide range of fish, shellfish and other living marine resources. As sovereign nations, Olympic Coast tribes have reserved treaty ﬁshing rights and co-management responsibilities for ﬁshery resources and ﬁshing activities within the sanctuary. The sanctuary does not manage fisheries.</div>
 </div>
 <div id="section" class="section level3 tabset">
-<h3></h3>
+<h3 class="tabset"></h3>
 <div id="fishing-personal-use" class="section level4">
 <h4>Fishing, personal use</h4>
 
 <p><img src="figures/Figure%20ES.SH.1%20Subsistence_edit.png" alt=""/> Reasons fishers reported keeping catch for personal use. Source: Poe, 2019.</p>
 
 </div>
-<div id="map---catch-reporting-areas-fishshellfish" class="section level4">
+<div id="map---catch-reporting-areas-fishshellfish"
+class="section level4">
 <h4>Map - catch reporting areas fish/shellfish</h4>
 
 <p><img src="figures/Figure%20ES.CH1a.%20marine%20area%20vs%20ocnms%20boundary.png" alt=""/> Washington Department of Fish and Wildlife commercial catch reporting areas for marine fish and shellfish. Source: WDFW</p>

@@ -10,6 +10,8 @@ source(here::here("infographiqR.R"))
 `r insert_info(csv = here::here("data/gsheets/modals.csv"))`
 
 
+### {.tabset}
 
-### Trends - Processes
-`r insert_caption('ocean-climate_physical-processes.html', 'Trends - Processes')`
+#### Trends - LUSI & TUMI
+
+`r insert_figure("ocean-climate_physical-processes.html", "figures/S_WQ_Q6_4_LUSI_TUMI_CCIEA.JPG")`

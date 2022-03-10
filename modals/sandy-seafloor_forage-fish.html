@@ -13,6 +13,7 @@
 
 <title>Forage fish</title>
 
+<script src="_libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -33,6 +34,15 @@
 <script src="_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
 <link href="_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S52XFTVKL0');
+</script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -41,7 +51,8 @@
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
-    </style>
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -53,6 +64,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -81,6 +93,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;

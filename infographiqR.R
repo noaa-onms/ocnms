@@ -23,7 +23,8 @@ if (Sys.getenv("GITHUB_ACTIONS") == ""){
   google_sa_json <- switch(
     Sys.info()[['user']],
     # download from: https://drive.google.com/drive/u/1/folders/1k7DZBGTm4f8w4ppXdURSw67tnvzW4DsK
-    bbest       = "/Users/bbest/My Drive (ben@ecoquants.com)/projects/nms-web/data/nms4gargle-774a9e9ec703.json",
+    # bbest       = "/Users/bbest/My Drive (ben@ecoquants.com)/projects/nms-web/data/nms4gargle-774a9e9ec703.json",
+    bbest       = "/Volumes/GoogleDrive/My Drive/projects/nms-web/data/nms4gargle-774a9e9ec703.json",
     jaira       = "C:/Users/jaira/OneDrive/Documents/ocnms_extra/nms4gargle-774a9e9ec703.json",
     jai         = "/Users/jai/Documents/ocnms-extra/nms4gargle-774a9e9ec703.json",
     PikesStuff  = "/Users/PikesStuff/Theseus/Private/nms4gargle-774a9e9ec703.json")
