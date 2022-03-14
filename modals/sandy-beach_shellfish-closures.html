@@ -13,6 +13,7 @@
 
 <title>Shellfish closures</title>
 
+<script src="_libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -50,7 +51,8 @@
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
-    </style>
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -62,6 +64,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -90,6 +93,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -185,9 +191,12 @@ pre code {
 </div>
 <div style="margin: 10px; font-style: italic; flex: 20; ">Harmful algae species and biotoxins in shellfish are naturally present on the Olympic Coast, but increasingly they pose potential risks to the health of humans and other vertebrates that may consume contaminated shellfish. Shellfish in Washington that are harvested for human consumption are tested regularly to detect toxins like domoic acid, and in 2015-2016 high domoic acid levels in Dungeness crabs and razor clams prompted a devastating fishery closure that had negative consequences for coastal treaty tribes and adjacent coastal communities. Additional shellfish harvest closures have occurred more recently as well. Please consult official sources for updated information about shellfish safety.</div>
 </div>
-<p>PLEASE NOTE: for real-time information about shellfish harvesting in Washington, please visit the <a href="https://fortress.wa.gov/doh/biotoxin/biotoxin.html">Washington Department of Health shellfish safety information map</a></p>
+<p>PLEASE NOTE: for real-time information about shellfish harvesting in
+Washington, please visit the <a
+href="https://fortress.wa.gov/doh/biotoxin/biotoxin.html">Washington
+Department of Health shellfish safety information map</a></p>
 <div id="section" class="section level3 tabset">
-<h3></h3>
+<h3 class="tabset"></h3>
 <div id="trends---biotoxin-closures" class="section level4">
 <h4>Trends - Biotoxin closures</h4>
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://fortress.wa.gov/doh/biotoxin/biotoxin.html" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
@@ -208,13 +217,15 @@ WDFW Domoic Acid Monitoring</a></div><div style="text-align:right; display:table
 Kalaloch domoic acid levels</a></div></div></div><p><img src="figures/DA_Kalaloch_WDFW.JPG" alt=""/> Domoic acid levels in razor clams for Kalaloch Beach, OCNMS (1999–2021). Dashed line shows the WDFW domoic acid threshold (20 ppm). Source: Washington Department of Health; WDFW, 2021; Image: Dan Ayres/WDFW.</p>
 
 </div>
-<div id="trends---mocrocks-domoic-acid-levels-cciea" class="section level4">
+<div id="trends---mocrocks-domoic-acid-levels-cciea"
+class="section level4">
 <h4>Trends - Mocrocks Domoic Acid Levels (CCIEA)</h4>
 
 <p><img src="figures/S_WQ_Q7_4_MaxDA_RazorClams_Mocrocks_CCIEA.JPG" alt=""/> Maximum domoic acid levels in razor clams for Mocrocks Beach, OCNMS (1991–2019). The vertical black line indicates the year of the last condition report (2008). The black dot (●) indicates that the mean for the last 10 years was within 1 standard deviation of the long-term mean. During the last 10 years, the trend did not change (indicated by arrow →). Solid green lines show ±1 standard deviation. Image: IEA, 2020.</p>
 
 </div>
-<div id="trends---mocrocks-domoic-acid-levels-wdfw" class="section level4">
+<div id="trends---mocrocks-domoic-acid-levels-wdfw"
+class="section level4">
 <h4>Trends - Mocrocks Domoic Acid Levels (WDFW)</h4>
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://wdfw.wa.gov/fishing/basics/domoic-acid" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
 WDFW Domoic Acid Monitoring</a></div><div style="text-align:right; display:table-cell;"><a href="https://wdfw.wa.gov/fishing/basics/domoic-acid/mocrocks" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
