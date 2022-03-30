@@ -13,6 +13,7 @@
 
 <title>Shorebirds</title>
 
+<script src="_libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -50,7 +51,8 @@
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
-    </style>
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
@@ -62,6 +64,7 @@ if (window.hljs) {
   }
 }
 </script>
+
 
 
 
@@ -90,6 +93,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -189,7 +195,7 @@ pre code {
 <div style="margin: 10px; font-style: italic; flex: 20; ">Olympic Coast National Marine Sanctuary is used by more than 100 different species of marine birds and shorebirds. Many of the birds that are here in significant numbers in the summer travel to the Olympic Coast from nesting areas thousands of miles away. Others nest on offshore islands and live here year-round. Most shorebirds are carnivorous and eat a range of insects, mollusks, crustaceans, and similar prey that they catch by picking and probing with their bills. All seabird species, whether they nest in our region or only visit, tell us something about the health of our marine ecosystem. They breed more successfully when food is abundant, they are sensitive to water contamination such as oil, they respond to human disturbance, and sometimes suffer from disruption of their nesting and roosting sites. By admiring, studying and observing marine birds we can learn much about the ocean as a whole.</div>
 </div>
 <div id="section" class="section level3 tabset">
-<h3></h3>
+<h3 class="tabset"></h3>
 <div id="trends---cassins-auklet-carcasses" class="section level4">
 <h4>Trends - Cassin’s Auklet carcasses</h4>
 <div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://coasst.org/" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
