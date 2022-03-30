@@ -24,6 +24,8 @@ navbar:
     - text: "Human Connections"
       href: human-connections.html
   right:
+    - text: "Feedback"
+      href: _feedback.html
     - text: "Credits"
       href: _credits.html
 output:
