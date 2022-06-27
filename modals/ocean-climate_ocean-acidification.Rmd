@@ -14,7 +14,7 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Benthic aragonite saturation
 
-`r insert_figure("ocean-climate_ocean-acidification.html", "figures/Alin arag_edit.png")`
+`r insert_figure("ocean-climate_ocean-acidification.html", "figures/Alin arag_edit_2.0.png")`
 
 #### Trends - Benthic pCO2
 
@@ -22,4 +22,4 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Benthic pH
 
-`r insert_figure("ocean-climate_ocean-acidification.html", "figures/alin pH_edit.png")`
+`r insert_figure("ocean-climate_ocean-acidification.html", "figures/alin pH_edit_2.0.png")`
