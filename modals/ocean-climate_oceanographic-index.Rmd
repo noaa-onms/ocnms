@@ -12,10 +12,6 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Trends - LUSI & TUMI
-
-`r insert_figure("ocean-climate_oceanographic-index.html", "figures/S_WQ_Q6_4_LUSI_TUMI_CCIEA.JPG")`
-
 #### Trends - NPGO
 
 `r insert_figure("ocean-climate_oceanographic-index.html", "figures/Figure S_WQ_Q8_2_NPGO_CCIEA.JPG")`
