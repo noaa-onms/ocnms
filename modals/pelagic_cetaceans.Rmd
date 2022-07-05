@@ -24,7 +24,7 @@ source(here::here("infographiqR.R"))
 
 `r insert_figure("pelagic_cetaceans.html", "figures/Appendix S.LR.13.15 - Abundance Fin Whale 1991-2014.jpg")`
   
-## Grey whales
+## Gray whales
 
 ### {.tabset}
 

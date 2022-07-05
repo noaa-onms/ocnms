@@ -16,7 +16,7 @@ source(here::here("infographiqR.R"))
 
 ### {.tabset}
 
-#### Maps - Marbled Murrelet
+#### Map - Marbled Murrelet
 
 `r insert_figure("pelagic_seabirds.html", "figures/S.LR.13.12 - Marbled murrelet densities 2000-2019 Map.jpg")`
 
