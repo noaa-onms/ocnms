@@ -1,4 +1,8 @@
-
+---
+title: "Credits"
+pagetitle: "Credits"
+output: html_document
+---
 - **Artwork**: 
    * Su Kim, NOAA/NMFS-NWFSC
   * Amanda Dillon, [Aline design](https://alinedesignhawaii.com/){target="_blank"}

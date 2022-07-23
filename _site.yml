@@ -25,14 +25,20 @@ navbar:
       href: human-connections.html
   right:
     - text: "Feedback"
-      href: _feedback.html
+      href: feedback.html
     - text: "Credits"
-      href: _credits.html
+      href: credits.html
 output:
   html_document:
-    theme: lumen # darkly # cosmo # https://bootswatch.com
+    theme:
+      version: 3
+      bootswatch: yeti
+      primary: '#00467f' # sanctuaries.noaa.gov navbar: darkblue=#00467f, teal=#008da8
+      secondary: '#FFF'
     self_contained: no
-    css: libs/styles.css
+    css: _styles.css
     mathjax: null
     includes:
       in_header: _ganalytics.html 
+      before_body: _before_body.html   # IOOS menu
+      after_body: _after_body.html  # JavaScript to update menus
