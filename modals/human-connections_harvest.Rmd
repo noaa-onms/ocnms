@@ -46,7 +46,7 @@ source(here::here("infographiqR.R"))
 
 #### Trends - Dungeness crab catch, revenue
 
-`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.3 D crab_edit.png")`
+`r insert_figure("human-connections_harvest.html", "figures/Appendix Figure ES.CH.3 D crab_edit_2.0.png")`
 
 #### Trends - Halibut biomass
 
