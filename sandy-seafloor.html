@@ -13,7 +13,7 @@
 
 <title>Sandy Seafloor</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <link href="site_libs/bootstrap-3.4.1/bootstrap.min.css" rel="stylesheet" />
@@ -22,8 +22,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.1.1/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.1.1/css/v4-shims.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
 <script>
@@ -143,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -312,14 +316,7 @@ $(document).ready(function () {
 </div>
 
 
-<div style="display: flex">
-<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
-<a href="https://sanctuarysimon.org/regional-nms/continental-shelf/" target="_blank">
-<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
-</a>
-</div>
-<div style="margin: 10px; font-style: italic; flex: 20; ">Sandy seafloor habitats extend seaward from the shore, encompassing areas of the continental shelf in waters less than 30m (~100 ft) deep. These areas of the seafloor, which are dominated by sand and other small particles, tend to shift over time, favoring organisms that burrow and scurry or can tolerate changes in the substrate. Surf perch, forage fish, and Dungeness crab frequently utilize sandy seafloor areas. Washington’s sea otters are known to forage within this habitat, in addition to the kelp forests with which they are often associated.</div>
-</div>
+<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"> <a href="https://sanctuarysimon.org/regional-nms/continental-shelf/" target="_blank"> <i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i> </a> </div> <div style="margin: 10px; font-style: italic; flex: 20; ">Sandy seafloor habitats extend seaward from the shore, encompassing areas of the continental shelf in waters less than 30m (~100 ft) deep. These areas of the seafloor, which are dominated by sand and other small particles, tend to shift over time, favoring organisms that burrow and scurry or can tolerate changes in the substrate. Surf perch, forage fish, and Dungeness crab frequently utilize sandy seafloor areas. Washington’s sea otters are known to forage within this habitat, in addition to the kelp forests with which they are often associated.</div> </div></p>
 <div class="row">
 <div class="col-md-9">
 <div id="svg">
