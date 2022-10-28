@@ -13,7 +13,7 @@
 
 <title>Sea urchins</title>
 
-<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="_libs/navigation-1.1/tabsets.js"></script>
 <link href="_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="_libs/font-awesome-6.1.1/css/all.min.css" rel="stylesheet" />
-<link href="_libs/font-awesome-6.1.1/css/v4-shims.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
 <script>
@@ -116,8 +116,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -125,9 +125,16 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -176,16 +183,32 @@ pre code {
 </div>
 
 
-<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"> <a href="https://olympiccoast.noaa.gov/living/marinelife/inverts/inverts.html" target="_blank"> <i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i> </a> <a href="https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_urchinred.html" target="_blank"> <i class="fa fa-camera" role="presentation" aria-label="camera icon"></i> </a> </div> <div style="margin: 10px; font-style: italic; flex: 20; ">Kelp forests support a great diversity of species, including many invertebrates, which are animals that lack a backbone. Sea urchins living in kelp forests are food for predators like sea stars, fishes, and sea otters. If sea urchin numbers grow unchecked, these grazers of kelp and understory algae can cause declines in kelp forests and the species that live in or are associated with them.</div> </div></p>
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
+<a href="https://olympiccoast.noaa.gov/living/marinelife/inverts/inverts.html" target="_blank">
+<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
+</a>
+<a href="https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_urchinred.html" target="_blank">
+<i class="fa fa-camera" role="presentation" aria-label="camera icon"></i>
+</a>
+</div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">Kelp forests support a great diversity of species, including many invertebrates, which are animals that lack a backbone. Sea urchins living in kelp forests are food for predators like sea stars, fishes, and sea otters. If sea urchin numbers grow unchecked, these grazers of kelp and understory algae can cause declines in kelp forests and the species that live in or are associated with them.</div>
+</div>
 <div id="section" class="section level3 tabset">
 <h3 class="tabset"></h3>
 <div id="trends---purple-urchin" class="section level4">
 <h4>Trends - Purple urchin</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://www.webapps.nwfsc.noaa.gov/apex/f?p=158:1::::" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> OCNMS Kelp forest monitoring</a></div><div style="text-align:right; display:table-cell;"><a href="https://www.webapps.nwfsc.noaa.gov/apex/f?p=158:10::::::" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> NOAA Fisheries Kelp Forest Monitoring Data</a></div></div></div><p><img src="figures/Appendix%20S.LR.12.4%20-%20Density%20of%20purple%20urchin%20in%20kelp%20forest%20habitats%202015-2019.jpg" alt=""/> Average density of purple sea urchins <em>Strongylocentrotus purpuratus</em> from 2015–2019 at 5 m (top) and 10 m (bottom) depths from Destruction Island to Neah Bay, Washington. Mean density was higher at Tatoosh Island at both 5 m and 10 m depths from 2016 - 2019 compared to other sites. In 2019, the mean density of purple urchins at 5m sites at Tatoosh Island was similar to the mean density of urchins at 5m sites near Destruction Island in 2019. Source: NOAA-NWFSC; Image: G. Williams/NOAA.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://www.webapps.nwfsc.noaa.gov/apex/f?p=158:1::::" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
+OCNMS Kelp forest monitoring</a></div><div style="text-align:right; display:table-cell;"><a href="https://www.webapps.nwfsc.noaa.gov/apex/f?p=158:10::::::" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+NOAA Fisheries Kelp Forest Monitoring Data</a></div></div></div><p><img src="figures/Appendix%20S.LR.12.4%20-%20Density%20of%20purple%20urchin%20in%20kelp%20forest%20habitats%202015-2019.jpg" alt=""/> Average density of purple sea urchins <em>Strongylocentrotus purpuratus</em> from 2015–2019 at 5 m (top) and 10 m (bottom) depths from Destruction Island to Neah Bay, Washington. Mean density was higher at Tatoosh Island at both 5 m and 10 m depths from 2016 - 2019 compared to other sites. In 2019, the mean density of purple urchins at 5m sites at Tatoosh Island was similar to the mean density of urchins at 5m sites near Destruction Island in 2019. Source: NOAA-NWFSC; Image: G. Williams/NOAA.</p>
+
 </div>
 <div id="trends---red-urchin" class="section level4">
 <h4>Trends - Red urchin</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://www.webapps.nwfsc.noaa.gov/apex/f?p=158:1::::" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> OCNMS Kelp forest monitoring</a></div><div style="text-align:right; display:table-cell;"><a href="https://www.webapps.nwfsc.noaa.gov/apex/f?p=158:10::::::" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> NOAA Fisheries Kelp Forest Monitoring Data</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.19%20-%20Density%20of%20red%20urchins%20in%20kelp%20forest%202015-2019.jpg" alt=""/> Average density of red sea urchins <em>Mesocentrotus franciscanus</em> (per m2) from 2015–2019 at 5 m (top) and 10 m (bottom) depths for Destruction Island to Neah Bay, Washington. Mean density of red sea urchins at 10 m sites was consistently higher at Tatoosh Island compared to other sites. Source: NOAA-NWFSC; Image: G. Williams/NOAA.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://www.webapps.nwfsc.noaa.gov/apex/f?p=158:1::::" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
+OCNMS Kelp forest monitoring</a></div><div style="text-align:right; display:table-cell;"><a href="https://www.webapps.nwfsc.noaa.gov/apex/f?p=158:10::::::" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+NOAA Fisheries Kelp Forest Monitoring Data</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.19%20-%20Density%20of%20red%20urchins%20in%20kelp%20forest%202015-2019.jpg" alt=""/> Average density of red sea urchins <em>Mesocentrotus franciscanus</em> (per m2) from 2015–2019 at 5 m (top) and 10 m (bottom) depths for Destruction Island to Neah Bay, Washington. Mean density of red sea urchins at 10 m sites was consistently higher at Tatoosh Island compared to other sites. Source: NOAA-NWFSC; Image: G. Williams/NOAA.</p>
+
 </div>
 </div>
 

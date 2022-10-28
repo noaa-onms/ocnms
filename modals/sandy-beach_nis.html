@@ -13,7 +13,7 @@
 
 <title>Non-indigenous species</title>
 
-<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="_libs/navigation-1.1/tabsets.js"></script>
 <link href="_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="_libs/font-awesome-6.1.1/css/all.min.css" rel="stylesheet" />
-<link href="_libs/font-awesome-6.1.1/css/v4-shims.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
 <script>
@@ -116,8 +116,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -125,9 +125,16 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -176,20 +183,39 @@ pre code {
 </div>
 
 
-<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"> <a href="https://sanctuaries.noaa.gov/science/sentinel-site-program/olympic-coast/invasive-species.html" target="_blank"> <i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i> </a> <a href="https://nmsolympiccoast.blob.core.windows.net/olympiccoast-prod/media/docs/20200724-green-crabs-west-coast.pdf" target="_blank"> <i class="fa fa-camera" role="presentation" aria-label="camera icon"></i> </a> </div> <div style="margin: 10px; font-style: italic; flex: 20; ">Non-indigenous species are not native to the environment in which they are living and may have been introduced through a variety of pathways including in ballast water of oceangoing ships, intentional or accidental releases, or as stow-aways on tsunami debris, such as the debris that washed onto Olympic Coast beaches following the Fukushima, Japan earthquake and tsunami in 2011. Non-indigenous species have the potential to cause ecological and economic harm within environments where they are not native. Beach communities can be impacted by the arrival of species from other parts of the world that may become invasive if they out-compete native species. European green crab is a non-indigenous species that has spread rapidly and become invasive since it was first found on northern Olympic Coast beaches in the summer of 2017.</div> </div></p>
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
+<a href="https://sanctuaries.noaa.gov/science/sentinel-site-program/olympic-coast/invasive-species.html" target="_blank">
+<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
+</a>
+<a href="https://nmsolympiccoast.blob.core.windows.net/olympiccoast-prod/media/docs/20200724-green-crabs-west-coast.pdf" target="_blank">
+<i class="fa fa-camera" role="presentation" aria-label="camera icon"></i>
+</a>
+</div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">Non-indigenous species are not native to the environment in which they are living and may have been introduced through a variety of pathways including in ballast water of oceangoing ships, intentional or accidental releases, or as stow-aways on tsunami debris, such as the debris that washed onto Olympic Coast beaches following the Fukushima, Japan earthquake and tsunami in 2011. Non-indigenous species have the potential to cause ecological and economic harm within environments where they are not native. Beach communities can be impacted by the arrival of species from other parts of the world that may become invasive if they out-compete native species. European green crab is a non-indigenous species that has spread rapidly and become invasive since it was first found on northern Olympic Coast beaches in the summer of 2017.</div>
+</div>
 <div id="section" class="section level3 tabset">
 <h3 class="tabset"></h3>
 <div id="tsunami" class="section level4">
 <h4>2011 Tsunami</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://marinedebris.noaa.gov/japan-tsunami-marine-debris/monitoring-tsunami-debris-north-american-shorelines" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> NOAA MDP - Monitoring Tsunami Debris</a></div><div style="text-align:right; display:table-cell;"><a href="https://repository.library.noaa.gov/view/noaa/18775" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Clarke Murray et al. 2018</a></div></div></div><p><img src="figures/S.LR.14.4%20-%20NIS%20introduced%20to%20US%20west%20coast%20by%202011%20tsunami.jpg" alt=""/> Living, non-indigenous species (by taxonomic group) introduced to the U.S. West Coast as a result of the 2011 tsunami in Japan. The turquoise shading denotes the number of non-indigenous species present before the tsunami. The coral bars denote the number of non-indigenous species introduced as a result of the tsunami. Image: Carlton et al., 2017.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://marinedebris.noaa.gov/japan-tsunami-marine-debris/monitoring-tsunami-debris-north-american-shorelines" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
+NOAA MDP - Monitoring Tsunami Debris</a></div><div style="text-align:right; display:table-cell;"><a href="https://repository.library.noaa.gov/view/noaa/18775" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+Clarke Murray et al. 2018</a></div></div></div><p><img src="figures/S.LR.14.4%20-%20NIS%20introduced%20to%20US%20west%20coast%20by%202011%20tsunami.jpg" alt=""/> Living, non-indigenous species (by taxonomic group) introduced to the U.S. West Coast as a result of the 2011 tsunami in Japan. The turquoise shading denotes the number of non-indigenous species present before the tsunami. The coral bars denote the number of non-indigenous species introduced as a result of the tsunami. Image: Carlton et al., 2017.</p>
+
 </div>
 <div id="maps---2011-tsunami" class="section level4">
 <h4>Maps - 2011 Tsunami</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://marinedebris.noaa.gov/tsunamidebris" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Japanese Tsunami Marine Debris</a></div><div style="text-align:right; display:table-cell;"><a href="https://marinedebris.noaa.gov/sites/default/files/JTMD_ERMA_all_Source_20160224_0.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Environmental Response Management Application</a></div></div></div><p><img src="figures/S.LR.14.5%20-%20Map%20of%20marine%20debris%20from%202011%20tsunami.jpg" alt=""/> Confirmed (triangles) and potential (circles) marine debris from the 2011 tsunami reported from December 2011 to February 2016 in OCNMS. Image: Office of Response and Restoration, 2016.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://marinedebris.noaa.gov/tsunamidebris" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
+Japanese Tsunami Marine Debris</a></div><div style="text-align:right; display:table-cell;"><a href="https://marinedebris.noaa.gov/sites/default/files/JTMD_ERMA_all_Source_20160224_0.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+Environmental Response Management Application</a></div></div></div><p><img src="figures/S.LR.14.5%20-%20Map%20of%20marine%20debris%20from%202011%20tsunami.jpg" alt=""/> Confirmed (triangles) and potential (circles) marine debris from the 2011 tsunami reported from December 2011 to February 2016 in OCNMS. Image: Office of Response and Restoration, 2016.</p>
+
 </div>
 <div id="trends---european-green-crab" class="section level4">
 <h4>Trends - European green crab</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://wdfw.wa.gov/species-habitats/invasive/carcinus-maenas" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Washington Department of Fish and Wildlife</a></div><div style="text-align:right; display:table-cell;"><a href="https://wdfw.wa.gov/sites/default/files/2019-11/4_makah_aakmajian.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Makah Tribe Trapping Program</a></div></div></div><p><img src="figures/S.LR.14.2%20-%20European%20green%20crab%20CPUE%20in%20Makah%20Bay%202018%20and%202019.jpg" alt=""/> Catch per unit effort for European green crab <em>Carcinus maenas</em> from trapping in coastal rivers adjacent to Makah Bay in 2018 (top) and 2019 (bottom). Image: Akmajian &amp; Halttunen, 2019.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://wdfw.wa.gov/species-habitats/invasive/carcinus-maenas" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
+Washington Department of Fish and Wildlife</a></div><div style="text-align:right; display:table-cell;"><a href="https://wdfw.wa.gov/sites/default/files/2019-11/4_makah_aakmajian.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+Makah Tribe Trapping Program</a></div></div></div><p><img src="figures/S.LR.14.2%20-%20European%20green%20crab%20CPUE%20in%20Makah%20Bay%202018%20and%202019.jpg" alt=""/> Catch per unit effort for European green crab <em>Carcinus maenas</em> from trapping in coastal rivers adjacent to Makah Bay in 2018 (top) and 2019 (bottom). Image: Akmajian &amp; Halttunen, 2019.</p>
+
 </div>
 </div>
 

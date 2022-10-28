@@ -13,7 +13,7 @@
 
 <title>Science</title>
 
-<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -114,8 +114,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -123,9 +123,16 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -174,24 +181,35 @@ pre code {
 </div>
 
 
-<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"></div> <div style="margin: 10px; font-style: italic; flex: 20; ">Science is an ecosystem service related to “the capacity to acquire and contribute information and knowledge”. Science and research activities represent major investments for OCNMS staff and sanctuary partners who regularly collaborate to advance shared priorities and fill critical knowledge gaps.</div> </div></p>
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"></div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">Science is an ecosystem service related to “the capacity to acquire and contribute information and knowledge”. Science and research activities represent major investments for OCNMS staff and sanctuary partners who regularly collaborate to advance shared priorities and fill critical knowledge gaps.</div>
+</div>
 <div id="section" class="section level3 tabset">
 <h3 class="tabset"></h3>
 <div id="community-science-activities" class="section level4">
 <h4>Community science activities</h4>
-<p><p><img src="figures/ES.S.3.png" alt=""/> Between 2008 and 2019, community scientists contributed 53,913 hours toward a variety of activities. The majority (93%) of hours were associated with marine debris and beached seabird surveys (COASST/MDMAP), with the remaining 3,582 hours contributed to dive surveys, research projects, and mooring operations aboard the R/V <em>Tatoosh</em>. Source: NOAA; Image: C. Butler Minor</p></p>
+
+<p><img src="figures/ES.S.3.png" alt=""/> Between 2008 and 2019, community scientists contributed 53,913 hours toward a variety of activities. The majority (93%) of hours were associated with marine debris and beached seabird surveys (COASST/MDMAP), with the remaining 3,582 hours contributed to dive surveys, research projects, and mooring operations aboard the R/V <em>Tatoosh</em>. Source: NOAA; Image: C. Butler Minor</p>
+
 </div>
 <div id="trends---community-science" class="section level4">
 <h4>Trends - Community science</h4>
-<p><p><img src="figures/ES.S.4.png" alt=""/> The number of volunteers participating in community science efforts (community scientists) and the hours of service provided have varied over the past decade. Both hours and number of community scientists have generally declined, however a pulse of activity occurred in 2014 as a result of tsunami debris monitoring. Source: NOAA; Image: C. Butler Minor</p></p>
+
+<p><img src="figures/ES.S.4.png" alt=""/> The number of volunteers participating in community science efforts (community scientists) and the hours of service provided have varied over the past decade. Both hours and number of community scientists have generally declined, however a pulse of activity occurred in 2014 as a result of tsunami debris monitoring. Source: NOAA; Image: C. Butler Minor</p>
+
 </div>
 <div id="trends---open-ocnms-permits" class="section level4">
 <h4>Trends - Open OCNMS permits</h4>
-<p><p><img src="figures/ES.S.1.png" alt=""/> Open OCNMS permits by year. OCNMS issues permits for otherwise prohibited activities if the proposed activity will not substantially injure sanctuary resources and qualities, and will further research related to those resources and qualities. The most commonly issued permit is for conducting research in the sanctuary. Source: NOAA</p></p>
+
+<p><img src="figures/ES.S.1.png" alt=""/> Open OCNMS permits by year. OCNMS issues permits for otherwise prohibited activities if the proposed activity will not substantially injure sanctuary resources and qualities, and will further research related to those resources and qualities. The most commonly issued permit is for conducting research in the sanctuary. Source: NOAA</p>
+
 </div>
 <div id="trends---rv-tatoosh-activity" class="section level4">
 <h4>Trends - R/V <em>Tatoosh</em> activity</h4>
-<p><p><img src="figures/ES.S.2.png" alt=""/> The R/V <em>Tatoosh</em> operates May to October on the Olympic Coast to conduct sanctuary research and facilitate collaborator research. Vessel use data for the assessment period are presented above, including hours at sea and days at sea. Source: NOAA; Image: A. Hallingstad</p></p>
+
+<p><img src="figures/ES.S.2.png" alt=""/> The R/V <em>Tatoosh</em> operates May to October on the Olympic Coast to conduct sanctuary research and facilitate collaborator research. Vessel use data for the assessment period are presented above, including hours at sea and days at sea. Source: NOAA; Image: A. Hallingstad</p>
+
 </div>
 </div>
 

@@ -13,7 +13,7 @@
 
 <title>Humboldt squid</title>
 
-<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -114,8 +114,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -123,9 +123,16 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -174,10 +181,14 @@ pre code {
 </div>
 
 
-<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"></div> <div style="margin: 10px; font-style: italic; flex: 20; ">Humboldt squid are cephalopods, like octopus, except with ten tentacles so they are called decapods. They are an important coastal pelagic species for the west coast and swim freely in the open ocean, often schooling together like fish. This species is usually found in warmer waters, but over time it has extended its range to temperate regions including the Olympic Coast, mainly during months when water temperatures are warmest.</div> </div></p>
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"></div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">Humboldt squid are cephalopods, like octopus, except with ten tentacles so they are called decapods. They are an important coastal pelagic species for the west coast and swim freely in the open ocean, often schooling together like fish. This species is usually found in warmer waters, but over time it has extended its range to temperate regions including the Olympic Coast, mainly during months when water temperatures are warmest.</div>
+</div>
 <div id="trends---abundance" class="section level3">
 <h3>Trends - Abundance</h3>
-<p><p>Data not yet available, but we hope to include information soon.</p></p>
+<p>Data not yet available, but we hope to include information soon.</p>
+
 </div>
 
 

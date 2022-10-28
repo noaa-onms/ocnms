@@ -13,7 +13,7 @@
 
 <title>Southern resident killer whale</title>
 
-<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="_libs/navigation-1.1/tabsets.js"></script>
 <link href="_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="_libs/font-awesome-6.1.1/css/all.min.css" rel="stylesheet" />
-<link href="_libs/font-awesome-6.1.1/css/v4-shims.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
 <script>
@@ -116,8 +116,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -125,9 +125,16 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -176,13 +183,25 @@ pre code {
 </div>
 
 
-<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"> <a href="https://www.fisheries.noaa.gov/species/killer-whale#overview" target="_blank"> <i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i> </a> <a href="https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_orca.html" target="_blank"> <i class="fa fa-camera" role="presentation" aria-label="camera icon"></i> </a> </div> <div style="margin: 10px; font-style: italic; flex: 20; ">Southern Resident killer whales, living in three groups called J, K and L ‘pod’, spend several months of the summer and fall each year in Washington State's Puget Sound and have been increasingly observed in pelagic habitats along the outer coasts of Washington and Vancouver Island in recent years. This population was listed as endangered in 2005 under the Endangered Species Act, and more than 15 years later, Southern Resident killer whales remain in danger of extinction. Although their abundance has remained stable compared to the long-term mean, their 10-year population trend indicates declining abundance. This species faces several threats, including environmental contaminants, reduced quantity and quality of prey, sound pollution and vessel disturbance.</div> </div></p>
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
+<a href="https://www.fisheries.noaa.gov/species/killer-whale#overview" target="_blank">
+<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
+</a>
+<a href="https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_orca.html" target="_blank">
+<i class="fa fa-camera" role="presentation" aria-label="camera icon"></i>
+</a>
+</div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">Southern Resident killer whales, living in three groups called J, K and L ‘pod’, spend several months of the summer and fall each year in Washington State's Puget Sound and have been increasingly observed in pelagic habitats along the outer coasts of Washington and Vancouver Island in recent years. This population was listed as endangered in 2005 under the Endangered Species Act, and more than 15 years later, Southern Resident killer whales remain in danger of extinction. Although their abundance has remained stable compared to the long-term mean, their 10-year population trend indicates declining abundance. This species faces several threats, including environmental contaminants, reduced quantity and quality of prey, sound pollution and vessel disturbance.</div>
+</div>
 <div id="section" class="section level3 tabset">
 <h3 class="tabset"></h3>
 <div id="trends---southern-resident-killer-whales"
 class="section level4">
 <h4>Trends - Southern resident killer whales</h4>
-<p><p><img src="figures/Figure%20S.LR.13.12.%20PopulationGraph_CWR.png" alt=""/> Abundance for Southern Resident killer whales in the Northeast Pacific, by pod, from 1975–2020 as of December 31, 2020. Southern Resident killer whale numbers have continued to decline during the assessment period for this report (2008–2020). Source: Center for Whale Research.</p></p>
+
+<p><img src="figures/Figure%20S.LR.13.12.%20PopulationGraph_CWR.png" alt=""/> Abundance for Southern Resident killer whales in the Northeast Pacific, by pod, from 1975–2020 as of December 31, 2020. Southern Resident killer whale numbers have continued to decline during the assessment period for this report (2008–2020). Source: Center for Whale Research.</p>
+
 </div>
 </div>
 

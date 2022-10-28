@@ -13,7 +13,7 @@
 
 <title>Deep sea corals and sponges</title>
 
-<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="_libs/navigation-1.1/tabsets.js"></script>
 <link href="_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="_libs/font-awesome-6.1.1/css/all.min.css" rel="stylesheet" />
-<link href="_libs/font-awesome-6.1.1/css/v4-shims.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
 <script>
@@ -116,8 +116,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -125,9 +125,16 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -176,12 +183,24 @@ pre code {
 </div>
 
 
-<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"> <a href="https://olympiccoast.noaa.gov/science/coralandsponge/coralandsponge.html" target="_blank"> <i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i> </a> <a href="https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_primnoa.html" target="_blank"> <i class="fa fa-camera" role="presentation" aria-label="camera icon"></i> </a> </div> <div style="margin: 10px; font-style: italic; flex: 20; ">Deep seafloor habitats are usually cold, dark and subject to intense pressure, and it may be hard to imagine corals and sponges thriving in the deep ocean. However, at Olympic Coast, many fascinating and beautiful deep sea corals and sponges can be found in the deep seafloor, creating vital habitat for many associated fishes and invertebrates.</div> </div></p>
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
+<a href="https://olympiccoast.noaa.gov/science/coralandsponge/coralandsponge.html" target="_blank">
+<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
+</a>
+<a href="https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_primnoa.html" target="_blank">
+<i class="fa fa-camera" role="presentation" aria-label="camera icon"></i>
+</a>
+</div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">Deep seafloor habitats are usually cold, dark and subject to intense pressure, and it may be hard to imagine corals and sponges thriving in the deep ocean. However, at Olympic Coast, many fascinating and beautiful deep sea corals and sponges can be found in the deep seafloor, creating vital habitat for many associated fishes and invertebrates.</div>
+</div>
 <div id="section" class="section level3 tabset">
 <h3 class="tabset"></h3>
 <div id="deep-sea-corals-and-sponges" class="section level4">
 <h4>Deep Sea Corals and Sponges</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://www.ncei.noaa.gov/maps/deep-sea-corals/mapSites.htm" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> NOAA's Deep Sea Coral and Sponge Map Portal</a></div></div></div><p><img src="figures/SH.6%20Coral_edit.png" alt=""/> A mature colony of the deep sea coral <em>Primnoa pacifica</em>, encountered in central Juan de Fuca Canyon during an ROV dive in OCNMS in September 2019. Photo: Marine Applied Research &amp; Exploration/NOAA. NOAA&#39;s Deep Sea Coral Research and Technology Program maintains a database to document the presence of many deep sea organisms that are encountered through trawl surveys, visual surveys using remotely operated vehicles, and other sources; presence data is available through their Deep Sea Coral Data Portal: <a href="https://deepseacoraldata.noaa.gov/">https://deepseacoraldata.noaa.gov/</a>.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://www.ncei.noaa.gov/maps/deep-sea-corals/mapSites.htm" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+NOAA's Deep Sea Coral and Sponge Map Portal</a></div></div></div><p><img src="figures/SH.6%20Coral_edit.png" alt=""/> A mature colony of the deep sea coral <em>Primnoa pacifica</em>, encountered in central Juan de Fuca Canyon during an ROV dive in OCNMS in September 2019. Photo: Marine Applied Research &amp; Exploration/NOAA. NOAA&#39;s Deep Sea Coral Research and Technology Program maintains a database to document the presence of many deep sea organisms that are encountered through trawl surveys, visual surveys using remotely operated vehicles, and other sources; presence data is available through their Deep Sea Coral Data Portal: <a href="https://deepseacoraldata.noaa.gov/">https://deepseacoraldata.noaa.gov/</a>.</p>
+
 </div>
 </div>
 

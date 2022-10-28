@@ -13,7 +13,7 @@
 
 <title>Military activity</title>
 
-<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -114,8 +114,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -123,9 +123,16 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -174,12 +181,17 @@ pre code {
 </div>
 
 
-<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"></div> <div style="margin: 10px; font-style: italic; flex: 20; ">The Olympic Coast region was used by the US Navy for testing and training purposes for many years prior to the establishment of the sanctuary in 1994, and the Navy continues to conduct military operations throughout the region for national security purposes. The US Navy also supports a number of important research efforts in the region, focused primarily on mitigating impacts to marine species from military testing and training activities.</div> </div></p>
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"></div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">The Olympic Coast region was used by the US Navy for testing and training purposes for many years prior to the establishment of the sanctuary in 1994, and the Navy continues to conduct military operations throughout the region for national security purposes. The US Navy also supports a number of important research efforts in the region, focused primarily on mitigating impacts to marine species from military testing and training activities.</div>
+</div>
 <div id="section" class="section level3 tabset">
 <h3 class="tabset"></h3>
 <div id="map---military-activity-zoning" class="section level4">
 <h4>Map - Military activity zoning</h4>
-<p><p><img src="figures/Figure%20P.10%20NWTT%20Area_edit.png" alt=""/> The offshore area of the Navy’s Northwest Testing and Training (NWTT) Study Area overlaps the entire sanctuary. NWTT Study Area activities ensure that the Navy meets its statutory mission, and include anti-submarine warfare testing, sonar testing and training, non-explosive mine countermeasures and neutralization testing, unmanned underwater testing and training, and acoustic and oceanographic research. The Naval Undersea Warfare Center Division Keyport operates and maintains the Quinault Range Site, which is instrumented to track surface vessels, submarines, and various undersea vehicles. Both the Quinault Range Site and the larger NWTT Study Area extend beyond the boundaries of OCNMS. Image: U.S. Navy, 2020</p></p>
+
+<p><img src="figures/Figure%20P.10%20NWTT%20Area_edit.png" alt=""/> The offshore area of the Navy’s Northwest Testing and Training (NWTT) Study Area overlaps the entire sanctuary. NWTT Study Area activities ensure that the Navy meets its statutory mission, and include anti-submarine warfare testing, sonar testing and training, non-explosive mine countermeasures and neutralization testing, unmanned underwater testing and training, and acoustic and oceanographic research. The Naval Undersea Warfare Center Division Keyport operates and maintains the Quinault Range Site, which is instrumented to track surface vessels, submarines, and various undersea vehicles. Both the Quinault Range Site and the larger NWTT Study Area extend beyond the boundaries of OCNMS. Image: U.S. Navy, 2020</p>
+
 </div>
 </div>
 

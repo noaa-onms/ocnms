@@ -13,7 +13,7 @@
 
 <title>Oceanographic Indexes</title>
 
-<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="_libs/navigation-1.1/tabsets.js"></script>
 <link href="_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="_libs/font-awesome-6.1.1/css/all.min.css" rel="stylesheet" />
-<link href="_libs/font-awesome-6.1.1/css/v4-shims.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
 <script>
@@ -116,8 +116,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -125,9 +125,16 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -176,24 +183,39 @@ pre code {
 </div>
 
 
-<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"> <a href="https://www.fisheries.noaa.gov/west-coast/science-data/ocean-indicators-summary-2021" target="_blank"> <i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i> </a> </div> <div style="margin: 10px; font-style: italic; flex: 20; ">Oceanographic indices are tools that draw from a variety of data resources such as from ocean models, satellite and in-situ data to characterize an aspect of a geophysical system or describe the status of environmental drivers that influence ocean ecosystems. Examples include ocean climate indices like the El Nino Southern Oscillation and Pacific Decadal Oscillation, or indices for upwelling that have been developed specifically to track this phenomenon along the US west coast. Some ocean indices are used to predict growth and survival conditions for living resources, such as salmon.</div> </div></p>
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
+<a href="https://www.fisheries.noaa.gov/west-coast/science-data/ocean-indicators-summary-2021" target="_blank">
+<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
+</a>
+</div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">Oceanographic indices are tools that draw from a variety of data resources such as from ocean models, satellite and in-situ data to characterize an aspect of a geophysical system or describe the status of environmental drivers that influence ocean ecosystems. Examples include ocean climate indices like the El Nino Southern Oscillation and Pacific Decadal Oscillation, or indices for upwelling that have been developed specifically to track this phenomenon along the US west coast. Some ocean indices are used to predict growth and survival conditions for living resources, such as salmon.</div>
+</div>
 <div id="section" class="section level3 tabset">
 <h3 class="tabset"></h3>
 <div id="trends---npgo" class="section level4">
 <h4>Trends - NPGO</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://oceanview.pfeg.noaa.gov/cciea-plotting/?opentab=8&amp;ind=19" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> NOAA CCIEA Climate and Ocean Drivers</a></div></div></div><p><img src="figures/Figure%20S_WQ_Q8_2_NPGO_CCIEA.JPG" alt=""/> Monthly North Pacific Gyre Oscillation (NPGO) index. NPGO indicates sea surface height, signaling changes in ocean circulation that affect source waters. Positive NPGO values are associated with increased equatorward flow; higher surface salinities, nutrients, and chlorophyll; and higher productivity. Negative values are associated with less productive conditions. The black dot (●) indicates that the recent mean (last 10 years) was within 1 standard deviation of the long-term mean, and there was a decreasing trend (indicated by arrow ↘) for the last 10 years. The dashed green line is the long-term mean and solid green lines are ±1 standard deviation. Image: IEA, 2020.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://oceanview.pfeg.noaa.gov/cciea-plotting/?opentab=8&amp;ind=19" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+NOAA CCIEA Climate and Ocean Drivers</a></div></div></div><p><img src="figures/Figure%20S_WQ_Q8_2_NPGO_CCIEA.JPG" alt=""/> Monthly North Pacific Gyre Oscillation (NPGO) index. NPGO indicates sea surface height, signaling changes in ocean circulation that affect source waters. Positive NPGO values are associated with increased equatorward flow; higher surface salinities, nutrients, and chlorophyll; and higher productivity. Negative values are associated with less productive conditions. The black dot (●) indicates that the recent mean (last 10 years) was within 1 standard deviation of the long-term mean, and there was a decreasing trend (indicated by arrow ↘) for the last 10 years. The dashed green line is the long-term mean and solid green lines are ±1 standard deviation. Image: IEA, 2020.</p>
+
 </div>
 <div id="trends---oni" class="section level4">
 <h4>Trends - ONI</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://oceanview.pfeg.noaa.gov/cciea-plotting/?opentab=8&amp;ind=21" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> NOAA CCIEA Climate and Ocean Drivers</a></div></div></div><p><img src="figures/Figure%20S_WQ_Q8_3_ONI_CCIEA.JPG" alt=""/> Monthly Oceanographic Nino Index (ONI) from 1950-2020. The ONI describes equatorial conditions related to the El Niño Southern Oscillation; a positive value reflects El Niño conditions with generally lower primary productivity, weaker upwelling, poleward transport of equatorial waters and species, and more storms in the southern portion of the California Current. A negative value indicates La Niña conditions, with generally higher productivity. The black dot (●) indicates that the recent mean (last 10 years) was within 1 standard deviation of the long-term mean, and there was an increasing trend (indicated by arrow ↗) for the last 10 years. The dashed green line is the long-term mean and solid green lines are ±1 standard deviation. Image: IEA, 2020.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://oceanview.pfeg.noaa.gov/cciea-plotting/?opentab=8&amp;ind=21" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+NOAA CCIEA Climate and Ocean Drivers</a></div></div></div><p><img src="figures/Figure%20S_WQ_Q8_3_ONI_CCIEA.JPG" alt=""/> Monthly Oceanographic Nino Index (ONI) from 1950-2020. The ONI describes equatorial conditions related to the El Niño Southern Oscillation; a positive value reflects El Niño conditions with generally lower primary productivity, weaker upwelling, poleward transport of equatorial waters and species, and more storms in the southern portion of the California Current. A negative value indicates La Niña conditions, with generally higher productivity. The black dot (●) indicates that the recent mean (last 10 years) was within 1 standard deviation of the long-term mean, and there was an increasing trend (indicated by arrow ↗) for the last 10 years. The dashed green line is the long-term mean and solid green lines are ±1 standard deviation. Image: IEA, 2020.</p>
+
 </div>
 <div id="trends---pdo" class="section level4">
 <h4>Trends - PDO</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://oceanview.pfeg.noaa.gov/cciea-plotting/?opentab=8&amp;ind=22" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> NOAA CCIEA Climate and Ocean Drivers</a></div></div></div><p><img src="figures/Figure%20S_WQ_Q8_1_PDO_CCIEA.JPG" alt=""/> Monthly Pacific Decadal Oscillation (PDO) index. The PDO describes sea surface temperature anomalies in the Northeast Pacific. Positive PDO values are associated with warmer waters and lower productivity, while negative PDO values indicate cooler waters and higher productivity. The vertical black line indicates the year of the last condition report (2008). The black dot (●) indicates that the recent mean (last 10 years) was within 1 standard deviation of the long-term mean, and there was an increasing trend (indicated by arrow ↗) for the last 10 years. The dashed green line is the long-term mean and solid green lines are ±1 standard deviation. Image: IEA, 2020.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://oceanview.pfeg.noaa.gov/cciea-plotting/?opentab=8&amp;ind=22" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+NOAA CCIEA Climate and Ocean Drivers</a></div></div></div><p><img src="figures/Figure%20S_WQ_Q8_1_PDO_CCIEA.JPG" alt=""/> Monthly Pacific Decadal Oscillation (PDO) index. The PDO describes sea surface temperature anomalies in the Northeast Pacific. Positive PDO values are associated with warmer waters and lower productivity, while negative PDO values indicate cooler waters and higher productivity. The vertical black line indicates the year of the last condition report (2008). The black dot (●) indicates that the recent mean (last 10 years) was within 1 standard deviation of the long-term mean, and there was an increasing trend (indicated by arrow ↗) for the last 10 years. The dashed green line is the long-term mean and solid green lines are ±1 standard deviation. Image: IEA, 2020.</p>
+
 </div>
 <div id="trends---sti" class="section level4">
 <h4>Trends - STI</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://oceanview.pfeg.noaa.gov/cciea-plotting/?opentab=8&amp;ind=45" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> NOAA CCIEA Climate and Ocean Drivers</a></div></div></div><p><img src="figures/S_WQ_Q6_3_STI_CCIEA.JPG" alt=""/> Spring Transition Index (STI) at 48 °N from 1967 to 2019. The black dot (●) indicates that the recent mean (last 10 years) was within 1 standard deviation of the long-term mean. During the last 10 years, the trend has not changed (indicated by arrow →). The dashed line is the long-term mean and solid horizontal lines are ±1 standard deviation. The vertical black line indicates the year of the last condition report (2008). An explanation of index values (y-axis) and associated caveats are provided in Schwing et al. (1996). Image: IEA, 2020.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://oceanview.pfeg.noaa.gov/cciea-plotting/?opentab=8&amp;ind=45" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+NOAA CCIEA Climate and Ocean Drivers</a></div></div></div><p><img src="figures/S_WQ_Q6_3_STI_CCIEA.JPG" alt=""/> Spring Transition Index (STI) at 48 °N from 1967 to 2019. The black dot (●) indicates that the recent mean (last 10 years) was within 1 standard deviation of the long-term mean. During the last 10 years, the trend has not changed (indicated by arrow →). The dashed line is the long-term mean and solid horizontal lines are ±1 standard deviation. The vertical black line indicates the year of the last condition report (2008). An explanation of index values (y-axis) and associated caveats are provided in Schwing et al. (1996). Image: IEA, 2020.</p>
+
 </div>
 </div>
 

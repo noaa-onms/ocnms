@@ -13,7 +13,7 @@
 
 <title>Seals and sealions</title>
 
-<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="_libs/navigation-1.1/tabsets.js"></script>
 <link href="_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="_libs/font-awesome-6.1.1/css/all.min.css" rel="stylesheet" />
-<link href="_libs/font-awesome-6.1.1/css/v4-shims.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
 <script>
@@ -116,8 +116,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -125,9 +125,16 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -176,16 +183,30 @@ pre code {
 </div>
 
 
-<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"> <a href="https://olympiccoast.noaa.gov/living/marinelife/mammals/mammals.html" target="_blank"> <i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i> </a> <a href="https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_sealions.html" target="_blank"> <i class="fa fa-camera" role="presentation" aria-label="camera icon"></i> </a> </div> <div style="margin: 10px; font-style: italic; flex: 20; ">Pinnipeds are marine mammals and carnivores that have adapted to life in the water and at the water's edge. They forage at sea in the open ocean, but come ashore at some time of the year to mate, give birth, suckle their young, molt, or rest on sandy beaches or rocky shore habitats. Pinnipeds are divided into two families: eared seals or sea lions (otariids) and the earless or true seals (phocids). Steller and California sea lions are representative eared seals of the Olympic Coast. Harbor seals and elephant seals are the only earless seals of the Olympic Coast.</div> </div></p>
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
+<a href="https://olympiccoast.noaa.gov/living/marinelife/mammals/mammals.html" target="_blank">
+<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
+</a>
+<a href="https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_sealions.html" target="_blank">
+<i class="fa fa-camera" role="presentation" aria-label="camera icon"></i>
+</a>
+</div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">Pinnipeds are marine mammals and carnivores that have adapted to life in the water and at the water's edge. They forage at sea in the open ocean, but come ashore at some time of the year to mate, give birth, suckle their young, molt, or rest on sandy beaches or rocky shore habitats. Pinnipeds are divided into two families: eared seals or sea lions (otariids) and the earless or true seals (phocids). Steller and California sea lions are representative eared seals of the Olympic Coast. Harbor seals and elephant seals are the only earless seals of the Olympic Coast.</div>
+</div>
 <div id="section" class="section level3 tabset">
 <h3 class="tabset"></h3>
 <div id="maps---stellar-sea-lion-haul-outs" class="section level4">
 <h4>Maps - Stellar sea lion haul-outs</h4>
-<p><p><img src="figures/S.LR.13.9%20-%20Stellar%20sea%20lion%20haulouts%20in%20OCNMS.jpg" alt=""/> Location of Steller sea lion haulouts on the Olympic peninsula (left). Sites 4–12 are located inside OCNMS. Symbols denote haulouts with annual maximum numbers of &gt;100 animals (triangles), &lt;= 100 animals (circles) and those with no information (squares). Number of Steller sea lions counted during breeding season (June-July surveys) in OCNMS 1989–2013 (right). An overall increasing trend during this period is shown by the black line while the variability around that trend is shown by grey shading. Source: WDFW, 2019; Figure: S. Colosimo and S. Jeffries/WDFW.</p></p>
+
+<p><img src="figures/S.LR.13.9%20-%20Stellar%20sea%20lion%20haulouts%20in%20OCNMS.jpg" alt=""/> Location of Steller sea lion haulouts on the Olympic peninsula (left). Sites 4–12 are located inside OCNMS. Symbols denote haulouts with annual maximum numbers of &gt;100 animals (triangles), &lt;= 100 animals (circles) and those with no information (squares). Number of Steller sea lions counted during breeding season (June-July surveys) in OCNMS 1989–2013 (right). An overall increasing trend during this period is shown by the black line while the variability around that trend is shown by grey shading. Source: WDFW, 2019; Figure: S. Colosimo and S. Jeffries/WDFW.</p>
+
 </div>
 <div id="trends---stellar-sea-lion-abundance" class="section level4">
 <h4>Trends - Stellar sea lion abundance</h4>
-<p><p><img src="figures/S.LR.13.9%20-%20Stellar%20sea%20lion%20abundance%201989-2013.jpg" alt=""/> Number of Steller sea lions counted during breeding season (June-July surveys) in OCNMS, 1989–2013 (right). An overall increasing trend during this period is shown by the black line, while the variability around that trend is shown by grey shading. Image: S. Colosimo and S. Jeffries/WDFW.</p></p>
+
+<p><img src="figures/S.LR.13.9%20-%20Stellar%20sea%20lion%20abundance%201989-2013.jpg" alt=""/> Number of Steller sea lions counted during breeding season (June-July surveys) in OCNMS, 1989–2013 (right). An overall increasing trend during this period is shown by the black line, while the variability around that trend is shown by grey shading. Image: S. Colosimo and S. Jeffries/WDFW.</p>
+
 </div>
 </div>
 

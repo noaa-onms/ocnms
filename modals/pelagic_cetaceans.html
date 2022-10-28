@@ -13,7 +13,7 @@
 
 <title>Cetaceans</title>
 
-<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="_libs/navigation-1.1/tabsets.js"></script>
 <link href="_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="_libs/font-awesome-6.1.1/css/all.min.css" rel="stylesheet" />
-<link href="_libs/font-awesome-6.1.1/css/v4-shims.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
 <script>
@@ -116,8 +116,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -125,9 +125,16 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -176,7 +183,17 @@ pre code {
 </div>
 
 
-<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"> <a href="https://olympiccoast.noaa.gov/living/marinelife/mammals/mammals.html" target="_blank"> <i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i> </a> <a href="https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_humpback.html" target="_blank"> <i class="fa fa-camera" role="presentation" aria-label="camera icon"></i> </a> </div> <div style="margin: 10px; font-style: italic; flex: 20; ">Mammals are animals that are warm blooded, breathe with lungs, give birth to live young, nurse their young, and have hair (at some point in their life). Twenty-nine species of marine mammals reside in or migrate through Olympic Coast National Marine Sanctuary. Three broad types of marine mammals are represented within Olympic Coast waters: cetaceans (whales, dolphins and porpoises), pinnipeds (seals and sea lions), and sea otters. Cetaceans are completely aquatic animals that breathe through nostrils (blowholes) on top of the head. Cetaceans are divided into two groups - baleen whales (mysticetes) and toothed whales (odontocetes). The most common baleen whales of the Olympic Coast are the North Pacific gray whale and the humpback whale. The most common toothed cetaceans of the Olympic Coast are the harbor porpoise and the killer whale (also known as orca).</div> </div></p>
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
+<a href="https://olympiccoast.noaa.gov/living/marinelife/mammals/mammals.html" target="_blank">
+<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
+</a>
+<a href="https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_humpback.html" target="_blank">
+<i class="fa fa-camera" role="presentation" aria-label="camera icon"></i>
+</a>
+</div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">Mammals are animals that are warm blooded, breathe with lungs, give birth to live young, nurse their young, and have hair (at some point in their life). Twenty-nine species of marine mammals reside in or migrate through Olympic Coast National Marine Sanctuary. Three broad types of marine mammals are represented within Olympic Coast waters: cetaceans (whales, dolphins and porpoises), pinnipeds (seals and sea lions), and sea otters. Cetaceans are completely aquatic animals that breathe through nostrils (blowholes) on top of the head. Cetaceans are divided into two groups - baleen whales (mysticetes) and toothed whales (odontocetes). The most common baleen whales of the Olympic Coast are the North Pacific gray whale and the humpback whale. The most common toothed cetaceans of the Olympic Coast are the harbor porpoise and the killer whale (also known as orca).</div>
+</div>
 <div id="section" class="section level1 tabset">
 <h1 class="tabset"></h1>
 <div id="fin-whales" class="section level2">
@@ -185,11 +202,15 @@ pre code {
 <h3 class="tabset"></h3>
 <div id="maps---fin-whales" class="section level4">
 <h4>Maps - Fin whales</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://swfsc-publications.fisheries.noaa.gov/publications/CR/2020/2020Carretta.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Carretta et al., 2020</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.15%20-%20Map%20Sightings%20Fin%20Whale%201991-2014.jpg" alt=""/> A map of fin whale <em>Balaenoptera physalus</em> sightings from shipboard surveys on the U.S. West Coast, 1991–2014. Image: Carretta et al., 2020.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://swfsc-publications.fisheries.noaa.gov/publications/CR/2020/2020Carretta.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+Carretta et al., 2020</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.15%20-%20Map%20Sightings%20Fin%20Whale%201991-2014.jpg" alt=""/> A map of fin whale <em>Balaenoptera physalus</em> sightings from shipboard surveys on the U.S. West Coast, 1991–2014. Image: Carretta et al., 2020.</p>
+
 </div>
 <div id="trends---fin-whales" class="section level4">
 <h4>Trends - Fin whales</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://doi.org/10.1890/15-1406.1" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Nadeem et al., 2016</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.15%20-%20Abundance%20Fin%20Whale%201991-2014.jpg" alt=""/> Fin whale <em>Balaenoptera physalus</em> abundance estimates on the U.S. West Coast, 1991–2014. Image: Nadeem et al., 2016.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://doi.org/10.1890/15-1406.1" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+Nadeem et al., 2016</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.15%20-%20Abundance%20Fin%20Whale%201991-2014.jpg" alt=""/> Fin whale <em>Balaenoptera physalus</em> abundance estimates on the U.S. West Coast, 1991–2014. Image: Nadeem et al., 2016.</p>
+
 </div>
 </div>
 </div>
@@ -199,15 +220,21 @@ pre code {
 <h3 class="tabset"></h3>
 <div id="maps---gray-whales" class="section level4">
 <h4>Maps - Gray whales</h4>
-<p><p><img src="figures/Figure%20Appendix%20S.LR.13.13%20Panel%201%20-%20Map%20Density%20of%20gray%20whales%202005-2011jpg.jpg" alt=""/> Map of gray whale <em>Eschrichtius robustus</em> survey region, including region 4 (North Ocean) and region 5 (South Ocean) (left). Average observation rates by year for gray whales (per km2) in North and South Ocean regions from June to November, 1996–2011 (right). Error bars represent two times standard error. No surveys were conducted in 2004. Image: Scordino et al., 2017.</p></p>
+
+<p><img src="figures/Figure%20Appendix%20S.LR.13.13%20Panel%201%20-%20Map%20Density%20of%20gray%20whales%202005-2011jpg.jpg" alt=""/> Map of gray whale <em>Eschrichtius robustus</em> survey region, including region 4 (North Ocean) and region 5 (South Ocean) (left). Average observation rates by year for gray whales (per km2) in North and South Ocean regions from June to November, 1996–2011 (right). Error bars represent two times standard error. No surveys were conducted in 2004. Image: Scordino et al., 2017.</p>
+
 </div>
 <div id="trends---gray-whale-strandings" class="section level4">
 <h4>Trends - Gray whale strandings</h4>
-<p><p><img src="figures/Appendix%20S.LR.13.18%20-%20Gray%20whale%20strandings%202019-2020.jpg" alt=""/> Combined 2019–2020 gray whale <em>Eschrichtius robustus</em> strandings by month in California, Oregon, Washington, and Alaska. Note that Image: D. Fauquier/NOAA.</p></p>
+
+<p><img src="figures/Appendix%20S.LR.13.18%20-%20Gray%20whale%20strandings%202019-2020.jpg" alt=""/> Combined 2019–2020 gray whale <em>Eschrichtius robustus</em> strandings by month in California, Oregon, Washington, and Alaska. Note that Image: D. Fauquier/NOAA.</p>
+
 </div>
 <div id="trends---gray-whales" class="section level4">
 <h4>Trends - Gray whales</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://www.cascadiaresearch.org/files/publications/Scordinoetal-2017.PDF" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Scordino et al., 2017</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.14%20-%20Density%20of%20gray%20whales%202005-2011jpg.jpg" alt=""/> Average observation rates by year for gray whales <em>Eschrichtius robustus</em> per km2 in North Ocean (Cape Flattery to Cape Alava) and South Ocean (Cape Alava to Sea Lion Rock) regions from June to November, 1996–2011 (See: Maps - Gray Whales). Error bars represent two times standard error. No surveys were conducted in 2004. Image: Scordino et al., 2017.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://www.cascadiaresearch.org/files/publications/Scordinoetal-2017.PDF" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+Scordino et al., 2017</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.14%20-%20Density%20of%20gray%20whales%202005-2011jpg.jpg" alt=""/> Average observation rates by year for gray whales <em>Eschrichtius robustus</em> per km2 in North Ocean (Cape Flattery to Cape Alava) and South Ocean (Cape Alava to Sea Lion Rock) regions from June to November, 1996–2011 (See: Maps - Gray Whales). Error bars represent two times standard error. No surveys were conducted in 2004. Image: Scordino et al., 2017.</p>
+
 </div>
 </div>
 </div>
@@ -217,11 +244,15 @@ pre code {
 <h3 class="tabset"></h3>
 <div id="maps---humpback-whales" class="section level4">
 <h4>Maps - Humpback whales</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://swfsc-publications.fisheries.noaa.gov/publications/CR/2020/2020Carretta.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Carretta et al., 2020</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.16%20-%20Map%20Sightings%20of%20humpback%20whales%20off%20US%20west%20coast%201991-2014.jpg" alt=""/> A map of humpback whale <em>Megaptera novaeangliae</em> sightings from shipboard surveys on the U.S. West Coast, 1991–2014. Image: Carretta et al., 2020.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://swfsc-publications.fisheries.noaa.gov/publications/CR/2020/2020Carretta.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+Carretta et al., 2020</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.16%20-%20Map%20Sightings%20of%20humpback%20whales%20off%20US%20west%20coast%201991-2014.jpg" alt=""/> A map of humpback whale <em>Megaptera novaeangliae</em> sightings from shipboard surveys on the U.S. West Coast, 1991–2014. Image: Carretta et al., 2020.</p>
+
 </div>
 <div id="trends---humpback-whales" class="section level4">
 <h4>Trends - Humpback whales</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://www.cascadiaresearch.org/files/publications/RS6796_SC_A17_NP_13.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Calambokidis et al., 2017</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.16%20-%20Figure%20Sightings%20of%20humpback%20whales%20off%20US%20west%20coast%201991-2014.jpg" alt=""/> Humpback whale <em>Megaptera novaeangliae</em> abundance estimates off Washington and southern British Columbia. Image: Calambokidis et al., 2017.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://www.cascadiaresearch.org/files/publications/RS6796_SC_A17_NP_13.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+Calambokidis et al., 2017</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.16%20-%20Figure%20Sightings%20of%20humpback%20whales%20off%20US%20west%20coast%201991-2014.jpg" alt=""/> Humpback whale <em>Megaptera novaeangliae</em> abundance estimates off Washington and southern British Columbia. Image: Calambokidis et al., 2017.</p>
+
 </div>
 </div>
 </div>
@@ -231,7 +262,9 @@ pre code {
 <h3 class="tabset"></h3>
 <div id="maps---density-comparison" class="section level4">
 <h4>Maps - Density comparison</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://doi.org/10.1111/ddi.12867" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> Becker et al., 2019</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.17.jpg" alt=""/> Predicted mean densities from 1991–2009 habitat‐based density models compared to novel 2014 summer/fall density predictions for fin whales <em>Balaenoptera physalus</em> (top) and humpback whales <em>Megaptera novaeangliae</em> (bottom). Left panels show the average prediction for 1991–2009, middle panels show predictions for 2014, and right panels show the difference between the two predictions. Image: Becker et al., 2019.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://doi.org/10.1111/ddi.12867" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+Becker et al., 2019</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.17.jpg" alt=""/> Predicted mean densities from 1991–2009 habitat‐based density models compared to novel 2014 summer/fall density predictions for fin whales <em>Balaenoptera physalus</em> (top) and humpback whales <em>Megaptera novaeangliae</em> (bottom). Left panels show the average prediction for 1991–2009, middle panels show predictions for 2014, and right panels show the difference between the two predictions. Image: Becker et al., 2019.</p>
+
 </div>
 </div>
 </div>

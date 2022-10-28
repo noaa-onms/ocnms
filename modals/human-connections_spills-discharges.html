@@ -13,7 +13,7 @@
 
 <title>Spills and discharges</title>
 
-<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -114,8 +114,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -123,9 +123,16 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -174,24 +181,35 @@ pre code {
 </div>
 
 
-<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"></div> <div style="margin: 10px; font-style: italic; flex: 20; ">Although water quality within the sanctuary is generally good, the potential for contamination from oil spills and discharges remains a concern. Prior to sanctuary designation in 1994, several significant oil spills occurred on the Olympic Coast, affecting wildlife and fishery resources and prompting outcry from coastal communities. Limiting the discharge of materials to the sanctuary through permitting is one way OCNMS tries to minimize impacts to habitats and wildlife from human activities. Staff also regularly undergo training in oil spill response efforts to increase readiness.</div> </div></p>
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"></div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">Although water quality within the sanctuary is generally good, the potential for contamination from oil spills and discharges remains a concern. Prior to sanctuary designation in 1994, several significant oil spills occurred on the Olympic Coast, affecting wildlife and fishery resources and prompting outcry from coastal communities. Limiting the discharge of materials to the sanctuary through permitting is one way OCNMS tries to minimize impacts to habitats and wildlife from human activities. Staff also regularly undergo training in oil spill response efforts to increase readiness.</div>
+</div>
 <div id="section" class="section level3 tabset">
 <h3 class="tabset"></h3>
 <div id="map---at-sea-fish-processing-discharge" class="section level4">
 <h4>Map - At-sea fish processing discharge</h4>
-<p><p><img src="figures/Figure%20R.2_EPA_Daily_Vessel_Locations_2019.jpg" alt=""/> EPA compilation of 2019 discharges of seafood processing vessels reported by industry. Each location is a single reported daily position for days when discharges occurred (discharges occur over a larger area then shown on map). Source: EPA; Image: NOAA.</p></p>
+
+<p><img src="figures/Figure%20R.2_EPA_Daily_Vessel_Locations_2019.jpg" alt=""/> EPA compilation of 2019 discharges of seafood processing vessels reported by industry. Each location is a single reported daily position for days when discharges occurred (discharges occur over a larger area then shown on map). Source: EPA; Image: NOAA.</p>
+
 </div>
 <div id="map---petroleum-movement" class="section level4">
 <h4>Map - Petroleum movement</h4>
-<p><p><img src="figures/Figure%20P.4%20ECY%20Oil%20movement_edit.png" alt=""/> Map showing movement of oil within Washington state via railroads, pipelines, vessels, and refineries. Image: Washington State Department of Ecology, 2017a</p></p>
+
+<p><img src="figures/Figure%20P.4%20ECY%20Oil%20movement_edit.png" alt=""/> Map showing movement of oil within Washington state via railroads, pipelines, vessels, and refineries. Image: Washington State Department of Ecology, 2017a</p>
+
 </div>
 <div id="map---tenyo-maru-oil-spill" class="section level4">
 <h4>Map - Tenyo Maru oil spill</h4>
-<p><p><img src="figures/Figure%20P.6%20Tenyo%20Maru_edit.png" alt=""/> Approximate area impacted by 1991 Tenyo Maru Oil Spill. Image: The Tenyo Maru Oil Spill Natural Resource Trustees, 2000.</p></p>
+
+<p><img src="figures/Figure%20P.6%20Tenyo%20Maru_edit.png" alt=""/> Approximate area impacted by 1991 Tenyo Maru Oil Spill. Image: The Tenyo Maru Oil Spill Natural Resource Trustees, 2000.</p>
+
 </div>
 <div id="trends---petroleum-movement" class="section level4">
 <h4>Trends - Petroleum movement</h4>
-<p><p><img src="figures/Figure%20P.5%20ECY%20Total%20Oil%20moved_edit.png" alt=""/> Twenty billion barrels, on average, are moved through Washington state annually by vessel (blue), rail (red), and pipeline (orange). In recent years, there has been a slight decrease in oil movement by vessel and an increase in the use of rail. Image: Washington State Department of Ecology, 2017a.</p></p>
+
+<p><img src="figures/Figure%20P.5%20ECY%20Total%20Oil%20moved_edit.png" alt=""/> Twenty billion barrels, on average, are moved through Washington state annually by vessel (blue), rail (red), and pipeline (orange). In recent years, there has been a slight decrease in oil movement by vessel and an increase in the use of rail. Image: Washington State Department of Ecology, 2017a.</p>
+
 </div>
 </div>
 

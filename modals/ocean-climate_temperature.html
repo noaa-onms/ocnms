@@ -13,7 +13,7 @@
 
 <title>Temperature</title>
 
-<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="_libs/navigation-1.1/tabsets.js"></script>
 <link href="_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="_libs/font-awesome-6.1.1/css/all.min.css" rel="stylesheet" />
-<link href="_libs/font-awesome-6.1.1/css/v4-shims.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
 <script>
@@ -116,8 +116,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -125,9 +125,16 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -176,25 +183,42 @@ pre code {
 </div>
 
 
-<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"> <a href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current/cc-projects-blobtracker" target="_blank"> <i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i> </a> </div> <div style="margin: 10px; font-style: italic; flex: 20; ">To date, the ocean has absorbed more than 90% of the heat associated with climate change, causing the average ocean temperature to increase world-wide. In Olympic Coast National Marine Sanctuary, water temperatures are expected to increase over the next century, becoming 2°F warmer by 2050. Warmer ocean temperatures hold less oxygen and increase stratification, and can weaken upwelling and reduce ecosystem productivity, factors that all have the potential to affect the distribution of species and modify species ranges.</div> </div></p>
+<div style="display: flex">
+<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
+<a href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current/cc-projects-blobtracker" target="_blank">
+<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
+</a>
+</div>
+<div style="margin: 10px; font-style: italic; flex: 20; ">To date, the ocean has absorbed more than 90% of the heat associated with climate change, causing the average ocean temperature to increase world-wide. In Olympic Coast National Marine Sanctuary, water temperatures are expected to increase over the next century, becoming 2°F warmer by 2050. Warmer ocean temperatures hold less oxygen and increase stratification, and can weaken upwelling and reduce ecosystem productivity, factors that all have the potential to affect the distribution of species and modify species ranges.</div>
+</div>
 <div id="section" class="section level3 tabset">
 <h3 class="tabset"></h3>
 <div id="maps---marine-heatwave-20142019-comparison"
 class="section level4">
 <h4>Maps - Marine heatwave 2014/2019 comparison</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current/cc-projects-blobtracker" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> California Current Marine Heatwave Tracker</a></div><div style="text-align:right; display:table-cell;"><a href="https://www.fisheries.noaa.gov/feature-story/new-marine-heatwave-emerges-west-coast-resembles-blob" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> NOAA Fisheries</a></div></div></div><p><img src="figures/S_WQ_8_6_SST%20anomaly%20heat%20maps%20Blob%202014%20and%202019.png" alt=""/> Sea surface temperature anomaly (°C) along the Pacific coast of North America in September 2014 and September 2019. Several intense marine heatwaves have affected the Northeast Pacific in recent years. Source: NOAA Fisheries, 2019a.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current/cc-projects-blobtracker" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
+California Current Marine Heatwave Tracker</a></div><div style="text-align:right; display:table-cell;"><a href="https://www.fisheries.noaa.gov/feature-story/new-marine-heatwave-emerges-west-coast-resembles-blob" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+NOAA Fisheries</a></div></div></div><p><img src="figures/S_WQ_8_6_SST%20anomaly%20heat%20maps%20Blob%202014%20and%202019.png" alt=""/> Sea surface temperature anomaly (°C) along the Pacific coast of North America in September 2014 and September 2019. Several intense marine heatwaves have affected the Northeast Pacific in recent years. Source: NOAA Fisheries, 2019a.</p>
+
 </div>
 <div id="maps---marine-heatwave-2019" class="section level4">
 <h4>Maps - Marine heatwave 2019</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current/cc-projects-blobtracker" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> CCIEA Marine Heatwave Tracker</a></div><div style="text-align:right; display:table-cell;"><a href="https://www.pcouncil.org/documents/2020/02/g-1-a-iea-team-report-1.pdf/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> NOAA CCIEA 2020</a></div></div></div><p><img src="figures/Figure%20S.H.10.4_Marine%20Heat%20Wave.JPG" alt=""/> Four maps showing standardized SST anomalies (SSTa) across the Northeast Pacific Ocean, including OCNMS, for May, July, and September 2019 and January 2020. Dark contours denote regions that meet the criteria of a marine heatwave (see Harvey et al., 2020). Standardized SSTa is defined as SSTa divided by the standard deviation of SSTa at each location calculated from 1982–2019, thus accounting for spatial variance in the normal fluctuation of SSTa. Image: CCIEA, 2021; Harvey et al., 2020.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current/cc-projects-blobtracker" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
+CCIEA Marine Heatwave Tracker</a></div><div style="text-align:right; display:table-cell;"><a href="https://www.pcouncil.org/documents/2020/02/g-1-a-iea-team-report-1.pdf/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+NOAA CCIEA 2020</a></div></div></div><p><img src="figures/Figure%20S.H.10.4_Marine%20Heat%20Wave.JPG" alt=""/> Four maps showing standardized SST anomalies (SSTa) across the Northeast Pacific Ocean, including OCNMS, for May, July, and September 2019 and January 2020. Dark contours denote regions that meet the criteria of a marine heatwave (see Harvey et al., 2020). Standardized SSTa is defined as SSTa divided by the standard deviation of SSTa at each location calculated from 1982–2019, thus accounting for spatial variance in the normal fluctuation of SSTa. Image: CCIEA, 2021; Harvey et al., 2020.</p>
+
 </div>
 <div id="trends---sea-surface-temperature" class="section level4">
 <h4>Trends - Sea surface temperature</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current/cc-indicator-climate-ocean-drivers" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> NOAA CCIEA Climate and Ocean Drivers</a></div></div></div><p><img src="figures/SSTanomalies%20NEW%20Final%20png" alt=""/> Annual SST anomalies (Reynolds Optimum Interpolation SST-v2) and trends analysis for OCNMS, 1979–2019. Red box illustrates a significant increasing trend for 2010–2019. Blue shading and “-” indicate a significant decrease, while red shading and “+” indicate a significant increase. Symbols in parentheses (i.e., “(-)” and “(+)”) do not indicate significant changes. Image: NOAA Fisheries, 2020d; O’Brien &amp; Oakes, 2020.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current/cc-indicator-climate-ocean-drivers" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+NOAA CCIEA Climate and Ocean Drivers</a></div></div></div><p><img src="figures/SSTanomalies%20NEW%20Final%20png" alt=""/> Annual SST anomalies (Reynolds Optimum Interpolation SST-v2) and trends analysis for OCNMS, 1979–2019. Red box illustrates a significant increasing trend for 2010–2019. Blue shading and “-” indicate a significant decrease, while red shading and “+” indicate a significant increase. Symbols in parentheses (i.e., “(-)” and “(+)”) do not indicate significant changes. Image: NOAA Fisheries, 2020d; O’Brien &amp; Oakes, 2020.</p>
+
 </div>
 <div id="trends---subsurface-temperature" class="section level4">
 <h4>Trends - Subsurface temperature</h4>
-<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://www.climate.gov/news-features/blogs/enso/seeing-red-across-north-pacific-ocean" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i> L'Heureux, M., 2019</a></div></div></div><p><img src="figures/Figure%20S_WQ_8_4_SST%20anomalies%20profile%201980-2019.png" alt=""/> Subsurface temperature anomalies averaged in the North Pacific Ocean (40–50°N, 150–130 °W) from 1980 to present (using an ensemble of ocean reanalysis from various agencies). Source: NOAA Climate Prediction Center; Image: L&#39;Heureux, 2019; C. Wen/NOAA.</p></p>
+<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://www.climate.gov/news-features/blogs/enso/seeing-red-across-north-pacific-ocean" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
+L'Heureux, M., 2019</a></div></div></div><p><img src="figures/Figure%20S_WQ_8_4_SST%20anomalies%20profile%201980-2019.png" alt=""/> Subsurface temperature anomalies averaged in the North Pacific Ocean (40–50°N, 150–130 °W) from 1980 to present (using an ensemble of ocean reanalysis from various agencies). Source: NOAA Climate Prediction Center; Image: L&#39;Heureux, 2019; C. Wen/NOAA.</p>
+
 </div>
 </div>
 
