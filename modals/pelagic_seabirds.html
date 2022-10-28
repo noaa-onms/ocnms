@@ -13,7 +13,7 @@
 
 <title>Seabirds</title>
 
-<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="_libs/navigation-1.1/tabsets.js"></script>
 <link href="_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
-<link href="_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-6.2.0/css/all.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-6.2.0/css/v4-shims.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
 <script>
@@ -116,8 +116,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -125,16 +125,9 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -183,17 +176,7 @@ pre code {
 </div>
 
 
-<div style="display: flex">
-<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
-<a href="https://olympiccoast.noaa.gov/living/marinelife/birds/birds.html" target="_blank">
-<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
-</a>
-<a href="https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_albatross.html" target="_blank">
-<i class="fa fa-camera" role="presentation" aria-label="camera icon"></i>
-</a>
-</div>
-<div style="margin: 10px; font-style: italic; flex: 20; ">Olympic Coast National Marine Sanctuary is used by more than 100 different species of marine birds and shorebirds. Many of the birds that are here in significant numbers in the summer, such as sooty shearwaters and black-footed albatross, travel to the Olympic Coast from nesting areas thousands of miles away. Other seabirds, like Tufted Puffins and Common Murre, nest on offshore islands and live here year-round. All seabird species, whether they nest in our region or only visit, tell us something about the health of our marine ecosystem. They breed more successfully when food is abundant, they are sensitive to water contamination such as oil, they respond to human disturbance, and sometimes suffer from disruption of their nesting and roosting sites. By admiring, studying and observing marine birds we can learn much about the ocean as a whole.</div>
-</div>
+<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"> <a href="https://olympiccoast.noaa.gov/living/marinelife/birds/birds.html" target="_blank"> <i class="fas fa-circle-info" role="presentation" aria-label="circle-info icon"></i> </a> <a href="https://olympiccoast.noaa.gov/library/pixpages/librarypixpg_albatross.html" target="_blank"> <i class="fas fa-camera" role="presentation" aria-label="camera icon"></i> </a> </div> <div style="margin: 10px; font-style: italic; flex: 20; ">Olympic Coast National Marine Sanctuary is used by more than 100 different species of marine birds and shorebirds. Many of the birds that are here in significant numbers in the summer, such as sooty shearwaters and black-footed albatross, travel to the Olympic Coast from nesting areas thousands of miles away. Other seabirds, like Tufted Puffins and Common Murre, nest on offshore islands and live here year-round. All seabird species, whether they nest in our region or only visit, tell us something about the health of our marine ecosystem. They breed more successfully when food is abundant, they are sensitive to water contamination such as oil, they respond to human disturbance, and sometimes suffer from disruption of their nesting and roosting sites. By admiring, studying and observing marine birds we can learn much about the ocean as a whole.</div> </div></p>
 <div id="section" class="section level1 tabset">
 <h1 class="tabset"></h1>
 <div id="at-sea-surveys" class="section level2">
@@ -202,27 +185,19 @@ pre code {
 <h3 class="tabset"></h3>
 <div id="map---marbled-murrelet" class="section level4">
 <h4>Map - Marbled Murrelet</h4>
-
-<p><img src="figures/S.LR.13.12%20-%20Marbled%20murrelet%20densities%202000-2019%20Map.jpg" alt=""/> A map showing where Marbled murrelet <em>Brachyramphus marmoratus</em> densities (birds/km2) are taken along the West Coast of North America from 2000–2019. Image: McIver et al., 2019.</p>
-
+<p><p><img src="figures/S.LR.13.12%20-%20Marbled%20murrelet%20densities%202000-2019%20Map.jpg" alt=""/> A map showing where Marbled murrelet <em>Brachyramphus marmoratus</em> densities (birds/km2) are taken along the West Coast of North America from 2000–2019. Image: McIver et al., 2019.</p></p>
 </div>
 <div id="trends---cassins-auklet" class="section level4">
 <h4>Trends - Cassin’s Auklet</h4>
-<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://oceanview.pfeg.noaa.gov/cciea-plotting/?opentab=5&amp;ind=1" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
-CCIEA Seabirds Indicators</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.10%20-%20Density%20anomalies%20for%20Cassins%20Auklet%202003-2019.jpg" alt=""/> Density anomalies (number of birds per km2) for Cassin’s auklet <em>Ptychoramphus aleuticus</em> from Newport, Oregon to Cape Flattery, Washington during the summer from 2003–2019. Data are shipboard counts conducted during the NOAA Northwest Fisheries Science Center&#39;s Juvenile Salmon &amp; Ocean Ecosystem Survey (JSOES)The black dot (●) indicates that the 10-year mean (2010–2019, shaded in blue) is within one standard deviation of the long-term mean. The horizontal arrow (→) indicates no change in the 10-year trend.  Source: J. Zamon/NOAA; Image: CCIEA, 2019.</p>
-
+<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://oceanview.pfeg.noaa.gov/cciea-plotting/?opentab=5&amp;ind=1" target="_blank"><i class="fas fa-database" role="presentation" aria-label="database icon"></i> CCIEA Seabirds Indicators</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.10%20-%20Density%20anomalies%20for%20Cassins%20Auklet%202003-2019.jpg" alt=""/> Density anomalies (number of birds per km2) for Cassin’s auklet <em>Ptychoramphus aleuticus</em> from Newport, Oregon to Cape Flattery, Washington during the summer from 2003–2019. Data are shipboard counts conducted during the NOAA Northwest Fisheries Science Center&#39;s Juvenile Salmon &amp; Ocean Ecosystem Survey (JSOES)The black dot (●) indicates that the 10-year mean (2010–2019, shaded in blue) is within one standard deviation of the long-term mean. The horizontal arrow (→) indicates no change in the 10-year trend.  Source: J. Zamon/NOAA; Image: CCIEA, 2019.</p></p>
 </div>
 <div id="trends---marbled-murrelet" class="section level4">
 <h4>Trends - Marbled Murrelet</h4>
-
-<p><img src="figures/Figure%20S.LR.13.10%20Panel%202%20-%20Marbled%20murrelet%20densities%202000-2019%20Figure.jpg" alt=""/> Marbled murrelet  <em>Brachyramphus marmoratus</em> densities (birds/km2) along the Washington coast (Zone 2 on map) from 2000–2019. Image: McIver et al., 2019.</p>
-
+<p><p><img src="figures/Figure%20S.LR.13.10%20Panel%202%20-%20Marbled%20murrelet%20densities%202000-2019%20Figure.jpg" alt=""/> Marbled murrelet  <em>Brachyramphus marmoratus</em> densities (birds/km2) along the Washington coast (Zone 2 on map) from 2000–2019. Image: McIver et al., 2019.</p></p>
 </div>
 <div id="trends---tufted-puffin" class="section level4">
 <h4>Trends - Tufted Puffin</h4>
-<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://wdfw.wa.gov/sites/default/files/publications/02051/wdfw02051.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
-Hanson et al., 2019</a></div></div></div><p><img src="figures/S.LR.13.11%20-%20Tufted%20puffin%20encounters%202001-2018.jpg" alt=""/> Encounters (birds/km) of Tufted puffins <em>Fratercula cirrhata</em> during summer (May–July) at-sea surveys between Cape Flattery and Point Grenville from 2001–2017. Image: Hanson et al., 2019.</p>
-
+<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://wdfw.wa.gov/sites/default/files/publications/02051/wdfw02051.pdf" target="_blank"><i class="fas fa-database" role="presentation" aria-label="database icon"></i> Hanson et al., 2019</a></div></div></div><p><img src="figures/S.LR.13.11%20-%20Tufted%20puffin%20encounters%202001-2018.jpg" alt=""/> Encounters (birds/km) of Tufted puffins <em>Fratercula cirrhata</em> during summer (May–July) at-sea surveys between Cape Flattery and Point Grenville from 2001–2017. Image: Hanson et al., 2019.</p></p>
 </div>
 </div>
 </div>
@@ -232,17 +207,11 @@ Hanson et al., 2019</a></div></div></div><p><img src="figures/S.LR.13.11%20-%20T
 <h3 class="tabset"></h3>
 <div id="trends---cassins-auklet-carcasses" class="section level4">
 <h4>Trends - Cassin’s Auklet carcasses</h4>
-<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://coasst.org/" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
-Coastal Observation and Seabird Survey Team (COASST)</a></div><div style="text-align:right; display:table-cell;"><a href="https://oceanview.pfeg.noaa.gov/cciea-plotting/?opentab=5&amp;ind=27" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
-CCIEA Seabirds Indicators</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.11%20-%20Encounter%20rates%20for%20dead%20Cassins%20auklet%202001-2018.jpg" alt=""/> Encounter rates for dead Cassin’s auklets <em>Ptychoramphus aleuticus</em> from 2001–2018 from the California-Oregon border to Cape Flattery, Washington. The black dot (●) indicates that the 10-year mean (2010–2019, shaded in blue) is within one standard deviation of the long-term mean. The horizontal arrow (→) indicates no change in the 10-year trend. Source: COASST, 2020; Image: CCIEA, 2019.</p>
-
+<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://coasst.org/" target="_blank"><i class="fas fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Coastal Observation and Seabird Survey Team (COASST)</a></div><div style="text-align:right; display:table-cell;"><a href="https://oceanview.pfeg.noaa.gov/cciea-plotting/?opentab=5&amp;ind=27" target="_blank"><i class="fas fa-database" role="presentation" aria-label="database icon"></i> CCIEA Seabirds Indicators</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.11%20-%20Encounter%20rates%20for%20dead%20Cassins%20auklet%202001-2018.jpg" alt=""/> Encounter rates for dead Cassin’s auklets <em>Ptychoramphus aleuticus</em> from 2001–2018 from the California-Oregon border to Cape Flattery, Washington. The black dot (●) indicates that the 10-year mean (2010–2019, shaded in blue) is within one standard deviation of the long-term mean. The horizontal arrow (→) indicates no change in the 10-year trend. Source: COASST, 2020; Image: CCIEA, 2019.</p></p>
 </div>
 <div id="trends---common-murre-carcasses" class="section level4">
 <h4>Trends - Common Murre carcasses</h4>
-<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://coasst.org/" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
-Coastal Observation and Seabird Survey Team (COASST)</a></div><div style="text-align:right; display:table-cell;"><a href="http://3.223.50.225:3838/Explore-data/" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
-COASST explore data App</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.9%20-%20Encounter%20rates%20for%20dead%20common%20murres%202008-2020.jpg" alt=""/> Encounter rates for dead common murres <em>Uria aalge</em> from 2008–2020 on beaches in northern Washington. Image: COASST, 2020.</p>
-
+<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://coasst.org/" target="_blank"><i class="fas fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Coastal Observation and Seabird Survey Team (COASST)</a></div><div style="text-align:right; display:table-cell;"><a href="http://3.223.50.225:3838/Explore-data/" target="_blank"><i class="fas fa-database" role="presentation" aria-label="database icon"></i> COASST explore data App</a></div></div></div><p><img src="figures/Appendix%20S.LR.13.9%20-%20Encounter%20rates%20for%20dead%20common%20murres%202008-2020.jpg" alt=""/> Encounter rates for dead common murres <em>Uria aalge</em> from 2008–2020 on beaches in northern Washington. Image: COASST, 2020.</p></p>
 </div>
 </div>
 </div>

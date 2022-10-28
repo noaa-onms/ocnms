@@ -13,7 +13,7 @@
 
 <title>Vessels</title>
 
-<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="_libs/navigation-1.1/tabsets.js"></script>
 <link href="_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
-<link href="_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-6.2.0/css/all.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-6.2.0/css/v4-shims.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
 <script>
@@ -116,8 +116,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -125,16 +125,9 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -183,47 +176,28 @@ pre code {
 </div>
 
 
-<div style="display: flex">
-<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
-<a href="https://olympiccoast.noaa.gov/protect/incidentresponse/incidentresponse.html" target="_blank">
-<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
-</a>
-</div>
-<div style="margin: 10px; font-style: italic; flex: 20; ">Although water quality within the sanctuary is currently good, the potential for contamination by petroleum products, pathogens, and chemicals is a concern. Four of the five largest vessel-based oil spills in Washington state history have occurred in or moved into the area now designated as the sanctuary. Sanctuary staff collaborate on management efforts designed to minimize risks to sanctuary habitats and living resources and the communities that depend on them from vessels in several ways. For example, an Area to Be Avoided covering more than 70% of the sanctuary was designated by the International Maritime Organization to keep all ships and barges that carry oil or hazardous materials as cargo, and all ships 400 gross tons and above, solely in transit, outside of the Area To Be Avoided. High compliance with this provision enhances several other resource protection efforts at the sanctuary designed to minimize risks from vessels. NOAA regularly posts news about vessel incidents at: https://incidentnews.noaa.gov/</div>
-</div>
+<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"> <a href="https://olympiccoast.noaa.gov/protect/incidentresponse/incidentresponse.html" target="_blank"> <i class="fas fa-circle-info" role="presentation" aria-label="circle-info icon"></i> </a> </div> <div style="margin: 10px; font-style: italic; flex: 20; ">Although water quality within the sanctuary is currently good, the potential for contamination by petroleum products, pathogens, and chemicals is a concern. Four of the five largest vessel-based oil spills in Washington state history have occurred in or moved into the area now designated as the sanctuary. Sanctuary staff collaborate on management efforts designed to minimize risks to sanctuary habitats and living resources and the communities that depend on them from vessels in several ways. For example, an Area to Be Avoided covering more than 70% of the sanctuary was designated by the International Maritime Organization to keep all ships and barges that carry oil or hazardous materials as cargo, and all ships 400 gross tons and above, solely in transit, outside of the Area To Be Avoided. High compliance with this provision enhances several other resource protection efforts at the sanctuary designed to minimize risks from vessels. NOAA regularly posts news about vessel incidents at: https://incidentnews.noaa.gov/</div> </div></p>
 <div id="section" class="section level3 tabset">
 <h3 class="tabset"></h3>
 <div id="map---vessel-density" class="section level4">
 <h4>Map - Vessel density</h4>
-
-<p><img src="figures/Figure%20P.3%20Vessel%20Traffic%20NWTT_edit.png" alt=""/> Map showing relative density of vessel traffic. Image: U.S. Department of the Navy, 2020.</p>
-
+<p><p><img src="figures/Figure%20P.3%20Vessel%20Traffic%20NWTT_edit.png" alt=""/> Map showing relative density of vessel traffic. Image: U.S. Department of the Navy, 2020.</p></p>
 </div>
 <div id="map---vessel-zoning" class="section level4">
 <h4>Map - Vessel zoning</h4>
-
-<p><img src="figures/OCNMS_ATBA_TSS_SP23_04162021.jpg" alt=""/> Map showing the northern portion of the sanctuary relative to the entrance to the Strait of Juan de Fuca, international shipping lanes and traffic separation schemes, and the Area to be Avoided designated by the IMO to reduce risks to the Olympic Coast from vessels over 400 gross tons. Image: T. Reyer/NOAA.</p>
-
+<p><p><img src="figures/OCNMS_ATBA_TSS_SP23_04162021.jpg" alt=""/> Map showing the northern portion of the sanctuary relative to the entrance to the Strait of Juan de Fuca, international shipping lanes and traffic separation schemes, and the Area to be Avoided designated by the IMO to reduce risks to the Olympic Coast from vessels over 400 gross tons. Image: T. Reyer/NOAA.</p></p>
 </div>
 <div id="trends---cruise-passengers" class="section level4">
 <h4>Trends - Cruise passengers</h4>
-<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://www.portseattle.org/sites/default/files/2019-04/cruise_economic_impact_2019.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
-Port of Seattle</a></div></div></div><p><img src="figures/Figure%20P.7%20Cruise%20Ships_edit.png" alt=""/> Passenger embarkments, disembarkments, and in-transit stops at the Port of Seattle, 2000–2019. Image: Port of Seattle, 2019.</p>
-
+<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://www.portseattle.org/sites/default/files/2019-04/cruise_economic_impact_2019.pdf" target="_blank"><i class="fas fa-database" role="presentation" aria-label="database icon"></i> Port of Seattle</a></div></div></div><p><img src="figures/Figure%20P.7%20Cruise%20Ships_edit.png" alt=""/> Passenger embarkments, disembarkments, and in-transit stops at the Port of Seattle, 2000–2019. Image: Port of Seattle, 2019.</p></p>
 </div>
 <div id="trends---vessel-groundingssinkings" class="section level4">
 <h4>Trends - Vessel groundings/sinkings</h4>
-<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://incidentnews.noaa.gov/" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
-NOAA Vessel Incident Reports</a></div><div style="text-align:right; display:table-cell;"><a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/archive/science/conservation/pdfs/olympic-coast-vessel-incident-1994-to-2016.pdf" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
-Galasso, 2017</a></div></div></div><p><img src="figures/R.6.png" alt=""/> Number of documented lost vessels in or near OCNMS by vessel type and by year. Image: Galasso, 2017.</p>
-
+<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://incidentnews.noaa.gov/" target="_blank"><i class="fas fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> NOAA Vessel Incident Reports</a></div><div style="text-align:right; display:table-cell;"><a href="https://nmssanctuaries.blob.core.windows.net/sanctuaries-prod/media/archive/science/conservation/pdfs/olympic-coast-vessel-incident-1994-to-2016.pdf" target="_blank"><i class="fas fa-database" role="presentation" aria-label="database icon"></i> Galasso, 2017</a></div></div></div><p><img src="figures/R.6.png" alt=""/> Number of documented lost vessels in or near OCNMS by vessel type and by year. Image: Galasso, 2017.</p></p>
 </div>
 <div id="trends---vessel-transits" class="section level4">
 <h4>Trends - Vessel transits</h4>
-<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://ecology.wa.gov/" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
-Washington State Department of Ecology</a></div><div style="text-align:right; display:table-cell;"><a href="https://apps.ecology.wa.gov/publications/UIPages/PublicationList.aspx?IndexTypeName=Topic&amp;NameValue=Vessel+Entries+And+Transits+(VEAT)+Reports+for+Washington+Waters&amp;DocumentTypeName=Publication" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
-Vessel Entries And Transits (VEAT) Reports</a></div></div></div><p><img src="figures/S.P.2.2.png" alt=""/> Number of inbound vessel transits to the Strait of Juan de Fuca, including cargo and passenger vessels 300 gross tons and larger, and tank ships and tank barges (transporting oil) of any tonnage, from 2008–2019. Data collected from 2008–2019 demonstrate an overall 7% increase in vessel entries and transits, with a 13% increase in cargo and passenger vessel transits and a 24% decrease in tank ships. Source: Washington State Department of Ecology, 2020.</p>
-
+<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://ecology.wa.gov/" target="_blank"><i class="fas fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Washington State Department of Ecology</a></div><div style="text-align:right; display:table-cell;"><a href="https://apps.ecology.wa.gov/publications/UIPages/PublicationList.aspx?IndexTypeName=Topic&amp;NameValue=Vessel+Entries+And+Transits+(VEAT)+Reports+for+Washington+Waters&amp;DocumentTypeName=Publication" target="_blank"><i class="fas fa-database" role="presentation" aria-label="database icon"></i> Vessel Entries And Transits (VEAT) Reports</a></div></div></div><p><img src="figures/S.P.2.2.png" alt=""/> Number of inbound vessel transits to the Strait of Juan de Fuca, including cargo and passenger vessels 300 gross tons and larger, and tank ships and tank barges (transporting oil) of any tonnage, from 2008–2019. Data collected from 2008–2019 demonstrate an overall 7% increase in vessel entries and transits, with a 13% increase in cargo and passenger vessel transits and a 24% decrease in tank ships. Source: Washington State Department of Ecology, 2020.</p></p>
 </div>
 </div>
 

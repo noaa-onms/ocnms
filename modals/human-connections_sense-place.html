@@ -13,7 +13,7 @@
 
 <title>Sense of place</title>
 
-<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -114,8 +114,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -123,16 +123,9 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -181,29 +174,20 @@ pre code {
 </div>
 
 
-<div style="display: flex">
-<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"></div>
-<div style="margin: 10px; font-style: italic; flex: 20; ">Sense of place is an ecosystem service describing mostly intangible aspects of a place that are related to its aesthetic attraction, spiritual significance or location identity. For tribal communities who have maintained a reciprocal relationship with the Olympic Coast since time immemorial, sense of place may reflect intangible values that are inextricable from place identity and thus difficult to adequately characterize.</div>
-</div>
+<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"></div> <div style="margin: 10px; font-style: italic; flex: 20; ">Sense of place is an ecosystem service describing mostly intangible aspects of a place that are related to its aesthetic attraction, spiritual significance or location identity. For tribal communities who have maintained a reciprocal relationship with the Olympic Coast since time immemorial, sense of place may reflect intangible values that are inextricable from place identity and thus difficult to adequately characterize.</div> </div></p>
 <div id="section" class="section level3 tabset">
 <h3 class="tabset"></h3>
 <div id="sense-of-place" class="section level4">
 <h4>Sense of Place</h4>
-
-<p><img src="figures/MakahDays-SmokingSalmon-KarlynLangjahr.jpg" alt=""/> Fish on a stick, salmon being cooked during the Makah Days celebration. Photo: Karlyn Langjahr/NOAA.</p>
-
+<p><p><img src="figures/MakahDays-SmokingSalmon-KarlynLangjahr.jpg" alt=""/> Fish on a stick, salmon being cooked during the Makah Days celebration. Photo: Karlyn Langjahr/NOAA.</p></p>
 </div>
 <div id="sense-of-place-1" class="section level4">
 <h4>Sense of Place</h4>
-
-<p><img src="figures/S.P.16.3_tribaljourneys2009_24.JPG" alt=""/> Quinault canoe <em>Os-chuck-a-bick</em> navigating off the Olympic Coast during the 2009 Paddle to Suquamish Tribal Canoe Journey. Photo: NOAA</p>
-
+<p><p><img src="figures/S.P.16.3_tribaljourneys2009_24.JPG" alt=""/> Quinault canoe <em>Os-chuck-a-bick</em> navigating off the Olympic Coast during the 2009 Paddle to Suquamish Tribal Canoe Journey. Photo: NOAA</p></p>
 </div>
 <div id="sense-of-place-2" class="section level4">
 <h4>Sense of Place</h4>
-
-<p><img src="figures/SecondBeach_Matt_McIntosh.jpg" alt=""/> Surfers at Second Beach walking at sunset. Photo: Matt McIntosh/NOAA</p>
-
+<p><p><img src="figures/SecondBeach_Matt_McIntosh.jpg" alt=""/> Surfers at Second Beach walking at sunset. Photo: Matt McIntosh/NOAA</p></p>
 </div>
 </div>
 

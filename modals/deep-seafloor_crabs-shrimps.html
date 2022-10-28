@@ -13,7 +13,7 @@
 
 <title>Crabs and shrimp</title>
 
-<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="_libs/navigation-1.1/tabsets.js"></script>
 <link href="_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
-<link href="_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-6.2.0/css/all.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-6.2.0/css/v4-shims.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
 <script>
@@ -116,8 +116,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -125,16 +125,9 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -183,22 +176,12 @@ pre code {
 </div>
 
 
-<div style="display: flex">
-<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
-<a href="https://olympiccoast.noaa.gov/living/marinelife/inverts/inverts.html" target="_blank">
-<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
-</a>
-</div>
-<div style="margin: 10px; font-style: italic; flex: 20; ">Protected by their hard shell, crabs and shrimp living in the deepest parts of the sanctuary patrol the seafloor in search of food. Some crustacean species, like Dungeness crab, spot shrimp and pink shrimp, support fisheries that may include sandy seafloor areas near the shore and deeper fishing grounds that may be 30 miles or more offshore.</div>
-</div>
+<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"> <a href="https://olympiccoast.noaa.gov/living/marinelife/inverts/inverts.html" target="_blank"> <i class="fas fa-circle-info" role="presentation" aria-label="circle-info icon"></i> </a> </div> <div style="margin: 10px; font-style: italic; flex: 20; ">Protected by their hard shell, crabs and shrimp living in the deepest parts of the sanctuary patrol the seafloor in search of food. Some crustacean species, like Dungeness crab, spot shrimp and pink shrimp, support fisheries that may include sandy seafloor areas near the shore and deeper fishing grounds that may be 30 miles or more offshore.</div> </div></p>
 <div id="section" class="section level3 tabset">
 <h3 class="tabset"></h3>
 <div id="trends---dungeness-crab" class="section level4">
 <h4>Trends - Dungeness crab</h4>
-<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://www.fisheries.noaa.gov/west-coast/science-data/us-west-coast-groundfish-bottom-trawl-survey" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
-U.S. West Coast Groundfish Bottom Trawl Survey</a></div><div style="text-align:right; display:table-cell;"><a href="https://www.fisheries.noaa.gov/resource/data/fishery-resource-analysis-and-monitoring-division-fram-data-warehouse" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
-FRAM Data Warehouse</a></div></div></div><p><img src="figures/log_ocnms_Cancer%20magister_2003-2019.png" alt=""/> Log catch per unit effort for Dungeness crab (<em>Cancer magister</em>) from scientific surveys from 2003–2019 in OCNMS at 55–1280 m depths (offshore). The black dot (●) indicates that the 10-year mean (2010–2019) is within one standard deviation of the long-term mean, and there was an increasing trend (indicated by arrow ↗) for the last 10 years. The dashed line is the long-term mean and solid blue lines are ±1 standard deviation. Because NOAA Fisheries sampling is conducted offshore, it does not provide abundance estimates for the nearshore Dungeness crab populations frequently targeted by tribal fishers. For this reason, companion data describing nearshore catch &lt;55 m are provided in Figure S.LR.13.4. Source: CCIEA, 2021; Image: G. Williams/NOAA.</p>
-
+<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://www.fisheries.noaa.gov/west-coast/science-data/us-west-coast-groundfish-bottom-trawl-survey" target="_blank"><i class="fas fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> U.S. West Coast Groundfish Bottom Trawl Survey</a></div><div style="text-align:right; display:table-cell;"><a href="https://www.fisheries.noaa.gov/resource/data/fishery-resource-analysis-and-monitoring-division-fram-data-warehouse" target="_blank"><i class="fas fa-database" role="presentation" aria-label="database icon"></i> FRAM Data Warehouse</a></div></div></div><p><img src="figures/log_ocnms_Cancer%20magister_2003-2019.png" alt=""/> Log catch per unit effort for Dungeness crab (<em>Cancer magister</em>) from scientific surveys from 2003–2019 in OCNMS at 55–1280 m depths (offshore). The black dot (●) indicates that the 10-year mean (2010–2019) is within one standard deviation of the long-term mean, and there was an increasing trend (indicated by arrow ↗) for the last 10 years. The dashed line is the long-term mean and solid blue lines are ±1 standard deviation. Because NOAA Fisheries sampling is conducted offshore, it does not provide abundance estimates for the nearshore Dungeness crab populations frequently targeted by tribal fishers. For this reason, companion data describing nearshore catch &lt;55 m are provided in Figure S.LR.13.4. Source: CCIEA, 2021; Image: G. Williams/NOAA.</p></p>
 </div>
 </div>
 

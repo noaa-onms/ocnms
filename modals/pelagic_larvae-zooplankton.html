@@ -13,7 +13,7 @@
 
 <title>Larvae and zooplankton</title>
 
-<script src="_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="_libs/header-attrs-2.17/header-attrs.js"></script>
 <script src="_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="_libs/navigation-1.1/tabsets.js"></script>
 <link href="_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
-<link href="_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-6.2.0/css/all.min.css" rel="stylesheet" />
+<link href="_libs/font-awesome-6.2.0/css/v4-shims.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S52XFTVKL0"></script>
 <script>
@@ -116,8 +116,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -125,16 +125,9 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -183,47 +176,29 @@ pre code {
 </div>
 
 
-<div style="display: flex">
-<div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;">
-<a href="https://oceanservice.noaa.gov/facts/plankton.html" target="_blank">
-<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>
-</a>
-</div>
-<div style="margin: 10px; font-style: italic; flex: 20; ">The rich abundance of marine life on the Olympic Coast is associated with high seasonal productivity driven by climate and ocean phenomena like upwelling, a wind-driven process that draws nutrients from deep ocean water onto the continental shelf during the spring and summer. This influx of nutrients fuels an increase among phytoplankton, tiny marine plants that use sunlight and nutrients to grow. Phytoplankton are consumed by other plankton, including tiny marine animals known as zooplankton and fish larvae, also known as ichthyoplankton. The composition and abundance of zooplankton and ichthyoplankton are critical metrics for understanding the condition of pelagic habitats and the flow of energy through the ecosystem. Many species large and small depend on zooplankton, including many species of fish.</div>
-</div>
+<p><div style="display: flex"> <div style="margin-top: 10px;margin-bottom: 10px; margin-right: 10px; flex: 1;"> <a href="https://oceanservice.noaa.gov/facts/plankton.html" target="_blank"> <i class="fas fa-circle-info" role="presentation" aria-label="circle-info icon"></i> </a> </div> <div style="margin: 10px; font-style: italic; flex: 20; ">The rich abundance of marine life on the Olympic Coast is associated with high seasonal productivity driven by climate and ocean phenomena like upwelling, a wind-driven process that draws nutrients from deep ocean water onto the continental shelf during the spring and summer. This influx of nutrients fuels an increase among phytoplankton, tiny marine plants that use sunlight and nutrients to grow. Phytoplankton are consumed by other plankton, including tiny marine animals known as zooplankton and fish larvae, also known as ichthyoplankton. The composition and abundance of zooplankton and ichthyoplankton are critical metrics for understanding the condition of pelagic habitats and the flow of energy through the ecosystem. Many species large and small depend on zooplankton, including many species of fish.</div> </div></p>
 <div id="section" class="section level3 tabset">
 <h3 class="tabset"></h3>
 <div id="maps---larvae-and-zooplankton-stations" class="section level4">
 <h4>Maps - Larvae and zooplankton stations</h4>
-
-<p><img src="figures/S.LR.Q15.3%20-%20Map%20Pelagic%20larvae%20and%20zooplankton%20species%20richness,%20diversity%20and%20evenness_edit.jpg" alt=""/> Location of survey stations trawled in Oregon and Washington that were used to characterize species richness, diversity and evenness for pelagic larvae and zooplankton. Note: plus signs (+) denotate locations of sampling stations.</p>
-
+<p><p><img src="figures/S.LR.Q15.3%20-%20Map%20Pelagic%20larvae%20and%20zooplankton%20species%20richness,%20diversity%20and%20evenness_edit.jpg" alt=""/> Location of survey stations trawled in Oregon and Washington that were used to characterize species richness, diversity and evenness for pelagic larvae and zooplankton. Note: plus signs (+) denotate locations of sampling stations.</p></p>
 </div>
 <div id="maps---phytoplankton" class="section level4">
 <h4>Maps - Phytoplankton</h4>
-
-<p><img src="figures/S.LR.Q15.2%20-%20Map%20Diatom%20and%20dinoflagellate%20species%20richness%20anomalies%20for%202009-2016%20offshore%20of%20Newport%20OR_edit.jpg" alt=""/> Location of the Newport hydrographic line where phytoplankton net samples were collected from February 2009 to June 2016 to identify species richness anomalies for diatoms and dinoflaggelates.  Image: Peterson et al., 2017.</p>
-
+<p><p><img src="figures/S.LR.Q15.2%20-%20Map%20Diatom%20and%20dinoflagellate%20species%20richness%20anomalies%20for%202009-2016%20offshore%20of%20Newport%20OR_edit.jpg" alt=""/> Location of the Newport hydrographic line where phytoplankton net samples were collected from February 2009 to June 2016 to identify species richness anomalies for diatoms and dinoflaggelates.  Image: Peterson et al., 2017.</p></p>
 </div>
 <div id="trends---copepods" class="section level4">
 <h4>Trends - Copepods</h4>
-<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://www.fisheries.noaa.gov/content/newportal-blog-northwest-fisheries-science-center" target="_blank"><i class="fa fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i>
-Newport Hydrographic Line</a></div><div style="text-align:right; display:table-cell;"><a href="https://www.fisheries.noaa.gov/west-coast/science-data/local-biological-indicators" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
-NOAA Fisheries Local Biological Indicators</a></div></div></div><p><img src="figures/S.LR.13.1%20-%20Copepod%20Biomass%201996-2020.jpg" alt=""/> PDO and ONI (top) and monthly biomass anomalies of the northern (middle) and southern (bottom) copepod taxa from 1969 to 2020 offshore of Newport, Oregon. Note that when SST is anomalously warm (i.e., PDO is positive), northern copepod biomass is low (negative anomaly) and southern copepod biomass is high (positive anomaly). Image: NWFSC, 2020.</p>
-
+<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:left; display:table-cell;"><a href="https://www.fisheries.noaa.gov/content/newportal-blog-northwest-fisheries-science-center" target="_blank"><i class="fas fa-clipboard-list" role="presentation" aria-label="clipboard-list icon"></i> Newport Hydrographic Line</a></div><div style="text-align:right; display:table-cell;"><a href="https://www.fisheries.noaa.gov/west-coast/science-data/local-biological-indicators" target="_blank"><i class="fas fa-database" role="presentation" aria-label="database icon"></i> NOAA Fisheries Local Biological Indicators</a></div></div></div><p><img src="figures/S.LR.13.1%20-%20Copepod%20Biomass%201996-2020.jpg" alt=""/> PDO and ONI (top) and monthly biomass anomalies of the northern (middle) and southern (bottom) copepod taxa from 1969 to 2020 offshore of Newport, Oregon. Note that when SST is anomalously warm (i.e., PDO is positive), northern copepod biomass is low (negative anomaly) and southern copepod biomass is high (positive anomaly). Image: NWFSC, 2020.</p></p>
 </div>
 <div id="trends---larvae-and-zooplankton-diversity"
 class="section level4">
 <h4>Trends - Larvae and zooplankton diversity</h4>
-<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://doi.org/10.3389/fmars.2019.00212" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
-Brodeur et al., 2019</a></div></div></div><p><img src="figures/S.LR.Q15.3%20-%20Figure%20Pelagic%20larvae%20and%20zooplankton%20species%20richness,%20diversity%20and%20evenness.jpg" alt=""/> Box plots showing pelagic larvae and zooplankton species richness, diversity, and evenness for all trawls (see map, left) in southern Washington and Oregon (2011 and 2013–2016). Image: Brodeur et al., 2019.</p>
-
+<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://doi.org/10.3389/fmars.2019.00212" target="_blank"><i class="fas fa-database" role="presentation" aria-label="database icon"></i> Brodeur et al., 2019</a></div></div></div><p><img src="figures/S.LR.Q15.3%20-%20Figure%20Pelagic%20larvae%20and%20zooplankton%20species%20richness,%20diversity%20and%20evenness.jpg" alt=""/> Box plots showing pelagic larvae and zooplankton species richness, diversity, and evenness for all trawls (see map, left) in southern Washington and Oregon (2011 and 2013–2016). Image: Brodeur et al., 2019.</p></p>
 </div>
 <div id="trends---phytoplankton-diversity" class="section level4">
 <h4>Trends - Phytoplankton diversity</h4>
-<div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://doi.org/10.1002/2017JC012952" target="_blank"><i class="fa fa-database" role="presentation" aria-label="database icon"></i>
-Peterson et al, 2017</a></div></div></div><p><img src="figures/S.LR.Q15.2%20-%20Figure%20Diatom%20and%20dinoflagellate%20species%20richness%20anomalies%20for%202009-2016%20offshore%20of%20Newport%20OR.jpg" alt=""/> Diatom (top) and dinoflagellate (bottom) species richness anomalies for 2009–2016 offshore of Newport, Oregon. Image: Peterson et al., 2017.</p>
-
+<p><div style="background:LightGrey; width:100%; display:table; font-size:120%; padding: 10px 10px 10px 10px; margin-bottom: 10px;"><div style="display:table-row"><div style="text-align:right; display:table-cell;"><a href="https://doi.org/10.1002/2017JC012952" target="_blank"><i class="fas fa-database" role="presentation" aria-label="database icon"></i> Peterson et al, 2017</a></div></div></div><p><img src="figures/S.LR.Q15.2%20-%20Figure%20Diatom%20and%20dinoflagellate%20species%20richness%20anomalies%20for%202009-2016%20offshore%20of%20Newport%20OR.jpg" alt=""/> Diatom (top) and dinoflagellate (bottom) species richness anomalies for 2009–2016 offshore of Newport, Oregon. Image: Peterson et al., 2017.</p></p>
 </div>
 </div>
 
